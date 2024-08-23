@@ -25,15 +25,21 @@ function App() {
       const imageBytes = await fetch(imageUrl).then((res) => res.arrayBuffer());
 
       const teacherSignUrl =
-        "https://dpsin.s3.amazonaws.com/sign/IAteacher1.jpeg";
+        "https://dpsin.s3.amazonaws.com/students/stusdnt1.jpeg";
       const teacherSignBytes = await fetch(teacherSignUrl).then((res) =>
+        res.arrayBuffer()
+      );
+
+      const principlaSignUrl =
+        "https://dpsin.s3.amazonaws.com/sign/rakhi.jpg";
+      const principalSignBytes = await fetch(principlaSignUrl).then((res) =>
         res.arrayBuffer()
       );
 
       // Embed the image in the PDF
       const image = await pdfDoc.embedJpg(imageBytes);
       const teacherSignImage = await pdfDoc.embedJpg(teacherSignBytes);
-      
+      const principalSignImage = await pdfDoc.embedJpg(principalSignBytes);
 
       // Get the first page
       const pages = pdfDoc.getPages();
@@ -385,9 +391,15 @@ function App() {
       );
       sixthPage.drawImage(teacherSignImage, {
         x: 80,
-        y: 100,
+        y: 260,
         width: 100,
-        height: 50,
+        height: 30,
+      });
+      sixthPage.drawImage(principalSignImage, {
+        x: 230,
+        y: 260,
+        width: 100,
+        height: 30,
       });
 
       seventhPage.drawText(userData.english.first.language, {

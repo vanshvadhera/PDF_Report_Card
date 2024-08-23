@@ -1,6 +1,6 @@
 export const userData = {
   profileIMG:
-    "https://thumbs.dreamstime.com/b/vector-illustration-avatar-dummy-logo-collection-image-icon-stock-isolated-object-set-symbol-web-137160339.jpg",
+    "https://static.vecteezy.com/system/resources/previews/002/629/904/non_2x/portrait-of-woman-university-student-holding-book-in-studio-grey-background-free-photo.jpg",
   name: "MITANSH THAKUR",
   section: "A",
   admissionNumber: "I-22/15112",
