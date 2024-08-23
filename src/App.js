@@ -25,7 +25,7 @@ function App() {
       const imageBytes = await fetch(imageUrl).then((res) => res.arrayBuffer());
 
       const teacherSignUrl =
-        "https://dpsin.s3.amazonaws.com/students/stusdnt1.jpeg";
+        "https://dpsin.s3.amazonaws.com/sign/IAteacher1.jpeg";
       const teacherSignBytes = await fetch(teacherSignUrl).then((res) =>
         res.arrayBuffer()
       );
