@@ -13,17 +13,9 @@ function FillMultiplae() {
     setSelectedStudent(userData[selectedStudentIndex]);
   };
 
-  const fillPdfForm = async (shouldDownload, shouldView) => {
+  const fillPdfForm = async (student, pdfDoc) => {
     try {
-      const existingPdfBytes = await fetch(
-        process.env.PUBLIC_URL +
-          "./asserts/Copy of Copy of REport Card 2E-11Feb2024 (19).pdf"
-      ).then((res) => res.arrayBuffer());
-
-      const pdfDoc = await PDFDocument.load(existingPdfBytes);
-
-      // Load the image from the selected student's profileIMG
-      const imageUrl = selectedStudent.profileIMG;
+      const imageUrl = student.profileIMG;
       const imageBytes = await fetch(imageUrl).then((res) => res.arrayBuffer());
 
       const teacherSignUrl =
@@ -32,9 +24,9 @@ function FillMultiplae() {
         res.arrayBuffer()
       );
 
-      const principlaSignUrl =
+      const principalSignUrl =
         "https://upload.wikimedia.org/wikipedia/commons/7/7d/Virat_Kohli_Signature.jpg";
-      const principalSignBytes = await fetch(principlaSignUrl).then((res) =>
+      const principalSignBytes = await fetch(principalSignUrl).then((res) =>
         res.arrayBuffer()
       );
 
@@ -44,48 +36,45 @@ function FillMultiplae() {
 
       const pages = pdfDoc.getPages();
       const firstPage = pages[0];
-      const secondPage = pages[1];
-      const thirdPage = pages[2];
-      const fourthPage = pages[3];
 
-      // Insert data dynamically from the selected student's record
+      // Insert data dynamically from the student's record
       firstPage.drawImage(image, {
         x: 234,
         y: 356,
         width: 134,
         height: 175,
       });
-      firstPage.drawText(selectedStudent.name, {
+      firstPage.drawText(student.name, {
         x: 210,
         y: 303,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      firstPage.drawText(selectedStudent.section, {
+      firstPage.drawText(student.section, {
         x: 490,
         y: 303,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      firstPage.drawText(selectedStudent.admissionNumber, {
+      firstPage.drawText(student.admissionNumber, {
         x: 196,
         y: 269,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      firstPage.drawText(selectedStudent.rollNumber, {
+      firstPage.drawText(student.rollNumber, {
         x: 298,
         y: 269,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      firstPage.drawText(selectedStudent.fatherName, {
+      firstPage.drawText(student.fatherName, {
         x: 202,
         y: 234,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      firstPage.drawText(selectedStudent.motherName, {
+      firstPage.drawText(student.motherName, {
         x: 205,
         y: 164,
         size: 10,
@@ -93,6 +82,56 @@ function FillMultiplae() {
       });
 
       // More drawing based on the student's data...
+    } catch (error) {
+      console.error("Error filling PDF form:", error);
+    }
+  };
+
+  const generatePdfForAllStudents = async () => {
+    try {
+      const mergedPdf = await PDFDocument.create();
+
+      for (let student of userData) {
+        const existingPdfBytes = await fetch(
+          process.env.PUBLIC_URL +
+            "./asserts/Copy of Copy of REport Card 2E-11Feb2024 (19).pdf"
+        ).then((res) => res.arrayBuffer());
+
+        const pdfDoc = await PDFDocument.load(existingPdfBytes);
+
+        await fillPdfForm(student, pdfDoc);
+
+        const pdfBytes = await pdfDoc.save();
+        const singlePdf = await PDFDocument.load(pdfBytes);
+        const copiedPages = await mergedPdf.copyPages(
+          singlePdf,
+          singlePdf.getPageIndices()
+        );
+
+        copiedPages.forEach((page) => mergedPdf.addPage(page));
+      }
+
+      const mergedPdfBytes = await mergedPdf.save();
+      download(
+        mergedPdfBytes,
+        "all-students-report-cards.pdf",
+        "application/pdf"
+      );
+    } catch (error) {
+      console.error("Error generating PDF for all students:", error);
+    }
+  };
+
+  const fillAndDownloadSinglePdf = async (shouldDownload, shouldView) => {
+    try {
+      const existingPdfBytes = await fetch(
+        process.env.PUBLIC_URL +
+          "./asserts/Copy of Copy of REport Card 2E-11Feb2024 (19).pdf"
+      ).then((res) => res.arrayBuffer());
+
+      const pdfDoc = await PDFDocument.load(existingPdfBytes);
+
+      await fillPdfForm(selectedStudent, pdfDoc);
 
       if (shouldDownload) {
         const pdfBytes = await pdfDoc.save();
@@ -125,8 +164,13 @@ function FillMultiplae() {
           ))}
         </select>
 
-        <button onClick={() => fillPdfForm(true, false)}>Download PDF</button>
-        <button onClick={() => fillPdfForm(false, true)}>View PDF</button>
+        <button onClick={() => fillAndDownloadSinglePdf(true, false)}>
+          Download PDF
+        </button>
+        <button onClick={() => fillAndDownloadSinglePdf(false, true)}>
+          View PDF
+        </button>
+        <button onClick={generatePdfForAllStudents}>Download All PDFs</button>
       </div>
       {pdfUrl && (
         <iframe ref={iframeRef} title="PDF Preview" width="100%" height="800" />
