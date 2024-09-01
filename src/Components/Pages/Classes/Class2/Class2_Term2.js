@@ -1,47 +1,43 @@
 import React, { useState, useRef } from "react";
-import "./App.css";
 import { PDFDocument, rgb } from "pdf-lib";
-import download from "downloadjs"; // Import downloadjs
-import { userData } from "./Components/UserData/UserData";
+import download from "downloadjs";
+import JSZip from "jszip";
+import { userData } from "./../../../UserData/UserData";
+import styles from "./../PageCss.module.css";
 
-function App() {
+function Class2_Term2() {
+  const [selectedStudent, setSelectedStudent] = useState(userData[0]);
+
+  //eslint-disable-next-line
   const [pdfUrl, setPdfUrl] = useState(null);
   const iframeRef = useRef(null);
 
-  // Function to fill in the PDF
-  const fillPdfForm = async (shouldDownload, shouldView) => {
+  const handleStudentChange = (event) => {
+    const selectedStudentIndex = event.target.value;
+    setSelectedStudent(userData[selectedStudentIndex]);
+  };
+
+  const fillPdfForm = async (student, pdfDoc) => {
     try {
-      // Fetch the existing PDF (make sure the path is correct)
-      const existingPdfBytes = await fetch(
-        process.env.PUBLIC_URL +
-          "./asserts/Copy of Copy of REport Card 2E-11Feb2024 (19).pdf"
-      ).then((res) => res.arrayBuffer());
-
-      // Load the PDFDocument
-      const pdfDoc = await PDFDocument.load(existingPdfBytes);
-
-      // Load the image from the URL
-      const imageUrl = userData.profileIMG;
+      const imageUrl = student.profileIMG;
       const imageBytes = await fetch(imageUrl).then((res) => res.arrayBuffer());
 
       const teacherSignUrl =
-        "https://dpsin.s3.amazonaws.com/sign/IAteacher1.jpeg";
+        "https://upload.wikimedia.org/wikipedia/commons/7/7d/Virat_Kohli_Signature.jpg";
       const teacherSignBytes = await fetch(teacherSignUrl).then((res) =>
         res.arrayBuffer()
       );
 
-      const principlaSignUrl =
-        "https://dpsin.s3.amazonaws.com/sign/rakhi.jpg";
-      const principalSignBytes = await fetch(principlaSignUrl).then((res) =>
+      const principalSignUrl =
+        "https://upload.wikimedia.org/wikipedia/commons/7/7d/Virat_Kohli_Signature.jpg";
+      const principalSignBytes = await fetch(principalSignUrl).then((res) =>
         res.arrayBuffer()
       );
 
-      // Embed the image in the PDF
       const image = await pdfDoc.embedJpg(imageBytes);
       const teacherSignImage = await pdfDoc.embedJpg(teacherSignBytes);
       const principalSignImage = await pdfDoc.embedJpg(principalSignBytes);
 
-      // Get the first page
       const pages = pdfDoc.getPages();
       const firstPage = pages[0];
       const secondPage = pages[1];
@@ -54,139 +50,131 @@ function App() {
       const ninthPage = pages[8];
       const tenthPage = pages[9];
 
-      // const { width, height } = image.scale(0.15); // Adjust scale as needed
+      // Insert data dynamically from the student's record
       firstPage.drawImage(image, {
-        x: 234, // Adjust x position as needed
-        y: 356, // Adjust y position as needed
+        x: 234,
+        y: 356,
         width: 134,
         height: 175,
       });
-
-      // Define text and positions (x, y)
-      firstPage.drawText(userData.name, {
+      firstPage.drawText(student.name, {
         x: 210,
         y: 303,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      firstPage.drawText(userData.section, {
+      firstPage.drawText(student.section, {
         x: 490,
         y: 303,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      firstPage.drawText(userData.admissionNumber, {
+      firstPage.drawText(student.admissionNumber, {
         x: 196,
         y: 269,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      firstPage.drawText(userData.rollNumber, {
+      firstPage.drawText(student.rollNumber, {
         x: 298,
         y: 269,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      firstPage.drawText(userData.fatherName, {
+      firstPage.drawText(student.fatherName, {
         x: 202,
         y: 234,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      firstPage.drawText(userData.motherName, {
+      firstPage.drawText(student.motherName, {
         x: 205,
         y: 164,
         size: 10,
         color: rgb(0, 0, 0),
       });
 
-      secondPage.drawText(`${userData.principalDesk.slice(0, 90)}-`, {
+      secondPage.drawText(`${student.principalDesk.slice(0, 90)}-`, {
         x: 85,
         y: 720,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      secondPage.drawText(`${userData.principalDesk.slice(90, 170)}-`, {
+      secondPage.drawText(`${student.principalDesk.slice(90, 170)}-`, {
         x: 85,
         y: 700,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      secondPage.drawText(`${userData.principalDesk.slice(170, 260)}-`, {
+      secondPage.drawText(`${student.principalDesk.slice(170, 260)}-`, {
         x: 85,
         y: 680,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      secondPage.drawText(`${userData.principalDesk.slice(260, 340)}-`, {
+      secondPage.drawText(`${student.principalDesk.slice(260, 340)}-`, {
         x: 85,
         y: 660,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      secondPage.drawText(`${userData.principalDesk.slice(340, 420)}.`, {
+      secondPage.drawText(`${student.principalDesk.slice(340, 420)}.`, {
         x: 85,
         y: 640,
         size: 10,
         color: rgb(0, 0, 0),
       });
 
-      thirdPage.drawText(userData.english.first.language, {
+      thirdPage.drawText(student.english.first.language, {
         x: 295,
         y: 707,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      thirdPage.drawText(userData.english.first.written, {
+      thirdPage.drawText(student.english.first.written, {
         x: 295,
         y: 692,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      thirdPage.drawText(`${userData.english.first.description.slice(0, 45)}`, {
+      thirdPage.drawText(`${student.english.first.description.slice(0, 45)}`, {
         x: 348,
         y: 707,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      thirdPage.drawText(
-        `${userData.english.first.description.slice(45, 89)}`,
-        {
-          x: 348,
-          y: 693,
-          size: 10,
-          color: rgb(0, 0, 0),
-        }
-      );
-      thirdPage.drawText(userData.english.second.word, {
+      thirdPage.drawText(`${student.english.first.description.slice(45, 89)}`, {
+        x: 348,
+        y: 693,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      thirdPage.drawText(student.english.second.word, {
         x: 295,
         y: 662,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      thirdPage.drawText(userData.english.second.Articular, {
+      thirdPage.drawText(student.english.second.Articular, {
         x: 295,
         y: 647,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      thirdPage.drawText(userData.english.second.proficiency, {
+      thirdPage.drawText(student.english.second.proficiency, {
         x: 295,
         y: 632,
         size: 10,
         color: rgb(0, 0, 0),
       });
+      thirdPage.drawText(`${student.english.second.description.slice(0, 45)}`, {
+        x: 348,
+        y: 662,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
       thirdPage.drawText(
-        `${userData.english.second.description.slice(0, 45)}`,
-        {
-          x: 348,
-          y: 662,
-          size: 10,
-          color: rgb(0, 0, 0),
-        }
-      );
-      thirdPage.drawText(
-        `${userData.english.second.description.slice(45, 89)}`,
+        `${student.english.second.description.slice(45, 89)}`,
         {
           x: 348,
           y: 648,
@@ -194,78 +182,75 @@ function App() {
           color: rgb(0, 0, 0),
         }
       );
-      thirdPage.drawText(userData.hindi.first.language, {
+      thirdPage.drawText(student.hindi.first.language, {
         x: 295,
         y: 465,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      thirdPage.drawText(userData.hindi.first.written, {
+      thirdPage.drawText(student.hindi.first.written, {
         x: 295,
         y: 450,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      thirdPage.drawText(`${userData.hindi.first.description.slice(0, 45)}`, {
+      thirdPage.drawText(`${student.hindi.first.description.slice(0, 45)}`, {
         x: 348,
         y: 465,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      thirdPage.drawText(`${userData.hindi.first.description.slice(45, 89)}`, {
+      thirdPage.drawText(`${student.hindi.first.description.slice(45, 89)}`, {
         x: 348,
         y: 451,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      thirdPage.drawText(userData.hindi.second.word, {
+      thirdPage.drawText(student.hindi.second.word, {
         x: 295,
         y: 420,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      thirdPage.drawText(userData.hindi.second.Articular, {
+      thirdPage.drawText(student.hindi.second.Articular, {
         x: 295,
         y: 405,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      thirdPage.drawText(`${userData.hindi.second.description.slice(0, 45)}`, {
+      thirdPage.drawText(`${student.hindi.second.description.slice(0, 45)}`, {
         x: 348,
         y: 420,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      thirdPage.drawText(`${userData.hindi.second.description.slice(45, 89)}`, {
+      thirdPage.drawText(`${student.hindi.second.description.slice(45, 89)}`, {
         x: 348,
         y: 407,
         size: 10,
         color: rgb(0, 0, 0),
       });
 
-      fourthPage.drawText(userData.english.first.language, {
+      fourthPage.drawText(student.english.first.language, {
         x: 295,
         y: 695,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      fourthPage.drawText(userData.english.first.written, {
+      fourthPage.drawText(student.english.first.written, {
         x: 295,
         y: 680,
         size: 10,
         color: rgb(0, 0, 0),
       });
+      fourthPage.drawText(`${student.english.first.description.slice(0, 45)}`, {
+        x: 348,
+        y: 695,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
       fourthPage.drawText(
-        `${userData.english.first.description.slice(0, 45)}`,
-        {
-          x: 348,
-          y: 695,
-          size: 10,
-          color: rgb(0, 0, 0),
-        }
-      );
-      fourthPage.drawText(
-        `${userData.english.first.description.slice(45, 89)}`,
+        `${student.english.first.description.slice(45, 89)}`,
         {
           x: 348,
           y: 681,
@@ -273,35 +258,26 @@ function App() {
           color: rgb(0, 0, 0),
         }
       );
-      fourthPage.drawText(
-        `${userData.english.first.description.slice(89, 108)}`,
-        {
-          x: 348,
-          y: 681,
-          size: 10,
-          color: rgb(0, 0, 0),
-        }
-      );
-      fourthPage.drawText(userData.english.second.word, {
+      fourthPage.drawText(student.english.second.word, {
         x: 295,
         y: 648,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      fourthPage.drawText(userData.english.second.Articular, {
+      fourthPage.drawText(student.english.second.Articular, {
         x: 295,
         y: 632,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      fourthPage.drawText(userData.english.second.proficiency, {
+      fourthPage.drawText(student.english.second.proficiency, {
         x: 295,
         y: 617,
         size: 10,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(
-        `${userData.english.second.description.slice(0, 45)}`,
+        `${student.english.second.description.slice(0, 45)}`,
         {
           x: 348,
           y: 649,
@@ -310,7 +286,7 @@ function App() {
         }
       );
       fourthPage.drawText(
-        `${userData.english.second.description.slice(45, 89)}`,
+        `${student.english.second.description.slice(45, 89)}`,
         {
           x: 348,
           y: 634,
@@ -318,57 +294,60 @@ function App() {
           color: rgb(0, 0, 0),
         }
       );
-      fourthPage.drawText(userData.hindi.first.language, {
+      fourthPage.drawText(student.hindi.first.language, {
         x: 295,
         y: 410,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      fourthPage.drawText(userData.hindi.first.written, {
+      fourthPage.drawText(student.hindi.first.written, {
         x: 295,
         y: 395,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      fourthPage.drawText(`${userData.hindi.first.description.slice(0, 45)}`, {
+      fourthPage.drawText(`${student.hindi.first.description.slice(0, 45)}`, {
         x: 348,
         y: 410,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      fourthPage.drawText(`${userData.hindi.first.description.slice(45, 89)}`, {
+      fourthPage.drawText(`${student.hindi.first.description.slice(45, 89)}`, {
         x: 348,
         y: 396,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      fourthPage.drawText(userData.hindi.second.word, {
+      fourthPage.drawText(`${student.hindi.first.description.slice(89, 135)}`, {
+        x: 348,
+        y: 380,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      fourthPage.drawText(student.hindi.second.word, {
         x: 295,
         y: 350,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      fourthPage.drawText(userData.hindi.second.Articular, {
+      fourthPage.drawText(student.hindi.second.Articular, {
         x: 295,
         y: 335,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      fourthPage.drawText(`${userData.hindi.second.description.slice(0, 45)}`, {
+      fourthPage.drawText(`${student.hindi.second.description.slice(0, 45)}`, {
         x: 348,
         y: 350,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      fourthPage.drawText(
-        `${userData.hindi.second.description.slice(45, 89)}`,
-        {
-          x: 348,
-          y: 335,
-          size: 10,
-          color: rgb(0, 0, 0),
-        }
-      );
+      fourthPage.drawText(`${student.hindi.second.description.slice(45, 89)}`, {
+        x: 348,
+        y: 335,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
 
       fifthPage.drawText("English", {
         x: 210,
@@ -411,20 +390,20 @@ function App() {
         height: 30,
       });
 
-      seventhPage.drawText(userData.english.first.language, {
+      seventhPage.drawText(student.english.first.language, {
         x: 295,
         y: 707,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      seventhPage.drawText(userData.english.first.written, {
+      seventhPage.drawText(student.english.first.written, {
         x: 295,
         y: 692,
         size: 10,
         color: rgb(0, 0, 0),
       });
       seventhPage.drawText(
-        `${userData.english.first.description.slice(0, 45)}`,
+        `${student.english.first.description.slice(0, 45)}`,
         {
           x: 348,
           y: 707,
@@ -433,7 +412,7 @@ function App() {
         }
       );
       seventhPage.drawText(
-        `${userData.english.first.description.slice(45, 89)}`,
+        `${student.english.first.description.slice(45, 89)}`,
         {
           x: 348,
           y: 693,
@@ -441,26 +420,26 @@ function App() {
           color: rgb(0, 0, 0),
         }
       );
-      seventhPage.drawText(userData.english.second.word, {
+      seventhPage.drawText(student.english.second.word, {
         x: 295,
         y: 662,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      seventhPage.drawText(userData.english.second.Articular, {
+      seventhPage.drawText(student.english.second.Articular, {
         x: 295,
         y: 647,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      seventhPage.drawText(userData.english.second.proficiency, {
+      seventhPage.drawText(student.english.second.proficiency, {
         x: 295,
         y: 632,
         size: 10,
         color: rgb(0, 0, 0),
       });
       seventhPage.drawText(
-        `${userData.english.second.description.slice(0, 45)}`,
+        `${student.english.second.description.slice(0, 45)}`,
         {
           x: 348,
           y: 662,
@@ -469,7 +448,7 @@ function App() {
         }
       );
       seventhPage.drawText(
-        `${userData.english.second.description.slice(45, 89)}`,
+        `${student.english.second.description.slice(45, 89)}`,
         {
           x: 348,
           y: 648,
@@ -477,56 +456,50 @@ function App() {
           color: rgb(0, 0, 0),
         }
       );
-      seventhPage.drawText(userData.hindi.first.language, {
+      seventhPage.drawText(student.hindi.first.language, {
         x: 295,
         y: 465,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      seventhPage.drawText(userData.hindi.first.written, {
+      seventhPage.drawText(student.hindi.first.written, {
         x: 295,
         y: 450,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      seventhPage.drawText(`${userData.hindi.first.description.slice(0, 45)}`, {
+      seventhPage.drawText(`${student.hindi.first.description.slice(0, 45)}`, {
         x: 348,
         y: 465,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      seventhPage.drawText(
-        `${userData.hindi.first.description.slice(45, 89)}`,
-        {
-          x: 348,
-          y: 451,
-          size: 10,
-          color: rgb(0, 0, 0),
-        }
-      );
-      seventhPage.drawText(userData.hindi.second.word, {
+      seventhPage.drawText(`${student.hindi.first.description.slice(45, 89)}`, {
+        x: 348,
+        y: 451,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      seventhPage.drawText(student.hindi.second.word, {
         x: 295,
         y: 420,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      seventhPage.drawText(userData.hindi.second.Articular, {
+      seventhPage.drawText(student.hindi.second.Articular, {
         x: 295,
         y: 405,
         size: 10,
         color: rgb(0, 0, 0),
       });
+      seventhPage.drawText(`${student.hindi.second.description.slice(0, 45)}`, {
+        x: 348,
+        y: 420,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
       seventhPage.drawText(
-        `${userData.hindi.second.description.slice(0, 45)}`,
-        {
-          x: 348,
-          y: 420,
-          size: 10,
-          color: rgb(0, 0, 0),
-        }
-      );
-      seventhPage.drawText(
-        `${userData.hindi.second.description.slice(45, 89)}`,
+        `${student.hindi.second.description.slice(45, 89)}`,
         {
           x: 348,
           y: 407,
@@ -535,29 +508,26 @@ function App() {
         }
       );
 
-      eighthPage.drawText(userData.english.first.language, {
+      eighthPage.drawText(student.english.first.language, {
         x: 295,
         y: 712,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      eighthPage.drawText(userData.english.first.written, {
+      eighthPage.drawText(student.english.first.written, {
         x: 295,
         y: 700,
         size: 10,
         color: rgb(0, 0, 0),
       });
+      eighthPage.drawText(`${student.english.first.description.slice(0, 45)}`, {
+        x: 348,
+        y: 712,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
       eighthPage.drawText(
-        `${userData.english.first.description.slice(0, 45)}`,
-        {
-          x: 348,
-          y: 712,
-          size: 10,
-          color: rgb(0, 0, 0),
-        }
-      );
-      eighthPage.drawText(
-        `${userData.english.first.description.slice(45, 89)}`,
+        `${student.english.first.description.slice(45, 89)}`,
         {
           x: 348,
           y: 701,
@@ -565,26 +535,26 @@ function App() {
           color: rgb(0, 0, 0),
         }
       );
-      eighthPage.drawText(userData.english.second.word, {
+      eighthPage.drawText(student.english.second.word, {
         x: 295,
         y: 668,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      eighthPage.drawText(userData.english.second.Articular, {
+      eighthPage.drawText(student.english.second.Articular, {
         x: 295,
         y: 652,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      eighthPage.drawText(userData.english.second.proficiency, {
+      eighthPage.drawText(student.english.second.proficiency, {
         x: 295,
         y: 637,
         size: 10,
         color: rgb(0, 0, 0),
       });
       eighthPage.drawText(
-        `${userData.english.second.description.slice(0, 45)}`,
+        `${student.english.second.description.slice(0, 45)}`,
         {
           x: 348,
           y: 669,
@@ -593,7 +563,7 @@ function App() {
         }
       );
       eighthPage.drawText(
-        `${userData.english.second.description.slice(45, 89)}`,
+        `${student.english.second.description.slice(45, 89)}`,
         {
           x: 348,
           y: 654,
@@ -601,61 +571,70 @@ function App() {
           color: rgb(0, 0, 0),
         }
       );
-      eighthPage.drawText(userData.hindi.first.language, {
+      eighthPage.drawText(student.hindi.first.language, {
         x: 295,
         y: 430,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      eighthPage.drawText(userData.hindi.first.written, {
+      eighthPage.drawText(student.hindi.first.written, {
         x: 295,
         y: 415,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      eighthPage.drawText(`${userData.hindi.first.description.slice(0, 45)}`, {
+      eighthPage.drawText(`${student.hindi.first.description.slice(0, 45)}`, {
         x: 348,
         y: 430,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      eighthPage.drawText(`${userData.hindi.first.description.slice(45, 89)}`, {
+      eighthPage.drawText(`${student.hindi.first.description.slice(45, 89)}`, {
         x: 348,
         y: 416,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      eighthPage.drawText(userData.hindi.second.word, {
+      eighthPage.drawText(student.hindi.second.word, {
         x: 295,
         y: 370,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      eighthPage.drawText(userData.hindi.second.Articular, {
+      eighthPage.drawText(student.hindi.second.Articular, {
         x: 295,
         y: 355,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      eighthPage.drawText(`${userData.hindi.second.description.slice(0, 45)}`, {
+      eighthPage.drawText(`${student.hindi.second.description.slice(0, 45)}`, {
         x: 348,
         y: 370,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      eighthPage.drawText(
-        `${userData.hindi.second.description.slice(45, 89)}`,
-        {
-          x: 348,
-          y: 355,
-          size: 10,
-          color: rgb(0, 0, 0),
-        }
-      );
+      eighthPage.drawText(`${student.hindi.second.description.slice(45, 89)}`, {
+        x: 348,
+        y: 355,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
 
-      ninthPage.drawText("English, Hindi, Maths", {
+      ninthPage.drawText(student.english.first.description.slice(0, 60), {
         x: 80,
         y: 620,
+        size: 15,
+        color: rgb(0, 0, 0),
+      });
+      ninthPage.drawText(student.english.first.description.slice(60, 120), {
+        x: 80,
+        y: 600,
+        size: 15,
+        color: rgb(0, 0, 0),
+      });
+      ninthPage.drawText(student.english.first.description.slice(120, 180), {
+        x: 80,
+        y: 580,
         size: 15,
         color: rgb(0, 0, 0),
       });
@@ -687,24 +666,61 @@ function App() {
         size: 18,
         color: rgb(0, 0, 0),
       });
+      // More drawing based on the student's data...
+    } catch (error) {
+      console.error("Error filling PDF form:", error);
+    }
+  };
 
-      // Serialize the PDFDocument to bytes (a Uint8Array)
-      const pdfBytes = await pdfDoc.save();
+  const generatePdfForAllStudentsAndZip = async () => {
+    try {
+      const zip = new JSZip();
+
+      for (let student of userData) {
+        const existingPdfBytes = await fetch("/asserts/class2_term2.pdf").then(
+          (res) => res.arrayBuffer()
+        );
+
+        const pdfDoc = await PDFDocument.load(existingPdfBytes);
+        await fillPdfForm(student, pdfDoc);
+
+        const pdfBytes = await pdfDoc.save();
+
+        // Add the PDF to the ZIP file, using the student's name for the file name
+        zip.file(
+          `${student.name.replace(/\s+/g, "_")}_report_card.pdf`,
+          pdfBytes
+        );
+      }
+
+      // Generate the ZIP file and download it
+      const zipBlob = await zip.generateAsync({ type: "blob" });
+      download(zipBlob, "student_report_cards.zip");
+    } catch (error) {
+      console.error("Error generating PDFs and ZIP file:", error);
+    }
+  };
+
+  const fillAndDownloadSinglePdf = async (shouldDownload, shouldView) => {
+    try {
+      const existingPdfBytes = await fetch("/asserts/class2_term2.pdf").then(
+        (res) => res.arrayBuffer()
+      );
+
+      const pdfDoc = await PDFDocument.load(existingPdfBytes);
+
+      await fillPdfForm(selectedStudent, pdfDoc);
 
       if (shouldDownload) {
-        // Use downloadjs to trigger the download
-        download(pdfBytes, "updated.pdf", "application/pdf");
+        const pdfBytes = await pdfDoc.save();
+        download(pdfBytes, "filled-form.pdf", "application/pdf");
       }
 
       if (shouldView) {
-        // Create a Blob from the PDF bytes
-        const blob = new Blob([pdfBytes], { type: "application/pdf" });
-
-        // Generate a URL for the Blob and set it to display the PDF in the iframe
-        const pdfUrl = URL.createObjectURL(blob);
+        const pdfBytes = await pdfDoc.save();
+        const pdfBlob = new Blob([pdfBytes], { type: "application/pdf" });
+        const pdfUrl = URL.createObjectURL(pdfBlob);
         setPdfUrl(pdfUrl);
-
-        // Update the iframe src to display the PDF
         if (iframeRef.current) {
           iframeRef.current.src = pdfUrl;
         }
@@ -715,35 +731,41 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Click the button below to fill the PDF and view the updated version
-          live.
-        </p>
+    <div className={styles.app}>
+      <div>
+        <h1 className={styles.header}>Student Report Card Generator</h1>
+        <select className={styles.select} onChange={handleStudentChange}>
+          {userData.map((student, index) => (
+            <option key={index} value={index}>
+              {student.name}
+            </option>
+          ))}
+        </select>
+
         <button
-          onClick={() => {
-            fillPdfForm(false, true); // View the PDF
-          }}
+          className={styles.button}
+          onClick={() => fillAndDownloadSinglePdf(true, false)}
         >
-          Fill and View PDF
+          Download PDF
         </button>
         <button
-          onClick={() => {
-            fillPdfForm(true, false); // Download the PDF
-          }}
+          className={styles.button}
+          onClick={() => fillAndDownloadSinglePdf(false, true)}
         >
-          Fill and Download PDF
+          View PDF
         </button>
-        <iframe
-          ref={iframeRef}
-          src={pdfUrl}
-          style={{ width: "100%", height: "700px", marginTop: "20px" }}
-          title="PDF Viewer"
-        ></iframe>
-      </header>
+        <button
+          className={styles.buttonZip}
+          onClick={generatePdfForAllStudentsAndZip}
+        >
+          Download All PDFs as ZIP
+        </button>
+      </div>
+      {/* {pdfUrl && ( */}
+      <iframe ref={iframeRef} className={styles.iframe} title="PDF Preview" />
+      {/* )} */}
     </div>
   );
 }
 
-export default App;
+export default Class2_Term2;

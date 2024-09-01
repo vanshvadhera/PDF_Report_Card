@@ -1,0 +1,94 @@
+.dashboard {
+  margin-top: 60px;
+  padding: 20px;
+  width: 100%;
+  height: 90vh;
+  background-image: url("./../../../../public/dpslogo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+@media (max-width: 500px) {
+  .dashboard {
+    height: 100vh;
+    margin-top: 0;
+  }
+}
+
+.dash {
+  margin: 0 auto;
+}
+
+@media (max-width: 500px) {
+  .dash {
+    margin-top: 60px;
+  }
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #f9f9f9;
+  width: 120vh;
+}
+
+@media (max-width: 1200px) {
+  .inputs {
+    width: 100vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .inputs {
+    width: 70vh;
+  }
+}
+
+@media (max-width: 500px) {
+  .inputs {
+    width: 100%;
+  }
+}
+
+.students {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.select {
+  width: 30%;
+  border-radius: 5px;
+}
+
+.fileInput {
+  margin-top: 10px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .students {
+    flex-direction: column;
+  }
+
+  .select {
+    width: 100%;
+  }
+
+  .fileInput {
+    width: 100%;
+  }
+}
+
+.heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+}
