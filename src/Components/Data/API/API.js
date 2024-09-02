@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const domainURL = "http://qa.edvanz.com/api/";
+const domainURL = "https://app.innovartan.com/api/";
 
 export const uploadData = async (studentData) => {
   console.log(studentData, "uploadData");
