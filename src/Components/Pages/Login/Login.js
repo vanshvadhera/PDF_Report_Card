@@ -63,7 +63,7 @@ function App() {
             style={{ alignSelf: "center" }}
           >
             <div className="text-center">
-              <img src="./dpsLogo.png" style={{ width: "130px" }} alt="logo" />
+              <img src="/dpsLogo.png" style={{ width: "130px" }} alt="logo" />
               <h4 className="mt-1 mb-5 pb-1">
                 Delhi Public School Indirapuram
               </h4>
