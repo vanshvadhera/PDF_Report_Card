@@ -6,7 +6,7 @@ import { getData, uploadData } from "../../Data/API/API";
 import { useNavigate } from "react-router";
 
 function Dashboard() {
-  const [data, setData] = useState([]);
+  // const [data, setData] = useState([]);
   const [file, setFile] = useState("");
   const [className, setClassName] = useState("");
   const [section, setSection] = useState("");
@@ -139,6 +139,8 @@ function Dashboard() {
       section: section2,
       term: term2,
     };
+
+    console.log(tempData);
     const data = await getData(tempData);
 
     if (term2 === "1" && data?.data?.term_1?.length === 0) {
@@ -229,6 +231,9 @@ function Dashboard() {
               >
                 <option className={styles.option} value="">
                   Select Class
+                </option>
+                <option className={styles.option} value="NUR">
+                  Nursery
                 </option>
                 <option className={styles.option} value="LKG">
                   LKG
@@ -348,6 +353,9 @@ function Dashboard() {
             >
               <option className={styles.option} value="">
                 Select Class
+              </option>
+              <option className={styles.option} value="NUR">
+                Nursery
               </option>
               <option className={styles.option} value="LKG">
                 LKG
