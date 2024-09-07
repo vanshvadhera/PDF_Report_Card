@@ -865,7 +865,7 @@ function Ukg_Term1() {
       const zip = new JSZip();
 
       for (let student of userData) {
-        const existingPdfBytes = await fetch("/asserts/Nur_term1.pdf").then(
+        const existingPdfBytes = await fetch("/asserts/UKG_term1.pdf").then(
           (res) => res.arrayBuffer()
         );
 
@@ -888,7 +888,7 @@ function Ukg_Term1() {
 
   const fillAndDownloadSinglePdf = async (shouldDownload, shouldView) => {
     try {
-      const existingPdfBytes = await fetch("/asserts/Nur_term1.pdf").then(
+      const existingPdfBytes = await fetch("/asserts/UKG_term1.pdf").then(
         (res) => res.arrayBuffer()
       );
 
