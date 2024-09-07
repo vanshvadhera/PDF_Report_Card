@@ -10,6 +10,7 @@ import NoPage from "./Components/Pages/NoPage/NoPage";
 import Class1_Term2 from "./Components/Pages/Classes/Class1/Class1_Term2";
 import Class1_Term1 from "./Components/Pages/Classes/Class1/Class1_Term1";
 import Nursery_Term1 from "./Components/Pages/Classes/Nursery/Nursery_Term1";
+import Class2_Term1 from "./Components/Pages/Classes/Class2/Class2_Term1";
 
 const RootPage = () => {
   const userState = useSelector((state) => state.userData);
@@ -52,11 +53,11 @@ const RootPage = () => {
           }
         />
         <Route
-          path="/classii/term2"
+          path="/classi/term1"
           element={
             <CustomNavbar>
               {/* eslint-disable-next-line */}
-              <Class2_Term2 />
+              <Class1_Term1 />
             </CustomNavbar>
           }
         />
@@ -70,11 +71,20 @@ const RootPage = () => {
           }
         />
         <Route
-          path="/classi/term1"
+          path="/classii/term1"
           element={
             <CustomNavbar>
               {/* eslint-disable-next-line */}
-              <Class1_Term1 />
+              <Class2_Term1 />
+            </CustomNavbar>
+          }
+        />
+        <Route
+          path="/classii/term2"
+          element={
+            <CustomNavbar>
+              {/* eslint-disable-next-line */}
+              <Class2_Term2 />
             </CustomNavbar>
           }
         />
