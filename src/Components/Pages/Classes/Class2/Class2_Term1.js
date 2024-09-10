@@ -42,28 +42,28 @@ function Class2_Term1() {
       //     res.arrayBuffer()
       //   );
 
-      const groupPhotUrl = student.group_photo;
-      const groupPhotBytes = await fetch(groupPhotUrl).then((res) =>
-        res.arrayBuffer()
-      );
+      // const groupPhotUrl = student.group_photo;
+      // const groupPhotBytes = await fetch(groupPhotUrl).then((res) =>
+      //   res.arrayBuffer()
+      // );
 
       const image = await pdfDoc.embedJpg(imageBytes);
       const teacherSign1Image = await pdfDoc.embedJpg(teacherSign1Bytes);
       // const teacherSign2Image = await pdfDoc.embedJpg(teacherSign2Bytes);
       //   const familyPhotImage = await pdfDoc.embedJpg(familyPhotoBytes);
-      const groupPhotImage = await pdfDoc.embedJpg(groupPhotBytes);
+      // const groupPhotImage = await pdfDoc.embedJpg(groupPhotBytes);
 
       const pages = pdfDoc.getPages();
       const firstPage = pages[0];
-      const secondPage = pages[1];
+      // const secondPage = pages[1];
       const thirdPage = pages[2];
       const fourthPage = pages[3];
       const fifthPage = pages[4];
       const sixthPage = pages[5];
-      const seventhPage = pages[6];
-      const eighthPage = pages[7];
-      const ninthPage = pages[8];
-      const tenthPage = pages[9];
+      // const seventhPage = pages[6];
+      // const eighthPage = pages[7];
+      // const ninthPage = pages[8];
+      // const tenthPage = pages[9];
 
       // Insert data dynamically from the student's record
       firstPage.drawImage(image, {
@@ -1228,13 +1228,13 @@ function Class2_Term1() {
         color: rgb(0, 0, 0),
       });
 
-      seventhPage.drawImage(groupPhotImage, {
-        x: 485,
-        y: 193,
-        width: 470,
-        height: 330,
-        rotate: degrees(90),
-      });
+      // seventhPage.drawImage(groupPhotImage, {
+      //   x: 485,
+      //   y: 193,
+      //   width: 470,
+      //   height: 330,
+      //   rotate: degrees(90),
+      // });
 
       // More drawing based on the student's data...
     } catch (error) {

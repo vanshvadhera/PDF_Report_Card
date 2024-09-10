@@ -43,10 +43,10 @@ function Ukg_Term1() {
         res.arrayBuffer()
       );
 
-      const groupPhotUrl = student.group_photo;
-      const groupPhotBytes = await fetch(groupPhotUrl).then((res) =>
-        res.arrayBuffer()
-      );
+    //   const groupPhotUrl = student.group_photo;
+    //   const groupPhotBytes = await fetch(groupPhotUrl).then((res) =>
+    //     res.arrayBuffer()
+    //   );
 
       const myPagePhotoUrl = student.my_page_photo;
       const myPagePhotoBytes = await fetch(myPagePhotoUrl).then((res) =>
@@ -57,7 +57,7 @@ function Ukg_Term1() {
       const teacherSign1Image = await pdfDoc.embedJpg(teacherSign1Bytes);
       // const teacherSign2Image = await pdfDoc.embedJpg(teacherSign2Bytes);
       const familyPhotImage = await pdfDoc.embedJpg(familyPhotoBytes);
-      const groupPhotImage = await pdfDoc.embedJpg(groupPhotBytes);
+    //   const groupPhotImage = await pdfDoc.embedJpg(groupPhotBytes);
       const myPagePhotoImage = await pdfDoc.embedJpg(myPagePhotoBytes);
 
       const pages = pdfDoc.getPages();
@@ -67,7 +67,7 @@ function Ukg_Term1() {
       const fourthPage = pages[3];
       const fifthPage = pages[4];
       const sixthPage = pages[5];
-      const seventhPage = pages[6];
+    //   const seventhPage = pages[6];
       // const eighthPage = pages[7];
       // const ninthPage = pages[8];
       // const tenthPage = pages[9];
