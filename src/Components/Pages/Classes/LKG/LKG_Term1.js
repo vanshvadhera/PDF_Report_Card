@@ -48,11 +48,17 @@ function LKG_Term1() {
         res.arrayBuffer()
       );
 
+      const myPagePhotoUrl = student.my_page_photo;
+      const myPagePhotoBytes = await fetch(myPagePhotoUrl).then((res) =>
+        res.arrayBuffer()
+      );
+
       const image = await pdfDoc.embedJpg(imageBytes);
       const teacherSign1Image = await pdfDoc.embedJpg(teacherSign1Bytes);
       // const teacherSign2Image = await pdfDoc.embedJpg(teacherSign2Bytes);
       const familyPhotImage = await pdfDoc.embedJpg(familyPhotoBytes);
       const groupPhotImage = await pdfDoc.embedJpg(groupPhotBytes);
+      const myPagePhotoImage = await pdfDoc.embedJpg(myPagePhotoBytes);
 
       const pages = pdfDoc.getPages();
       const firstPage = pages[0];
@@ -233,12 +239,15 @@ function LKG_Term1() {
         size: 10,
         color: rgb(0, 0, 0),
       });
-      thirdPage.drawText(student["MINDFUL MILESTONES Remarks"].slice(100, 150), {
-        x: 315,
-        y: 529,
-        size: 10,
-        color: rgb(0, 0, 0),
-      });
+      thirdPage.drawText(
+        student["MINDFUL MILESTONES Remarks"].slice(100, 150),
+        {
+          x: 315,
+          y: 529,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
       thirdPage.drawText(
         student["MINDFUL MILESTONES Remarks"].slice(120, 160),
         {
@@ -846,11 +855,11 @@ function LKG_Term1() {
         height: 30,
       });
 
-      sixthPage.drawImage(groupPhotImage, {
-        x: 470,
-        y: 160,
-        width: 480,
-        height: 350,
+      sixthPage.drawImage(myPagePhotoImage, {
+        x: 534,
+        y: 120,
+        width: 598,
+        height: 480,
         rotate: degrees(90),
       });
 
