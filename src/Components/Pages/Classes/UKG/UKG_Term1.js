@@ -841,13 +841,13 @@ function Ukg_Term1() {
         rotate: degrees(90),
       });
 
-      seventhPage.drawImage(groupPhotImage, {
-        x: 500,
-        y: 160,
-        width: 550,
-        height: 350,
-        rotate: degrees(90),
-      });
+      //   seventhPage.drawImage(groupPhotImage, {
+      //     x: 500,
+      //     y: 160,
+      //     width: 550,
+      //     height: 350,
+      //     rotate: degrees(90),
+      //   });
 
       // More drawing based on the student's data...
     } catch (error) {
