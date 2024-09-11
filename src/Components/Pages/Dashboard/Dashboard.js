@@ -138,6 +138,22 @@ function Dashboard() {
       className: className2,
       section: section2,
       term: term2,
+      remarks_pos:
+        className2 === "LKG"
+          ? 50
+          : className2 === "NUR"
+          ? 35
+          : className2 === "UKG"
+          ? 33
+          : 100,
+      reflection_pos:
+        className2 === "LKG"
+          ? 105
+          : className2 === "NUR"
+          ? 105
+          : className2 === "UKG"
+          ? 105
+          : 210,
     };
 
     console.log(tempData);

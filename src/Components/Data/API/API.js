@@ -29,6 +29,8 @@ export const getData = async (classData) => {
     section: classData.section,
     term: classData.term,
     env: "local",
+    remarks_pos: classData.remarks_pos,
+    reflection_pos: classData.reflection_pos,
   };
   console.log(tempData, "getData");
 
