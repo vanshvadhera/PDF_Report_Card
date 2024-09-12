@@ -1000,9 +1000,9 @@ function Nursery_Term1() {
       const zip = new JSZip();
 
       for (let student of userData) {
-        const existingPdfBytes = await fetch("/asserts/Nur_term1.pdf").then(
-          (res) => res.arrayBuffer()
-        );
+        const existingPdfBytes = await fetch(
+          "https://innovartan.s3.amazonaws.com/955f2ec619cc680213076c2cd5e236f6851474013/5efdfc6d39cba32c0467d876147009b6.pdf"
+        ).then((res) => res.arrayBuffer());
 
         const pdfDoc = await PDFDocument.load(existingPdfBytes);
         await fillPdfForm(student, pdfDoc);
@@ -1059,9 +1059,9 @@ function Nursery_Term1() {
 
   const fillAndDownloadSinglePdf = async (shouldDownload, shouldView) => {
     try {
-      const existingPdfBytes = await fetch("/asserts/Nur_term1.pdf").then(
-        (res) => res.arrayBuffer()
-      );
+      const existingPdfBytes = await fetch(
+        "https://innovartan.s3.amazonaws.com/955f2ec619cc680213076c2cd5e236f6851474013/5efdfc6d39cba32c0467d876147009b6.pdf"
+      ).then((res) => res.arrayBuffer());
 
       const pdfDoc = await PDFDocument.load(existingPdfBytes);
 

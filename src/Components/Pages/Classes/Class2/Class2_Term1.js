@@ -1316,9 +1316,9 @@ function Class2_Term1() {
       const zip = new JSZip();
 
       for (let student of userData) {
-        const existingPdfBytes = await fetch("/asserts/Class2_Term1.pdf").then(
-          (res) => res.arrayBuffer()
-        );
+        const existingPdfBytes = await fetch(
+          "https://innovartan.s3.amazonaws.com/001d9729d83854585db4fb2a211228971260921912/b0af04b8d56f43231994cee103cea05b.pdf"
+        ).then((res) => res.arrayBuffer());
 
         const pdfDoc = await PDFDocument.load(existingPdfBytes);
         await fillPdfForm(student, pdfDoc);
@@ -1375,9 +1375,9 @@ function Class2_Term1() {
 
   const fillAndDownloadSinglePdf = async (shouldDownload, shouldView) => {
     try {
-      const existingPdfBytes = await fetch("/asserts/Class2_Term1.pdf").then(
-        (res) => res.arrayBuffer()
-      );
+      const existingPdfBytes = await fetch(
+        "https://innovartan.s3.amazonaws.com/001d9729d83854585db4fb2a211228971260921912/b0af04b8d56f43231994cee103cea05b.pdf"
+      ).then((res) => res.arrayBuffer());
 
       const pdfDoc = await PDFDocument.load(existingPdfBytes);
 

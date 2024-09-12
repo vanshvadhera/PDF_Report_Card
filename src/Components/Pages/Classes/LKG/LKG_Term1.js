@@ -1074,9 +1074,9 @@ function LKG_Term1() {
       const zip = new JSZip();
 
       for (let student of userData) {
-        const existingPdfBytes = await fetch("/asserts/LKG_term1.pdf").then(
-          (res) => res.arrayBuffer()
-        );
+        const existingPdfBytes = await fetch(
+          "https://innovartan.s3.amazonaws.com/f6da40d6c80cd8c17790761a695051c9150236450/6d685d6c9e640b47d0aaced60d71c8be.pdf"
+        ).then((res) => res.arrayBuffer());
 
         const pdfDoc = await PDFDocument.load(existingPdfBytes);
         await fillPdfForm(student, pdfDoc);
@@ -1133,9 +1133,9 @@ function LKG_Term1() {
 
   const fillAndDownloadSinglePdf = async (shouldDownload, shouldView) => {
     try {
-      const existingPdfBytes = await fetch("/asserts/LKG_term1.pdf").then(
-        (res) => res.arrayBuffer()
-      );
+      const existingPdfBytes = await fetch(
+        "https://innovartan.s3.amazonaws.com/f6da40d6c80cd8c17790761a695051c9150236450/6d685d6c9e640b47d0aaced60d71c8be.pdf"
+      ).then((res) => res.arrayBuffer());
 
       const pdfDoc = await PDFDocument.load(existingPdfBytes);
 
