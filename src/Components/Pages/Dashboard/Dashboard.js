@@ -145,6 +145,10 @@ function Dashboard() {
           ? 35
           : className2 === "UKG"
           ? 33
+          : className2 === "I"
+          ? 40
+          : className2 === "II"
+          ? 50
           : 100,
       reflection_pos:
         className2 === "LKG"
@@ -153,6 +157,10 @@ function Dashboard() {
           ? 105
           : className2 === "UKG"
           ? 105
+          : className2 === "I"
+          ? 80
+          : className2 === "II"
+          ? 65
           : 210,
     };
 

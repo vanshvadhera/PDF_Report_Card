@@ -73,195 +73,255 @@ function Class1_Term1() {
         width: 134,
         height: 175,
       });
-      firstPage.drawText(student["Student Name"], {
+      firstPage.drawText(student["Student Name"][0], {
         x: 200,
         y: 255,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      firstPage.drawText(student.Section, {
+      firstPage.drawText(student.Section[0], {
         x: 480,
         y: 255,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      firstPage.drawText(student["Admission Number"], {
+      firstPage.drawText(student["Admission Number"][0], {
         x: 168,
         y: 222,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      firstPage.drawText(student["Roll No."], {
+      firstPage.drawText(student["Roll No."][0], {
         x: 295,
         y: 222,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      firstPage.drawText(student["Date Of Birth"].replace(/['"]/g, ""), {
+      firstPage.drawText(student["Date Of Birth"][0].replace(/['"]/g, ""), {
         x: 430,
         y: 222,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      firstPage.drawText(student["Father's Name"], {
+      firstPage.drawText(student["Father's Name"][0], {
         x: 190,
         y: 188,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      firstPage.drawText(student["Father's Mobile No."], {
+      firstPage.drawText(student["Father's Mobile No."][0], {
         x: 210,
         y: 153,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      firstPage.drawText(student["Mother's Name"], {
+      firstPage.drawText(student["Mother's Name"][0], {
         x: 195,
         y: 121,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      firstPage.drawText(student["Mother's Mobile No."], {
+      firstPage.drawText(student["Mother's Mobile No."][0], {
         x: 215,
         y: 87,
         size: 10,
         color: rgb(0, 0, 0),
       });
 
-      thirdPage.drawText(student["ENGLISH Language Competency"], {
+      thirdPage.drawText(student["ENGLISH Language Competency"][0], {
         x: 293,
         y: 695,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      thirdPage.drawText(student["ENGLISH Written assessment"], {
+      thirdPage.drawText(student["ENGLISH Written assessment"][0], {
         x: 293,
         y: 678,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      thirdPage.drawText(student["ENGLISH Articulation"], {
+      thirdPage.drawText(student["ENGLISH Articulation"][0], {
         x: 293,
         y: 645,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      thirdPage.drawText(student["ENGLISH Proficiency"], {
+      thirdPage.drawText(student["ENGLISH Proficiency"][0], {
         x: 293,
         y: 629,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      thirdPage.drawText(student["ENGLISH Fluency"], {
+      thirdPage.drawText(student["ENGLISH Fluency"][0], {
         x: 293,
         y: 600,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      thirdPage.drawText(student["ENGLISH Poem presentation"], {
+      thirdPage.drawText(student["ENGLISH Poem presentation"][0], {
         x: 293,
         y: 585,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      thirdPage.drawText(student["ENGLISH Adept speller"], {
+      thirdPage.drawText(student["ENGLISH Adept speller"][0], {
         x: 293,
         y: 553,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      thirdPage.drawText(student["ENGLISH Word power"], {
+      thirdPage.drawText(student["ENGLISH Word power"][0], {
         x: 293,
         y: 536,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      thirdPage.drawText(student["ENGLISH Handwriting"], {
+      thirdPage.drawText(student["ENGLISH Handwriting"][0], {
         x: 293,
         y: 519,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      thirdPage.drawText(student["ENGLISH Work presentation"], {
+      thirdPage.drawText(student["ENGLISH Work presentation"][0], {
         x: 293,
         y: 502,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      thirdPage.drawText(student["ENGLISH REMARKS"], {
-        x: 343,
-        y: 695,
-        size: 10,
-        color: rgb(0, 0, 0),
-      });
-      thirdPage.drawText(student["HINDI भाषा कुशलता"], {
+      {
+        student["ENGLISH REMARKS"][0] &&
+          thirdPage.drawText(student["ENGLISH REMARKS"][0], {
+            x: 343,
+            y: 695,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["ENGLISH REMARKS"][1] &&
+          thirdPage.drawText(student["ENGLISH REMARKS"][1], {
+            x: 343,
+            y: 682,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["ENGLISH REMARKS"][2] &&
+          thirdPage.drawText(student["ENGLISH REMARKS"][2], {
+            x: 343,
+            y: 669,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["ENGLISH REMARKS"][3] &&
+          thirdPage.drawText(student["ENGLISH REMARKS"][3], {
+            x: 343,
+            y: 656,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      thirdPage.drawText(student["HINDI भाषा कुशलता"][0], {
         x: 293,
         y: 468,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      thirdPage.drawText(student["HINDI लिखित मूल्यांकन"], {
+      thirdPage.drawText(student["HINDI लिखित मूल्यांकन"][0], {
         x: 293,
         y: 451,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      thirdPage.drawText(student["HINDI उच्चारण एवं शब्द पहचान"], {
+      thirdPage.drawText(student["HINDI उच्चारण एवं शब्द पहचान"][0], {
         x: 293,
         y: 418,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      thirdPage.drawText(student["HINDI पढ़ने की निपुणता / गतिशीलता"], {
+      thirdPage.drawText(student["HINDI पढ़ने की निपुणता / गतिशीलता"][0], {
         x: 293,
         y: 401,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      thirdPage.drawText(student["HINDI कविता प्रस्तुति"], {
+      thirdPage.drawText(student["HINDI कविता प्रस्तुति"][0], {
         x: 293,
         y: 363,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      thirdPage.drawText(student["HINDI संवाद गतिशीलता"], {
+      thirdPage.drawText(student["HINDI संवाद गतिशीलता"][0], {
         x: 293,
         y: 340,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      thirdPage.drawText(student["HINDI शब्द शुद्धता"], {
+      thirdPage.drawText(student["HINDI शब्द शुद्धता"][0], {
         x: 293,
         y: 305,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      thirdPage.drawText(student["HINDI शब्दकोष"], {
+      thirdPage.drawText(student["HINDI शब्दकोष"][0], {
         x: 293,
         y: 288,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      thirdPage.drawText(student["HINDI हस्तलेख"], {
+      thirdPage.drawText(student["HINDI हस्तलेख"][0], {
         x: 293,
         y: 271,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      thirdPage.drawText(student["HINDI Remarks"], {
-        x: 343,
-        y: 468,
-        size: 10,
-        color: rgb(0, 0, 0),
-      });
-      thirdPage.drawText(student["MATHEMATICS Written assessment"], {
+      {
+        student["HINDI Remarks"][0] &&
+          thirdPage.drawText(student["HINDI Remarks"][0], {
+            x: 343,
+            y: 468,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["HINDI Remarks"][1] &&
+          thirdPage.drawText(student["HINDI Remarks"][1], {
+            x: 343,
+            y: 455,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["HINDI Remarks"][2] &&
+          thirdPage.drawText(student["HINDI Remarks"][2], {
+            x: 343,
+            y: 442,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["HINDI Remarks"][3] &&
+          thirdPage.drawText(student["HINDI Remarks"][3], {
+            x: 343,
+            y: 429,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      thirdPage.drawText(student["MATHEMATICS Written assessment"][0], {
         x: 293,
         y: 235,
         size: 10,
         color: rgb(0, 0, 0),
       });
       thirdPage.drawText(
-        student["MATHEMATICS Computational & calculation skills"],
+        student["MATHEMATICS Computational & calculation skills"][0],
         {
           x: 293,
           y: 213,
@@ -269,32 +329,67 @@ function Class1_Term1() {
           color: rgb(0, 0, 0),
         }
       );
-      thirdPage.drawText(student["MATHEMATICS Mental aptitude"], {
+      thirdPage.drawText(student["MATHEMATICS Mental aptitude"][0], {
         x: 293,
         y: 192,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      thirdPage.drawText(student["MATHEMATICS Work presentation"], {
+      thirdPage.drawText(student["MATHEMATICS Work presentation"][0], {
         x: 293,
         y: 170,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      thirdPage.drawText(student["MATHEMATICS Remarks"], {
-        x: 343,
-        y: 235,
-        size: 10,
-        color: rgb(0, 0, 0),
-      });
-      thirdPage.drawText(student["ENVIORNMENTAL STUDIES Written assessment"], {
-        x: 293,
-        y: 130,
-        size: 10,
-        color: rgb(0, 0, 0),
-      });
+      {
+        student["MATHEMATICS Remarks"][0] &&
+          thirdPage.drawText(student["MATHEMATICS Remarks"][0], {
+            x: 343,
+            y: 235,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["MATHEMATICS Remarks"][1] &&
+          thirdPage.drawText(student["MATHEMATICS Remarks"][1], {
+            x: 343,
+            y: 222,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["MATHEMATICS Remarks"][2] &&
+          thirdPage.drawText(student["MATHEMATICS Remarks"][2], {
+            x: 343,
+            y: 209,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["MATHEMATICS Remarks"][3] &&
+          thirdPage.drawText(student["MATHEMATICS Remarks"][3], {
+            x: 343,
+            y: 196,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
       thirdPage.drawText(
-        student["ENVIORNMENTAL STUDIE Expanded awareness of the surroundings"],
+        student["ENVIORNMENTAL STUDIES Written assessment"][0],
+        {
+          x: 293,
+          y: 130,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
+      thirdPage.drawText(
+        student[
+          "ENVIORNMENTAL STUDIE Expanded awareness of the surroundings"
+        ][0],
         {
           x: 293,
           y: 110,
@@ -302,69 +397,112 @@ function Class1_Term1() {
           color: rgb(0, 0, 0),
         }
       );
-      thirdPage.drawText(student["ENVIORNMENTAL STUDIE Work presentation"], {
+      thirdPage.drawText(student["ENVIORNMENTAL STUDIE Work presentation"][0], {
         x: 293,
         y: 86,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      thirdPage.drawText(student["ENVIRONMENTAL STUDIES Remarks"], {
-        x: 343,
-        y: 130,
-        size: 10,
-        color: rgb(0, 0, 0),
-      });
-      thirdPage.drawText(student["COMPUTER SCIENCE Computer skills"], {
+      {
+        student["ENVIRONMENTAL STUDIES Remarks"][0] &&
+          thirdPage.drawText(student["ENVIRONMENTAL STUDIES Remarks"][0], {
+            x: 343,
+            y: 130,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["ENVIRONMENTAL STUDIES Remarks"][1] &&
+          thirdPage.drawText(student["ENVIRONMENTAL STUDIES Remarks"][1], {
+            x: 343,
+            y: 117,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["ENVIRONMENTAL STUDIES Remarks"][2] &&
+          thirdPage.drawText(student["ENVIRONMENTAL STUDIES Remarks"][2], {
+            x: 343,
+            y: 104,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      thirdPage.drawText(student["COMPUTER SCIENCE Computer skills"][0], {
         x: 293,
         y: 51,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      thirdPage.drawText(student["COMPUTER SCIENCE Remarks"], {
+      thirdPage.drawText(student["COMPUTER SCIENCE Remarks"][0], {
         x: 343,
         y: 51,
         size: 10,
         color: rgb(0, 0, 0),
       });
 
-      fourthPage.drawText(student["ART & CRAFT Artistic ability"], {
+      fourthPage.drawText(student["ART & CRAFT Artistic ability"][0], {
         x: 291,
         y: 693,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      fourthPage.drawText(student["ART & CRAFT Remarks"], {
+      fourthPage.drawText(student["ART & CRAFT Remarks"][0], {
         x: 335,
         y: 693,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      fourthPage.drawText(student["MUSIC Lyrical memory"], {
+      fourthPage.drawText(student["MUSIC Lyrical memory"][0], {
         x: 291,
         y: 655,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      fourthPage.drawText(student["MUSIC Sings melodiously"], {
+      fourthPage.drawText(student["MUSIC Sings melodiously"][0], {
         x: 291,
         y: 635,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      fourthPage.drawText(student["MUSIC Shows eagerness"], {
+      fourthPage.drawText(student["MUSIC Shows eagerness"][0], {
         x: 291,
         y: 614,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      fourthPage.drawText(student["MUSIC Remarks"], {
-        x: 335,
-        y: 655,
-        size: 10,
-        color: rgb(0, 0, 0),
-      });
+      {
+        student["MUSIC Remarks"][0] &&
+          fourthPage.drawText(student["MUSIC Remarks"][0], {
+            x: 335,
+            y: 655,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["MUSIC Remarks"][1] &&
+          fourthPage.drawText(student["MUSIC Remarks"][1], {
+            x: 335,
+            y: 642,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["MUSIC Remarks"][2] &&
+          fourthPage.drawText(student["MUSIC Remarks"][2], {
+            x: 335,
+            y: 629,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+
       fourthPage.drawText(
-        student["DANCE Demonstrates aesthetic hand and leg coordination"],
+        student["DANCE Demonstrates aesthetic hand and leg coordination"][0],
         {
           x: 291,
           y: 570,
@@ -373,7 +511,7 @@ function Class1_Term1() {
         }
       );
       fourthPage.drawText(
-        student["DANCE Shows zest to learn new dancing skills"],
+        student["DANCE Shows zest to learn new dancing skills"][0],
         {
           x: 291,
           y: 542,
@@ -381,16 +519,37 @@ function Class1_Term1() {
           color: rgb(0, 0, 0),
         }
       );
-      fourthPage.drawText(student["DANCE Remarks"], {
-        x: 335,
-        y: 570,
-        size: 10,
-        color: rgb(0, 0, 0),
-      });
+      {
+        student["DANCE Remarks"][0] &&
+          fourthPage.drawText(student["DANCE Remarks"][0], {
+            x: 335,
+            y: 570,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["DANCE Remarks"][1] &&
+          fourthPage.drawText(student["DANCE Remarks"][1], {
+            x: 335,
+            y: 557,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["DANCE Remarks"][2] &&
+          fourthPage.drawText(student["DANCE Remarks"][2], {
+            x: 335,
+            y: 544,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
       fourthPage.drawText(
         student[
           "PHYSICAL EDUCATION Shows strength and endurance in carrying, walking and running"
-        ],
+        ][0],
         {
           x: 291,
           y: 495,
@@ -398,26 +557,62 @@ function Class1_Term1() {
           color: rgb(0, 0, 0),
         }
       );
-      fourthPage.drawText(student["PHYSICAL EDUCATION Adheres to guidance"], {
-        x: 291,
-        y: 470,
-        size: 10,
-        color: rgb(0, 0, 0),
-      });
-      fourthPage.drawText(student["PHYSICAL EDUCATION Displays team spirit"], {
-        x: 291,
-        y: 450,
-        size: 10,
-        color: rgb(0, 0, 0),
-      });
-      fourthPage.drawText(student["PHYSICAL EDUCATION Remarks"], {
-        x: 335,
-        y: 495,
-        size: 10,
-        color: rgb(0, 0, 0),
-      });
       fourthPage.drawText(
-        student["LIFE SKILLS & WELL BEING Personal upkeep & cleanliness"],
+        student["PHYSICAL EDUCATION Adheres to guidance"][0],
+        {
+          x: 291,
+          y: 470,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fourthPage.drawText(
+        student["PHYSICAL EDUCATION Displays team spirit"][0],
+        {
+          x: 291,
+          y: 450,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
+      {
+        student["PHYSICAL EDUCATION Remarks"][0] &&
+          fourthPage.drawText(student["PHYSICAL EDUCATION Remarks"][0], {
+            x: 335,
+            y: 495,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["PHYSICAL EDUCATION Remarks"][1] &&
+          fourthPage.drawText(student["PHYSICAL EDUCATION Remarks"][1], {
+            x: 335,
+            y: 482,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["PHYSICAL EDUCATION Remarks"][2] &&
+          fourthPage.drawText(student["PHYSICAL EDUCATION Remarks"][2], {
+            x: 335,
+            y: 469,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["PHYSICAL EDUCATION Remarks"][3] &&
+          fourthPage.drawText(student["PHYSICAL EDUCATION Remarks"][3], {
+            x: 335,
+            y: 456,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      fourthPage.drawText(
+        student["LIFE SKILLS & WELL BEING Personal upkeep & cleanliness"][0],
         {
           x: 291,
           y: 406,
@@ -426,7 +621,7 @@ function Class1_Term1() {
         }
       );
       fourthPage.drawText(
-        student["LIFE SKILLS & WELL BEING Tidy and presentable"],
+        student["LIFE SKILLS & WELL BEING Tidy and presentable"][0],
         {
           x: 291,
           y: 386,
@@ -435,7 +630,7 @@ function Class1_Term1() {
         }
       );
       fourthPage.drawText(
-        student["LIFE SKILLS & WELL BEING Managing personal belongings"],
+        student["LIFE SKILLS & WELL BEING Managing personal belongings"][0],
         {
           x: 291,
           y: 364,
@@ -443,20 +638,50 @@ function Class1_Term1() {
           color: rgb(0, 0, 0),
         }
       );
-      fourthPage.drawText(student["LIFE SKILLS & WELL BEING Remarks"], {
-        x: 335,
-        y: 406,
-        size: 10,
-        color: rgb(0, 0, 0),
-      });
-      fourthPage.drawText(student["COGNITIVE DEVELOPMENT Vigilant mind"], {
+      {
+        student["LIFE SKILLS & WELL BEING Remarks"][0] &&
+          fourthPage.drawText(student["LIFE SKILLS & WELL BEING Remarks"][0], {
+            x: 335,
+            y: 406,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["LIFE SKILLS & WELL BEING Remarks"][1] &&
+          fourthPage.drawText(student["LIFE SKILLS & WELL BEING Remarks"][1], {
+            x: 335,
+            y: 393,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["LIFE SKILLS & WELL BEING Remarks"][2] &&
+          fourthPage.drawText(student["LIFE SKILLS & WELL BEING Remarks"][2], {
+            x: 335,
+            y: 380,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["LIFE SKILLS & WELL BEING Remarks"][3] &&
+          fourthPage.drawText(student["LIFE SKILLS & WELL BEING Remarks"][3], {
+            x: 335,
+            y: 367,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      fourthPage.drawText(student["COGNITIVE DEVELOPMENT Vigilant mind"][0], {
         x: 291,
         y: 320,
         size: 10,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(
-        student["COGNITIVE DEVELOPMENT Proactive & volunteering"],
+        student["COGNITIVE DEVELOPMENT Proactive & volunteering"][0],
         {
           x: 291,
           y: 300,
@@ -467,7 +692,7 @@ function Class1_Term1() {
       fourthPage.drawText(
         student[
           "COGNITIVE DEVELOPMENT Adherence and compliance to instructions"
-        ],
+        ][0],
         {
           x: 291,
           y: 280,
@@ -475,14 +700,14 @@ function Class1_Term1() {
           color: rgb(0, 0, 0),
         }
       );
-      fourthPage.drawText(student["COGNITIVE DEVELOPMENT Self-reliance"], {
+      fourthPage.drawText(student["COGNITIVE DEVELOPMENT Self-reliance"][0], {
         x: 291,
         y: 257,
         size: 10,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(
-        student["COGNITIVE DEVELOPMENT Engagement in classroom ventures"],
+        student["COGNITIVE DEVELOPMENT Engagement in classroom ventures"][0],
         {
           x: 291,
           y: 235,
@@ -490,14 +715,44 @@ function Class1_Term1() {
           color: rgb(0, 0, 0),
         }
       );
-      fourthPage.drawText(student["COGNITIVE DEVELOPMENT Remarks"], {
-        x: 335,
-        y: 320,
-        size: 10,
-        color: rgb(0, 0, 0),
-      });
+      {
+        student["COGNITIVE DEVELOPMENT Remarks"][0] &&
+          fourthPage.drawText(student["COGNITIVE DEVELOPMENT Remarks"][0], {
+            x: 335,
+            y: 320,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["COGNITIVE DEVELOPMENT Remarks"][1] &&
+          fourthPage.drawText(student["COGNITIVE DEVELOPMENT Remarks"][1], {
+            x: 335,
+            y: 307,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["COGNITIVE DEVELOPMENT Remarks"][2] &&
+          fourthPage.drawText(student["COGNITIVE DEVELOPMENT Remarks"][2], {
+            x: 335,
+            y: 294,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["COGNITIVE DEVELOPMENT Remarks"][3] &&
+          fourthPage.drawText(student["COGNITIVE DEVELOPMENT Remarks"][3], {
+            x: 335,
+            y: 281,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
       fourthPage.drawText(
-        student["COMMUNICATION AND SOCIO-EMOTIONAL DEVELOPMENT Discipline"],
+        student["COMMUNICATION AND SOCIO-EMOTIONAL DEVELOPMENT Discipline"][0],
         {
           x: 291,
           y: 192,
@@ -508,7 +763,7 @@ function Class1_Term1() {
       fourthPage.drawText(
         student[
           "COMMUNICATION AND SOCIO-EMOTIONAL DEVELOPMENT Radiant self - confidence"
-        ],
+        ][0],
         {
           x: 291,
           y: 172,
@@ -517,7 +772,7 @@ function Class1_Term1() {
         }
       );
       fourthPage.drawText(
-        student["COMMUNICATION AND SOCIO-EMOTIONAL DEVELOPMENT Timeliness"],
+        student["COMMUNICATION AND SOCIO-EMOTIONAL DEVELOPMENT Timeliness"][0],
         {
           x: 291,
           y: 150,
@@ -526,7 +781,9 @@ function Class1_Term1() {
         }
       );
       fourthPage.drawText(
-        student["COMMUNICATION AND SOCIO-EMOTIONAL DEVELOPMENT Shows empathy"],
+        student[
+          "COMMUNICATION AND SOCIO-EMOTIONAL DEVELOPMENT Shows empathy"
+        ][0],
         {
           x: 291,
           y: 128,
@@ -537,7 +794,7 @@ function Class1_Term1() {
       fourthPage.drawText(
         student[
           "COMMUNICATION AND SOCIO-EMOTIONAL DEVELOPMENT Courteous approach"
-        ],
+        ][0],
         {
           x: 291,
           y: 107,
@@ -545,17 +802,56 @@ function Class1_Term1() {
           color: rgb(0, 0, 0),
         }
       );
+      {
+        student["COMMUNICATION AND SOCIO-EMOTIONAL DEVELOPMENT Remarks"][0] &&
+          fourthPage.drawText(
+            student["COMMUNICATION AND SOCIO-EMOTIONAL DEVELOPMENT Remarks"][0],
+            {
+              x: 335,
+              y: 192,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+      {
+        student["COMMUNICATION AND SOCIO-EMOTIONAL DEVELOPMENT Remarks"][1] &&
+          fourthPage.drawText(
+            student["COMMUNICATION AND SOCIO-EMOTIONAL DEVELOPMENT Remarks"][1],
+            {
+              x: 335,
+              y: 179,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+      {
+        student["COMMUNICATION AND SOCIO-EMOTIONAL DEVELOPMENT Remarks"][2] &&
+          fourthPage.drawText(
+            student["COMMUNICATION AND SOCIO-EMOTIONAL DEVELOPMENT Remarks"][2],
+            {
+              x: 335,
+              y: 166,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+      {
+        student["COMMUNICATION AND SOCIO-EMOTIONAL DEVELOPMENT Remarks"][3] &&
+          fourthPage.drawText(
+            student["COMMUNICATION AND SOCIO-EMOTIONAL DEVELOPMENT Remarks"][3],
+            {
+              x: 335,
+              y: 153,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
       fourthPage.drawText(
-        student["COMMUNICATION AND SOCIO-EMOTIONAL DEVELOPMENT Remarks"],
-        {
-          x: 335,
-          y: 192,
-          size: 10,
-          color: rgb(0, 0, 0),
-        }
-      );
-      fourthPage.drawText(
-        student["APPLIED LEARNING EXPERIENCES Active participation"],
+        student["APPLIED LEARNING EXPERIENCES Active participation"][0],
         {
           x: 291,
           y: 67,
@@ -564,7 +860,7 @@ function Class1_Term1() {
         }
       );
       fourthPage.drawText(
-        student["APPLIED LEARNING EXPERIENCES Reflection and integration"],
+        student["APPLIED LEARNING EXPERIENCES Reflection and integration"][0],
         {
           x: 291,
           y: 47,
@@ -572,129 +868,198 @@ function Class1_Term1() {
           color: rgb(0, 0, 0),
         }
       );
-      fourthPage.drawText(student["APPLIED LEARNING EXPERIENCES Remarks"], {
-        x: 335,
-        y: 67,
-        size: 10,
-        color: rgb(0, 0, 0),
-      });
+      {
+        student["APPLIED LEARNING EXPERIENCES Remarks"][0] &&
+          fourthPage.drawText(
+            student["APPLIED LEARNING EXPERIENCES Remarks"][0],
+            {
+              x: 335,
+              y: 67,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+      {
+        student["APPLIED LEARNING EXPERIENCES Remarks"][1] &&
+          fourthPage.drawText(
+            student["APPLIED LEARNING EXPERIENCES Remarks"][1],
+            {
+              x: 335,
+              y: 54,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+      {
+        student["APPLIED LEARNING EXPERIENCES Remarks"][2] &&
+          fourthPage.drawText(
+            student["APPLIED LEARNING EXPERIENCES Remarks"][2],
+            {
+              x: 335,
+              y: 41,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
 
-      fifthPage.drawText(student["My Favourite Hue…"], {
+      fifthPage.drawText(student["My Favourite Hue…"][0], {
         x: 125,
         y: 545,
         size: 14,
         color: rgb(0, 0, 0),
       });
-      fifthPage.drawText(student["I Relish"], {
+      fifthPage.drawText(student["I Relish"][0], {
         x: 335,
         y: 545,
         size: 14,
         color: rgb(0, 0, 0),
       });
-      fifthPage.drawText(student["Fictional Character I like the most"], {
+      fifthPage.drawText(student["Fictional Character I like the most"][0], {
         x: 95,
         y: 390,
         size: 14,
         color: rgb(0, 0, 0),
       });
-      fifthPage.drawText(student["My Best Buddy"].slice(0, 20), {
+      fifthPage.drawText(student["My Best Buddy"][0].slice(0, 20), {
         x: 335,
         y: 425,
         size: 14,
         color: rgb(0, 0, 0),
       });
-      fifthPage.drawText(student["My Best Buddy"].slice(20, 40), {
+      fifthPage.drawText(student["My Best Buddy"][0].slice(20, 40), {
         x: 345,
         y: 415,
         size: 14,
         color: rgb(0, 0, 0),
       });
-      fifthPage.drawText(student["My Favourite Bird.."], {
+      fifthPage.drawText(student["My Favourite Bird.."][0], {
         x: 118,
         y: 248,
         size: 14,
         color: rgb(0, 0, 0),
       });
-      fifthPage.drawText(student["I Enjoy Celebrating…."], {
+      fifthPage.drawText(student["I Enjoy Celebrating…."][0], {
         x: 350,
         y: 290,
         size: 14,
         color: rgb(0, 0, 0),
       });
-      fifthPage.drawText(student["My Favourite Game.."], {
+      fifthPage.drawText(student["My Favourite Game.."][0], {
         x: 117,
         y: 130,
         size: 14,
         color: rgb(0, 0, 0),
       });
-      fifthPage.drawText(student["I Learnt A Lot From      This Book...."], {
+      fifthPage.drawText(student["I Learnt A Lot From      This Book...."][0], {
         x: 335,
         y: 105,
         size: 14,
         color: rgb(0, 0, 0),
       });
 
-      sixthPage.drawText(student["Honors To My Name"].slice(0, 80), {
-        x: 95,
-        y: 650,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
-      sixthPage.drawText(student["Honors To My Name"].slice(80, 160), {
-        x: 95,
-        y: 635,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
-      sixthPage.drawText(student["Honors To My Name"].slice(160, 240), {
-        x: 95,
-        y: 620,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
-      sixthPage.drawText(student["Teacher's Holistic Over View"].slice(0, 80), {
-        x: 95,
-        y: 560,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
-      sixthPage.drawText(
-        student["Teacher's Holistic Over View"].slice(80, 160),
-        {
-          x: 95,
-          y: 545,
-          size: 12,
-          color: rgb(0, 0, 0),
-        }
-      );
-      sixthPage.drawText(
-        student["Teacher's Holistic Over View"].slice(160, 240),
-        {
-          x: 95,
-          y: 530,
-          size: 12,
-          color: rgb(0, 0, 0),
-        }
-      );
+      {
+        student["Honors To My Name"][0] &&
+          sixthPage.drawText(student["Honors To My Name"][0], {
+            x: 95,
+            y: 650,
+            size: 12,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["Honors To My Name"][1] &&
+          sixthPage.drawText(student["Honors To My Name"][1], {
+            x: 95,
+            y: 635,
+            size: 12,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["Honors To My Name"][2] &&
+          sixthPage.drawText(student["Honors To My Name"][2], {
+            x: 95,
+            y: 620,
+            size: 12,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["Teacher's Holistic Over View"][0] &&
+          sixthPage.drawText(student["Teacher's Holistic Over View"][0], {
+            x: 95,
+            y: 560,
+            size: 12,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["Teacher's Holistic Over View"][1] &&
+          sixthPage.drawText(student["Teacher's Holistic Over View"][1], {
+            x: 95,
+            y: 545,
+            size: 12,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["Teacher's Holistic Over View"][2] &&
+          sixthPage.drawText(student["Teacher's Holistic Over View"][2], {
+            x: 95,
+            y: 530,
+            size: 12,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["PARENT'S REFLECTION"][0] &&
+          sixthPage.drawText(student["PARENT'S REFLECTION"][0], {
+            x: 95,
+            y: 447,
+            size: 12,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["PARENT'S REFLECTION"][1] &&
+          sixthPage.drawText(student["PARENT'S REFLECTION"][1], {
+            x: 95,
+            y: 432,
+            size: 12,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["PARENT'S REFLECTION"][2] &&
+          sixthPage.drawText(student["PARENT'S REFLECTION"][2], {
+            x: 95,
+            y: 417,
+            size: 12,
+            color: rgb(0, 0, 0),
+          });
+      }
       sixthPage.drawImage(teacherSign1Image, {
         x: 90,
         y: 370,
         width: 100,
         height: 30,
       });
-      sixthPage.drawText(student["No. Of Days Present"], {
+      sixthPage.drawText(student["No. Of Days Present"][0], {
         x: 345,
         y: 170,
         size: 15,
         color: rgb(0, 0, 0),
       });
-      sixthPage.drawText(student["Total No. Of Present"], {
+      sixthPage.drawText(student["Total No. Of Present"][0], {
         x: 345,
         y: 130,
         size: 15,
         color: rgb(0, 0, 0),
       });
-      sixthPage.drawText(student["Attendance"], {
+      sixthPage.drawText(student["Attendance"][0], {
         x: 345,
         y: 85,
         size: 15,
