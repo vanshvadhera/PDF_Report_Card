@@ -1021,7 +1021,7 @@ function Ukg_Term1() {
       const zip = new JSZip();
 
       for (let student of userData) {
-        const existingPdfBytes = await fetch("/asserts/UKG_term1.pdf").then(
+        const existingPdfBytes = await fetch("https://innovartan.s3.ap-southeast-1.amazonaws.com/resource/4/file-1725721624-1781446423.pdf").then(
           (res) => res.arrayBuffer()
         );
 
@@ -1080,7 +1080,7 @@ function Ukg_Term1() {
 
   const fillAndDownloadSinglePdf = async (shouldDownload, shouldView) => {
     try {
-      const existingPdfBytes = await fetch("/asserts/UKG_term1.pdf").then(
+      const existingPdfBytes = await fetch("https://innovartan.s3.ap-southeast-1.amazonaws.com/resource/4/file-1725721624-1781446423.pdf").then(
         (res) => res.arrayBuffer()
       );
 
