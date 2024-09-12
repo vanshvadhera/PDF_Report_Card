@@ -29,13 +29,13 @@ export const uploadData = async (studentData) => {
   }
 };
 
-export const getData = async (classData) => {
+export const getData = async (classData, localParam) => {
   try {
     const tempData = {
       class: classData.className,
       section: classData.section,
       term: classData.term,
-      env: "local",
+      env: localParam ? "local" : "",
       remarks_pos: classData.remarks_pos,
       reflection_pos: classData.reflection_pos,
     };

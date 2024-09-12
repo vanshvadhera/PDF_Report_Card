@@ -6,7 +6,10 @@ import { getData, uploadData } from "../../Data/API/API";
 import { useNavigate } from "react-router";
 
 function Dashboard() {
-  
+  const param = new URLSearchParams(window.location.search);
+  const localParam = param.get("local");
+  console.log(localParam);
+
   // const [data, setData] = useState([]);
   const [file, setFile] = useState("");
   const [className, setClassName] = useState("");
@@ -145,7 +148,7 @@ function Dashboard() {
     };
 
     console.log(tempData);
-    const data = await getData(tempData);
+    const data = await getData(tempData, localParam);
     console.log(data);
 
     if (data === "error") {
