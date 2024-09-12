@@ -5,6 +5,8 @@ import JSZip from "jszip";
 // import { userData } from "../../../UserData/UserData";
 import styles from "./../PageCss.module.css";
 import { useLocation } from "react-router";
+import { useDispatch } from "react-redux";
+import { userDataActions } from "../../../Data/Slices/UserDataSlice";
 
 function LKG_Term1() {
   const location = useLocation();
@@ -13,7 +15,12 @@ function LKG_Term1() {
 
   console.log(data, "Data in Class1_Term2");
 
+  const dispatch = useDispatch();
+
   const [selectedStudent, setSelectedStudent] = useState(userData[0]);
+  const [zipButtonText, setZipButtonText] = useState(
+    "Download All PDFs as ZIP"
+  );
 
   //eslint-disable-next-line
   const [pdfUrl, setPdfUrl] = useState(null);
@@ -1063,6 +1070,7 @@ function LKG_Term1() {
 
   const generatePdfForAllStudentsAndZip = async () => {
     try {
+      setZipButtonText("Generating ZIP file...");
       const zip = new JSZip();
 
       for (let student of userData) {
@@ -1082,8 +1090,44 @@ function LKG_Term1() {
       // Generate the ZIP file and download it
       const zipBlob = await zip.generateAsync({ type: "blob" });
       download(zipBlob, "LKG_report_cards.zip");
+      setZipButtonText("Download All PDFs as ZIP");
+      dispatch(
+        userDataActions.setAlert({
+          message: "Zip Downloaded Successfully",
+          variant: "success",
+          show: true,
+        })
+      );
+
+      setTimeout(() => {
+        dispatch(
+          userDataActions.setAlert({
+            message: "",
+            variant: "",
+            show: false,
+          })
+        );
+      }, 3000);
     } catch (error) {
       console.error("Error generating PDFs and ZIP file:", error);
+      setZipButtonText("Download All PDFs as ZIP");
+      dispatch(
+        userDataActions.setAlert({
+          message: "Error generating PDFs and ZIP file",
+          variant: "danger",
+          show: true,
+        })
+      );
+
+      setTimeout(() => {
+        dispatch(
+          userDataActions.setAlert({
+            message: "",
+            variant: "",
+            show: false,
+          })
+        );
+      }, 3000);
     }
   };
 
@@ -1144,7 +1188,7 @@ function LKG_Term1() {
           className={styles.buttonZip}
           onClick={generatePdfForAllStudentsAndZip}
         >
-          Download All PDFs as ZIP
+          {zipButtonText}
         </button>
       </div>
       {/* {pdfUrl && ( */}

@@ -48,27 +48,31 @@ function Dashboard() {
     setTerm2(e.target.value);
   };
 
+  const displayAlert = (message, variant = "danger") => {
+    dispatch(
+      userDataActions.setAlert({
+        message,
+        variant,
+        show: true,
+      })
+    );
+
+    setTimeout(() => {
+      dispatch(
+        userDataActions.setAlert({
+          message: "",
+          variant: "",
+          show: false,
+        })
+      );
+    }, 3000);
+  };
+
   const submitHandler = async (e) => {
     e.preventDefault();
 
     if (!file || !className || !section || !term) {
-      dispatch(
-        userDataActions.setAlert({
-          message: "Please fill all fields",
-          variant: "danger",
-          show: true,
-        })
-      );
-
-      setTimeout(() => {
-        dispatch(
-          userDataActions.setAlert({
-            message: "",
-            variant: "",
-            show: false,
-          })
-        );
-      }, 3000);
+      displayAlert("Please fill all fields");
       return;
     }
 
@@ -82,6 +86,13 @@ function Dashboard() {
 
     const apiData = await uploadData(tempData);
 
+    if (apiData === "error") {
+      displayAlert(
+        "Error uploading file. Please check your network or try again."
+      );
+      return;
+    }
+
     if (apiData.status === "success") {
       setClassName("");
       setSection("");
@@ -93,45 +104,13 @@ function Dashboard() {
         fileInputRef.current.value = "";
       }
 
-      dispatch(
-        userDataActions.setAlert({
-          message: "File uploaded successfully",
-          variant: "success",
-          show: true,
-        })
-      );
-
-      setTimeout(() => {
-        dispatch(
-          userDataActions.setAlert({
-            message: "",
-            variant: "",
-            show: false,
-          })
-        );
-      }, 3000);
+      displayAlert("File uploaded successfully", "success");
     }
   };
 
   const handleGenerate = async () => {
     if (!className2 || !section2 || !term2) {
-      dispatch(
-        userDataActions.setAlert({
-          message: "Please fill all fields",
-          variant: "danger",
-          show: true,
-        })
-      );
-
-      setTimeout(() => {
-        dispatch(
-          userDataActions.setAlert({
-            message: "",
-            variant: "",
-            show: false,
-          })
-        );
-      }, 3000);
+      displayAlert("Please fill all fields");
       return;
     }
     const tempData = {
@@ -166,63 +145,29 @@ function Dashboard() {
 
     console.log(tempData);
     const data = await getData(tempData);
+    console.log(data);
+
+    if (data === "error") {
+      displayAlert(
+        "Error fetching data. Please check your network or try again."
+      );
+      return;
+    }
 
     if (term2 === "1" && data?.data?.term_1?.length === 0) {
-      dispatch(
-        userDataActions.setAlert({
-          message: `Data not found for Class ${className2} Section ${section2} Term 1`,
-          variant: "danger",
-          show: true,
-        })
+      displayAlert(
+        `Data not found for Class ${className2} Section ${section2} Term 1`
       );
-
-      setTimeout(() => {
-        dispatch(
-          userDataActions.setAlert({
-            message: "",
-            variant: "",
-            show: false,
-          })
-        );
-      }, 3000);
       return;
     } else if (term2 === "2" && data?.data?.term_2?.length === 0) {
-      dispatch(
-        userDataActions.setAlert({
-          message: `Data not found for Class ${className2} Section ${section2} Term 2`,
-          variant: "danger",
-          show: true,
-        })
+      displayAlert(
+        `Data not found for Class ${className2} Section ${section2} Term 2`
       );
-
-      setTimeout(() => {
-        dispatch(
-          userDataActions.setAlert({
-            message: "",
-            variant: "",
-            show: false,
-          })
-        );
-      }, 3000);
       return;
     } else if (term2 === "3" && data?.data?.term_3?.length === 0) {
-      dispatch(
-        userDataActions.setAlert({
-          message: `Data not found for Class ${className2} Section ${section2} Term 3`,
-          variant: "danger",
-          show: true,
-        })
+      displayAlert(
+        `Data not found for Class ${className2} Section ${section2} Term 3`
       );
-
-      setTimeout(() => {
-        dispatch(
-          userDataActions.setAlert({
-            message: "",
-            variant: "",
-            show: false,
-          })
-        );
-      }, 3000);
       return;
     }
 
