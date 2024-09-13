@@ -125,7 +125,7 @@ function Dashboard() {
         className2 === "LKG"
           ? 50
           : className2 === "NUR"
-          ? 35
+          ? 30
           : className2 === "UKG"
           ? 33
           : className2 === "I"
@@ -277,6 +277,30 @@ function Dashboard() {
                 <option className={styles.option} value="H">
                   H
                 </option>
+                <option className={styles.option} value="H">
+                  I
+                </option>
+                <option className={styles.option} value="H">
+                  J
+                </option>
+                <option className={styles.option} value="H">
+                  K
+                </option>
+                <option className={styles.option} value="H">
+                  L
+                </option>
+                <option className={styles.option} value="H">
+                  M
+                </option>
+                <option className={styles.option} value="H">
+                  N
+                </option>
+                <option className={styles.option} value="H">
+                  O
+                </option>
+                <option className={styles.option} value="H">
+                  P
+                </option>
               </select>
 
               <select
@@ -398,6 +422,30 @@ function Dashboard() {
               </option>
               <option className={styles.option} value="H">
                 H
+              </option>
+              <option className={styles.option} value="H">
+                I
+              </option>
+              <option className={styles.option} value="H">
+                J
+              </option>
+              <option className={styles.option} value="H">
+                K
+              </option>
+              <option className={styles.option} value="H">
+                L
+              </option>
+              <option className={styles.option} value="H">
+                M
+              </option>
+              <option className={styles.option} value="H">
+                N
+              </option>
+              <option className={styles.option} value="H">
+                O
+              </option>
+              <option className={styles.option} value="H">
+                P
               </option>
             </select>
 
