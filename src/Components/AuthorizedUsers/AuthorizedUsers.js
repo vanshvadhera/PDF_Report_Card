@@ -1,22 +1,26 @@
 export const authorizedUsers = [
   {
-    username: "admin",
-    password: "admin",
+    username: "admin@dpsindp.com",
+    password: "Admin@2024",
   },
   {
-    username: "teacher",
-    password: "teacher",
+    username: "nursery@dpsindp.com",
+    password: "nursery@123",
   },
   {
-    username: "student",
-    password: "student",
+    username: "lkg@dpsindp.com",
+    password: "lkg@123",
   },
   {
-    username: "parent",
-    password: "parent",
+    username: "ukg@dpsindp.com",
+    password: "ukg@123",
   },
   {
-    username: "user1@dps.in",
-    password: "masterLogin"
-  }
+    username: "class1@dpsindp.com",
+    password: "class1@123",
+  },
+  {
+    username: "class2@dpsindp.com",
+    password: "class2@123",
+  },
 ];

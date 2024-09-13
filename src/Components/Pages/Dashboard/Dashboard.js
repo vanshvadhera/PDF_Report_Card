@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import styles from "./Dashboard.module.css";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { userDataActions } from "../../Data/Slices/UserDataSlice";
 import { getData, uploadData } from "../../Data/API/API";
 import { useNavigate } from "react-router";
@@ -9,6 +9,8 @@ function Dashboard() {
   const param = new URLSearchParams(window.location.search);
   const localParam = param.get("local");
   console.log(localParam);
+
+  const userData = useSelector((state) => state.userData);
 
   // const [data, setData] = useState([]);
   const [file, setFile] = useState("");
@@ -191,153 +193,160 @@ function Dashboard() {
   return (
     <div className={styles.dashboard}>
       <div className={`${styles.dash} w-85`}>
-        <form onSubmit={submitHandler}>
-          <div className={`${styles.inputs} border border-black rounded p-3`}>
-            <h1 className={styles.heading}>Upload Result</h1>
-            <div className={`${styles.students} text-2xl`}>
-              <select
-                className={`${styles.select} p-2 border-black border rounded-md`}
-                name="class_name"
-                id="class"
-                value={className}
-                onChange={handleClassChange}
+        {userData.user === "admin@dpsindp.com" && (
+          <div>
+            <form onSubmit={submitHandler}>
+              <div
+                className={`${styles.inputs} border border-black rounded p-3`}
               >
-                <option className={styles.option} value="">
-                  Select Class
-                </option>
-                <option className={styles.option} value="NUR">
-                  Nursery
-                </option>
-                <option className={styles.option} value="LKG">
-                  LKG
-                </option>
-                <option className={styles.option} value="UKG">
-                  UKG
-                </option>
-                <option className={styles.option} value="I">
-                  Class 1
-                </option>
-                <option className={styles.option} value="II">
-                  Class 2
-                </option>
-                <option className={styles.option} value="III">
-                  Class 3
-                </option>
-                <option className={styles.option} value="IV">
-                  Class 4
-                </option>
-                <option className={styles.option} value="V">
-                  Class 5
-                </option>
-                <option className={styles.option} value="VI">
-                  Class 6
-                </option>
-                <option className={styles.option} value="VII">
-                  Class 7
-                </option>
-                <option className={styles.option} value="VIII">
-                  Class 8
-                </option>
-                <option className={styles.option} value="IX">
-                  Class 9
-                </option>
-              </select>
+                <h1 className={styles.heading}>Upload Result</h1>
+                <div className={`${styles.students} text-2xl`}>
+                  <select
+                    className={`${styles.select} p-2 border-black border rounded-md`}
+                    name="class_name"
+                    id="class"
+                    value={className}
+                    onChange={handleClassChange}
+                  >
+                    <option className={styles.option} value="">
+                      Select Class
+                    </option>
+                    <option className={styles.option} value="NUR">
+                      Nursery
+                    </option>
+                    <option className={styles.option} value="LKG">
+                      LKG
+                    </option>
+                    <option className={styles.option} value="UKG">
+                      UKG
+                    </option>
+                    <option className={styles.option} value="I">
+                      Class 1
+                    </option>
+                    <option className={styles.option} value="II">
+                      Class 2
+                    </option>
+                    <option className={styles.option} value="III">
+                      Class 3
+                    </option>
+                    <option className={styles.option} value="IV">
+                      Class 4
+                    </option>
+                    <option className={styles.option} value="V">
+                      Class 5
+                    </option>
+                    <option className={styles.option} value="VI">
+                      Class 6
+                    </option>
+                    <option className={styles.option} value="VII">
+                      Class 7
+                    </option>
+                    <option className={styles.option} value="VIII">
+                      Class 8
+                    </option>
+                    <option className={styles.option} value="IX">
+                      Class 9
+                    </option>
+                  </select>
 
-              <select
-                className={`${styles.select} p-2 border-black border rounded-md`}
-                name="section"
-                id="section"
-                value={section}
-                onChange={handleSectionChange}
-              >
-                <option className={styles.option} value="">
-                  Select Section
-                </option>
-                <option className={styles.option} value="A">
-                  A
-                </option>
-                <option className={styles.option} value="B">
-                  B
-                </option>
-                <option className={styles.option} value="C">
-                  C
-                </option>
-                <option className={styles.option} value="D">
-                  D
-                </option>
-                <option className={styles.option} value="E">
-                  E
-                </option>
-                <option className={styles.option} value="F">
-                  F
-                </option>
-                <option className={styles.option} value="G">
-                  G
-                </option>
-                <option className={styles.option} value="H">
-                  H
-                </option>
-                <option className={styles.option} value="H">
-                  I
-                </option>
-                <option className={styles.option} value="H">
-                  J
-                </option>
-                <option className={styles.option} value="H">
-                  K
-                </option>
-                <option className={styles.option} value="H">
-                  L
-                </option>
-                <option className={styles.option} value="H">
-                  M
-                </option>
-                <option className={styles.option} value="H">
-                  N
-                </option>
-                <option className={styles.option} value="H">
-                  O
-                </option>
-                <option className={styles.option} value="H">
-                  P
-                </option>
-              </select>
+                  <select
+                    className={`${styles.select} p-2 border-black border rounded-md`}
+                    name="section"
+                    id="section"
+                    value={section}
+                    onChange={handleSectionChange}
+                  >
+                    <option className={styles.option} value="">
+                      Select Section
+                    </option>
+                    <option className={styles.option} value="A">
+                      A
+                    </option>
+                    <option className={styles.option} value="B">
+                      B
+                    </option>
+                    <option className={styles.option} value="C">
+                      C
+                    </option>
+                    <option className={styles.option} value="D">
+                      D
+                    </option>
+                    <option className={styles.option} value="E">
+                      E
+                    </option>
+                    <option className={styles.option} value="F">
+                      F
+                    </option>
+                    <option className={styles.option} value="G">
+                      G
+                    </option>
+                    <option className={styles.option} value="H">
+                      H
+                    </option>
+                    <option className={styles.option} value="H">
+                      I
+                    </option>
+                    <option className={styles.option} value="H">
+                      J
+                    </option>
+                    <option className={styles.option} value="H">
+                      K
+                    </option>
+                    <option className={styles.option} value="H">
+                      L
+                    </option>
+                    <option className={styles.option} value="H">
+                      M
+                    </option>
+                    <option className={styles.option} value="H">
+                      N
+                    </option>
+                    <option className={styles.option} value="H">
+                      O
+                    </option>
+                    <option className={styles.option} value="H">
+                      P
+                    </option>
+                  </select>
 
-              <select
-                className={`${styles.select} p-2 border-black border rounded-md`}
-                name="term"
-                id="term"
-                value={term}
-                onChange={handleTermChange}
-              >
-                <option className={styles.option} value="">
-                  Select Term
-                </option>
-                <option className={styles.option} value="1">
-                  Term 1
-                </option>
-                <option className={styles.option} value="2">
-                  Term 2
-                </option>
-                <option className={styles.option} value="3">
-                  Term 3
-                </option>
-              </select>
-            </div>
-            <input
-              ref={fileInputRef}
-              onChange={handleFileChange}
-              className={`${styles.fileInput} border-1 border-black rounded-md p-2 mx-2`}
-              type="file"
-              name="file"
-              id="excel"
-            />
-            <button type="submit" className="btn btn-primary">
-              Upload
-            </button>
+                  <select
+                    className={`${styles.select} p-2 border-black border rounded-md`}
+                    name="term"
+                    id="term"
+                    value={term}
+                    onChange={handleTermChange}
+                  >
+                    <option className={styles.option} value="">
+                      Select Term
+                    </option>
+                    <option className={styles.option} value="1">
+                      Term 1
+                    </option>
+                    <option className={styles.option} value="2">
+                      Term 2
+                    </option>
+                    <option className={styles.option} value="3">
+                      Term 3
+                    </option>
+                  </select>
+                </div>
+                <input
+                  ref={fileInputRef}
+                  onChange={handleFileChange}
+                  className={`${styles.fileInput} border-1 border-black rounded-md p-2 mx-2`}
+                  type="file"
+                  name="file"
+                  id="excel"
+                />
+                <button type="submit" className="btn btn-primary">
+                  Upload
+                </button>
+              </div>
+            </form>
+
+            <hr style={{ margin: "40px 0px" }} />
           </div>
-        </form>
-        <hr style={{ margin: "40px 0px" }} />
+        )}
         <div className={`${styles.inputs} border border-black rounded p-3`}>
           <h1 className={styles.heading}>Create Report Card</h1>
           <div className={`${styles.students} text-2xl`}>

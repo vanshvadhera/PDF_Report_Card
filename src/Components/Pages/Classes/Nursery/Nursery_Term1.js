@@ -40,10 +40,10 @@ function Nursery_Term1() {
         res.arrayBuffer()
       );
 
-      // const teacherSign2Url = student.teacher_sign_2;
-      // const teacherSign2Bytes = await fetch(teacherSign2Url).then((res) =>
-      //   res.arrayBuffer()
-      // );
+      const teacherSign2Url = student.teacher_sign_2;
+      const teacherSign2Bytes = await fetch(teacherSign2Url).then((res) =>
+        res.arrayBuffer()
+      );
 
       const familyPhotoUrl = student.family_photo;
       const familyPhotoBytes = await fetch(familyPhotoUrl).then((res) =>
@@ -62,7 +62,7 @@ function Nursery_Term1() {
 
       const image = await pdfDoc.embedJpg(imageBytes);
       const teacherSign1Image = await pdfDoc.embedJpg(teacherSign1Bytes);
-      // const teacherSign2Image = await pdfDoc.embedJpg(teacherSign2Bytes);
+      const teacherSign2Image = await pdfDoc.embedJpg(teacherSign2Bytes);
       const familyPhotImage = await pdfDoc.embedJpg(familyPhotoBytes);
       //   const groupPhotImage = await pdfDoc.embedJpg(groupPhotBytes);
       const myPagePhotoImage = await pdfDoc.embedJpg(myPagePhotoBytes);
@@ -977,7 +977,13 @@ function Nursery_Term1() {
       fifthPage.drawImage(teacherSign1Image, {
         x: 57,
         y: 55,
-        width: 150,
+        width: 70,
+        height: 30,
+      });
+      fifthPage.drawImage(teacherSign2Image, {
+        x: 140,
+        y: 55,
+        width: 70,
         height: 30,
       });
 
