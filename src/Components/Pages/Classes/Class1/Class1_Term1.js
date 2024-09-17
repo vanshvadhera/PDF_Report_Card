@@ -1066,7 +1066,7 @@ function Class1_Term1() {
         size: 15,
         color: rgb(0, 0, 0),
       });
-      sixthPage.drawText(student["Attendance %"][0], {
+      sixthPage.drawText(student["Attendance %"][0].replace(/['"]/g, ""), {
         x: 340,
         y: 85,
         size: 15,

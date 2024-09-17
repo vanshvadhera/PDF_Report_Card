@@ -151,7 +151,7 @@ function Dashboard() {
 
     console.log(tempData);
     const data = await getData(tempData, localParam);
-    console.log(data);
+    console.log(data, "Getting Data");
 
     if (data === "error") {
       displayAlert(
