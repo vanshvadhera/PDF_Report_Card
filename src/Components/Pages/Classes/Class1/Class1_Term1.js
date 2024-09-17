@@ -1022,8 +1022,8 @@ function Class1_Term1() {
           });
       }
       {
-        student["PARENT'S REFLECTION"][0] &&
-          sixthPage.drawText(student["PARENT'S REFLECTION"][0], {
+        student["Parent's Reflection"][0] &&
+          sixthPage.drawText(student["Parent's Reflection"][0], {
             x: 95,
             y: 447,
             size: 12,
@@ -1031,8 +1031,8 @@ function Class1_Term1() {
           });
       }
       {
-        student["PARENT'S REFLECTION"][1] &&
-          sixthPage.drawText(student["PARENT'S REFLECTION"][1], {
+        student["Parent's Reflection"][1] &&
+          sixthPage.drawText(student["Parent's Reflection"][1], {
             x: 95,
             y: 432,
             size: 12,
@@ -1040,8 +1040,8 @@ function Class1_Term1() {
           });
       }
       {
-        student["PARENT'S REFLECTION"][2] &&
-          sixthPage.drawText(student["PARENT'S REFLECTION"][2], {
+        student["Parent's Reflection"][2] &&
+          sixthPage.drawText(student["Parent's Reflection"][2], {
             x: 95,
             y: 417,
             size: 12,
@@ -1054,20 +1054,20 @@ function Class1_Term1() {
         width: 100,
         height: 30,
       });
-      sixthPage.drawText(student["No. Of Days Present"][0], {
+      sixthPage.drawText(student["Total No. Of Working Days"][0], {
         x: 345,
         y: 170,
         size: 15,
         color: rgb(0, 0, 0),
       });
-      sixthPage.drawText(student["Total No. Of Present"][0], {
+      sixthPage.drawText(student["No. Of Days Present"][0], {
         x: 345,
         y: 130,
         size: 15,
         color: rgb(0, 0, 0),
       });
-      sixthPage.drawText(student["Attendance"][0], {
-        x: 345,
+      sixthPage.drawText(student["Attendance %"][0], {
+        x: 340,
         y: 85,
         size: 15,
         color: rgb(0, 0, 0),

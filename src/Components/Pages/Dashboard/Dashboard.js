@@ -283,28 +283,28 @@ function Dashboard() {
                     <option className={styles.option} value="H">
                       H
                     </option>
-                    <option className={styles.option} value="H">
+                    <option className={styles.option} value="I">
                       I
                     </option>
-                    <option className={styles.option} value="H">
+                    <option className={styles.option} value="J">
                       J
                     </option>
-                    <option className={styles.option} value="H">
+                    <option className={styles.option} value="K">
                       K
                     </option>
-                    <option className={styles.option} value="H">
+                    <option className={styles.option} value="L">
                       L
                     </option>
-                    <option className={styles.option} value="H">
+                    <option className={styles.option} value="M">
                       M
                     </option>
-                    <option className={styles.option} value="H">
+                    <option className={styles.option} value="N">
                       N
                     </option>
-                    <option className={styles.option} value="H">
+                    <option className={styles.option} value="O">
                       O
                     </option>
-                    <option className={styles.option} value="H">
+                    <option className={styles.option} value="P">
                       P
                     </option>
                   </select>
@@ -432,28 +432,28 @@ function Dashboard() {
               <option className={styles.option} value="H">
                 H
               </option>
-              <option className={styles.option} value="H">
+              <option className={styles.option} value="I">
                 I
               </option>
-              <option className={styles.option} value="H">
+              <option className={styles.option} value="J">
                 J
               </option>
-              <option className={styles.option} value="H">
+              <option className={styles.option} value="K">
                 K
               </option>
-              <option className={styles.option} value="H">
+              <option className={styles.option} value="L">
                 L
               </option>
-              <option className={styles.option} value="H">
+              <option className={styles.option} value="M">
                 M
               </option>
-              <option className={styles.option} value="H">
+              <option className={styles.option} value="N">
                 N
               </option>
-              <option className={styles.option} value="H">
+              <option className={styles.option} value="O">
                 O
               </option>
-              <option className={styles.option} value="H">
+              <option className={styles.option} value="P">
                 P
               </option>
             </select>
