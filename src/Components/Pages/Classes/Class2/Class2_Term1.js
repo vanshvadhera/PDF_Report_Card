@@ -1326,7 +1326,7 @@ function Class2_Term1() {
         const pdfBytes = await pdfDoc.save();
 
         // Add the PDF to the ZIP file, using the student's name for the file name
-        zip.file(`${student["Admission Number"]}_report_card.pdf`, pdfBytes);
+        zip.file(`${student["zip_name"]}_report_card.pdf`, pdfBytes);
       }
 
       // Generate the ZIP file and download it
