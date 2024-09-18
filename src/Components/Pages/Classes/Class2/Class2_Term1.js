@@ -784,7 +784,7 @@ function Class2_Term1() {
 
       fourthPage.drawText(
         student[
-          "PHYSICAL EDUCATION Shows strength and endurance in carrying,walking and running"
+          "PHYSICAL EDUCATION / SPORTS SMART Shows strength and endurance in carrying, walking and running"
         ][0],
         {
           x: 295,
@@ -794,7 +794,7 @@ function Class2_Term1() {
         }
       );
       fourthPage.drawText(
-        student["PHYSICAL EDUCATION Adheres to guidance"][0],
+        student["PHYSICAL EDUCATION / SPORTS SMART Adheres to guidance"][0],
         {
           x: 295,
           y: 458,
@@ -803,7 +803,7 @@ function Class2_Term1() {
         }
       );
       fourthPage.drawText(
-        student["PHYSICAL EDUCATION Displays team spirit"][0],
+        student["PHYSICAL EDUCATION / SPORTS SMART Displays team spirit"][0],
         {
           x: 295,
           y: 443,
@@ -812,9 +812,9 @@ function Class2_Term1() {
         }
       );
       {
-        student["PHYSICAL EDUCATION DESCRIPTIVE INDICATORS"][0] &&
+        student["PHYSICAL EDUCATION / SPORTS SMART DESCRIPTIVE INDICATORS"][0] &&
           fourthPage.drawText(
-            `${student["PHYSICAL EDUCATION DESCRIPTIVE INDICATORS"][0]}`,
+            `${student["PHYSICAL EDUCATION / SPORTS SMART DESCRIPTIVE INDICATORS"][0]}`,
             {
               x: 348,
               y: 480,
@@ -824,9 +824,9 @@ function Class2_Term1() {
           );
       }
       {
-        student["PHYSICAL EDUCATION DESCRIPTIVE INDICATORS"][1] &&
+        student["PHYSICAL EDUCATION / SPORTS SMART DESCRIPTIVE INDICATORS"][1] &&
           fourthPage.drawText(
-            `${student["PHYSICAL EDUCATION DESCRIPTIVE INDICATORS"][1]}`,
+            `${student["PHYSICAL EDUCATION / SPORTS SMART DESCRIPTIVE INDICATORS"][1]}`,
             {
               x: 348,
               y: 465,
@@ -984,7 +984,7 @@ function Class2_Term1() {
       }
 
       fourthPage.drawText(
-        student["COMMUNICATION AND SOCIO -EMOTIONAL DEVELOPMENT Discipline"][0],
+        student["COMMUNICATION AND SOCIO - EMOTIONAL DEVELOPMENT Discipline"][0],
         {
           x: 295,
           y: 263,
@@ -994,7 +994,7 @@ function Class2_Term1() {
       );
       fourthPage.drawText(
         student[
-          "COMMUNICATION AND SOCIO -EMOTIONAL DEVELOPMENT Radiant & confident"
+          "COMMUNICATION AND SOCIO - EMOTIONAL DEVELOPMENT Radiant & confident"
         ][0],
         {
           x: 295,
@@ -1005,7 +1005,7 @@ function Class2_Term1() {
       );
       fourthPage.drawText(
         student[
-          "COMMUNICATION AND SOCIO -EMOTIONAL DEVELOPMENT Promptitude"
+          "COMMUNICATION AND SOCIO - EMOTIONAL DEVELOPMENT Promptitude"
         ][0],
         {
           x: 295,
@@ -1016,7 +1016,7 @@ function Class2_Term1() {
       );
       fourthPage.drawText(
         student[
-          "COMMUNICATION AND SOCIO – EMOTIONAL DEVELOPMENT Shows empathy"
+          "COMMUNICATION AND SOCIO - EMOTIONAL DEVELOPMENT Shows empathy"
         ][0],
         {
           x: 295,
@@ -1027,7 +1027,7 @@ function Class2_Term1() {
       );
       fourthPage.drawText(
         student[
-          "OMMUNICATION AND SOCIO – EMOTIONAL DEVELOPMENT Courteous approach"
+          "COMMUNICATION AND SOCIO - EMOTIONAL DEVELOPMENT Courteous approach"
         ][0],
         {
           x: 295,
@@ -1147,7 +1147,7 @@ function Class2_Term1() {
         size: 14,
         color: rgb(0, 0, 0),
       });
-      fifthPage.drawText(student["Fictional character I like the most "][0], {
+      fifthPage.drawText(student["Fictional character I like the most"][0], {
         x: 85,
         y: 420,
         size: 14,
@@ -1289,7 +1289,7 @@ function Class2_Term1() {
         size: 12,
         color: rgb(0, 0, 0),
       });
-      sixthPage.drawText(student["ATTENDANCE %"][0], {
+      sixthPage.drawText(student["ATTENDANCE %"][0].replace(/[' "]/g, ""), {
         x: 370,
         y: 97,
         size: 12,
