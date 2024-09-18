@@ -131,9 +131,9 @@ function Dashboard() {
           : className2 === "UKG"
           ? 33
           : className2 === "I"
-          ? 40
+          ? 37
           : className2 === "II"
-          ? 50
+          ? 42
           : 100,
       reflection_pos:
         className2 === "LKG"
