@@ -1028,7 +1028,7 @@ function Ukg_Term1() {
 
       for (let student of userData) {
         const existingPdfBytes = await fetch(
-          "https://innovartan.s3.ap-southeast-1.amazonaws.com/resource/4/file-1725721624-1781446423.pdf"
+          "https://innovartan.s3.amazonaws.com/1c5602fb110d78ecb973866f263a9d391962234724/d814c4e5600ba771020aec479aa4294b.pdf"
         ).then((res) => res.arrayBuffer());
 
         const pdfDoc = await PDFDocument.load(existingPdfBytes);

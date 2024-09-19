@@ -30,6 +30,10 @@ function Class2_Term1() {
     setSelectedStudent(userData[selectedStudentIndex]);
   };
 
+  function cleanText(text) {
+    return text.replace(/[\u200B-\u200D\u2060-\u206F]/g, "");
+  }
+
   const fillPdfForm = async (student, pdfDoc) => {
     try {
       const imageUrl = student.student_photo;
@@ -812,7 +816,9 @@ function Class2_Term1() {
         }
       );
       {
-        student["PHYSICAL EDUCATION / SPORTS SMART DESCRIPTIVE INDICATORS"][0] &&
+        student[
+          "PHYSICAL EDUCATION / SPORTS SMART DESCRIPTIVE INDICATORS"
+        ][0] &&
           fourthPage.drawText(
             `${student["PHYSICAL EDUCATION / SPORTS SMART DESCRIPTIVE INDICATORS"][0]}`,
             {
@@ -824,7 +830,9 @@ function Class2_Term1() {
           );
       }
       {
-        student["PHYSICAL EDUCATION / SPORTS SMART DESCRIPTIVE INDICATORS"][1] &&
+        student[
+          "PHYSICAL EDUCATION / SPORTS SMART DESCRIPTIVE INDICATORS"
+        ][1] &&
           fourthPage.drawText(
             `${student["PHYSICAL EDUCATION / SPORTS SMART DESCRIPTIVE INDICATORS"][1]}`,
             {
@@ -984,7 +992,9 @@ function Class2_Term1() {
       }
 
       fourthPage.drawText(
-        student["COMMUNICATION AND SOCIO - EMOTIONAL DEVELOPMENT Discipline"][0],
+        student[
+          "COMMUNICATION AND SOCIO - EMOTIONAL DEVELOPMENT Discipline"
+        ][0],
         {
           x: 295,
           y: 263,
@@ -1147,7 +1157,8 @@ function Class2_Term1() {
         size: 14,
         color: rgb(0, 0, 0),
       });
-      fifthPage.drawText(student["Fictional character I like the most"][0], {
+      const text = cleanText(student["Fictional character I like the most"][0]);
+      fifthPage.drawText(text, {
         x: 85,
         y: 420,
         size: 14,
@@ -1193,81 +1204,90 @@ function Class2_Term1() {
       {
         student["My Accolades"][0] &&
           sixthPage.drawText(student["My Accolades"][0], {
-            x: 80,
-            y: 620,
-            size: 15,
+            x: 78,
+            y: 624,
+            size: 13,
             color: rgb(0, 0, 0),
           });
       }
       {
         student["My Accolades"][1] &&
           sixthPage.drawText(student["My Accolades"][1], {
-            x: 80,
-            y: 603,
-            size: 15,
+            x: 78,
+            y: 609,
+            size: 13,
             color: rgb(0, 0, 0),
           });
       }
       {
         student["My Accolades"][2] &&
           sixthPage.drawText(student["My Accolades"][2], {
-            x: 80,
-            y: 590,
-            size: 15,
+            x: 78,
+            y: 594,
+            size: 13,
             color: rgb(0, 0, 0),
           });
       }
       {
         student["TEACHER’S HOLISTIC OVERVIEW"][0] &&
           sixthPage.drawText(student["TEACHER’S HOLISTIC OVERVIEW"][0], {
-            x: 80,
-            y: 490,
-            size: 15,
+            x: 78,
+            y: 496,
+            size: 13,
             color: rgb(0, 0, 0),
           });
       }
       {
         student["TEACHER’S HOLISTIC OVERVIEW"][1] &&
           sixthPage.drawText(student["TEACHER’S HOLISTIC OVERVIEW"][1], {
-            x: 80,
-            y: 473,
-            size: 15,
+            x: 78,
+            y: 481,
+            size: 13,
             color: rgb(0, 0, 0),
           });
       }
       {
         student["TEACHER’S HOLISTIC OVERVIEW"][2] &&
           sixthPage.drawText(student["TEACHER’S HOLISTIC OVERVIEW"][2], {
-            x: 80,
-            y: 456,
-            size: 15,
+            x: 78,
+            y: 465,
+            size: 13,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["TEACHER’S HOLISTIC OVERVIEW"][3] &&
+          sixthPage.drawText(student["TEACHER’S HOLISTIC OVERVIEW"][3], {
+            x: 78,
+            y: 450,
+            size: 13,
             color: rgb(0, 0, 0),
           });
       }
       {
         student["PARENT’S REFLECTION"][0] &&
           sixthPage.drawText(student["PARENT’S REFLECTION"][0], {
-            x: 80,
-            y: 360,
-            size: 15,
+            x: 78,
+            y: 366,
+            size: 13,
             color: rgb(0, 0, 0),
           });
       }
       {
         student["PARENT’S REFLECTION"][1] &&
           sixthPage.drawText(student["PARENT’S REFLECTION"][1], {
-            x: 80,
-            y: 343,
-            size: 15,
+            x: 78,
+            y: 352,
+            size: 13,
             color: rgb(0, 0, 0),
           });
       }
       {
         student["PARENT’S REFLECTION"][2] &&
           sixthPage.drawText(student["PARENT’S REFLECTION"][2], {
-            x: 80,
-            y: 326,
-            size: 15,
+            x: 78,
+            y: 337,
+            size: 13,
             color: rgb(0, 0, 0),
           });
       }

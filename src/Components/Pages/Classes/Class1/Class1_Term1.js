@@ -30,6 +30,10 @@ function Class1_Term1() {
     setSelectedStudent(userData[selectedStudentIndex]);
   };
 
+  function cleanText(text) {
+    return text.replace(/[\u200B-\u200D\u2060-\u206F]/g, "");
+  }
+
   const fillPdfForm = async (student, pdfDoc) => {
     try {
       const imageUrl = student.student_photo;
@@ -924,7 +928,8 @@ function Class1_Term1() {
         size: 14,
         color: rgb(0, 0, 0),
       });
-      fifthPage.drawText(student["Fictional Character I like the most"][0], {
+      const text = cleanText(student["Fictional Character I like the most"][0]);
+      fifthPage.drawText(text, {
         x: 95,
         y: 390,
         size: 14,
