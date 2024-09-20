@@ -1081,7 +1081,7 @@ function LKG_Term1() {
 
       for (let student of userData) {
         const existingPdfBytes = await fetch(
-          "https://innovartan.s3.amazonaws.com/f6da40d6c80cd8c17790761a695051c9150236450/6d685d6c9e640b47d0aaced60d71c8be.pdf"
+          "https://innovartan.s3.amazonaws.com/a3c8ca08a3f639a3cbe64eed054b0ff5564440747/580bbb0eeb89efc688f4febff43092fb.pdf"
         ).then((res) => res.arrayBuffer());
 
         const pdfDoc = await PDFDocument.load(existingPdfBytes);
@@ -1140,7 +1140,7 @@ function LKG_Term1() {
   const fillAndDownloadSinglePdf = async (shouldDownload, shouldView) => {
     try {
       const existingPdfBytes = await fetch(
-        "https://innovartan.s3.amazonaws.com/f6da40d6c80cd8c17790761a695051c9150236450/6d685d6c9e640b47d0aaced60d71c8be.pdf"
+        "https://innovartan.s3.amazonaws.com/a3c8ca08a3f639a3cbe64eed054b0ff5564440747/580bbb0eeb89efc688f4febff43092fb.pdf"
       ).then((res) => res.arrayBuffer());
 
       const pdfDoc = await PDFDocument.load(existingPdfBytes);

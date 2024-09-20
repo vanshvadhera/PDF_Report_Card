@@ -5,10 +5,8 @@ import {
   MDBRow,
   MDBCol,
   MDBInput,
-  MDBAlert,
 } from "mdb-react-ui-kit";
 import { authorizedUsers } from "../../AuthorizedUsers/AuthorizedUsers";
-import { useNavigate } from "react-router";
 import { useDispatch } from "react-redux";
 import { userDataActions } from "../../Data/Slices/UserDataSlice";
 
@@ -20,8 +18,6 @@ function App() {
   const dispatch = useDispatch();
 
   const width = window.innerWidth;
-
-  const navigate = useNavigate();
 
   const handleSignIn = () => {
     // Basic validation
