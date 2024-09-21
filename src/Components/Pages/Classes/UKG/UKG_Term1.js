@@ -1028,7 +1028,7 @@ function Ukg_Term1() {
 
       for (let student of userData) {
         const existingPdfBytes = await fetch(
-          "https://innovartan.s3.amazonaws.com/00ce24b28413cf8f78c090ae3ccb08161702136646/f640a82cf658f6a6d657e04152e5cd83.pdf"
+          "https://innovartan.s3.amazonaws.com/f02486825334ed20b46a81b63b7f3a441376479253/4d7afbad4bce6a4b3cae8bf74183ceb3.pdf"
         ).then((res) => res.arrayBuffer());
 
         const pdfDoc = await PDFDocument.load(existingPdfBytes);
@@ -1087,7 +1087,7 @@ function Ukg_Term1() {
   const fillAndDownloadSinglePdf = async (shouldDownload, shouldView) => {
     try {
       const existingPdfBytes = await fetch(
-        "https://innovartan.s3.amazonaws.com/00ce24b28413cf8f78c090ae3ccb08161702136646/f640a82cf658f6a6d657e04152e5cd83.pdf"
+        "https://innovartan.s3.amazonaws.com/f02486825334ed20b46a81b63b7f3a441376479253/4d7afbad4bce6a4b3cae8bf74183ceb3.pdf"
       ).then((res) => res.arrayBuffer());
 
       const pdfDoc = await PDFDocument.load(existingPdfBytes);
