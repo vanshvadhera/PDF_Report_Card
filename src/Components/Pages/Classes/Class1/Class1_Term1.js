@@ -10,9 +10,14 @@ import { userDataActions } from "../../../Data/Slices/UserDataSlice";
 
 function Class1_Term1() {
   const location = useLocation();
-  const { data } = location.state;
+  const { data, localPdf } = location.state;
   const userData = data.term_1;
   console.log(data, "Data in Class1_Term2");
+  console.log(localPdf, "Use localPdf ?");
+
+  const fileURL = localPdf
+    ? "https://innovartan.s3.amazonaws.com/8bbef6eb15b7516dc39fe4d2a98a7f40261504813/99060cfc082965233f64675885aa1875.pdf"
+    : "https://dpsin.s3.amazonaws.com/report/II/Class2.pdf";
 
   const dispatch = useDispatch();
 
@@ -1098,9 +1103,9 @@ function Class1_Term1() {
       const zip = new JSZip();
 
       for (let student of userData) {
-        const existingPdfBytes = await fetch(
-          "https://innovartan.s3.amazonaws.com/8bbef6eb15b7516dc39fe4d2a98a7f40261504813/99060cfc082965233f64675885aa1875.pdf"
-        ).then((res) => res.arrayBuffer());
+        const existingPdfBytes = await fetch(fileURL).then((res) =>
+          res.arrayBuffer()
+        );
 
         const pdfDoc = await PDFDocument.load(existingPdfBytes);
         await fillPdfForm(student, pdfDoc);
@@ -1157,9 +1162,9 @@ function Class1_Term1() {
 
   const fillAndDownloadSinglePdf = async (shouldDownload, shouldView) => {
     try {
-      const existingPdfBytes = await fetch(
-        "https://innovartan.s3.amazonaws.com/8bbef6eb15b7516dc39fe4d2a98a7f40261504813/99060cfc082965233f64675885aa1875.pdf"
-      ).then((res) => res.arrayBuffer());
+      const existingPdfBytes = await fetch(fileURL).then((res) =>
+        res.arrayBuffer()
+      );
 
       const pdfDoc = await PDFDocument.load(existingPdfBytes);
 

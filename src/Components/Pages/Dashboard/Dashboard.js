@@ -8,7 +8,8 @@ import { useNavigate } from "react-router";
 function Dashboard() {
   const param = new URLSearchParams(window.location.search);
   const localParam = param.get("local");
-  console.log(localParam);
+  const localPdf = param.get("localpdf");
+  console.log(localParam, localPdf);
 
   const userData = useSelector((state) => state.userData);
 
@@ -178,7 +179,7 @@ function Dashboard() {
     }
 
     navigate(`/class${className2.toLowerCase()}/term${term2}`, {
-      state: { data: data.data },
+      state: { data: data.data, localPdf },
     });
   };
 
