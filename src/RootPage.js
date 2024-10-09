@@ -13,6 +13,9 @@ import Nursery_Term1 from "./Components/Pages/Classes/Nursery/Nursery_Term1";
 import Class2_Term1 from "./Components/Pages/Classes/Class2/Class2_Term1";
 import Ukg_Term1 from "./Components/Pages/Classes/UKG/UKG_Term1";
 import LKG_Term1 from "./Components/Pages/Classes/LKG/LKG_Term1";
+import Class3_Term1 from "./Components/Pages/Classes/Class3/Class3_Term1";
+import Class4_Term1 from "./Components/Pages/Classes/Class4/Class4_Term1";
+import Class5_Term1 from "./Components/Pages/Classes/Class5/Class5_Term1";
 
 const RootPage = () => {
   const userState = useSelector((state) => state.userData);
@@ -105,6 +108,33 @@ const RootPage = () => {
             <CustomNavbar>
               {/* eslint-disable-next-line */}
               <Class2_Term2 />
+            </CustomNavbar>
+          }
+        />
+        <Route
+          path="/classiii/term1"
+          element={
+            <CustomNavbar>
+              {/* eslint-disable-next-line */}
+              <Class3_Term1 />
+            </CustomNavbar>
+          }
+        />
+        <Route
+          path="/classiv/term1"
+          element={
+            <CustomNavbar>
+              {/* eslint-disable-next-line */}
+              <Class4_Term1 />
+            </CustomNavbar>
+          }
+        />
+        <Route
+          path="/classv/term1"
+          element={
+            <CustomNavbar>
+              {/* eslint-disable-next-line */}
+              <Class5_Term1 />
             </CustomNavbar>
           }
         />
