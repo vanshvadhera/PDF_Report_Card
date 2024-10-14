@@ -1395,7 +1395,7 @@ function Class3_Term1() {
         color: rgb(0, 0, 0),
       });
       ninthPage.drawText(student["COMPUTER SCIENCE PERIODIC TEST-I (50)"][0], {
-        x: 279,
+        x: 270,
         y: 632,
         size: 12,
         color: rgb(0, 0, 0),
