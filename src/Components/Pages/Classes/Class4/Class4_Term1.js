@@ -1890,9 +1890,9 @@ function Class4_Term1() {
       });
 
       ninthPage.drawText(student["Third Language Name"][0], {
-        x: 120,
-        y: 682,
-        size: 12,
+        x: 116,
+        y: 681,
+        size: 9,
         color: rgb(0, 0, 0),
       });
       ninthPage.drawText(student["Third Language PERIODIC TEST-I (35)"][0], {
@@ -2018,7 +2018,7 @@ function Class4_Term1() {
         color: rgb(0, 0, 0),
       });
       ninthPage.drawText(student["Computer Science PERIODIC TEST-I (50)"][0], {
-        x: 265,
+        x: 272,
         y: 609,
         size: 12,
         color: rgb(0, 0, 0),

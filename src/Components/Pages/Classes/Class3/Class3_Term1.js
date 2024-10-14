@@ -1084,7 +1084,7 @@ function Class3_Term1() {
 
       eighthPage.drawText(
         student[
-          "COMPUTER SCIENCE Shows the ability to make logical decisions"
+          "ART AND CRAFT Demonstrates creativity through colourful and imaginative art projects"
         ][0],
         {
           x: 470,
@@ -1095,7 +1095,7 @@ function Class3_Term1() {
       );
       eighthPage.drawText(
         student[
-          "COMPUTER SCIENCE Shows the ability to make logical decisions"
+          "ART AND CRAFT Pays attention to details, ensuring neatness and precision in artwork"
         ][0],
         {
           x: 470,
@@ -1106,7 +1106,7 @@ function Class3_Term1() {
       );
       eighthPage.drawText(
         student[
-          "COMPUTER SCIENCE Shows the ability to make logical decisions"
+          "ART AND CRAFT Collaborates effectively with peers during art classes and activities"
         ][0],
         {
           x: 470,
@@ -1116,9 +1116,7 @@ function Class3_Term1() {
         }
       );
       eighthPage.drawText(
-        student[
-          "COMPUTER SCIENCE Shows the ability to make logical decisions"
-        ][0],
+        student["MUSIC Demonstrates a passion for music"][0],
         {
           x: 470,
           y: 576,
@@ -1127,9 +1125,7 @@ function Class3_Term1() {
         }
       );
       eighthPage.drawText(
-        student[
-          "COMPUTER SCIENCE Shows the ability to make logical decisions"
-        ][0],
+        student["MUSIC Displays a keen sense of rhythm and melody"][0],
         {
           x: 470,
           y: 550,
@@ -1139,7 +1135,7 @@ function Class3_Term1() {
       );
       eighthPage.drawText(
         student[
-          "COMPUTER SCIENCE Shows the ability to make logical decisions"
+          "MUSIC Collaborates harmoniously with peers during group musical activities"
         ][0],
         {
           x: 470,
@@ -1149,9 +1145,7 @@ function Class3_Term1() {
         }
       );
       eighthPage.drawText(
-        student[
-          "COMPUTER SCIENCE Shows the ability to make logical decisions"
-        ][0],
+        student["DANCE Demonstrates a passion for dance"][0],
         {
           x: 470,
           y: 471,
@@ -1160,9 +1154,7 @@ function Class3_Term1() {
         }
       );
       eighthPage.drawText(
-        student[
-          "COMPUTER SCIENCE Shows the ability to make logical decisions"
-        ][0],
+        student["DANCE Participates actively in group dance performances"][0],
         {
           x: 470,
           y: 444,
@@ -1171,9 +1163,7 @@ function Class3_Term1() {
         }
       );
       eighthPage.drawText(
-        student[
-          "COMPUTER SCIENCE Shows the ability to make logical decisions"
-        ][0],
+        student["DANCE Synchronizes harmoniously with the beat"][0],
         {
           x: 470,
           y: 417,
@@ -1183,7 +1173,7 @@ function Class3_Term1() {
       );
       eighthPage.drawText(
         student[
-          "COMPUTER SCIENCE Shows the ability to make logical decisions"
+          "PHYSICAL EDUCATION Demonstrates sportsmanship during physical activities displaying fair play"
         ][0],
         {
           x: 470,
@@ -1194,7 +1184,7 @@ function Class3_Term1() {
       );
       eighthPage.drawText(
         student[
-          "COMPUTER SCIENCE Shows the ability to make logical decisions"
+          "PHYSICAL EDUCATION Engages in cooperative games and team sports, fostering teamwork with classmates"
         ][0],
         {
           x: 470,
@@ -1205,7 +1195,7 @@ function Class3_Term1() {
       );
       eighthPage.drawText(
         student[
-          "COMPUTER SCIENCE Shows the ability to make logical decisions"
+          "PHYSICAL EDUCATION Follows safety guidelines and rules during sports activities"
         ][0],
         {
           x: 470,
@@ -1216,7 +1206,7 @@ function Class3_Term1() {
       );
       eighthPage.drawText(
         student[
-          "COMPUTER SCIENCE Shows the ability to make logical decisions"
+          "GENERAL KNOWLEDGE Shows interest in current events and world affairs, staying informed through reading and discussions"
         ][0],
         {
           x: 470,
@@ -1227,7 +1217,7 @@ function Class3_Term1() {
       );
       eighthPage.drawText(
         student[
-          "COMPUTER SCIENCE Shows the ability to make logical decisions"
+          "GENERAL KNOWLEDGE Demonstrates understanding of basic facts and concepts across different topics"
         ][0],
         {
           x: 470,
@@ -1238,7 +1228,7 @@ function Class3_Term1() {
       );
       eighthPage.drawText(
         student[
-          "COMPUTER SCIENCE Shows the ability to make logical decisions"
+          "GENERAL KNOWLEDGE Takes initiative in expanding general knowledge on current affairs"
         ][0],
         {
           x: 470,
@@ -1249,7 +1239,7 @@ function Class3_Term1() {
       );
       eighthPage.drawText(
         student[
-          "COMPUTER SCIENCE Shows the ability to make logical decisions"
+          "FRIDAY ACTIVITY Participates enthusiastically in the chosen Friday Activity"
         ][0],
         {
           x: 470,
@@ -1260,7 +1250,7 @@ function Class3_Term1() {
       );
       eighthPage.drawText(
         student[
-          "COMPUTER SCIENCE Shows the ability to make logical decisions"
+          "FRIDAY ACTIVITY Takes interest in honing the related skills"
         ][0],
         {
           x: 470,
@@ -1271,7 +1261,7 @@ function Class3_Term1() {
       );
       eighthPage.drawText(
         student[
-          "COMPUTER SCIENCE Shows the ability to make logical decisions"
+          "FRIDAY ACTIVITY Comprehends and executes the given instructions constructively"
         ][0],
         {
           x: 470,
@@ -1405,7 +1395,7 @@ function Class3_Term1() {
         color: rgb(0, 0, 0),
       });
       ninthPage.drawText(student["COMPUTER SCIENCE PERIODIC TEST-I (50)"][0], {
-        x: 270,
+        x: 279,
         y: 632,
         size: 12,
         color: rgb(0, 0, 0),
@@ -1538,7 +1528,6 @@ function Class3_Term1() {
         width: 100,
         height: 30,
       });
-    
 
       // seventhPage.drawImage(groupPhotImage, {
       //   x: 470,
