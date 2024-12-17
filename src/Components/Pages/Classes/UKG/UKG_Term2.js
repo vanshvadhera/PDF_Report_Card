@@ -10,9 +10,14 @@ import { userDataActions } from "../../../Data/Slices/UserDataSlice";
 
 function Ukg_Term2() {
   const location = useLocation();
-  const { data } = location.state;
+  const { data, localPdf } = location.state;
   const userData = data.term_2;
   console.log(data, "Data in Class1_Term2");
+  console.log(localPdf, "Use localPdf ?");
+
+  const fileURL = localPdf
+    ? "https://innovartan.s3.amazonaws.com/ee020ba3173d737e1f4c573bf4aff0b62120903416/35d766f637aad546e8169b5c84c56b8d.pdf"
+    : "https://dpsin.s3.us-east-1.amazonaws.com/report/UKG/term2.pdf";
 
   const dispatch = useDispatch();
 
@@ -1039,7 +1044,9 @@ function Ukg_Term2() {
       });
       seventhPage.drawText(student["I am polite and courteous_2"][0], {
         x:
-          student["I am polite and courteous_2"][0] === "PROGRESSIVE" ? 267 : 277,
+          student["I am polite and courteous_2"][0] === "PROGRESSIVE"
+            ? 267
+            : 277,
         y: 610,
         size: 10,
         color: rgb(0, 0, 0),
@@ -1096,13 +1103,17 @@ function Ukg_Term2() {
         color: rgb(0, 0, 0),
       });
       seventhPage.drawText(student["I am an eloquent speaker_2"][0], {
-        x: student["I am an eloquent speaker_2"][0] === "PROGRESSIVE" ? 267 : 277,
+        x:
+          student["I am an eloquent speaker_2"][0] === "PROGRESSIVE"
+            ? 267
+            : 277,
         y: 525,
         size: 10,
         color: rgb(0, 0, 0),
       });
       seventhPage.drawText(student["I take pride in my work_2"][0], {
-        x: student["I take pride in my work_2"][0] === "PROGRESSIVE" ? 267 : 277,
+        x:
+          student["I take pride in my work_2"][0] === "PROGRESSIVE" ? 267 : 277,
         y: 503,
         size: 10,
         color: rgb(0, 0, 0),
@@ -1166,7 +1177,9 @@ function Ukg_Term2() {
       });
       seventhPage.drawText(student["I am engaged and involved_2"][0], {
         x:
-          student["I am engaged and involved_2"][0] === "PROGRESSIVE" ? 267 : 277,
+          student["I am engaged and involved_2"][0] === "PROGRESSIVE"
+            ? 267
+            : 277,
         y: 397,
         size: 10,
         color: rgb(0, 0, 0),
@@ -1220,14 +1233,17 @@ function Ukg_Term2() {
           );
       }
       seventhPage.drawText(student["I demonstrate curiosity_2"][0], {
-        x: student["I demonstrate curiosity_2"][0] === "PROGRESSIVE" ? 267 : 277,
+        x:
+          student["I demonstrate curiosity_2"][0] === "PROGRESSIVE" ? 267 : 277,
         y: 352,
         size: 10,
         color: rgb(0, 0, 0),
       });
       seventhPage.drawText(student["I can observe and explore_2"][0], {
         x:
-          student["I can observe and explore_2"][0] === "PROGRESSIVE" ? 267 : 277,
+          student["I can observe and explore_2"][0] === "PROGRESSIVE"
+            ? 267
+            : 277,
         y: 331,
         size: 10,
         color: rgb(0, 0, 0),
@@ -1455,15 +1471,19 @@ function Ukg_Term2() {
           color: rgb(0, 0, 0),
         }
       );
-      eighthPage.drawText(student["I can perform mathematical operations_2"][0], {
-        x:
-          student["I can perform mathematical operations_2"][0] === "PROGRESSIVE"
-            ? 303
-            : 313,
-        y: 458,
-        size: 10,
-        color: rgb(0, 0, 0),
-      });
+      eighthPage.drawText(
+        student["I can perform mathematical operations_2"][0],
+        {
+          x:
+            student["I can perform mathematical operations_2"][0] ===
+            "PROGRESSIVE"
+              ? 303
+              : 313,
+          y: 458,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
       {
         student["NUMERACY SMART Remarks_2"][0] &&
           eighthPage.drawText(student["NUMERACY SMART Remarks_2"][0], {
@@ -1515,15 +1535,19 @@ function Ukg_Term2() {
         size: 10,
         color: rgb(0, 0, 0),
       });
-      eighthPage.drawText(student["I use vivid imagination with play-doh_2"][0], {
-        x:
-          student["I use vivid imagination with play-doh_2"][0] === "PROGRESSIVE"
-            ? 303
-            : 313,
-        y: 371,
-        size: 10,
-        color: rgb(0, 0, 0),
-      });
+      eighthPage.drawText(
+        student["I use vivid imagination with play-doh_2"][0],
+        {
+          x:
+            student["I use vivid imagination with play-doh_2"][0] ===
+            "PROGRESSIVE"
+              ? 303
+              : 313,
+          y: 371,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
       eighthPage.drawText(
         student["I work collaboratively in art and craft_2"][0],
         {
@@ -1724,15 +1748,12 @@ function Ukg_Term2() {
         size: 14,
         color: rgb(0, 0, 0),
       });
-      ninthPage.drawText(
-        student["My hobby_2"][0],
-        {
-          x: 160,
-          y: 530,
-          size: 14,
-          color: rgb(0, 0, 0),
-        }
-      );
+      ninthPage.drawText(student["My hobby_2"][0], {
+        x: 160,
+        y: 530,
+        size: 14,
+        color: rgb(0, 0, 0),
+      });
       ninthPage.drawText(student["Total no. of working days_2"][0], {
         x: 405,
         y: 527,
@@ -1889,9 +1910,9 @@ function Ukg_Term2() {
       const zip = new JSZip();
 
       for (let student of userData) {
-        const existingPdfBytes = await fetch(
-          "https://innovartan.s3.amazonaws.com/ee020ba3173d737e1f4c573bf4aff0b62120903416/35d766f637aad546e8169b5c84c56b8d.pdf"
-        ).then((res) => res.arrayBuffer());
+        const existingPdfBytes = await fetch(fileURL).then((res) =>
+          res.arrayBuffer()
+        );
 
         const pdfDoc = await PDFDocument.load(existingPdfBytes);
         await fillPdfForm(student, pdfDoc);
@@ -1948,9 +1969,9 @@ function Ukg_Term2() {
 
   const fillAndDownloadSinglePdf = async (shouldDownload, shouldView) => {
     try {
-      const existingPdfBytes = await fetch(
-        "https://innovartan.s3.amazonaws.com/ee020ba3173d737e1f4c573bf4aff0b62120903416/35d766f637aad546e8169b5c84c56b8d.pdf"
-      ).then((res) => res.arrayBuffer());
+      const existingPdfBytes = await fetch(fileURL).then((res) =>
+        res.arrayBuffer()
+      );
 
       const pdfDoc = await PDFDocument.load(existingPdfBytes);
 

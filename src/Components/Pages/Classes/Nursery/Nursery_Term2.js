@@ -10,9 +10,14 @@ import { userDataActions } from "../../../Data/Slices/UserDataSlice";
 
 function Nursery_Term2() {
   const location = useLocation();
-  const { data } = location.state;
+  const { data, localPdf } = location.state;
   const userData = data.term_2;
   console.log(data, "Data in Class1_Term2");
+  console.log(localPdf, "Use localPdf ?");
+
+  const fileURL = localPdf
+    ? "https://innovartan.s3.amazonaws.com/8c093da373d2fcb48313cc226546ed952109776981/f58192864ec3ec0f7407de2e887940f3.pdf"
+    : "https://dpsin.s3.us-east-1.amazonaws.com/report/NUR/term2.pdf";
 
   const dispatch = useDispatch();
 
@@ -1013,7 +1018,8 @@ function Nursery_Term2() {
         color: rgb(0, 0, 0),
       });
       seventhPage.drawText(student["I can eat independently_2"][0], {
-        x: student["I can eat independently_2"][0] === "PROGRESSIVE" ? 275 : 285,
+        x:
+          student["I can eat independently_2"][0] === "PROGRESSIVE" ? 275 : 285,
         y: 610,
         size: 10,
         color: rgb(0, 0, 0),
@@ -1029,39 +1035,51 @@ function Nursery_Term2() {
       });
       {
         student["FEELING STRONG AND FREE Remarks_2"][0] &&
-          seventhPage.drawText(student["FEELING STRONG AND FREE Remarks_2"][0], {
-            x: 363,
-            y: 656,
-            size: 10,
-            color: rgb(0, 0, 0),
-          });
+          seventhPage.drawText(
+            student["FEELING STRONG AND FREE Remarks_2"][0],
+            {
+              x: 363,
+              y: 656,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
       }
       {
         student["FEELING STRONG AND FREE Remarks_2"][1] &&
-          seventhPage.drawText(student["FEELING STRONG AND FREE Remarks_2"][1], {
-            x: 363,
-            y: 643,
-            size: 10,
-            color: rgb(0, 0, 0),
-          });
+          seventhPage.drawText(
+            student["FEELING STRONG AND FREE Remarks_2"][1],
+            {
+              x: 363,
+              y: 643,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
       }
       {
         student["FEELING STRONG AND FREE Remarks_2"][2] &&
-          seventhPage.drawText(student["FEELING STRONG AND FREE Remarks_2"][2], {
-            x: 363,
-            y: 630,
-            size: 10,
-            color: rgb(0, 0, 0),
-          });
+          seventhPage.drawText(
+            student["FEELING STRONG AND FREE Remarks_2"][2],
+            {
+              x: 363,
+              y: 630,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
       }
       {
         student["FEELING STRONG AND FREE Remarks_2"][3] &&
-          seventhPage.drawText(student["FEELING STRONG AND FREE Remarks_2"][3], {
-            x: 363,
-            y: 617,
-            size: 10,
-            color: rgb(0, 0, 0),
-          });
+          seventhPage.drawText(
+            student["FEELING STRONG AND FREE Remarks_2"][3],
+            {
+              x: 363,
+              y: 617,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
       }
       seventhPage.drawText(student["I have good observation skills_2"][0], {
         x:
@@ -1082,7 +1100,8 @@ function Nursery_Term2() {
         color: rgb(0, 0, 0),
       });
       seventhPage.drawText(student["I can retain and recall_2"][0], {
-        x: student["I can retain and recall_2"][0] === "PROGRESSIVE" ? 275 : 285,
+        x:
+          student["I can retain and recall_2"][0] === "PROGRESSIVE" ? 275 : 285,
         y: 497,
         size: 10,
         color: rgb(0, 0, 0),
@@ -1208,7 +1227,10 @@ function Nursery_Term2() {
         color: rgb(0, 0, 0),
       });
       seventhPage.drawText(student["I adopt and follow norms_2"][0], {
-        x: student["I adopt and follow norms_2"][0] === "PROGRESSIVE" ? 275 : 285,
+        x:
+          student["I adopt and follow norms_2"][0] === "PROGRESSIVE"
+            ? 275
+            : 285,
         y: 292,
         size: 10,
         color: rgb(0, 0, 0),
@@ -1374,7 +1396,8 @@ function Nursery_Term2() {
           });
       }
       eighthPage.drawText(student["I am jolly with phonics_2"][0], {
-        x: student["I am jolly with phonics_2"][0] === "PROGRESSIVE" ? 285 : 295,
+        x:
+          student["I am jolly with phonics_2"][0] === "PROGRESSIVE" ? 285 : 295,
         y: 612,
         size: 10,
         color: rgb(0, 0, 0),
@@ -1399,7 +1422,9 @@ function Nursery_Term2() {
       });
       eighthPage.drawText(student["I engage in action rhymes_2"][0], {
         x:
-          student["I engage in action rhymes_2"][0] === "PROGRESSIVE" ? 285 : 295,
+          student["I engage in action rhymes_2"][0] === "PROGRESSIVE"
+            ? 285
+            : 295,
         y: 543,
         size: 10,
         color: rgb(0, 0, 0),
@@ -1585,7 +1610,8 @@ function Nursery_Term2() {
         color: rgb(0, 0, 0),
       });
       eighthPage.drawText(student["I am a dance enthusiast_2"][0], {
-        x: student["I am a dance enthusiast_2"][0] === "PROGRESSIVE" ? 285 : 295,
+        x:
+          student["I am a dance enthusiast_2"][0] === "PROGRESSIVE" ? 285 : 295,
         y: 217,
         size: 10,
         color: rgb(0, 0, 0),
@@ -1871,9 +1897,9 @@ function Nursery_Term2() {
       const zip = new JSZip();
 
       for (let student of userData) {
-        const existingPdfBytes = await fetch(
-          "https://innovartan.s3.amazonaws.com/8c093da373d2fcb48313cc226546ed952109776981/f58192864ec3ec0f7407de2e887940f3.pdf"
-        ).then((res) => res.arrayBuffer());
+        const existingPdfBytes = await fetch(fileURL).then((res) =>
+          res.arrayBuffer()
+        );
 
         const pdfDoc = await PDFDocument.load(existingPdfBytes);
         await fillPdfForm(student, pdfDoc);
@@ -1930,9 +1956,9 @@ function Nursery_Term2() {
 
   const fillAndDownloadSinglePdf = async (shouldDownload, shouldView) => {
     try {
-      const existingPdfBytes = await fetch(
-        "https://innovartan.s3.amazonaws.com/8c093da373d2fcb48313cc226546ed952109776981/f58192864ec3ec0f7407de2e887940f3.pdf"
-      ).then((res) => res.arrayBuffer());
+      const existingPdfBytes = await fetch(fileURL).then((res) =>
+        res.arrayBuffer()
+      );
 
       const pdfDoc = await PDFDocument.load(existingPdfBytes);
 

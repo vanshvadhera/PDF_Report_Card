@@ -10,8 +10,13 @@ import { userDataActions } from "../../../Data/Slices/UserDataSlice";
 
 function LKG_Term2() {
   const location = useLocation();
-  const { data } = location.state;
+  const { data, localPdf } = location.state;
   const userData = data.term_2;
+  console.log(localPdf, "Use localPdf ?");
+
+  const fileURL = localPdf
+    ? "https://innovartan.s3.amazonaws.com/8ff73a2c8ecb1cfa06c33357b683933c728449690/2d1e6121cbaeae89c62f94bce36f74da.pdf"
+    : "https://dpsin.s3.us-east-1.amazonaws.com/report/LKG/term2.pdf";
 
   console.log(data, "Data in Class1_Term2");
 
@@ -1080,7 +1085,9 @@ function LKG_Term2() {
       });
       seventhPage.drawText(student["I practice mindful eating_2"][0], {
         x:
-          student["I practice mindful eating_2"][0] === "PROGRESSIVE" ? 230 : 240,
+          student["I practice mindful eating_2"][0] === "PROGRESSIVE"
+            ? 230
+            : 240,
         y: 621,
         size: 10,
         color: rgb(0, 0, 0),
@@ -1152,7 +1159,8 @@ function LKG_Term2() {
         color: rgb(0, 0, 0),
       });
       seventhPage.drawText(student["I can retain and recall_2"][0], {
-        x: student["I can retain and recall_2"][0] === "PROGRESSIVE" ? 230 : 240,
+        x:
+          student["I can retain and recall_2"][0] === "PROGRESSIVE" ? 230 : 240,
         y: 513,
         size: 10,
         color: rgb(0, 0, 0),
@@ -1227,7 +1235,8 @@ function LKG_Term2() {
         color: rgb(0, 0, 0),
       });
       seventhPage.drawText(student["I seek help when needed_2"][0], {
-        x: student["I seek help when needed_2"][0] === "PROGRESSIVE" ? 230 : 240,
+        x:
+          student["I seek help when needed_2"][0] === "PROGRESSIVE" ? 230 : 240,
         y: 405,
         size: 10,
         color: rgb(0, 0, 0),
@@ -1239,7 +1248,10 @@ function LKG_Term2() {
         color: rgb(0, 0, 0),
       });
       seventhPage.drawText(student["I engage in conversation_2"][0], {
-        x: student["I engage in conversation_2"][0] === "PROGRESSIVE" ? 230 : 240,
+        x:
+          student["I engage in conversation_2"][0] === "PROGRESSIVE"
+            ? 230
+            : 240,
         y: 363,
         size: 10,
         color: rgb(0, 0, 0),
@@ -1296,7 +1308,10 @@ function LKG_Term2() {
         color: rgb(0, 0, 0),
       });
       seventhPage.drawText(student["I adopt and follow norms_2"][0], {
-        x: student["I adopt and follow norms_2"][0] === "PROGRESSIVE" ? 230 : 240,
+        x:
+          student["I adopt and follow norms_2"][0] === "PROGRESSIVE"
+            ? 230
+            : 240,
         y: 297,
         size: 10,
         color: rgb(0, 0, 0),
@@ -1324,7 +1339,9 @@ function LKG_Term2() {
       });
       seventhPage.drawText(student["I believe in my abilities_2"][0], {
         x:
-          student["I believe in my abilities_2"][0] === "PROGRESSIVE" ? 230 : 240,
+          student["I believe in my abilities_2"][0] === "PROGRESSIVE"
+            ? 230
+            : 240,
         y: 213,
         size: 10,
         color: rgb(0, 0, 0),
@@ -1382,7 +1399,9 @@ function LKG_Term2() {
       });
       seventhPage.drawText(student["I explore my surroundings_2"][0], {
         x:
-          student["I explore my surroundings_2"][0] === "PROGRESSIVE" ? 230 : 240,
+          student["I explore my surroundings_2"][0] === "PROGRESSIVE"
+            ? 230
+            : 240,
         y: 147,
         size: 10,
         color: rgb(0, 0, 0),
@@ -1704,7 +1723,10 @@ function LKG_Term2() {
           });
       }
       eighthPage.drawText(student["I can dance to the beats_2"][0], {
-        x: student["I can dance to the beats_2"][0] === "PROGRESSIVE" ? 250 : 260,
+        x:
+          student["I can dance to the beats_2"][0] === "PROGRESSIVE"
+            ? 250
+            : 260,
         y: 200,
         size: 10,
         color: rgb(0, 0, 0),
@@ -1716,7 +1738,8 @@ function LKG_Term2() {
         color: rgb(0, 0, 0),
       });
       eighthPage.drawText(student["I am a dance enthusiast_2"][0], {
-        x: student["I am a dance enthusiast_2"][0] === "PROGRESSIVE" ? 250 : 260,
+        x:
+          student["I am a dance enthusiast_2"][0] === "PROGRESSIVE" ? 250 : 260,
         y: 158,
         size: 10,
         color: rgb(0, 0, 0),
@@ -1887,12 +1910,15 @@ function LKG_Term2() {
           color: rgb(0, 0, 0),
         }
       );
-      ninthPage.drawText(student["I can team up with others_2"][0].slice(0, 20), {
-        x: 303,
-        y: 369,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
+      ninthPage.drawText(
+        student["I can team up with others_2"][0].slice(0, 20),
+        {
+          x: 303,
+          y: 369,
+          size: 12,
+          color: rgb(0, 0, 0),
+        }
+      );
       ninthPage.drawText(
         student["I can team up with others_2"][0].slice(21, 40),
         {
@@ -1988,9 +2014,9 @@ function LKG_Term2() {
       const zip = new JSZip();
 
       for (let student of userData) {
-        const existingPdfBytes = await fetch(
-          "https://innovartan.s3.amazonaws.com/8ff73a2c8ecb1cfa06c33357b683933c728449690/2d1e6121cbaeae89c62f94bce36f74da.pdf"
-        ).then((res) => res.arrayBuffer());
+        const existingPdfBytes = await fetch(fileURL).then((res) =>
+          res.arrayBuffer()
+        );
 
         const pdfDoc = await PDFDocument.load(existingPdfBytes);
         await fillPdfForm(student, pdfDoc);
@@ -2047,9 +2073,9 @@ function LKG_Term2() {
 
   const fillAndDownloadSinglePdf = async (shouldDownload, shouldView) => {
     try {
-      const existingPdfBytes = await fetch(
-        "https://innovartan.s3.amazonaws.com/8ff73a2c8ecb1cfa06c33357b683933c728449690/2d1e6121cbaeae89c62f94bce36f74da.pdf"
-      ).then((res) => res.arrayBuffer());
+      const existingPdfBytes = await fetch(fileURL).then((res) =>
+        res.arrayBuffer()
+      );
 
       const pdfDoc = await PDFDocument.load(existingPdfBytes);
 
