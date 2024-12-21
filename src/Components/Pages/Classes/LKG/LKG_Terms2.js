@@ -51,6 +51,11 @@ function LKG_Term2() {
         res.arrayBuffer()
       );
 
+      const teacherSign3Url = student.teacher_sign_3;
+      const teacherSign3Bytes = await fetch(teacherSign3Url).then((res) =>
+        res.arrayBuffer()
+      );
+
       const familyPhotoUrl = student.family_photo;
       const familyPhotoBytes = await fetch(familyPhotoUrl).then((res) =>
         res.arrayBuffer()
@@ -74,6 +79,7 @@ function LKG_Term2() {
       const image = await pdfDoc.embedJpg(imageBytes);
       const teacherSign1Image = await pdfDoc.embedJpg(teacherSign1Bytes);
       const teacherSign2Image = await pdfDoc.embedJpg(teacherSign2Bytes);
+      const teacherSign3Image = await pdfDoc.embedJpg(teacherSign3Bytes);
       const familyPhotImage = await pdfDoc.embedJpg(familyPhotoBytes);
       //   const groupPhotImage = await pdfDoc.embedJpg(groupPhotBytes);
       const myPagePhotoImage = await pdfDoc.embedJpg(myPagePhotoBytes);
@@ -1989,7 +1995,7 @@ function LKG_Term2() {
         width: 70,
         height: 30,
       });
-      ninthPage.drawImage(teacherSign2Image, {
+      ninthPage.drawImage(teacherSign3Image, {
         x: 140,
         y: 82,
         width: 70,
