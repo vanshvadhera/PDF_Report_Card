@@ -19,6 +19,7 @@ import Class5_Term1 from "./Components/Pages/Classes/Class5/Class5_Term1";
 import Nursery_Term2 from "./Components/Pages/Classes/Nursery/Nursery_Term2";
 import LKG_Term2 from "./Components/Pages/Classes/LKG/LKG_Terms2";
 import Ukg_Term2 from "./Components/Pages/Classes/UKG/UKG_Term2";
+import Nursery_Term3 from "./Components/Pages/Classes/Nursery/Nursery_Term3";
 
 const RootPage = () => {
   const userState = useSelector((state) => state.userData);
@@ -66,6 +67,15 @@ const RootPage = () => {
             <CustomNavbar>
               {/* eslint-disable-next-line */}
               <Nursery_Term2 />
+            </CustomNavbar>
+          }
+        />
+        <Route
+          path="/classnur/term3"
+          element={
+            <CustomNavbar>
+              {/* eslint-disable-next-line */}
+              <Nursery_Term3 />
             </CustomNavbar>
           }
         />
