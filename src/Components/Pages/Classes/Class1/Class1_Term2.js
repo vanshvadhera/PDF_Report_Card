@@ -9,7 +9,7 @@ import { useLocation } from "react-router";
 function Class1_Term2() {
   const location = useLocation();
   const { data } = location.state;
-  const userData = data.term_1;
+  const userData = data.term_2;
   console.log(data, "Data in Class1_Term2");
 
   const [selectedStudent, setSelectedStudent] = useState(userData[0]);
@@ -64,25 +64,25 @@ function Class1_Term2() {
         width: 134,
         height: 175,
       });
-      firstPage.drawText(student["Student Name"], {
+      firstPage.drawText(student["Student Name"][0], {
         x: 200,
         y: 255,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      firstPage.drawText(student.Section, {
+      firstPage.drawText(student.Section[0], {
         x: 480,
         y: 255,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      firstPage.drawText(student["Admission No."], {
+      firstPage.drawText(student["Admission No."][0], {
         x: 168,
         y: 222,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      firstPage.drawText(student["Roll No."], {
+      firstPage.drawText(student["Roll No."][0], {
         x: 295,
         y: 222,
         size: 10,
@@ -144,7 +144,7 @@ function Class1_Term2() {
         color: rgb(0, 0, 0),
       });
 
-      thirdPage.drawText(student["English Language Competency"], {
+      thirdPage.drawText(student["English Language Competency"][0], {
         x: 293,
         y: 695,
         size: 10,
