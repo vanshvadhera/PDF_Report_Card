@@ -55,17 +55,17 @@ function Nursery_Term3() {
       //     res.arrayBuffer()
       //   );
 
-      // const myPagePhotoUrl = student.my_page_photo;
-      // const myPagePhotoBytes = await fetch(myPagePhotoUrl).then((res) =>
-      //   res.arrayBuffer()
-      // );
+      const myPagePhotoUrl = student.my_page_photo;
+      const myPagePhotoBytes = await fetch(myPagePhotoUrl).then((res) =>
+        res.arrayBuffer()
+      );
 
       const image = await pdfDoc.embedJpg(imageBytes);
       const teacherSign1Image = await pdfDoc.embedJpg(teacherSign1Bytes);
       const teacherSign2Image = await pdfDoc.embedJpg(teacherSign2Bytes);
       const familyPhotImage = await pdfDoc.embedJpg(familyPhotoBytes);
       // const groupPhotImage = await pdfDoc.embedJpg(groupPhotBytes);
-      // const myPagePhotoImage = await pdfDoc.embedJpg(myPagePhotoBytes);
+      const myPagePhotoImage = await pdfDoc.embedJpg(myPagePhotoBytes);
 
       const pages = pdfDoc.getPages();
       const firstPage = pages[0];
@@ -73,7 +73,7 @@ function Nursery_Term3() {
       const thirdPage = pages[2];
       const fourthPage = pages[3];
       const fifthPage = pages[4];
-      // const sixthPage = pages[5];
+      const sixthPage = pages[5];
       const seventhPage = pages[6];
       const eighthPage = pages[7];
       const ninthPage = pages[8];
@@ -1143,12 +1143,12 @@ function Nursery_Term3() {
         width: 70,
         height: 30,
       });
-      //   sixthPage.drawImage(myPagePhotoImage, {
-      //     x: 55,
-      //     y: 106,
-      //     width: 480,
-      //     height: 590,
-      //   });
+        sixthPage.drawImage(myPagePhotoImage, {
+          x: 55,
+          y: 106,
+          width: 480,
+          height: 590,
+        });
 
       // thirdPage.drawText ->
       seventhPage.drawText(student["I love cleanliness_2"][0], {
