@@ -11,13 +11,13 @@ import { userDataActions } from "../../../Data/Slices/UserDataSlice";
 function Class3_Term1() {
   const location = useLocation();
   const { data, localPdf } = location.state;
-  const userData = data.term_1;
-    console.log(data, "Data in Class3_Term1");
-  // console.log(localPdf, "Use localPdf ?");
+  const userData = data.term_2;
+  console.log(data, "Data in Class3_Term2");
+  //   console.log(localPdf, "Use localPdf ?");
 
   const fileURL = localPdf
-    ? "https://innovartan.s3.amazonaws.com/10f755159d81b7a7ef9c14b7c9d072531369542047/b500a3de62d0a34bc0aae7117bd358b2.pdf"
-    : "https://dpsin.s3.amazonaws.com/report/III/term1.pdf";
+    ? "https://innovartan.s3.amazonaws.com/776540f593b44804e9bab4683850acba1205709531/c12f6852fdeefbf14481468882e75224.pdf"
+    : "https://dpsin.s3.amazonaws.com/report/III/term2.pdf";
 
   const dispatch = useDispatch();
 
@@ -49,26 +49,26 @@ function Class3_Term1() {
         res.arrayBuffer()
       );
 
-      // const teacherSign2Url = student.teacher_sign_2;
-      // const teacherSign2Bytes = await fetch(teacherSign2Url).then((res) =>
-      //   res.arrayBuffer()
-      // );
+      const teacherSign2Url = student.teacher_sign_2;
+      const teacherSign2Bytes = await fetch(teacherSign2Url).then((res) =>
+        res.arrayBuffer()
+      );
 
       // const familyPhotoUrl = student.family_photo
       // const familyPhotoBytes = await fetch(familyPhotoUrl).then((res) =>
       //   res.arrayBuffer()
       // );
 
-      // const groupPhotUrl = student.group_photo;
-      // const groupPhotBytes = await fetch(groupPhotUrl).then((res) =>
-      //   res.arrayBuffer()
-      // );
+      const groupPhotUrl = student.group_photo;
+      const groupPhotBytes = await fetch(groupPhotUrl).then((res) =>
+        res.arrayBuffer()
+      );
 
       const image = await pdfDoc.embedJpg(imageBytes);
       const teacherSign1Image = await pdfDoc.embedJpg(teacherSign1Bytes);
-      // const teacherSign2Image = await pdfDoc.embedJpg(teacherSign2Bytes);
+      const teacherSign2Image = await pdfDoc.embedJpg(teacherSign2Bytes);
       // const familyPhotImage = await pdfDoc.embedJpg(familyPhotoBytes);
-      // const groupPhotImage = await pdfDoc.embedJpg(groupPhotBytes);
+      const groupPhotImage = await pdfDoc.embedJpg(groupPhotBytes);
 
       const pages = pdfDoc.getPages();
       const firstPage = pages[0];
@@ -81,6 +81,11 @@ function Class3_Term1() {
       const eighthPage = pages[7];
       const ninthPage = pages[8];
       const tenthPage = pages[9];
+      const eleventhPage = pages[10];
+      const twevelthPage = pages[11];
+      const thirteenPage = pages[12];
+      const fourteenPage = pages[13];
+      const fifteenthPage = pages[14];
 
       // Insert data dynamically from the student's record
       firstPage.drawImage(image, {
@@ -1537,7 +1542,869 @@ function Class3_Term1() {
       //   rotate: degrees(90),
       // });
 
-      // More drawing based on the student's data...
+      {
+        student["ACADEMIC GOALS (Term II)_2"][0] &&
+          tenthPage.drawText(student["ACADEMIC GOALS (Term II)_2"][0], {
+            x: 57,
+            y: 670,
+            size: 14,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["ACADEMIC GOALS (Term II)_2"][1] &&
+          tenthPage.drawText(student["ACADEMIC GOALS (Term II)_2"][1], {
+            x: 57,
+            y: 649,
+            size: 14,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["ACADEMIC GOALS (Term II)_2"][2] &&
+          tenthPage.drawText(student["ACADEMIC GOALS (Term II)_2"][2], {
+            x: 57,
+            y: 631,
+            size: 14,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["ACADEMIC GOALS (Term II)_2"][3] &&
+          tenthPage.drawText(student["ACADEMIC GOALS (Term II)_2"][3], {
+            x: 57,
+            y: 607,
+            size: 14,
+            color: rgb(0, 0, 0),
+          });
+      }
+
+      {
+        student["ACADEMIC ACHIEVEMENT (Term II)_2"][0] &&
+          tenthPage.drawText(student["ACADEMIC ACHIEVEMENT (Term II)_2"][0], {
+            x: 68,
+            y: 517,
+            size: 14,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["ACADEMIC ACHIEVEMENT (Term II)_2"][1] &&
+          tenthPage.drawText(student["ACADEMIC ACHIEVEMENT (Term II)_2"][1], {
+            x: 68,
+            y: 491,
+            size: 14,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["ACADEMIC ACHIEVEMENT (Term II)_2"][2] &&
+          tenthPage.drawText(student["ACADEMIC ACHIEVEMENT (Term II)_2"][2], {
+            x: 68,
+            y: 471,
+            size: 14,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["ACADEMIC ACHIEVEMENT (Term II)_2"][3] &&
+          tenthPage.drawText(student["ACADEMIC ACHIEVEMENT (Term II)_2"][3], {
+            x: 68,
+            y: 448,
+            size: 14,
+            color: rgb(0, 0, 0),
+          });
+      }
+
+      {
+        student["NON ACADEMIC GOALS (Term II)_2"][0] &&
+          tenthPage.drawText(student["NON ACADEMIC GOALS (Term II)_2"][0], {
+            x: 57,
+            y: 323,
+            size: 14,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["NON ACADEMIC GOALS (Term II)_2"][1] &&
+          tenthPage.drawText(student["NON ACADEMIC GOALS (Term II)_2"][1], {
+            x: 57,
+            y: 300,
+            size: 14,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["NON ACADEMIC GOALS (Term II)_2"][2] &&
+          tenthPage.drawText(student["NON ACADEMIC GOALS (Term II)_2"][2], {
+            x: 57,
+            y: 281,
+            size: 14,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["NON ACADEMIC GOALS (Term II)_2"][3] &&
+          tenthPage.drawText(student["NON ACADEMIC GOALS (Term II)_2"][3], {
+            x: 57,
+            y: 263,
+            size: 14,
+            color: rgb(0, 0, 0),
+          });
+      }
+
+      {
+        student["NON ACADEMIC ACHIEVEMENT (Term II)_2"][0] &&
+          tenthPage.drawText(
+            student["NON ACADEMIC ACHIEVEMENT (Term II)_2"][0],
+            {
+              x: 68,
+              y: 173,
+              size: 14,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+      {
+        student["NON ACADEMIC ACHIEVEMENT (Term II)_2"][1] &&
+          tenthPage.drawText(
+            student["NON ACADEMIC ACHIEVEMENT (Term II)_2"][1],
+            {
+              x: 68,
+              y: 151,
+              size: 14,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+      {
+        student["NON ACADEMIC ACHIEVEMENT (Term II)_2"][2] &&
+          tenthPage.drawText(
+            student["NON ACADEMIC ACHIEVEMENT (Term II)_2"][2],
+            {
+              x: 68,
+              y: 130,
+              size: 14,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+      {
+        student["NON ACADEMIC ACHIEVEMENT (Term II)_2"][3] &&
+          tenthPage.drawText(
+            student["NON ACADEMIC ACHIEVEMENT (Term II)_2"][3],
+            {
+              x: 68,
+              y: 107,
+              size: 14,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+
+      eleventhPage.drawText(student["ENGLISH PERIODIC TEST-II (35)_2"][0], {
+        x: 279,
+        y: 708,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      eleventhPage.drawText(student["ENGLISH MA2+SEA2+NW (5+5+5=15)_2"][0], {
+        x: 340,
+        y: 708,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      eleventhPage.drawText(student["ENGLISH TOTAL MARKS (100)_2"][0], {
+        x: 473,
+        y: 708,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+
+      eleventhPage.drawText(student["ENGLISH GRADE_2"][0], {
+        x: 533,
+        y: 708,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+
+      eleventhPage.drawText(student["HINDI PERIODIC TEST-II (35)_2"][0], {
+        x: 279,
+        y: 689,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      eleventhPage.drawText(student["HINDI MA2+SEA2+NW (5+5+5=15)_2"][0], {
+        x: 340,
+        y: 689,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+
+      eleventhPage.drawText(student["HINDI TOTAL MARKS (100)_2"][0], {
+        x: 473,
+        y: 689,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      eleventhPage.drawText(student["HINDI GRADE_2"][0], {
+        x: 533,
+        y: 689,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+
+      eleventhPage.drawText(student["MATHEMATICS PERIODIC TEST-II (35)_2"][0], {
+        x: 279,
+        y: 670,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      eleventhPage.drawText(
+        student["MATHEMATICS MA2+SEA2+NW (5+5+5=15)_2"][0],
+        {
+          x: 340,
+          y: 670,
+          size: 12,
+          color: rgb(0, 0, 0),
+        }
+      );
+      eleventhPage.drawText(student["MATHEMATICS HALF YEARLY EXAM (50)"][0], {
+        x: 407,
+        y: 670,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      eleventhPage.drawText(student["MATHEMATICS TOTAL MARKS (100)_2"][0], {
+        x: 473,
+        y: 670,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      eleventhPage.drawText(student["MATHEMATICS GRADE_2"][0], {
+        x: 533,
+        y: 670,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      eleventhPage.drawText(student["EVS PERIODIC TEST-II (35)_2"][0], {
+        x: 279,
+        y: 651,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      eleventhPage.drawText(student["EVS MA2+SEA2+NW (5+5+5=15)_2"][0], {
+        x: 340,
+        y: 651,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      eleventhPage.drawText(student["EVS HALF YEARLY EXAM (50)"][0], {
+        x: 407,
+        y: 651,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      eleventhPage.drawText(student["EVS TOTAL MARKS (100)_2"][0], {
+        x: 473,
+        y: 651,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      eleventhPage.drawText(student["EVS GRADE_2"][0], {
+        x: 533,
+        y: 651,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      eleventhPage.drawText(
+        student["COMPUTER SCIENCE PERIODIC TEST-II (50)_2"][0],
+        {
+          x: 270,
+          y: 632,
+          size: 12,
+          color: rgb(0, 0, 0),
+        }
+      );
+      eleventhPage.drawText(
+        student["COMPUTER SCIENCE MA2+SEA2+NW (5+5+5=15)_2"][0],
+        {
+          x: 340,
+          y: 632,
+          size: 12,
+          color: rgb(0, 0, 0),
+        }
+      );
+      eleventhPage.drawText(
+        student["COMPUTER SCIENCE HALF YEARLY EXAM (50)"][0],
+        {
+          x: 407,
+          y: 632,
+          size: 12,
+          color: rgb(0, 0, 0),
+        }
+      );
+      eleventhPage.drawText(
+        student["COMPUTER SCIENCE TOTAL MARKS (100)_2"][0],
+        {
+          x: 473,
+          y: 632,
+          size: 12,
+          color: rgb(0, 0, 0),
+        }
+      );
+      eleventhPage.drawText(student["COMPUTER SCIENCE GRADE_2"][0], {
+        x: 533,
+        y: 632,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      eleventhPage.drawText(student["GRAND TOTAL_2"][0], {
+        x: 470,
+        y: 613,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      eleventhPage.drawText(student["GRADE_2"][0], {
+        x: 533,
+        y: 613,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      eleventhPage.drawText(student["ATTENDANCE_2"][0], {
+        x: 300,
+        y: 594,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      eleventhPage.drawText(student["PERCENTAGE_2"][0], {
+        x: 530,
+        y: 594,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+
+      eleventhPage.drawText(student["ART AND CRAFT Grade_2"][0], {
+        x: 407,
+        y: 537,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      eleventhPage.drawText(student["MUSIC Grade_2"][0], {
+        x: 407,
+        y: 518,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      eleventhPage.drawText(student["DANCE Grade_2"][0], {
+        x: 407,
+        y: 499,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+
+      eleventhPage.drawText(student["PHYSICAL EDUCATION Grade_2"][0], {
+        x: 407,
+        y: 480,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      eleventhPage.drawText(student["DISCIPLINE Grade_2"][0], {
+        x: 407,
+        y: 461,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      eleventhPage.drawText(student["GENERAL KNOWLEDGE Grade_2"][0], {
+        x: 407,
+        y: 442,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      eleventhPage.drawText(student["FRIDAY ACTIVITY Grade_2"][0], {
+        x: 407,
+        y: 423,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+
+      {
+        student["REMARKS BY THE CLASS TEACHER_2"][0] &&
+          eleventhPage.drawText(student["REMARKS BY THE CLASS TEACHER_2"][0], {
+            x: 45,
+            y: 380,
+            size: 12,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["REMARKS BY THE CLASS TEACHER_2"][1] &&
+          eleventhPage.drawText(student["REMARKS BY THE CLASS TEACHER_2"][1], {
+            x: 45,
+            y: 365,
+            size: 12,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["REMARKS BY THE CLASS TEACHER_2"][2] &&
+          eleventhPage.drawText(student["REMARKS BY THE CLASS TEACHER_2"][2], {
+            x: 45,
+            y: 350,
+            size: 12,
+            color: rgb(0, 0, 0),
+          });
+      }
+
+      eleventhPage.drawImage(teacherSign2Image, {
+        x: 250,
+        y: 280,
+        width: 100,
+        height: 30,
+      });
+
+      //   twevelthPage
+
+      twevelthPage.drawText(student["ENGLISH TERM I (50)_2"][0], {
+        x: 268,
+        y: 641,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      twevelthPage.drawText(student["ENGLISH TERM II (50)_2"][0], {
+        x: 343,
+        y: 641,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      twevelthPage.drawText(student["ENGLISH TOTAL MARKS (100)"][0], {
+        x: 430,
+        y: 641,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      twevelthPage.drawText(student["ENGLISH GRADE"][0], {
+        x: 520,
+        y: 641,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      twevelthPage.drawText(student["HINDI TERM I (50)_2"][0], {
+        x: 268,
+        y: 613,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      twevelthPage.drawText(student["HINDI TERM II (50)_2"][0], {
+        x: 343,
+        y: 613,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+
+      twevelthPage.drawText(student["HINDI TOTAL MARKS (100)"][0], {
+        x: 430,
+        y: 613,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+
+      twevelthPage.drawText(student["HINDI GRADE"][0], {
+        x: 520,
+        y: 613,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+
+      twevelthPage.drawText(student["MATHEMATICS TERM I (50)_2"][0], {
+        x: 267,
+        y: 584,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      twevelthPage.drawText(student["MATHEMATICS TERM II (50)_2"][0], {
+        x: 342,
+        y: 584,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+
+      twevelthPage.drawText(student["MATHEMATICS TOTAL MARKS (100)"][0], {
+        x: 429,
+        y: 584,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+
+      twevelthPage.drawText(student["MATHEMATICS GRADE"][0], {
+        x: 519,
+        y: 584,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+
+      twevelthPage.drawText(student["EVS TERM I (50)_2"][0], {
+        x: 268,
+        y: 555,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      twevelthPage.drawText(student["EVS TERM II (50)_2"][0], {
+        x: 343,
+        y: 555,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+
+      twevelthPage.drawText(student["EVS TOTAL MARKS (100)"][0], {
+        x: 430,
+        y: 555,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+
+      twevelthPage.drawText(student["EVS GRADE"][0], {
+        x: 520,
+        y: 555,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+
+      twevelthPage.drawText(student["COMPUTER SCIENCE TERM I (50)_2"][0], {
+        x: 268,
+        y: 526,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      twevelthPage.drawText(student["COMPUTER SCIENCE TERM II (50)_2"][0], {
+        x: 343,
+        y: 526,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+
+      twevelthPage.drawText(student["COMPUTER SCIENCE TOTAL MARKS (100)"][0], {
+        x: 430,
+        y: 526,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+
+      twevelthPage.drawText(student["COMPUTER SCIENCE GRADE"][0], {
+        x: 520,
+        y: 526,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      twevelthPage.drawText(student["GRAND TOTAL_2"][0], {
+        x: 300,
+        y: 495,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      twevelthPage.drawText(student["Grand Total_2"][0], {
+        x: 430,
+        y: 495,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      twevelthPage.drawText(student["Grade_2"][0], {
+        x: 520,
+        y: 495,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+
+      twevelthPage.drawText(student["ATTENDANCE_2"][0], {
+        x: 300,
+        y: 465,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      twevelthPage.drawText(student["PERCENTAGE_2"][0], {
+        x: 517,
+        y: 465,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      twevelthPage.drawImage(teacherSign2Image, {
+        x: 250,
+        y: 340,
+        width: 100,
+        height: 30,
+      });
+
+      {
+        student["SELF ASSESSMENT_2"][0] &&
+          thirteenPage.drawText(student["SELF ASSESSMENT_2"][0], {
+            x: 45,
+            y: 660,
+            size: 12,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["SELF ASSESSMENT_2"][1] &&
+          thirteenPage.drawText(student["SELF ASSESSMENT_2"][1], {
+            x: 45,
+            y: 645,
+            size: 12,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["SELF ASSESSMENT_2"][2] &&
+          thirteenPage.drawText(student["SELF ASSESSMENT_2"][2], {
+            x: 45,
+            y: 630,
+            size: 12,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["SELF ASSESSMENT_2"][3] &&
+          thirteenPage.drawText(student["SELF ASSESSMENT_2"][3], {
+            x: 45,
+            y: 650,
+            size: 12,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["SELF ASSESSMENT_2"][4] &&
+          thirteenPage.drawText(student["SELF ASSESSMENT_2"][4], {
+            x: 45,
+            y: 650,
+            size: 12,
+            color: rgb(0, 0, 0),
+          });
+      }
+
+      {
+        student["PEER FEEDBACK_2"][0] &&
+          thirteenPage.drawText(student["PEER FEEDBACK_2"][0], {
+            x: 45,
+            y: 530,
+            size: 12,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["PEER FEEDBACK_2"][1] &&
+          thirteenPage.drawText(student["PEER FEEDBACK_2"][1], {
+            x: 45,
+            y: 515,
+            size: 12,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["PEER FEEDBACK_2"][2] &&
+          thirteenPage.drawText(student["PEER FEEDBACK_2"][2], {
+            x: 45,
+            y: 500,
+            size: 12,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["PEER FEEDBACK_2"][3] &&
+          thirteenPage.drawText(student["PEER FEEDBACK_2"][3], {
+            x: 45,
+            y: 510,
+            size: 12,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["PEER FEEDBACK_2"][4] &&
+          thirteenPage.drawText(student["PEER FEEDBACK_2"][4], {
+            x: 45,
+            y: 510,
+            size: 12,
+            color: rgb(0, 0, 0),
+          });
+      }
+
+      {
+        student["PARENTAL FEEDBACK_2"][0] &&
+          thirteenPage.drawText(student["PARENTAL FEEDBACK_2"][0], {
+            x: 45,
+            y: 398,
+            size: 12,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["PARENTAL FEEDBACK_2"][1] &&
+          thirteenPage.drawText(student["PARENTAL FEEDBACK_2"][1], {
+            x: 45,
+            y: 385,
+            size: 12,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["PARENTAL FEEDBACK_2"][2] &&
+          thirteenPage.drawText(student["PARENTAL FEEDBACK_2"][2], {
+            x: 45,
+            y: 372,
+            size: 12,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["PARENTAL FEEDBACK_2"][3] &&
+          thirteenPage.drawText(student["PARENTAL FEEDBACK_2"][3], {
+            x: 45,
+            y: 359,
+            size: 12,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["CLASS TEACHER’S FEEDBACK_2"][0] &&
+          thirteenPage.drawText(student["CLASS TEACHER’S FEEDBACK_2"][0], {
+            x: 45,
+            y: 302,
+            size: 12,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["CLASS TEACHER’S FEEDBACK_2"][1] &&
+          thirteenPage.drawText(student["CLASS TEACHER’S FEEDBACK_2"][1], {
+            x: 45,
+            y: 287,
+            size: 12,
+            color: rgb(0, 0, 0),
+          });
+      }
+
+      {
+        student["CLASS TEACHER’S FEEDBACK_2"][2] &&
+          thirteenPage.drawText(student["CLASS TEACHER’S FEEDBACK_2"][2], {
+            x: 45,
+            y: 273,
+            size: 12,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["CLASS TEACHER’S FEEDBACK_2"][3] &&
+          thirteenPage.drawText(student["CLASS TEACHER’S FEEDBACK_2"][3], {
+            x: 45,
+            y: 259,
+            size: 12,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["CLASS TEACHER’S FEEDBACK_2"][4] &&
+          thirteenPage.drawText(student["CLASS TEACHER’S FEEDBACK_2"][4], {
+            x: 45,
+            y: 245,
+            size: 12,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["CLASS TEACHER’S FEEDBACK_2"][5] &&
+          thirteenPage.drawText(student["CLASS TEACHER’S FEEDBACK_2"][5], {
+            x: 45,
+            y: 231,
+            size: 12,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["CLASS TEACHER’S FEEDBACK_2"][6] &&
+          thirteenPage.drawText(student["CLASS TEACHER’S FEEDBACK_2"][6], {
+            x: 45,
+            y: 217,
+            size: 12,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["CLASS TEACHER’S FEEDBACK_2"][7] &&
+          thirteenPage.drawText(student["CLASS TEACHER’S FEEDBACK_2"][7], {
+            x: 45,
+            y: 203,
+            size: 12,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["CLASS TEACHER’S FEEDBACK_2"][8] &&
+          thirteenPage.drawText(student["CLASS TEACHER’S FEEDBACK_2"][8], {
+            x: 45,
+            y: 189,
+            size: 12,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["CLASS TEACHER’S FEEDBACK_2"][9] &&
+          thirteenPage.drawText(student["CLASS TEACHER’S FEEDBACK_2"][9], {
+            x: 430,
+            y: 189,
+            size: 12,
+            color: rgb(0, 0, 0),
+          });
+      }
+      //
+      thirteenPage.drawText(student["You have been promoted to Class_2"][0], {
+        x: 240,
+        y: 113,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      thirteenPage.drawText(student["Sec_2"][0], {
+        x: 330,
+        y: 113,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      thirteenPage.drawText(student["The new session begins on:_2"][0], {
+        x: 205,
+        y: 92,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      fourteenPage.drawText(student["TERM I Height (cms)_2"][0], {
+        x: 90,
+        y: 233,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      fourteenPage.drawText(student["TERM I Weight (kgs)_2"][0], {
+        x: 90,
+        y: 148,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+
+      fourteenPage.drawText(student["TERM II Height (cms)_2"][0], {
+        x: 470,
+        y: 236,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      fourteenPage.drawText(student["TERM II Weight (kgs)_2"][0], {
+        x: 470,
+        y: 151,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+
+      fifteenthPage.drawImage(groupPhotImage, {
+        x: 0,
+        y: 200,
+        width: 600,
+        height: 600,
+        // rotate: degrees(90),
+      });
     } catch (error) {
       console.error("Error filling PDF form:", error);
     }

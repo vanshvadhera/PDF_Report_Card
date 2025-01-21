@@ -17,7 +17,7 @@ function Ukg_Term3() {
 
   const fileURL = localPdf
     ? "https://innovartan.s3.amazonaws.com/31b9e042df6102c2d14d3b76cf105ef81547917052/6c56527e474c9f6c88511446067172dd.pdf"
-    : "https://dpsin.s3.us-east-1.amazonaws.com/report/UKG/term2.pdf";
+    : "https://dpsin.s3.us-east-1.amazonaws.com/report/UKG/term3.pdf";
 
   const dispatch = useDispatch();
 

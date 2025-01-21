@@ -14,6 +14,7 @@ import Class2_Term1 from "./Components/Pages/Classes/Class2/Class2_Term1";
 import Ukg_Term1 from "./Components/Pages/Classes/UKG/UKG_Term1";
 import LKG_Term1 from "./Components/Pages/Classes/LKG/LKG_Term1";
 import Class3_Term1 from "./Components/Pages/Classes/Class3/Class3_Term1";
+import Class3_Term2 from "./Components/Pages/Classes/Class3/Class3_Term2";
 import Class4_Term1 from "./Components/Pages/Classes/Class4/Class4_Term1";
 import Class5_Term1 from "./Components/Pages/Classes/Class5/Class5_Term1";
 import Nursery_Term2 from "./Components/Pages/Classes/Nursery/Nursery_Term2";
@@ -177,6 +178,15 @@ const RootPage = () => {
             <CustomNavbar>
               {/* eslint-disable-next-line */}
               <Class3_Term1 />
+            </CustomNavbar>
+          }
+        />
+        <Route
+          path="/classiii/term2"
+          element={
+            <CustomNavbar>
+              {/* eslint-disable-next-line */}
+              <Class3_Term2 />
             </CustomNavbar>
           }
         />
