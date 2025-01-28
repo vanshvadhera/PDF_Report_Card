@@ -2143,11 +2143,7 @@
 // export default Class1_Term2;
 
 import React, { useState, useRef } from "react";
-<<<<<<< HEAD
-import { PDFDocument, rgb , degrees } from "pdf-lib";
-=======
 import { PDFDocument, rgb, degrees } from "pdf-lib";
->>>>>>> e23227d9e6e1a5f72e4afd532386f9f5e21f4a5c
 import download from "downloadjs";
 import JSZip from "jszip";
 // import { userData } from "../../../UserData/UserData";
@@ -4034,85 +4030,6 @@ function Class1_Term1() {
           );
       }
 
-<<<<<<< HEAD
-      {
-        student["Honors To My Name_2"][0] &&
-          ninthPage.drawText(student["Honors To My Name_2"][0], {
-            x: 95,
-            y: 625,
-            size: 12,
-            color: rgb(0, 0, 0),
-          });
-      }
-      {
-        student["Honors To My Name_2"][1] &&
-          ninthPage.drawText(student["Honors To My Name_2"][1], {
-            x: 95,
-            y: 640,
-            size: 12,
-            color: rgb(0, 0, 0),
-          });
-      }
-      {
-        student["Honors To My Name_2"][2] &&
-          ninthPage.drawText(student["Honors To My Name_2"][2], {
-            x: 95,
-            y: 625,
-            size: 12,
-            color: rgb(0, 0, 0),
-          });
-      }
-      {
-        student["Teacher's Holistic Over View_2"][0] &&
-          ninthPage.drawText(student["Teacher's Holistic Over View_2"][0], {
-            x: 95,
-            y: 535,
-            size: 12,
-            color: rgb(0, 0, 0),
-          });
-      }
-      {
-        student["Teacher's Holistic Over View_2"][1] &&
-          ninthPage.drawText(student["Teacher's Holistic Over View_2"][1], {
-            x: 95,
-            y: 520,
-            size: 12,
-            color: rgb(0, 0, 0),
-          });
-      }
-      {
-        student["Teacher's Holistic Over View_2"][2] &&
-          ninthPage.drawText(student["Teacher's Holistic Over View_2"][2], {
-            x: 95,
-            y: 505,
-            size: 12,
-            color: rgb(0, 0, 0),
-          });
-      }
-      {
-        student["Parent's Reflection_2"][0] &&
-          ninthPage.drawText(student["Parent's Reflection_2"][0], {
-            x: 95,
-            y: 432,
-            size: 12,
-            color: rgb(0, 0, 0),
-          });
-      }
-      {
-        student["Parent's Reflection_2"][1] &&
-          ninthPage.drawText(student["Parent's Reflection_2"][1], {
-            x: 95,
-            y: 422,
-            size: 12,
-            color: rgb(0, 0, 0),
-          });
-      }
-      {
-        student["Parent's Reflection_2"][2] &&
-          ninthPage.drawText(student["Parent's Reflection_2"][2], {
-            x: 95,
-            y: 402,
-=======
       ninthPage.drawText(student["I Enjoy Visiting_2"][0], {
         x: 80,
         y: 574,
@@ -4192,21 +4109,10 @@ function Class1_Term1() {
           tenthPage.drawText(student["Honors To My Name_2"][0], {
             x: 95,
             y: 650,
->>>>>>> e23227d9e6e1a5f72e4afd532386f9f5e21f4a5c
             size: 12,
             color: rgb(0, 0, 0),
           });
       }
-<<<<<<< HEAD
-
-      ninthPage.drawText(student["I’m happy to go to Class ……_2"][0], {
-        x: 357,
-        y: 38,
-        size: 14,
-        color: rgb(0, 0, 0),
-      });
-      ninthPage.drawImage(teacherSign2Image, {
-=======
       // {
       //   student["Honors To My Name_2"][1] &&
       //     tenthPage.drawText(student["Honors To My Name_2"][1], {
@@ -4281,95 +4187,11 @@ function Class1_Term1() {
       // }
 
       tenthPage.drawImage(teacherSign2Image, {
->>>>>>> e23227d9e6e1a5f72e4afd532386f9f5e21f4a5c
         x: 90,
         y: 400,
         width: 100,
         height: 30,
       });
-<<<<<<< HEAD
-      
-      tenthPage.drawText(student["I Enjoy Visiting_2"][0], {
-        x: 80,
-        y: 574,
-        size: 14,
-        color: rgb(0, 0, 0),
-      });
-      tenthPage.drawText(student["My Biggest Strength is_2"][0], {
-        x: 375,
-        y: 563,
-        size: 14,
-        color: rgb(0, 0, 0),
-      });
-      
-  
-      tenthPage.drawText(student["I Aspire To Be_2"][0], {
-        x: 80,
-        y: 408,
-        size: 14,
-        color: rgb(0, 0, 0),
-      });
-
-      tenthPage.drawText(student["I Am Glad To Be _________ years_2"][0], {
-        x: 420,
-        y: 413,
-        size: 14,
-        color: rgb(0, 0, 0),
-      });
-      
-      // tenthPage.drawText(student["I’m Growing Each Day ______cms & ____ in kgs_2"][0], {
-      //   x: 60,
-      //   y: 243,
-      //   size: 14,
-      //   color: rgb(0, 0, 0),
-      // });
-      tenthPage.drawText(student["Total No. Of Working Days_2"][0], {
-        x: 515,
-        y: 256,
-        size: 14,
-        color: rgb(0, 0, 0),
-      });
-      tenthPage.drawText(student["No. Of Days Present_2"][0], {
-        x: 510,
-        y: 235,
-        size: 14,
-        color: rgb(0, 0, 0),
-      });
-      tenthPage.drawText(student["Attendance %_2"][0], {
-        x: 494,
-        y: 214,
-        size: 14,
-        color: rgb(0, 0, 0),
-      });
-
-      tenthPage.drawText(student["I help and assist others_2"][0], {
-        x: 330,
-        y: 105,
-        size: 14,
-        color: rgb(0, 0, 0),
-      });
-      tenthPage.drawText(student["I willingly share my resources_2"][0], {
-        x: 330,
-        y: 75,
-        size: 14,
-        color: rgb(0, 0, 0),
-      });
-      tenthPage.drawText(student["I work independently_2"][0], {
-        x: 330,
-        y: 43,
-        size: 14,
-        color: rgb(0, 0, 0),
-      });
-
-    
-      eleventhPage.drawImage(groupPhotImage, {
-              x: 470,
-              y: 160,
-              width: 480,
-              height: 290,
-              rotate: degrees(90),
-            });
-=======
 
       eleventhPage.drawImage(groupPhotImage, {
         x: 175,
@@ -4380,7 +4202,6 @@ function Class1_Term1() {
       });
 
       // More drawing based on the student's data...
->>>>>>> e23227d9e6e1a5f72e4afd532386f9f5e21f4a5c
     } catch (error) {
       console.error("Error filling PDF form:", error);
     }
