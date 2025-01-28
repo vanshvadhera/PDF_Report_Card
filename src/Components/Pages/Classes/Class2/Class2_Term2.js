@@ -10,7 +10,7 @@ import { userDataActions } from "../../../Data/Slices/UserDataSlice";
 function Class2_Term2() {
   const location = useLocation();
   const { data, localPdf } = location.state;
-  const userData = data.term_1;
+  const userData = data.term_2;
   console.log(data, "Data in Class1_Term2");
   console.log(localPdf, "Use localPdf ?");
 

@@ -2023,17 +2023,14 @@ function LKG_Term2() {
         const existingPdfBytes = await fetch(fileURL).then((res) =>
           res.arrayBuffer()
         );
-
         const pdfDoc = await PDFDocument.load(existingPdfBytes);
         await fillPdfForm(student, pdfDoc);
 
         const pdfBytes = await pdfDoc.save();
 
-        // Add the PDF to the ZIP file, using the student's name for the file name
         zip.file(`${student["zip_name"]}_report_card.pdf`, pdfBytes);
       }
 
-      // Generate the ZIP file and download it
       const zipBlob = await zip.generateAsync({ type: "blob" });
       download(zipBlob, "LKG_report_cards.zip");
       setZipButtonText("Download All PDFs as ZIP");

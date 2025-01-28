@@ -8,11 +8,11 @@ import { useLocation } from "react-router";
 import { useDispatch } from "react-redux";
 import { userDataActions } from "../../../Data/Slices/UserDataSlice";
 
-function Class4_Term1() {
+function Class4_Term2() {
   const location = useLocation();
   const { data, localPdf } = location.state;
   const userData = data.term_2;
-  console.log(data, "Data in Class3_Term2");
+  console.log(data, "Data in Class4_Term2");
   //   console.log(localPdf, "Use localPdf ?");
 
   const fileURL = localPdf
@@ -4478,11 +4478,11 @@ twevelthPage.drawText(student["Grand Total_2"][0], {
 
 
       fifteenthPage.drawImage(groupPhotImage, {
-        x: 0,
-        y: 200,
+        x: 470,
+        y: 160,
         width: 600,
-        height: 600,
-        // rotate: degrees(90),
+        height: 300,
+        rotate: degrees(90),
       });
 
     } catch (error) {
@@ -4620,4 +4620,4 @@ twevelthPage.drawText(student["Grand Total_2"][0], {
   );
 }
 
-export default Class4_Term1;
+export default Class4_Term2;
