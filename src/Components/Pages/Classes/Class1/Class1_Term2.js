@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import { PDFDocument, rgb } from "pdf-lib";
+import { PDFDocument, rgb , degrees } from "pdf-lib";
 import download from "downloadjs";
 import JSZip from "jszip";
 // import { userData } from "../../../UserData/UserData";
@@ -1872,88 +1872,94 @@ function Class1_Term2() {
           );
       }
 
-      // {
-      //   student["Honors To My Name_2"][0] &&
-      //     ninthPage.drawText(student["Honors To My Name_2"][0], {
-      //       x: 95,
-      //       y: 650,
-      //       size: 12,
-      //       color: rgb(0, 0, 0),
-      //     });
-      // }
-      // {
-      //   student["Honors To My Name_2"][1] &&
-      //     ninthPage.drawText(student["Honors To My Name_2"][1], {
-      //       x: 95,
-      //       y: 635,
-      //       size: 12,
-      //       color: rgb(0, 0, 0),
-      //     });
-      // }
-      // {
-      //   student["Honors To My Name_2"][2] &&
-      //     ninthPage.drawText(student["Honors To My Name_2"][2], {
-      //       x: 95,
-      //       y: 620,
-      //       size: 12,
-      //       color: rgb(0, 0, 0),
-      //     });
-      // }
-      // {
-      //   student["Teacher's Holistic Over View_2"][0] &&
-      //     ninthPage.drawText(student["Teacher's Holistic Over View_2"][0], {
-      //       x: 95,
-      //       y: 560,
-      //       size: 12,
-      //       color: rgb(0, 0, 0),
-      //     });
-      // }
-      // {
-      //   student["Teacher's Holistic Over View_2"][1] &&
-      //     ninthPage.drawText(student["Teacher's Holistic Over View_2"][1], {
-      //       x: 95,
-      //       y: 545,
-      //       size: 12,
-      //       color: rgb(0, 0, 0),
-      //     });
-      // }
-      // {
-      //   student["Teacher's Holistic Over View_2"][2] &&
-      //     ninthPage.drawText(student["Teacher's Holistic Over View_2"][2], {
-      //       x: 95,
-      //       y: 530,
-      //       size: 12,
-      //       color: rgb(0, 0, 0),
-      //     });
-      // }
-      // {
-      //   student["Parent's Reflection_2"][0] &&
-      //     ninthPage.drawText(student["Parent's Reflection_2"][0], {
-      //       x: 95,
-      //       y: 447,
-      //       size: 12,
-      //       color: rgb(0, 0, 0),
-      //     });
-      // }
-      // {
-      //   student["Parent's Reflection_2"][1] &&
-      //     ninthPage.drawText(student["Parent's Reflection_2"][1], {
-      //       x: 95,
-      //       y: 432,
-      //       size: 12,
-      //       color: rgb(0, 0, 0),
-      //     });
-      // }
-      // {
-      //   student["Parent's Reflection_2"][2] &&
-      //     ninthPage.drawText(student["Parent's Reflection_2"][2], {
-      //       x: 95,
-      //       y: 417,
-      //       size: 12,
-      //       color: rgb(0, 0, 0),
-      //     });
-      // }
+      {
+        student["Honors To My Name_2"][0] &&
+          ninthPage.drawText(student["Honors To My Name_2"][0], {
+            x: 95,
+            y: 625,
+            size: 12,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["Honors To My Name_2"][1] &&
+          ninthPage.drawText(student["Honors To My Name_2"][1], {
+            x: 95,
+            y: 640,
+            size: 12,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["Honors To My Name_2"][2] &&
+          ninthPage.drawText(student["Honors To My Name_2"][2], {
+            x: 95,
+            y: 625,
+            size: 12,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["Teacher's Holistic Over View_2"][0] &&
+          ninthPage.drawText(student["Teacher's Holistic Over View_2"][0], {
+            x: 95,
+            y: 535,
+            size: 12,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["Teacher's Holistic Over View_2"][1] &&
+          ninthPage.drawText(student["Teacher's Holistic Over View_2"][1], {
+            x: 95,
+            y: 520,
+            size: 12,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["Teacher's Holistic Over View_2"][2] &&
+          ninthPage.drawText(student["Teacher's Holistic Over View_2"][2], {
+            x: 95,
+            y: 505,
+            size: 12,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["Parent's Reflection_2"][0] &&
+          ninthPage.drawText(student["Parent's Reflection_2"][0], {
+            x: 95,
+            y: 432,
+            size: 12,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["Parent's Reflection_2"][1] &&
+          ninthPage.drawText(student["Parent's Reflection_2"][1], {
+            x: 95,
+            y: 422,
+            size: 12,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["Parent's Reflection_2"][2] &&
+          ninthPage.drawText(student["Parent's Reflection_2"][2], {
+            x: 95,
+            y: 402,
+            size: 12,
+            color: rgb(0, 0, 0),
+          });
+      }
 
+      ninthPage.drawText(student["I’m happy to go to Class ……_2"][0], {
+        x: 357,
+        y: 38,
+        size: 14,
+        color: rgb(0, 0, 0),
+      });
       ninthPage.drawImage(teacherSign2Image, {
         x: 90,
         y: 400,
@@ -1989,57 +1995,58 @@ function Class1_Term2() {
         color: rgb(0, 0, 0),
       });
       
-      tenthPage.drawText(student["I’m Growing Each Day ______cms & ____ in kgs_2"][0], {
-        x: 60,
-        y: 243,
-        size: 14,
-        color: rgb(0, 0, 0),
-      });
-      tenthPage.drawText(student["Total No. Of Working Days"][0], {
+      // tenthPage.drawText(student["I’m Growing Each Day ______cms & ____ in kgs_2"][0], {
+      //   x: 60,
+      //   y: 243,
+      //   size: 14,
+      //   color: rgb(0, 0, 0),
+      // });
+      tenthPage.drawText(student["Total No. Of Working Days_2"][0], {
         x: 515,
         y: 256,
         size: 14,
         color: rgb(0, 0, 0),
       });
-      // tenthPage.drawText(student["Total No. Of Working Days"][0], {
-      //   x: 510,
-      //   y: 235,
-      //   size: 14,
-      //   color: rgb(0, 0, 0),
-      // });
-      // tenthPage.drawText(student["Total No. Of Working Days"][0], {
-      //   x: 495,
-      //   y: 214,
-      //   size: 14,
-      //   color: rgb(0, 0, 0),
-      // });
-
-      // tenthPage.drawText(student["Total No. Of Working Days"][0], {
-      //   x: 330,
-      //   y: 105,
-      //   size: 14,
-      //   color: rgb(0, 0, 0),
-      // });
-      // tenthPage.drawText(student["Total No. Of Working Days"][0], {
-      //   x: 330,
-      //   y: 75,
-      //   size: 14,
-      //   color: rgb(0, 0, 0),
-      // });
-      // tenthPage.drawText(student["Total No. Of Working Days"][0], {
-      //   x: 330,
-      //   y: 43,
-      //   size: 14,
-      //   color: rgb(0, 0, 0),
-      // });
-
-      eleventhPage.drawImage(groupPhotImage, {
-        x: 175,
-        y: 160,
-        width: 300,
-        height: 480,
-        // rotate: degrees(90),
+      tenthPage.drawText(student["No. Of Days Present_2"][0], {
+        x: 510,
+        y: 235,
+        size: 14,
+        color: rgb(0, 0, 0),
       });
+      tenthPage.drawText(student["Attendance %_2"][0], {
+        x: 494,
+        y: 214,
+        size: 14,
+        color: rgb(0, 0, 0),
+      });
+
+      tenthPage.drawText(student["I help and assist others_2"][0], {
+        x: 330,
+        y: 105,
+        size: 14,
+        color: rgb(0, 0, 0),
+      });
+      tenthPage.drawText(student["I willingly share my resources_2"][0], {
+        x: 330,
+        y: 75,
+        size: 14,
+        color: rgb(0, 0, 0),
+      });
+      tenthPage.drawText(student["I work independently_2"][0], {
+        x: 330,
+        y: 43,
+        size: 14,
+        color: rgb(0, 0, 0),
+      });
+
+    
+      eleventhPage.drawImage(groupPhotImage, {
+              x: 470,
+              y: 160,
+              width: 480,
+              height: 290,
+              rotate: degrees(90),
+            });
     } catch (error) {
       console.error("Error filling PDF form:", error);
     }

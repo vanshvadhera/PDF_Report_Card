@@ -60,10 +60,10 @@ function Ukg_Term3() {
         res.arrayBuffer()
       );
 
-        const groupPhotUrl = student.group_photo;
-        const groupPhotBytes = await fetch(groupPhotUrl).then((res) =>
-          res.arrayBuffer()
-        );
+      const groupPhotUrl = student.group_photo;
+      const groupPhotBytes = await fetch(groupPhotUrl).then((res) =>
+        res.arrayBuffer()
+      );
 
       const myPagePhotoUrl = student.my_page_photo;
       const myPagePhotoBytes = await fetch(myPagePhotoUrl).then((res) =>
@@ -80,7 +80,7 @@ function Ukg_Term3() {
       const teacherSign2Image = await pdfDoc.embedJpg(teacherSign2Bytes);
       const teacherSign3Image = await pdfDoc.embedJpg(teacherSign3Bytes);
       const familyPhotImage = await pdfDoc.embedJpg(familyPhotoBytes);
-        const groupPhotImage = await pdfDoc.embedJpg(groupPhotBytes);
+      const groupPhotImage = await pdfDoc.embedJpg(groupPhotBytes);
       const myPagePhotoImage = await pdfDoc.embedJpg(myPagePhotoBytes);
       const myPagePhotoImage_2 = await pdfDoc.embedJpg(myPagePhotoBytes_2);
 
@@ -99,7 +99,7 @@ function Ukg_Term3() {
       const twelfthPage = pages[11];
       const thirteenPage = pages[12];
       const fourteenPage = pages[13];
-      const fifteenPage = pages[14];
+      const fifteenthPage = pages[14];
 
       // Insert data dynamically from the student's record
       firstPage.drawImage(image, {
@@ -2698,43 +2698,44 @@ function Ukg_Term3() {
       {
         student["PARENT'S REFLECTION_3"][0] &&
           fourteenPage.drawText(student["PARENT'S REFLECTION_3"][0], {
-            x: 65,
-            y: 730,
+            x: 68,
+            y: 739,
             size: 10,
             color: rgb(0, 0, 0),
           });
       }
       {
         student["PARENT'S REFLECTION_3"][1] &&
-        fourteenPage.drawText(student["PARENT'S REFLECTION_3"][1], {
-            x: 65,
-            y: 718,
+          fourteenPage.drawText(student["PARENT'S REFLECTION_3"][1], {
+            x: 68,
+            y: 727,
             size: 10,
             color: rgb(0, 0, 0),
           });
       }
       {
         student["PARENT'S REFLECTION_3"][2] &&
-        fourteenPage.drawText(student["PARENT'S REFLECTION_3"][2], {
-            x: 65,
-y: 706,     size: 10,
+          fourteenPage.drawText(student["PARENT'S REFLECTION_3"][2], {
+            x: 68,
+            y: 715,
+            size: 10,
             color: rgb(0, 0, 0),
           });
       }
       {
         student["PARENT'S REFLECTION_3"][3] &&
-        fourteenPage.drawText(student["PARENT'S REFLECTION_3"][3], {
-            x: 65,
-            y: 706,
+          fourteenPage.drawText(student["PARENT'S REFLECTION_3"][3], {
+            x: 68,
+            y: 715,
             size: 10,
             color: rgb(0, 0, 0),
           });
       }
       {
         student["PARENT'S REFLECTION_3"][4] &&
-        fourteenPage.drawText(student["PARENT'S REFLECTION_3"][4], {
-            x: 65,
-            y: 400,
+          fourteenPage.drawText(student["PARENT'S REFLECTION_3"][4], {
+            x: 68,
+            y: 409,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -2742,45 +2743,45 @@ y: 706,     size: 10,
 
       {
         student["TEACHER'S REFLECTION_3"][0] &&
-        fourteenPage.drawText(student["TEACHER'S REFLECTION_3"][0], {
-            x: 65,
-            y: 500,
+          fourteenPage.drawText(student["TEACHER'S REFLECTION_3"][0], {
+            x: 68,
+            y: 511,
             size: 10,
             color: rgb(0, 0, 0),
           });
       }
       {
         student["TEACHER'S REFLECTION_3"][1] &&
-        fourteenPage.drawText(student["TEACHER'S REFLECTION_3"][1], {
-            x: 65,
-            y: 488,
+          fourteenPage.drawText(student["TEACHER'S REFLECTION_3"][1], {
+            x: 68,
+            y: 499,
             size: 10,
             color: rgb(0, 0, 0),
           });
       }
       {
         student["TEACHER'S REFLECTION_3"][2] &&
-        fourteenPage.drawText(student["TEACHER'S REFLECTION_3"][2], {
-            x: 65,
-            y: 476,
+          fourteenPage.drawText(student["TEACHER'S REFLECTION_3"][2], {
+            x: 68,
+            y: 487,
             size: 10,
             color: rgb(0, 0, 0),
           });
       }
       {
         student["TEACHER'S REFLECTION_3"][3] &&
-        fourteenPage.drawText(student["TEACHER'S REFLECTION_3"][3], {
-            x: 65,
-            y: 464,
+          fourteenPage.drawText(student["TEACHER'S REFLECTION_3"][3], {
+            x: 68,
+            y: 475,
             size: 10,
             color: rgb(0, 0, 0),
           });
       }
       {
         student["TEACHER'S REFLECTION_3"][4] &&
-        fourteenPage.drawText(student["TEACHER'S REFLECTION_3"][4], {
-            x: 65,
-            y: 464,
+          fourteenPage.drawText(student["TEACHER'S REFLECTION_3"][4], {
+            x: 68,
+            y: 475,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -2799,14 +2800,20 @@ y: 706,     size: 10,
         height: 30,
       });
 
-      fifteenPage.drawImage(groupPhotImage, {
-        x: 53,
-        y: 150,
-        width: 480,
-        height: 598,
-        // rotate: degrees(90),
+      fourteenPage.drawText(student["I have graduated to_3"][0], {
+        x: 234,
+        y: 163,
+        size: 14,
+        color: rgb(0, 0, 0),
       });
 
+      fifteenthPage.drawImage(groupPhotImage, {
+        x: 470,
+        y: 160,
+        width: 480,
+        height: 290,
+        rotate: degrees(90),
+      });
     } catch (error) {
       console.error("Error filling PDF form:", error);
     }

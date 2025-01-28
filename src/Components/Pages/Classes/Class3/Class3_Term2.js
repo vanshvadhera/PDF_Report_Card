@@ -1963,7 +1963,6 @@ function Class3_Term1() {
         height: 30,
       });
 
-      //   twevelthPage
 
       twevelthPage.drawText(student["ENGLISH TERM I (50)_2"][0], {
         x: 268,
