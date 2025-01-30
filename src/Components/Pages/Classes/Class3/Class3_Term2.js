@@ -304,10 +304,32 @@ function Class3_Term1() {
       );
       fourthPage.drawText(
         student[
+          "PERSONAL AND SOCIAL TRAITS Displays a sense of respect and responsibility_2"
+        ][0],
+        {
+          x: 525,
+          y: 681,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fourthPage.drawText(
+        student[
           "PERSONAL AND SOCIAL TRAITS Helps teachers in the routine work of the class"
         ][0],
         {
           x: 460,
+          y: 662,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fourthPage.drawText(
+        student[
+          "PERSONAL AND SOCIAL TRAITS Helps teachers in the routine work of the class_2"
+        ][0],
+        {
+          x: 525,
           y: 662,
           size: 14,
           color: rgb(0, 0, 0),
@@ -326,10 +348,32 @@ function Class3_Term1() {
       );
       fourthPage.drawText(
         student[
+          "PERSONAL AND SOCIAL TRAITS Identifies and reports problems and suggests solutions_2"
+        ][0],
+        {
+          x: 525,
+          y: 643,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fourthPage.drawText(
+        student[
           "PERSONAL AND SOCIAL TRAITS Displays kindness towards peers"
         ][0],
         {
           x: 460,
+          y: 605,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fourthPage.drawText(
+        student[
+          "PERSONAL AND SOCIAL TRAITS Displays kindness towards peers_2"
+        ][0],
+        {
+          x: 525,
           y: 605,
           size: 14,
           color: rgb(0, 0, 0),
@@ -348,10 +392,32 @@ function Class3_Term1() {
       );
       fourthPage.drawText(
         student[
+          "PERSONAL AND SOCIAL TRAITS Displays sharing and caring behaviour_2"
+        ][0],
+        {
+          x: 525,
+          y: 586,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fourthPage.drawText(
+        student[
           "PERSONAL AND SOCIAL TRAITS Leads the group with remarkable grace"
         ][0],
         {
           x: 460,
+          y: 566,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fourthPage.drawText(
+        student[
+          "PERSONAL AND SOCIAL TRAITS Leads the group with remarkable grace_2"
+        ][0],
+        {
+          x: 525,
           y: 566,
           size: 14,
           color: rgb(0, 0, 0),
@@ -370,6 +436,17 @@ function Class3_Term1() {
       );
       fourthPage.drawText(
         student[
+          "PERSONAL AND SOCIAL TRAITS Respects school property and school norms_2"
+        ][0],
+        {
+          x: 525,
+          y: 528,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fourthPage.drawText(
+        student[
           "PERSONAL AND SOCIAL TRAITS Takes responsibility of one’s own actions"
         ][0],
         {
@@ -380,9 +457,29 @@ function Class3_Term1() {
         }
       );
       fourthPage.drawText(
+        student[
+          "PERSONAL AND SOCIAL TRAITS Takes responsibility of one’s own actions_2"
+        ][0],
+        {
+          x: 525,
+          y: 509,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fourthPage.drawText(
         student["PERSONAL AND SOCIAL TRAITS Adapts positively to changes"][0],
         {
           x: 460,
+          y: 490,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fourthPage.drawText(
+        student["PERSONAL AND SOCIAL TRAITS Adapts positively to changes_2"][0],
+        {
+          x: 525,
           y: 490,
           size: 14,
           color: rgb(0, 0, 0),
@@ -401,10 +498,32 @@ function Class3_Term1() {
       );
       fourthPage.drawText(
         student[
+          "PERSONAL AND SOCIAL TRAITS Shows kindness to all life forms_2"
+        ][0],
+        {
+          x: 525,
+          y: 451,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fourthPage.drawText(
+        student[
           "PERSONAL AND SOCIAL TRAITS Respects and shows sympathy towards environmental entities"
         ][0],
         {
           x: 460,
+          y: 432,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fourthPage.drawText(
+        student[
+          "PERSONAL AND SOCIAL TRAITS Respects and shows sympathy towards environmental entities_2"
+        ][0],
+        {
+          x: 525,
           y: 432,
           size: 14,
           color: rgb(0, 0, 0),
@@ -422,9 +541,31 @@ function Class3_Term1() {
         }
       );
       fourthPage.drawText(
+        student[
+          "PERSONAL AND SOCIAL TRAITS Shows curiosity towards learning ways to protect the environment_2"
+        ][0],
+        {
+          x: 525,
+          y: 413,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fourthPage.drawText(
         student["LIFE SKILLS AND WELL BEING Manages emotions appropriately"][0],
         {
           x: 460,
+          y: 298,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fourthPage.drawText(
+        student[
+          "LIFE SKILLS AND WELL BEING Manages emotions appropriately_2"
+        ][0],
+        {
+          x: 525,
           y: 298,
           size: 14,
           color: rgb(0, 0, 0),
@@ -443,10 +584,32 @@ function Class3_Term1() {
       );
       fourthPage.drawText(
         student[
+          "LIFE SKILLS AND WELL BEING Promotes and supports the school motto ‘Service Before Self’_2"
+        ][0],
+        {
+          x: 525,
+          y: 279,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fourthPage.drawText(
+        student[
           "LIFE SKILLS AND WELL BEING Is exceptionally resilient and treats challenges as opportunities"
         ][0],
         {
           x: 460,
+          y: 260,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fourthPage.drawText(
+        student[
+          "LIFE SKILLS AND WELL BEING Is exceptionally resilient and treats challenges as opportunities_2"
+        ][0],
+        {
+          x: 525,
           y: 260,
           size: 14,
           color: rgb(0, 0, 0),
@@ -465,10 +628,32 @@ function Class3_Term1() {
       );
       fourthPage.drawText(
         student[
+          "LIFE SKILLS AND WELL BEING Displays confidence by sharing ideas and views clearly_2"
+        ][0],
+        {
+          x: 525,
+          y: 221,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fourthPage.drawText(
+        student[
           "LIFE SKILLS AND WELL BEING Accomplishes all the tasks with precision"
         ][0],
         {
           x: 460,
+          y: 202,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fourthPage.drawText(
+        student[
+          "LIFE SKILLS AND WELL BEING Accomplishes all the tasks with precision_2"
+        ][0],
+        {
+          x: 525,
           y: 202,
           size: 14,
           color: rgb(0, 0, 0),
@@ -487,10 +672,32 @@ function Class3_Term1() {
       );
       fourthPage.drawText(
         student[
+          "LIFE SKILLS AND WELL BEING Shows interest in others’ opinions and concerns_2"
+        ][0],
+        {
+          x: 525,
+          y: 164,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fourthPage.drawText(
+        student[
           "LIFE SKILLS AND WELL BEING Shows co-operation and is a patient listener"
         ][0],
         {
           x: 460,
+          y: 144,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fourthPage.drawText(
+        student[
+          "LIFE SKILLS AND WELL BEING Shows co-operation and is a patient listener_2"
+        ][0],
+        {
+          x: 525,
           y: 144,
           size: 14,
           color: rgb(0, 0, 0),
@@ -509,11 +716,33 @@ function Class3_Term1() {
       );
       fourthPage.drawText(
         student[
+          "LIFE SKILLS AND WELL BEING Shares responsibilities and credits_2"
+        ][0],
+        {
+          x: 525,
+          y: 106,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fourthPage.drawText(
+        student[
           "LIFE SKILLS AND WELL BEING Pays attention to the responses of others"
         ][0],
         {
           x: 460,
           y: 87,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fourthPage.drawText(
+        student[
+          "LIFE SKILLS AND WELL BEING Pays attention to the responses of others_2"
+        ][0],
+        {
+          x: 525,
+          y: 82,
           size: 14,
           color: rgb(0, 0, 0),
         }
@@ -529,13 +758,34 @@ function Class3_Term1() {
           color: rgb(0, 0, 0),
         }
       );
-
+      fourthPage.drawText(
+        student[
+          "LIFE SKILLS AND WELL BEING Plans and carries out group activities well_2"
+        ][0],
+        {
+          x: 525,
+          y: 67,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
       fifthPage.drawText(
         student[
           "ENGLISH Listens attentively and comprehends the information well"
         ][0],
         {
           x: 470,
+          y: 643,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fifthPage.drawText(
+        student[
+          "ENGLISH Listens attentively and comprehends the information well_2"
+        ][0],
+        {
+          x: 530,
           y: 643,
           size: 14,
           color: rgb(0, 0, 0),
@@ -553,9 +803,29 @@ function Class3_Term1() {
         }
       );
       fifthPage.drawText(
+        student[
+          "ENGLISH Understands the information delivered and acts appropriately_2"
+        ][0],
+        {
+          x: 530,
+          y: 616,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fifthPage.drawText(
         student["ENGLISH Connects and evaluates while listening"][0],
         {
           x: 470,
+          y: 591,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fifthPage.drawText(
+        student["ENGLISH Connects and evaluates while listening_2"][0],
+        {
+          x: 530,
           y: 591,
           size: 14,
           color: rgb(0, 0, 0),
@@ -574,10 +844,32 @@ function Class3_Term1() {
       );
       fifthPage.drawText(
         student[
+          "ENGLISH Converses fluently in English, uses good vocabulary, proper pronunciation, diction and modulation_2"
+        ][0],
+        {
+          x: 530,
+          y: 537,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fifthPage.drawText(
+        student[
           "ENGLISH Expresses feelings, emotions and ideas confidently in English"
         ][0],
         {
           x: 470,
+          y: 508,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fifthPage.drawText(
+        student[
+          "ENGLISH Expresses feelings, emotions and ideas confidently in English_2"
+        ][0],
+        {
+          x: 530,
           y: 508,
           size: 14,
           color: rgb(0, 0, 0),
@@ -596,10 +888,32 @@ function Class3_Term1() {
       );
       fifthPage.drawText(
         student[
+          "ENGLISH Uses Articles and Subject-Verb Agreement appropriately_2"
+        ][0],
+        {
+          x: 530,
+          y: 482,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fifthPage.drawText(
+        student[
           "ENGLISH Remains excited to read new content from various sources such as newspapers, library books etc."
         ][0],
         {
           x: 470,
+          y: 425,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fifthPage.drawText(
+        student[
+          "ENGLISH Remains excited to read new content from various sources such as newspapers, library books etc._2"
+        ][0],
+        {
+          x: 530,
           y: 425,
           size: 14,
           color: rgb(0, 0, 0),
@@ -618,10 +932,32 @@ function Class3_Term1() {
       );
       fifthPage.drawText(
         student[
+          "ENGLISH Makes inferences from the given context and draws conclusions effectively_2"
+        ][0],
+        {
+          x: 530,
+          y: 397,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fifthPage.drawText(
+        student[
           "ENGLISH Independently reads the text with proper intonation and pronunciation"
         ][0],
         {
           x: 470,
+          y: 368,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fifthPage.drawText(
+        student[
+          "ENGLISH Independently reads the text with proper intonation and pronunciation_2"
+        ][0],
+        {
+          x: 530,
           y: 368,
           size: 14,
           color: rgb(0, 0, 0),
@@ -640,6 +976,17 @@ function Class3_Term1() {
       );
       fifthPage.drawText(
         student[
+          "ENGLISH Uses appropriate and good vocabulary, sentence structures and forms of expression_2"
+        ][0],
+        {
+          x: 530,
+          y: 316,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fifthPage.drawText(
+        student[
           "ENGLISH Uses appropriate Parts of Speech, Punctuation and Spellings"
         ][0],
         {
@@ -650,9 +997,29 @@ function Class3_Term1() {
         }
       );
       fifthPage.drawText(
+        student[
+          "ENGLISH Uses appropriate Parts of Speech, Punctuation and Spellings_2"
+        ][0],
+        {
+          x: 530,
+          y: 285,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fifthPage.drawText(
         student["ENGLISH Presents the ideas creatively with clarity"][0],
         {
           x: 470,
+          y: 257,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fifthPage.drawText(
+        student["ENGLISH Presents the ideas creatively with clarity_2"][0],
+        {
+          x: 530,
           y: 257,
           size: 14,
           color: rgb(0, 0, 0),
@@ -671,10 +1038,32 @@ function Class3_Term1() {
       );
       fifthPage.drawText(
         student[
+          "HINDI Listens attentively and comprehends the information well_2"
+        ][0],
+        {
+          x: 530,
+          y: 178,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fifthPage.drawText(
+        student[
           "HINDI Understands the information delivered and acts appropriately"
         ][0],
         {
           x: 470,
+          y: 151,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fifthPage.drawText(
+        student[
+          "HINDI Understands the information delivered and acts appropriately_2"
+        ][0],
+        {
+          x: 530,
           y: 151,
           size: 14,
           color: rgb(0, 0, 0),
@@ -690,11 +1079,31 @@ function Class3_Term1() {
         }
       );
       fifthPage.drawText(
+        student["HINDI Connects and evaluates while listening_2"][0],
+        {
+          x: 530,
+          y: 124,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fifthPage.drawText(
         student[
           "HINDI Converses fluently in Hindi , uses good vocabulary, proper pronunciation, diction and modulation"
         ][0],
         {
           x: 470,
+          y: 68,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fifthPage.drawText(
+        student[
+          "HINDI Converses fluently in Hindi , uses good vocabulary, proper pronunciation, diction and modulation_2"
+        ][0],
+        {
+          x: 530,
           y: 68,
           size: 14,
           color: rgb(0, 0, 0),
@@ -713,9 +1122,29 @@ function Class3_Term1() {
         }
       );
       sixthPage.drawText(
+        student[
+          "HINDI Expresses feelings, emotions and ideas confidently in Hindi_2"
+        ][0],
+        {
+          x: 530,
+          y: 774,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      sixthPage.drawText(
         student["HINDI Uses Subject-Verb Agreement appropriately"][0],
         {
           x: 470,
+          y: 748,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      sixthPage.drawText(
+        student["HINDI Uses Subject-Verb Agreement appropriately_2"][0],
+        {
+          x: 530,
           y: 748,
           size: 14,
           color: rgb(0, 0, 0),
@@ -728,6 +1157,18 @@ function Class3_Term1() {
         ][0],
         {
           x: 470,
+          y: 694,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+
+      sixthPage.drawText(
+        student[
+          "HINDI Remains excited to read new content from various sources such as newspapers, library books etc._2"
+        ][0],
+        {
+          x: 530,
           y: 694,
           size: 14,
           color: rgb(0, 0, 0),
@@ -746,10 +1187,32 @@ function Class3_Term1() {
       );
       sixthPage.drawText(
         student[
+          "HINDI Makes inferences from the given context and draws conclusions effectively_2"
+        ][0],
+        {
+          x: 530,
+          y: 665,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      sixthPage.drawText(
+        student[
           "HINDI Independently reads the text with proper intonation and pronunciation"
         ][0],
         {
           x: 470,
+          y: 635,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      sixthPage.drawText(
+        student[
+          "HINDI Independently reads the text with proper intonation and pronunciation_2"
+        ][0],
+        {
+          x: 530,
           y: 635,
           size: 14,
           color: rgb(0, 0, 0),
@@ -769,6 +1232,17 @@ function Class3_Term1() {
       );
       sixthPage.drawText(
         student[
+          "HINDI Uses appropriate and good vocabulary, sentence structures and forms of expression_2"
+        ][0],
+        {
+          x: 530,
+          y: 581,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      sixthPage.drawText(
+        student[
           "HINDI Uses appropriate Parts of Speech, Punctuation and Spellings"
         ][0],
         {
@@ -779,9 +1253,29 @@ function Class3_Term1() {
         }
       );
       sixthPage.drawText(
+        student[
+          "HINDI Uses appropriate Parts of Speech, Punctuation and Spellings_2"
+        ][0],
+        {
+          x: 530,
+          y: 552,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      sixthPage.drawText(
         student["HINDI Presents the ideas creatively with clarity"][0],
         {
           x: 470,
+          y: 524,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      sixthPage.drawText(
+        student["HINDI Presents the ideas creatively with clarity_2"][0],
+        {
+          x: 530,
           y: 524,
           size: 14,
           color: rgb(0, 0, 0),
@@ -801,6 +1295,17 @@ function Class3_Term1() {
       );
       sixthPage.drawText(
         student[
+          "MATHEMATICS Explores concepts, theories, figures and graphs_2"
+        ][0],
+        {
+          x: 530,
+          y: 446,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      sixthPage.drawText(
+        student[
           "MATHEMATICS Uses mathematical concepts and logic to solve problems"
         ][0],
         {
@@ -812,10 +1317,32 @@ function Class3_Term1() {
       );
       sixthPage.drawText(
         student[
+          "MATHEMATICS Uses mathematical concepts and logic to solve problems_2"
+        ][0],
+        {
+          x: 530,
+          y: 419,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      sixthPage.drawText(
+        student[
           "MATHEMATICS Recognises basic geometrical shapes and their observable properties"
         ][0],
         {
           x: 470,
+          y: 392,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      sixthPage.drawText(
+        student[
+          "MATHEMATICS Recognises basic geometrical shapes and their observable properties_2"
+        ][0],
+        {
+          x: 530,
           y: 392,
           size: 14,
           color: rgb(0, 0, 0),
@@ -835,6 +1362,17 @@ function Class3_Term1() {
       );
       sixthPage.drawText(
         student[
+          "MATHEMATICS Is observant and can easily understand the problem_2"
+        ][0],
+        {
+          x: 530,
+          y: 340,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      sixthPage.drawText(
+        student[
           "MATHEMATICS Calculates precisely while working with large numbers"
         ][0],
         {
@@ -846,10 +1384,32 @@ function Class3_Term1() {
       );
       sixthPage.drawText(
         student[
+          "MATHEMATICS Calculates precisely while working with large numbers_2"
+        ][0],
+        {
+          x: 530,
+          y: 313,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      sixthPage.drawText(
+        student[
           "MATHEMATICS Can remember and recall various mathematical concepts such as addition, subtraction, multiplication and division"
         ][0],
         {
           x: 470,
+          y: 286,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      sixthPage.drawText(
+        student[
+          "MATHEMATICS Can remember and recall various mathematical concepts such as addition, subtraction, multiplication and division_2"
+        ][0],
+        {
+          x: 530,
           y: 286,
           size: 14,
           color: rgb(0, 0, 0),
@@ -869,6 +1429,17 @@ function Class3_Term1() {
       );
       sixthPage.drawText(
         student[
+          "MATHEMATICS Enjoys and understands all mathematical concepts_2"
+        ][0],
+        {
+          x: 530,
+          y: 230,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      sixthPage.drawText(
+        student[
           "MATHEMATICS Uses mathematical concepts in various subjects for integrated learning"
         ][0],
         {
@@ -880,10 +1451,32 @@ function Class3_Term1() {
       );
       sixthPage.drawText(
         student[
+          "MATHEMATICS Uses mathematical concepts in various subjects for integrated learning_2"
+        ][0],
+        {
+          x: 530,
+          y: 204,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      sixthPage.drawText(
+        student[
           "MATHEMATICS Correlates reasons and ideas with real life applications"
         ][0],
         {
           x: 470,
+          y: 178,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      sixthPage.drawText(
+        student[
+          "MATHEMATICS Correlates reasons and ideas with real life applications_2"
+        ][0],
+        {
+          x: 530,
           y: 178,
           size: 14,
           color: rgb(0, 0, 0),
@@ -903,6 +1496,17 @@ function Class3_Term1() {
       );
       sixthPage.drawText(
         student[
+          "MATHEMATICS Is able to perform minor mathematical calculations mentally_2"
+        ][0],
+        {
+          x: 530,
+          y: 124,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      sixthPage.drawText(
+        student[
           "MATHEMATICS Recalls and uses mathematical vocabulary and dodging tables efficiently"
         ][0],
         {
@@ -914,10 +1518,32 @@ function Class3_Term1() {
       );
       sixthPage.drawText(
         student[
+          "MATHEMATICS Recalls and uses mathematical vocabulary and dodging tables efficiently_2"
+        ][0],
+        {
+          x: 530,
+          y: 97,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      sixthPage.drawText(
+        student[
           "MATHEMATICS Is self-motivated and tries to execute complex mathematical calculations"
         ][0],
         {
           x: 470,
+          y: 70,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      sixthPage.drawText(
+        student[
+          "MATHEMATICS Is self-motivated and tries to execute complex mathematical calculations_2"
+        ][0],
+        {
+          x: 530,
           y: 70,
           size: 14,
           color: rgb(0, 0, 0),
@@ -937,10 +1563,32 @@ function Class3_Term1() {
       );
       seventhPage.drawText(
         student[
+          "EVS Shows the ability to compare and classify things to bring out differences and similarities_2"
+        ][0],
+        {
+          x: 530,
+          y: 720,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      seventhPage.drawText(
+        student[
           "EVS Uses classroom learning well to make connections to the environment"
         ][0],
         {
           x: 470,
+          y: 692,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      seventhPage.drawText(
+        student[
+          "EVS Uses classroom learning well to make connections to the environment_2"
+        ][0],
+        {
+          x: 530,
           y: 692,
           size: 14,
           color: rgb(0, 0, 0),
@@ -958,9 +1606,29 @@ function Class3_Term1() {
         }
       );
       seventhPage.drawText(
+        student[
+          "EVS Shows the ability to conduct small guided research and correlate information in oral and written forms_2"
+        ][0],
+        {
+          x: 530,
+          y: 663,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      seventhPage.drawText(
         student["EVS Enjoys lab visits, field trips and nature walks"][0],
         {
           x: 470,
+          y: 608,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      seventhPage.drawText(
+        student["EVS Enjoys lab visits, field trips and nature walks_2"][0],
+        {
+          x: 530,
           y: 608,
           size: 14,
           color: rgb(0, 0, 0),
@@ -978,9 +1646,29 @@ function Class3_Term1() {
         }
       );
       seventhPage.drawText(
+        student[
+          "EVS Shows curiosity and interests in every minute detail with hands on activities_2"
+        ][0],
+        {
+          x: 530,
+          y: 581,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      seventhPage.drawText(
         student["EVS Uses sensory perceptions and responds appropriately"][0],
         {
           x: 470,
+          y: 551,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      seventhPage.drawText(
+        student["EVS Uses sensory perceptions and responds appropriately_2"][0],
+        {
+          x: 530,
           y: 551,
           size: 14,
           color: rgb(0, 0, 0),
@@ -999,10 +1687,32 @@ function Class3_Term1() {
       );
       seventhPage.drawText(
         student[
+          "EVS Has the ability to gather, analyze and communicate complex information_2"
+        ][0],
+        {
+          x: 530,
+          y: 498,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      seventhPage.drawText(
+        student[
           "EVS Exhibits a sense of responsibility and sensitivity towards the environment"
         ][0],
         {
           x: 470,
+          y: 472,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      seventhPage.drawText(
+        student[
+          "EVS Exhibits a sense of responsibility and sensitivity towards the environment_2"
+        ][0],
+        {
+          x: 530,
           y: 472,
           size: 14,
           color: rgb(0, 0, 0),
@@ -1020,6 +1730,17 @@ function Class3_Term1() {
         }
       );
       seventhPage.drawText(
+        student[
+          "EVS Participates actively in class discussions and group activities_2"
+        ][0],
+        {
+          x: 530,
+          y: 445,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      seventhPage.drawText(
         student["EVS Identifies pictures and diagrams well"][0],
         {
           x: 470,
@@ -1029,9 +1750,27 @@ function Class3_Term1() {
         }
       );
       seventhPage.drawText(
+        student["EVS Identifies pictures and diagrams well_2"][0],
+        {
+          x: 530,
+          y: 391,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      seventhPage.drawText(
         student["EVS Draws and labels diagrams appropriately"][0],
         {
           x: 470,
+          y: 364,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      seventhPage.drawText(
+        student["EVS Draws and labels diagrams appropriately_2"][0],
+        {
+          x: 530,
           y: 364,
           size: 14,
           color: rgb(0, 0, 0),
@@ -1049,6 +1788,17 @@ function Class3_Term1() {
         }
       );
       seventhPage.drawText(
+        student[
+          "EVS Understands and differentiates various pictorial representations such as web charts, mind maps etc._2"
+        ][0],
+        {
+          x: 530,
+          y: 337,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      seventhPage.drawText(
         student["COMPUTER SCIENCE Displays understanding of concepts"][0],
         {
           x: 470,
@@ -1058,6 +1808,16 @@ function Class3_Term1() {
         }
       );
       seventhPage.drawText(
+        student["COMPUTER SCIENCE Displays understanding of concepts_2"][0],
+        {
+          x: 530,
+          y: 256,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      // Original text for "Awareness of hardware and software"
+      seventhPage.drawText(
         student["COMPUTER SCIENCE Awareness of hardware and software"][0],
         {
           x: 470,
@@ -1066,6 +1826,19 @@ function Class3_Term1() {
           color: rgb(0, 0, 0),
         }
       );
+
+      // Text with _2 added for "Awareness of hardware and software"
+      seventhPage.drawText(
+        student["COMPUTER SCIENCE Awareness of hardware and software_2"][0],
+        {
+          x: 530,
+          y: 230,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+
+      // Original text for "Executes the concepts well"
       seventhPage.drawText(
         student["COMPUTER SCIENCE Executes the concepts well"][0],
         {
@@ -1075,6 +1848,19 @@ function Class3_Term1() {
           color: rgb(0, 0, 0),
         }
       );
+
+      // Text with _2 added for "Executes the concepts well"
+      seventhPage.drawText(
+        student["COMPUTER SCIENCE Executes the concepts well_2"][0],
+        {
+          x: 530,
+          y: 177,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+
+      // First text for "Shows the ability to make logical decisions"
       seventhPage.drawText(
         student[
           "COMPUTER SCIENCE Shows the ability to make logical decisions"
@@ -1087,6 +1873,20 @@ function Class3_Term1() {
         }
       );
 
+      // Second text for "Shows the ability to make logical decisions" with _2
+      seventhPage.drawText(
+        student[
+          "COMPUTER SCIENCE Shows the ability to make logical decisions_2"
+        ][0],
+        {
+          x: 530,
+          y: 150,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+
+      // First text for "Demonstrates creativity through colourful and imaginative art projects"
       eighthPage.drawText(
         student[
           "ART AND CRAFT Demonstrates creativity through colourful and imaginative art projects"
@@ -1098,6 +1898,21 @@ function Class3_Term1() {
           color: rgb(0, 0, 0),
         }
       );
+
+      // Second text for "Demonstrates creativity through colourful and imaginative art projects" with _2
+      eighthPage.drawText(
+        student[
+          "ART AND CRAFT Demonstrates creativity through colourful and imaginative art projects_2"
+        ][0],
+        {
+          x: 530,
+          y: 682,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+
+      // First text for "Pays attention to details, ensuring neatness and precision in artwork"
       eighthPage.drawText(
         student[
           "ART AND CRAFT Pays attention to details, ensuring neatness and precision in artwork"
@@ -1109,6 +1924,21 @@ function Class3_Term1() {
           color: rgb(0, 0, 0),
         }
       );
+
+      // Second text for "Pays attention to details, ensuring neatness and precision in artwork" with _2
+      eighthPage.drawText(
+        student[
+          "ART AND CRAFT Pays attention to details, ensuring neatness and precision in artwork_2"
+        ][0],
+        {
+          x: 530,
+          y: 655,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+
+      // First text for "Collaborates effectively with peers during art classes and activities"
       eighthPage.drawText(
         student[
           "ART AND CRAFT Collaborates effectively with peers during art classes and activities"
@@ -1120,6 +1950,21 @@ function Class3_Term1() {
           color: rgb(0, 0, 0),
         }
       );
+
+      // Second text for "Collaborates effectively with peers during art classes and activities" with _2
+      eighthPage.drawText(
+        student[
+          "ART AND CRAFT Collaborates effectively with peers during art classes and activities_2"
+        ][0],
+        {
+          x: 530,
+          y: 628,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+
+      // First text for "Demonstrates a passion for music"
       eighthPage.drawText(
         student["MUSIC Demonstrates a passion for music"][0],
         {
@@ -1129,6 +1974,19 @@ function Class3_Term1() {
           color: rgb(0, 0, 0),
         }
       );
+
+      // Second text for "Demonstrates a passion for music" with _2
+      eighthPage.drawText(
+        student["MUSIC Demonstrates a passion for music_2"][0],
+        {
+          x: 530,
+          y: 576,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+
+      // First text for "Displays a keen sense of rhythm and melody"
       eighthPage.drawText(
         student["MUSIC Displays a keen sense of rhythm and melody"][0],
         {
@@ -1138,6 +1996,19 @@ function Class3_Term1() {
           color: rgb(0, 0, 0),
         }
       );
+
+      // Second text for "Displays a keen sense of rhythm and melody" with _2
+      eighthPage.drawText(
+        student["MUSIC Displays a keen sense of rhythm and melody_2"][0],
+        {
+          x: 530,
+          y: 550,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+
+      // First text for "Collaborates harmoniously with peers during group musical activities"
       eighthPage.drawText(
         student[
           "MUSIC Collaborates harmoniously with peers during group musical activities"
@@ -1149,6 +2020,21 @@ function Class3_Term1() {
           color: rgb(0, 0, 0),
         }
       );
+
+      // Second text for "Collaborates harmoniously with peers during group musical activities" with _2
+      eighthPage.drawText(
+        student[
+          "MUSIC Collaborates harmoniously with peers during group musical activities_2"
+        ][0],
+        {
+          x: 530,
+          y: 523,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+
+      // First text for "Demonstrates a passion for dance"
       eighthPage.drawText(
         student["DANCE Demonstrates a passion for dance"][0],
         {
@@ -1158,6 +2044,19 @@ function Class3_Term1() {
           color: rgb(0, 0, 0),
         }
       );
+
+      // Second text for "Demonstrates a passion for dance" with _2
+      eighthPage.drawText(
+        student["DANCE Demonstrates a passion for dance_2"][0],
+        {
+          x: 530,
+          y: 471,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+
+      // First text for "Participates actively in group dance performances"
       eighthPage.drawText(
         student["DANCE Participates actively in group dance performances"][0],
         {
@@ -1167,6 +2066,19 @@ function Class3_Term1() {
           color: rgb(0, 0, 0),
         }
       );
+
+      // Second text for "Participates actively in group dance performances" with _2
+      eighthPage.drawText(
+        student["DANCE Participates actively in group dance performances_2"][0],
+        {
+          x: 530,
+          y: 444,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+
+      // First text for "Synchronizes harmoniously with the beat"
       eighthPage.drawText(
         student["DANCE Synchronizes harmoniously with the beat"][0],
         {
@@ -1176,6 +2088,19 @@ function Class3_Term1() {
           color: rgb(0, 0, 0),
         }
       );
+
+      // Second text for "Synchronizes harmoniously with the beat" with _2
+      eighthPage.drawText(
+        student["DANCE Synchronizes harmoniously with the beat_2"][0],
+        {
+          x: 530,
+          y: 417,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+
+      // First text for "Demonstrates sportsmanship during physical activities displaying fair play"
       eighthPage.drawText(
         student[
           "PHYSICAL EDUCATION Demonstrates sportsmanship during physical activities displaying fair play"
@@ -1187,6 +2112,21 @@ function Class3_Term1() {
           color: rgb(0, 0, 0),
         }
       );
+
+      // Second text for "Demonstrates sportsmanship during physical activities displaying fair play" with _2
+      eighthPage.drawText(
+        student[
+          "PHYSICAL EDUCATION Demonstrates sportsmanship during physical activities displaying fair play_2"
+        ][0],
+        {
+          x: 530,
+          y: 365,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+
+      // First text for "Engages in cooperative games and team sports, fostering teamwork with classmates"
       eighthPage.drawText(
         student[
           "PHYSICAL EDUCATION Engages in cooperative games and team sports, fostering teamwork with classmates"
@@ -1198,6 +2138,21 @@ function Class3_Term1() {
           color: rgb(0, 0, 0),
         }
       );
+
+      // Second text for "Engages in cooperative games and team sports, fostering teamwork with classmates" with _2
+      eighthPage.drawText(
+        student[
+          "PHYSICAL EDUCATION Engages in cooperative games and team sports, fostering teamwork with classmates_2"
+        ][0],
+        {
+          x: 530,
+          y: 337,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+
+      // First text for "Follows safety guidelines and rules during sports activities"
       eighthPage.drawText(
         student[
           "PHYSICAL EDUCATION Follows safety guidelines and rules during sports activities"
@@ -1209,6 +2164,21 @@ function Class3_Term1() {
           color: rgb(0, 0, 0),
         }
       );
+
+      // Second text for "Follows safety guidelines and rules during sports activities" with _2
+      eighthPage.drawText(
+        student[
+          "PHYSICAL EDUCATION Follows safety guidelines and rules during sports activities_2"
+        ][0],
+        {
+          x: 530,
+          y: 308,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+
+      // First text for "Shows interest in current events and world affairs, staying informed through reading and discussions"
       eighthPage.drawText(
         student[
           "GENERAL KNOWLEDGE Shows interest in current events and world affairs, staying informed through reading and discussions"
@@ -1220,6 +2190,21 @@ function Class3_Term1() {
           color: rgb(0, 0, 0),
         }
       );
+
+      // Second text for "Shows interest in current events and world affairs, staying informed through reading and discussions" with _2
+      eighthPage.drawText(
+        student[
+          "GENERAL KNOWLEDGE Shows interest in current events and world affairs, staying informed through reading and discussions_2"
+        ][0],
+        {
+          x: 530,
+          y: 256,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+
+      // First text for "Demonstrates understanding of basic facts and concepts across different topics"
       eighthPage.drawText(
         student[
           "GENERAL KNOWLEDGE Demonstrates understanding of basic facts and concepts across different topics"
@@ -1231,6 +2216,21 @@ function Class3_Term1() {
           color: rgb(0, 0, 0),
         }
       );
+
+      // Second text for "Demonstrates understanding of basic facts and concepts across different topics" with _2
+      eighthPage.drawText(
+        student[
+          "GENERAL KNOWLEDGE Demonstrates understanding of basic facts and concepts across different topics_2"
+        ][0],
+        {
+          x: 530,
+          y: 223,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+
+      // First text for "Takes initiative in expanding general knowledge on current affairs"
       eighthPage.drawText(
         student[
           "GENERAL KNOWLEDGE Takes initiative in expanding general knowledge on current affairs"
@@ -1242,6 +2242,21 @@ function Class3_Term1() {
           color: rgb(0, 0, 0),
         }
       );
+
+      // Second text for "Takes initiative in expanding general knowledge on current affairs" with _2
+      eighthPage.drawText(
+        student[
+          "GENERAL KNOWLEDGE Takes initiative in expanding general knowledge on current affairs_2"
+        ][0],
+        {
+          x: 530,
+          y: 193,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+
+      // First text for "Participates enthusiastically in the chosen Friday Activity"
       eighthPage.drawText(
         student[
           "FRIDAY ACTIVITY Participates enthusiastically in the chosen Friday Activity"
@@ -1253,6 +2268,21 @@ function Class3_Term1() {
           color: rgb(0, 0, 0),
         }
       );
+
+      // Second text for "Participates enthusiastically in the chosen Friday Activity" with _2
+      eighthPage.drawText(
+        student[
+          "FRIDAY ACTIVITY Participates enthusiastically in the chosen Friday Activity_2"
+        ][0],
+        {
+          x: 530,
+          y: 141,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+
+      // First text for "Takes interest in honing the related skills"
       eighthPage.drawText(
         student[
           "FRIDAY ACTIVITY Takes interest in honing the related skills"
@@ -1264,12 +2294,40 @@ function Class3_Term1() {
           color: rgb(0, 0, 0),
         }
       );
+
+      // Second text for "Takes interest in honing the related skills" with _2
+      eighthPage.drawText(
+        student[
+          "FRIDAY ACTIVITY Takes interest in honing the related skills_2"
+        ][0],
+        {
+          x: 530,
+          y: 114,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+
+      // First text for "Comprehends and executes the given instructions constructively"
       eighthPage.drawText(
         student[
           "FRIDAY ACTIVITY Comprehends and executes the given instructions constructively"
         ][0],
         {
           x: 470,
+          y: 87,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+
+      // Second text for "Comprehends and executes the given instructions constructively" with _2
+      eighthPage.drawText(
+        student[
+          "FRIDAY ACTIVITY Comprehends and executes the given instructions constructively_2"
+        ][0],
+        {
+          x: 530,
           y: 87,
           size: 14,
           color: rgb(0, 0, 0),
@@ -1714,6 +2772,13 @@ function Class3_Term1() {
         size: 12,
         color: rgb(0, 0, 0),
       });
+      eleventhPage.drawText(student["ENGLISH ANNUAL EXAM (50)_2"][0], {
+        x: 400,
+        y: 708,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+
       eleventhPage.drawText(student["ENGLISH TOTAL MARKS (100)_2"][0], {
         x: 473,
         y: 708,
@@ -1736,6 +2801,12 @@ function Class3_Term1() {
       });
       eleventhPage.drawText(student["HINDI MA2+SEA2+NW (5+5+5=15)_2"][0], {
         x: 340,
+        y: 689,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      eleventhPage.drawText(student["HINDI ANNUAL EXAM (50)_2"][0], {
+        x: 400,
         y: 689,
         size: 12,
         color: rgb(0, 0, 0),
@@ -1769,7 +2840,7 @@ function Class3_Term1() {
           color: rgb(0, 0, 0),
         }
       );
-      eleventhPage.drawText(student["MATHEMATICS HALF YEARLY EXAM (50)"][0], {
+      eleventhPage.drawText(student["MATHEMATICS ANNUAL EXAM (50)_2"][0], {
         x: 407,
         y: 670,
         size: 12,
@@ -1962,7 +3033,6 @@ function Class3_Term1() {
         width: 100,
         height: 30,
       });
-
 
       twevelthPage.drawText(student["ENGLISH TERM I (50)_2"][0], {
         x: 268,
@@ -2398,11 +3468,11 @@ function Class3_Term1() {
       });
 
       fifteenthPage.drawImage(groupPhotImage, {
-        x: 0,
-        y: 200,
+        x: 550,
+        y: 160,
         width: 600,
-        height: 600,
-        // rotate: degrees(90),
+        height: 500,
+        rotate: degrees(90),
       });
     } catch (error) {
       console.error("Error filling PDF form:", error);

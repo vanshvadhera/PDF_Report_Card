@@ -18,7 +18,7 @@ function LKG_Term3() {
     ? "https://innovartan.s3.amazonaws.com/c39efc2627f135b5e8a181dc7c2889ea1344515805/3c73080241b00cd876c01395b0b9c01b.pdf"
     : "https://dpsin.s3.us-east-1.amazonaws.com/report/LKG/term3.pdf";
 
-  console.log(data, "Data in Class1_Term3");
+  console.log(data, "Data in Classlkg_Term3");
 
   const dispatch = useDispatch();
 
@@ -99,6 +99,7 @@ function LKG_Term3() {
       const eleventhPage = pages[10];
       const twelfthPage = pages[11];
       const thirteenPage = pages[12];
+      const fourteenPage = pages[13];
       const fifteenPage = pages[14];
 
       firstPage.drawImage(image, {
@@ -2791,103 +2792,180 @@ function LKG_Term3() {
           });
       }
 
-      // thirteenPage.drawText(student["Total no. of working days_2"][0], {
-      //   x: 220,
-      //   y: 685,
-      //   size: 14,
-      //   color: rgb(0, 0, 0),
-      // });
-      thirteenPage.drawText(student["No. of days present_2"][0], {
-        x: 200,
-        y: 669,
+      thirteenPage.drawText(student["Total no. of working days_3"][0], {
+        x: 228,
+        y: 670,
         size: 14,
         color: rgb(0, 0, 0),
       });
-      // thirteenPage.drawText(student["I stand _______ cm tall_3"][0], {
-      //   x: 294,
-      //   y: 633,
-      //   size: 14,
-      //   color: rgb(0, 0, 0),
-      // });
-      // thirteenPage.drawText(student["weigh _______ kgs_3"][0], {
-      //   x: 312,
-      //   y: 617,
-      //   size: 14,
-      //   color: rgb(0, 0, 0),
-      // });
-      // thirteenPage.drawText(student["My favourite book_3"][0], {
-      //   x: 410,
-      //   y: 672,
-      //   size: 14,
-      //   color: rgb(0, 0, 0),
-      // });
-      // thirteenPage.drawText(student["My best friend_3"][0], {
-      //   x: 130,
-      //   y: 545,
-      //   size: 14,
-      //   color: rgb(0, 0, 0),
-      // });
-      // thirteenPage.drawText(student["My favourite sport_3"][0], {
-      //   x: 410,
-      //   y: 545,
-      //   size: 14,
-      //   color: rgb(0, 0, 0),
-      // });
-      // thirteenPage.drawText(student["I assist others_3"][0].slice(0, 20), {
-      //   x: 303,
-      //   y: 445,
-      //   size: 12,
-      //   color: rgb(0, 0, 0),
-      // });
-      // thirteenPage.drawText(student["I assist others_3"][0].slice(21, 40), {
-      //   x: 303,
-      //   y: 432,
-      //   size: 12,
-      //   color: rgb(0, 0, 0),
-      // });
-      // thirteenPage.drawText(
-      //   student["I willingly share my resources_3"][0].slice(0, 20),
-      //   {
-      //     x: 303,
-      //     y: 408,
-      //     size: 12,
-      //     color: rgb(0, 0, 0),
-      //   }
-      // );
-      // thirteenPage.drawText(
-      //   student["I willingly share my resources_3"][0].slice(21, 40),
-      //   {
-      //     x: 303,
-      //     y: 395,
-      //     size: 12,
-      //     color: rgb(0, 0, 0),
-      //   }
-      // );
-      // thirteenPage.drawText(
-      //   student["I can team up with others_3"][0].slice(0, 20),
-      //   {
-      //     x: 303,
-      //     y: 369,
-      //     size: 12,
-      //     color: rgb(0, 0, 0),
-      //   }
-      // );
-      // thirteenPage.drawText(
-      //   student["I can team up with others_3"][0].slice(21, 40),
-      //   {
-      //     x: 303,
-      //     y: 356,
-      //     size: 12,
-      //     color: rgb(0, 0, 0),
-      //   }
-      // );
+      thirteenPage.drawText(student["No. of days present_3"][0], {
+        x: 211,
+        y: 648,
+        size: 14,
+        color: rgb(0, 0, 0),
+      });
+      thirteenPage.drawText(student["I stand _______ cm tall_3"][0], {
+        x: 289,
+        y: 556,
+        size: 14,
+        color: rgb(0, 0, 0),
+      });
+      thirteenPage.drawText(student["weigh _______ kgs_3"][0], {
+        x: 300,
+        y: 538,
+        size: 14,
+        color: rgb(0, 0, 0),
+      });
+      thirteenPage.drawText(student["Activities that bring me joy_3"][0], {
+        x: 385,
+        y: 627,
+        size: 14,
+        color: rgb(0, 0, 0),
+      });
+      thirteenPage.drawText(student["I am progressing in_3"][0], {
+        x: 148,
+        y: 414,
+        size: 14,
+        color: rgb(0, 0, 0),
+      });
+      thirteenPage.drawText(student["My favourite buddy bonding activity_3"][0], {
+        x: 385,
+        y: 414,
+        size: 14,
+        color: rgb(0, 0, 0),
+      });
+      
+      thirteenPage.drawText(student["I assist others_3"][0].slice(0, 20), {
+        x: 268,
+        y: 282,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      thirteenPage.drawText(student["I assist others_3"][0].slice(21, 40), {
+        x: 268,
+        y: 282,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      thirteenPage.drawText(
+        student["I willingly share my resources_3"][0].slice(0, 20),
+        {
+          x: 268,
+          y: 245,
+          size: 12,
+          color: rgb(0, 0, 0),
+        }
+      );
+      thirteenPage.drawText(
+        student["I willingly share my resources_3"][0].slice(21, 40),
+        {
+          x: 268,
+          y: 245,
+          size: 12,
+          color: rgb(0, 0, 0),
+        }
+      );
+      thirteenPage.drawText(
+        student["I can team up with others_3"][0].slice(0, 20),
+        {
+          x: 268,
+          y: 208,
+          size: 12,
+          color: rgb(0, 0, 0),
+        }
+      );
+      thirteenPage.drawText(
+        student["I can team up with others_3"][0].slice(21, 40),
+        {
+          x: 268,
+          y: 208,
+          size: 12,
+          color: rgb(0, 0, 0),
+        }
+      );
+      {
+        student["PARENT'S REFLECTION_3"][0] &&
+        fourteenPage.drawText(student["PARENT'S REFLECTION_3"][0], {
+            x: 66,
+            y: 740,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["PARENT'S REFLECTION_3"][1] &&
+        fourteenPage.drawText(student["PARENT'S REFLECTION_3"][1], {
+            x: 66,
+            y:730,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["PARENT'S REFLECTION_3"][2] &&
+        fourteenPage.drawText(student["PARENT'S REFLECTION_3"][2], {
+            x: 66,
+            y: 720,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+
+      {
+        student["TEACHER'S REFLECTION_3"][0] &&
+        fourteenPage.drawText(student["TEACHER'S REFLECTION_3"][0], {
+            x: 66,
+            y: 511,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["TEACHER'S REFLECTION_3"][1] &&
+        fourteenPage.drawText(student["TEACHER'S REFLECTION_3"][1], {
+            x: 66,
+            y: 501,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["TEACHER'S REFLECTION_3"][2] &&
+        fourteenPage.drawText(student["TEACHER'S REFLECTION_3"][2], {
+            x: 66,
+            y: 491,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      fourteenPage.drawImage(teacherSign1Image, {
+        x: 66,
+        y: 315,
+        width: 70,
+        height: 30,
+      });
+      fourteenPage.drawImage(teacherSign3Image, {
+        x: 149,
+        y: 315,
+        width: 70,
+        height: 30,
+      });
+      fourteenPage.drawText(
+        student["I have graduated to_3"][0],
+        {
+          x: 242,
+          y: 163,
+          size: 12,
+          color: rgb(0, 0, 0),
+        }
+      );
 
       fifteenPage.drawImage(groupPhotImage, {
-        x: 53,
-        y: 140,
-        width: 480,
-        height: 598,
-        // rotate: degrees(90),
+        x: 500,
+               y: 160,
+               width: 600,
+               height: 350,
+               rotate: degrees(90),
       });
     } catch (error) {
       console.error("Error filling PDF form:", error);
