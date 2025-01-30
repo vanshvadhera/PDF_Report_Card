@@ -16,7 +16,7 @@ function Class1_Term1() {
   console.log(localPdf, "Use localPdf ?");
 
   const fileURL = localPdf
-    ? "https://innovartan.s3.amazonaws.com/330eecd575e2507c702854111222504b591934392/b6fa6b40304673f52faa7cba41a1fc9a.pdf"
+    ? "https://innovartan.s3.amazonaws.com/9a85bea461ee9a650eb53fe09463f1d9229149619/9ab9f991c87d1f32268797f35eb5fbd5.pdf"
     : "https://dpsin.s3.us-east-1.amazonaws.com/report/I/Class1term2.pdf";
 
   const dispatch = useDispatch();
