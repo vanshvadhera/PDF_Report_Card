@@ -64,11 +64,16 @@ function Class4_Term2() {
         res.arrayBuffer()
       );
 
+      const barUrl =
+        "https://innovartan.s3.amazonaws.com/1cc34aea5f864bc6f60a0b15e4cdf0a31415071175/2cdb488e7a0f98f13f383a9e6be8a9c7.png";
+      const barBytes = await fetch(barUrl).then((res) => res.arrayBuffer());
+
       const image = await pdfDoc.embedJpg(imageBytes);
       const teacherSign1Image = await pdfDoc.embedJpg(teacherSign1Bytes);
       const teacherSign2Image = await pdfDoc.embedJpg(teacherSign2Bytes);
       // const familyPhotImage = await pdfDoc.embedJpg(familyPhotoBytes);
       const groupPhotImage = await pdfDoc.embedJpg(groupPhotBytes);
+      const barImage = await pdfDoc.embedPng(barBytes);
 
       const pages = pdfDoc.getPages();
       const firstPage = pages[0];
@@ -4476,6 +4481,43 @@ function Class4_Term2() {
         y: 300,
         width: 100,
         height: 30,
+      });
+
+      thirteenPage.drawImage(barImage, {
+        x: 101,
+        y: 462,
+        width: 26,
+        height: 55,
+      });
+      thirteenPage.drawImage(barImage, {
+        x: 180,
+        y: 462,
+        width: 26,
+        height: 110,
+      });
+      thirteenPage.drawImage(barImage, {
+        x: 259,
+        y: 462,
+        width: 26,
+        height: 220,
+      });
+      thirteenPage.drawImage(barImage, {
+        x: 338,
+        y: 462,
+        width: 26,
+        height: 165,
+      });
+      thirteenPage.drawImage(barImage, {
+        x: 417,
+        y: 462,
+        width: 26,
+        height: 220,
+      });
+      thirteenPage.drawImage(barImage, {
+        x: 496,
+        y: 462,
+        width: 26,
+        height: 220,
       });
 
       thirteenPage.drawText(student["TERM I Height (cms)_2"][0], {
