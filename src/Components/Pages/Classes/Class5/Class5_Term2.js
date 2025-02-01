@@ -3950,12 +3950,13 @@ function Class5_Term2() {
         }
       );
 
-      // eleventhPage.drawText(student["Third Language ANNUAL EXAM (50)_2"][0], {
-      //   x: 397,
-      //   y: 677,
-      //   size: 12,
-      //   color: rgb(0, 0, 0),
-      // });
+      eleventhPage.drawText(student["Third Language  HALF YEARLY EXAM (50)"][0], {
+        x: 397,
+        y: 677,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+
       eleventhPage.drawText(student["Third Language TOTAL MARKS (100)_2"][0], {
         x: 463,
         y: 677,
