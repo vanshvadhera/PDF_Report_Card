@@ -141,7 +141,7 @@ function Dashboard() {
           ? 75
           : className2 === "V"
           ? 75
-          : 100,
+          : 80,
       reflection_pos:
         className2 === "LKG"
           ? 105
