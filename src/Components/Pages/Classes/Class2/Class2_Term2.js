@@ -2066,33 +2066,34 @@ function Class2_Term2() {
           color: rgb(0, 0, 0),
         }
       );
-      // {
-      //   student[
-      //     "PHYSICAL EDUCATION / SPORTS SMART DESCRIPTIVE INDICATORS_2"][0] &&
-      //     eighthPage.drawText(
-      //       `${student["PHYSICAL EDUCATION / SPORTS SMART DESCRIPTIVE INDICATORS_2"][0]}`,
-      //       {
-      //         x: 348,
-      //         y: 497,
-      //         size: 10,
-      //         color: rgb(0, 0, 0),
-      //       }
-      //     );
-      // }
-      // {
-      //   student[
-      //     "PHYSICAL EDUCATION / SPORTS SMART DESCRIPTIVE INDICATORS_2"
-      //   ][1] &&
-      //     eighthPage.drawText(
-      //       `${student["PHYSICAL EDUCATION / SPORTS SMART DESCRIPTIVE INDICATORS_2"][1]}`,
-      //       {
-      //         x: 348,
-      //         y: 482,
-      //         size: 10,
-      //         color: rgb(0, 0, 0),
-      //       }
-      //     );
-      // }
+      {
+        student[
+          "PHYSICAL EDUCATION / SPORTS SMART DESCRIPTIVE INDICATORS_2"
+        ][0] &&
+          eighthPage.drawText(
+            `${student["PHYSICAL EDUCATION / SPORTS SMART DESCRIPTIVE INDICATORS_2"][0]}`,
+            {
+              x: 348,
+              y: 497,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+      {
+        student[
+          "PHYSICAL EDUCATION / SPORTS SMART DESCRIPTIVE INDICATORS_2"
+        ][1] &&
+          eighthPage.drawText(
+            `${student["PHYSICAL EDUCATION / SPORTS SMART DESCRIPTIVE INDICATORS_2"][1]}`,
+            {
+              x: 348,
+              y: 482,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
 
       eighthPage.drawText(
         student["LIFE SKILLS & WELL BEING Personal upkeep & cleanliness_2"][0],
