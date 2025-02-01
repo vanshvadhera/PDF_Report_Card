@@ -2828,13 +2828,16 @@ function LKG_Term3() {
         size: 14,
         color: rgb(0, 0, 0),
       });
-      thirteenPage.drawText(student["My favourite buddy bonding activity_3"][0], {
-        x: 385,
-        y: 414,
-        size: 14,
-        color: rgb(0, 0, 0),
-      });
-      
+      thirteenPage.drawText(
+        student["My favourite buddy bonding activity_3"][0],
+        {
+          x: 385,
+          y: 414,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+
       thirteenPage.drawText(student["I assist others_3"][0].slice(0, 20), {
         x: 268,
         y: 282,
@@ -2885,7 +2888,7 @@ function LKG_Term3() {
       );
       {
         student["PARENT'S REFLECTION_3"][0] &&
-        fourteenPage.drawText(student["PARENT'S REFLECTION_3"][0], {
+          fourteenPage.drawText(student["PARENT'S REFLECTION_3"][0], {
             x: 66,
             y: 740,
             size: 10,
@@ -2894,16 +2897,16 @@ function LKG_Term3() {
       }
       {
         student["PARENT'S REFLECTION_3"][1] &&
-        fourteenPage.drawText(student["PARENT'S REFLECTION_3"][1], {
+          fourteenPage.drawText(student["PARENT'S REFLECTION_3"][1], {
             x: 66,
-            y:730,
+            y: 730,
             size: 10,
             color: rgb(0, 0, 0),
           });
       }
       {
         student["PARENT'S REFLECTION_3"][2] &&
-        fourteenPage.drawText(student["PARENT'S REFLECTION_3"][2], {
+          fourteenPage.drawText(student["PARENT'S REFLECTION_3"][2], {
             x: 66,
             y: 720,
             size: 10,
@@ -2913,7 +2916,7 @@ function LKG_Term3() {
 
       {
         student["TEACHER'S REFLECTION_3"][0] &&
-        fourteenPage.drawText(student["TEACHER'S REFLECTION_3"][0], {
+          fourteenPage.drawText(student["TEACHER'S REFLECTION_3"][0], {
             x: 66,
             y: 511,
             size: 10,
@@ -2922,7 +2925,7 @@ function LKG_Term3() {
       }
       {
         student["TEACHER'S REFLECTION_3"][1] &&
-        fourteenPage.drawText(student["TEACHER'S REFLECTION_3"][1], {
+          fourteenPage.drawText(student["TEACHER'S REFLECTION_3"][1], {
             x: 66,
             y: 501,
             size: 10,
@@ -2931,7 +2934,7 @@ function LKG_Term3() {
       }
       {
         student["TEACHER'S REFLECTION_3"][2] &&
-        fourteenPage.drawText(student["TEACHER'S REFLECTION_3"][2], {
+          fourteenPage.drawText(student["TEACHER'S REFLECTION_3"][2], {
             x: 66,
             y: 491,
             size: 10,
@@ -2950,22 +2953,19 @@ function LKG_Term3() {
         width: 70,
         height: 30,
       });
-      fourteenPage.drawText(
-        student["I have graduated to_3"][0],
-        {
-          x: 242,
-          y: 163,
-          size: 12,
-          color: rgb(0, 0, 0),
-        }
-      );
+      fourteenPage.drawText(student["I have graduated to_3"][0], {
+        x: 242,
+        y: 163,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
 
       fifteenPage.drawImage(groupPhotImage, {
         x: 500,
-               y: 160,
-               width: 600,
-               height: 350,
-               rotate: degrees(90),
+        y: 145,
+        width: 600,
+        height: 350,
+        rotate: degrees(90),
       });
     } catch (error) {
       console.error("Error filling PDF form:", error);

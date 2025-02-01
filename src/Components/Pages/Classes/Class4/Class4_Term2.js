@@ -4745,7 +4745,7 @@ function Class4_Term2() {
       });
       fifteenthPage.drawImage(groupPhotImage, {
         x: 550,
-        y: 160,
+        y: 120,
         width: 600,
         height: 500,
         rotate: degrees(90),
