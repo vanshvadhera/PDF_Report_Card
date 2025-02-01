@@ -2809,7 +2809,7 @@ function Ukg_Term3() {
 
       fifteenthPage.drawImage(groupPhotImage, {
         x: 470,
-        y: 160,
+        y: 220,
         width: 480,
         height: 290,
         rotate: degrees(90),
