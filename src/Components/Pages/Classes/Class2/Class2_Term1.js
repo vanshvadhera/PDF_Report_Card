@@ -11,7 +11,6 @@ function Class2_Term1() {
   const location = useLocation();
   const { data, localPdf } = location.state;
   const userData = data.term_1;
-  console.log(data, "Data in Class1_Term2");
   console.log(localPdf, "Use localPdf ?");
 
   const fileURL = localPdf

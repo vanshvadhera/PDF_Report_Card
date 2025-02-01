@@ -11,12 +11,12 @@ function Class2_Term2() {
   const location = useLocation();
   const { data, localPdf } = location.state;
   const userData = data.term_2;
-  console.log(data, "Data in Class1_Term2");
+  console.log(data, "Data in Class2_Term2");
   console.log(localPdf, "Use localPdf ?");
 
   const fileURL = localPdf
-    ? "https://innovartan.s3.amazonaws.com/1d9f23f4ca910f9640e4ee8842a34062968816278/acc2c48e26ebca3c062e75786490b211.pdf"
-    : "https://dpsin.s3.amazonaws.com/report/II/Class2.pdf";
+    ? "https://innovartan.s3.amazonaws.com/4c32555894c885f5065e84e74549a9da1958350446/e592234befb81ca4779d841b5a2e90e6.pdf"
+    : "https://dpsin.s3.us-east-1.amazonaws.com/report/II/Class2term2.pdf";
 
   const dispatch = useDispatch();
 
@@ -49,26 +49,26 @@ function Class2_Term2() {
         res.arrayBuffer()
       );
 
-      // const teacherSign2Url = student.teacher_sign_2;
-      // const teacherSign2Bytes = await fetch(teacherSign2Url).then((res) =>
-      //   res.arrayBuffer()
-      // );
+      const teacherSign2Url = student.teacher_sign_2;
+      const teacherSign2Bytes = await fetch(teacherSign2Url).then((res) =>
+        res.arrayBuffer()
+      );
 
       //   const familyPhotoUrl = student.family_photo;
       //   const familyPhotoBytes = await fetch(familyPhotoUrl).then((res) =>
       //     res.arrayBuffer()
       //   );
 
-      // const groupPhotUrl = student.group_photo;
-      // const groupPhotBytes = await fetch(groupPhotUrl).then((res) =>
-      //   res.arrayBuffer()
-      // );
+      const groupPhotUrl = student.group_photo;
+      const groupPhotBytes = await fetch(groupPhotUrl).then((res) =>
+        res.arrayBuffer()
+      );
 
       const image = await pdfDoc.embedJpg(imageBytes);
       const teacherSign1Image = await pdfDoc.embedJpg(teacherSign1Bytes);
-      // const teacherSign2Image = await pdfDoc.embedJpg(teacherSign2Bytes);
+      const teacherSign2Image = await pdfDoc.embedJpg(teacherSign2Bytes);
       //   const familyPhotImage = await pdfDoc.embedJpg(familyPhotoBytes);
-      // const groupPhotImage = await pdfDoc.embedJpg(groupPhotBytes);
+      const groupPhotImage = await pdfDoc.embedJpg(groupPhotBytes);
 
       const pages = pdfDoc.getPages();
       const firstPage = pages[0];
@@ -77,10 +77,11 @@ function Class2_Term2() {
       const fourthPage = pages[3];
       const fifthPage = pages[4];
       const sixthPage = pages[5];
-      // const seventhPage = pages[6];
-      // const eighthPage = pages[7];
-      // const ninthPage = pages[8];
-      // const tenthPage = pages[9];
+      const seventhPage = pages[6];
+      const eighthPage = pages[7];
+      const ninthPage = pages[8];
+      const tenthPage = pages[9];
+      const eleventhPage = pages[10];
 
       // Insert data dynamically from the student's record
       firstPage.drawImage(image, {
@@ -1321,13 +1322,1279 @@ function Class2_Term2() {
         color: rgb(0, 0, 0),
       });
 
-      // seventhPage.drawImage(groupPhotImage, {
-      //   x: 485,
-      //   y: 193,
-      //   width: 470,
-      //   height: 330,
-      //   rotate: degrees(90),
-      // });
+      seventhPage.drawText(student["ENGLISH Language competency_2"][0], {
+        x: 295,
+        y: 692,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      seventhPage.drawText(student["ENGLISH Written assessment_2"][0], {
+        x: 295,
+        y: 677,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+
+      seventhPage.drawText(
+        `${student[
+          "ENGLISH Language competency DESCRIPTIVE INDICATORS_2"
+        ][0].slice(0, 45)}`,
+        {
+          x: 350,
+          y: 693,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
+      seventhPage.drawText(
+        `${student[
+          "ENGLISH Language competency DESCRIPTIVE INDICATORS_2"
+        ][0].slice(45, 89)}`,
+        {
+          x: 350,
+          y: 677,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
+      seventhPage.drawText(student["ENGLISH Word perception_2"][0], {
+        x: 295,
+        y: 647,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      seventhPage.drawText(student["ENGLISH Articulation_2"][0], {
+        x: 295,
+        y: 632,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      seventhPage.drawText(student["ENGLISH Proficiency_2"][0], {
+        x: 295,
+        y: 617,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+
+      {
+        student["ENGLISH READING CALIBRE DESCRIPTIVE INDICATORS_2"][0] &&
+          seventhPage.drawText(
+            `${student["ENGLISH READING CALIBRE DESCRIPTIVE INDICATORS_2"][0]}`,
+            {
+              x: 350,
+              y: 648,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+      {
+        student["ENGLISH READING CALIBRE DESCRIPTIVE INDICATORS_2"][1] &&
+          seventhPage.drawText(
+            `${student["ENGLISH READING CALIBRE DESCRIPTIVE INDICATORS_2"][1]}`,
+            {
+              x: 350,
+              y: 633,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+
+      seventhPage.drawText(student["ENGLISH Fluency_2"][0], {
+        x: 295,
+        y: 587,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      seventhPage.drawText(student["ENGLISH Poem presentation_2"][0], {
+        x: 295,
+        y: 572,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+
+      {
+        student["ENGLISH SPEAKING CALIBRE DESCRIPTIVE INDICATORS"][0] &&
+          seventhPage.drawText(
+            `${student["ENGLISH SPEAKING CALIBRE DESCRIPTIVE INDICATORS"][0]}`,
+            {
+              x: 350,
+              y: 587,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+      {
+        student["ENGLISH SPEAKING CALIBRE DESCRIPTIVE INDICATORS"][1] &&
+          seventhPage.drawText(
+            `${student["ENGLISH SPEAKING CALIBRE DESCRIPTIVE INDICATORS"][1]}`,
+            {
+              x: 350,
+              y: 572,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+
+      seventhPage.drawText(student["ENGLISH Spelling precision_2"][0], {
+        x: 295,
+        y: 542,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      seventhPage.drawText(
+        student["ENGLISH Effective sentence building_2"][0],
+        {
+          x: 295,
+          y: 527,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
+      seventhPage.drawText(student["ENGLISH Word power_2"][0], {
+        x: 295,
+        y: 512,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      seventhPage.drawText(student["ENGLISH Handwriting_2"][0], {
+        x: 295,
+        y: 497,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      seventhPage.drawText(student["ENGLISH Work presentation_2"][0], {
+        x: 295,
+        y: 482,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      {
+        student["ENGLISH WRITING CALIBRE DESCRIPTIVE INDICATORS_2"][0] &&
+          seventhPage.drawText(
+            `${student["ENGLISH WRITING CALIBRE DESCRIPTIVE INDICATORS_2"][0]}`,
+            {
+              x: 350,
+              y: 542,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+      {
+        student["ENGLISH WRITING CALIBRE DESCRIPTIVE INDICATORS_2"][1] &&
+          seventhPage.drawText(
+            `${student["ENGLISH WRITING CALIBRE DESCRIPTIVE INDICATORS_2"][1]}`,
+            {
+              x: 350,
+              y: 527,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+      {
+        student["ENGLISH WRITING CALIBRE DESCRIPTIVE INDICATORS_2"][2] &&
+          seventhPage.drawText(
+            `${student["ENGLISH WRITING CALIBRE DESCRIPTIVE INDICATORS_2"][2]}`,
+            {
+              x: 350,
+              y: 512,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+      {
+        student["ENGLISH WRITING CALIBRE DESCRIPTIVE INDICATORS_2"][3] &&
+          seventhPage.drawText(
+            `${student["ENGLISH WRITING CALIBRE DESCRIPTIVE INDICATORS_2"][3]}`,
+            {
+              x: 350,
+              y: 497,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+
+      seventhPage.drawText(student["HINDI भाषा कुशलता_2"][0], {
+        x: 295,
+        y: 450,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      seventhPage.drawText(student["HINDI लिखित मूल्यांकन_2"][0], {
+        x: 295,
+        y: 435,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+
+      {
+        student["HINDI भाषा कुशलता DESCRIPTIVE INDICATORS_2"][0] &&
+          seventhPage.drawText(
+            `${student["HINDI भाषा कुशलता DESCRIPTIVE INDICATORS_2"][0]}`,
+            {
+              x: 350,
+              y: 450,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+      {
+        student["HINDI भाषा कुशलता DESCRIPTIVE INDICATORS_2"][1] &&
+          seventhPage.drawText(
+            `${student["HINDI भाषा कुशलता DESCRIPTIVE INDICATORS_2"][1]}`,
+            {
+              x: 350,
+              y: 435,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+      {
+        student["HINDI भाषा कुशलता DESCRIPTIVE INDICATORS_2"][2] &&
+          seventhPage.drawText(
+            `${student["HINDI भाषा कुशलता DESCRIPTIVE INDICATORS_2"][2]}`,
+            {
+              x: 350,
+              y: 420,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+      {
+        student["HINDI भाषा कुशलता DESCRIPTIVE INDICATORS_2"][3] &&
+          seventhPage.drawText(
+            `${student["HINDI भाषा कुशलता DESCRIPTIVE INDICATORS_2"][3]}`,
+            {
+              x: 350,
+              y: 405,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+
+      seventhPage.drawText(student["HINDI उच्चारण एवं शब्द पहचान_2"][0], {
+        x: 295,
+        y: 405,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      seventhPage.drawText(student["HINDI पढ़ने की निपुणता / गतिशीलता_2"][0], {
+        x: 295,
+        y: 390,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      {
+        student["Hindi पठन कौशल DESCRIPTIVE INDICATORS_2"][0] &&
+          seventhPage.drawText(
+            `${student["Hindi पठन कौशल DESCRIPTIVE INDICATORS_2"][0]}`,
+            {
+              x: 350,
+              y: 405,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+      {
+        student["Hindi पठन कौशल DESCRIPTIVE INDICATORS_2"][1] &&
+          seventhPage.drawText(
+            `${student["Hindi पठन कौशल DESCRIPTIVE INDICATORS_2"][1]}`,
+            {
+              x: 350,
+              y: 392,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+      seventhPage.drawText(student["HINDI सम्वाद गतिशीलता_2"][0], {
+        x: 295,
+        y: 360,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      seventhPage.drawText(student["HINDI कविता प्रस्तुति_2"][0], {
+        x: 295,
+        y: 345,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      {
+        student["HINDI वाचन कौशल DESCRIPTIVE INDICATORS_2"][0] &&
+          seventhPage.drawText(
+            `${student["HINDI वाचन कौशल DESCRIPTIVE INDICATORS_2"][0]}`,
+            {
+              x: 350,
+              y: 360,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+      {
+        student["HINDI वाचन कौशल DESCRIPTIVE INDICATORS_2"][1] &&
+          seventhPage.drawText(
+            `${student["HINDI वाचन कौशल DESCRIPTIVE INDICATORS_2"][1]}`,
+            {
+              x: 350,
+              y: 345,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+
+      seventhPage.drawText(student["HINDI शब्द शुद्धता_2"][0], {
+        x: 295,
+        y: 315,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      seventhPage.drawText(student["HINDI वाक्य संरचना_2"][0], {
+        x: 295,
+        y: 300,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      seventhPage.drawText(student["HINDI शब्दकोष_2"][0], {
+        x: 295,
+        y: 285,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      seventhPage.drawText(student["HINDI हस्तलेख_2"][0], {
+        x: 295,
+        y: 270,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      seventhPage.drawText(student["HINDI कार्य प्रस्तुति_2"][0], {
+        x: 295,
+        y: 255,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+
+      {
+        student["HINDI लेखन कौशल DESCRIPTIVE INDICATORS"][0] &&
+          seventhPage.drawText(
+            `${student["HINDI लेखन कौशल DESCRIPTIVE INDICATORS"][0]}`,
+            {
+              x: 350,
+              y: 315,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+      {
+        student["HINDI लेखन कौशल DESCRIPTIVE INDICATORS"][1] &&
+          seventhPage.drawText(
+            `${student["HINDI लेखन कौशल DESCRIPTIVE INDICATORS"][1]}`,
+            {
+              x: 350,
+              y: 300,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+      {
+        student["HINDI लेखन कौशल DESCRIPTIVE INDICATORS"][2] &&
+          seventhPage.drawText(
+            `${student["HINDI लेखन कौशल DESCRIPTIVE INDICATORS"][2]}`,
+            {
+              x: 350,
+              y: 285,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+      {
+        student["HINDI लेखन कौशल DESCRIPTIVE INDICATORS"][3] &&
+          seventhPage.drawText(
+            `${student["HINDI लेखन कौशल DESCRIPTIVE INDICATORS"][3]}`,
+            {
+              x: 350,
+              y: 270,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+
+      seventhPage.drawText(student["MATHEMATICS Written assessment_2"][0], {
+        x: 295,
+        y: 225,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      seventhPage.drawText(
+        student["MATHEMATICS Computational & calculation skills_2"][0],
+        {
+          x: 295,
+          y: 210,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
+      seventhPage.drawText(student["MATHEMATICS Mental aptitude_2"][0], {
+        x: 295,
+        y: 195,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      seventhPage.drawText(student["MATHEMATICS Precision_2"][0], {
+        x: 295,
+        y: 180,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      seventhPage.drawText(student["MATHEMATICS Work presentation_2"][0], {
+        x: 295,
+        y: 165,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      {
+        student["MATHEMATICS  DESCRIPTIVE INDICATORS_2"][0] &&
+          seventhPage.drawText(
+            `${student["MATHEMATICS  DESCRIPTIVE INDICATORS_2"][0]}`,
+            {
+              x: 350,
+              y: 225,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+      {
+        student["MATHEMATICS  DESCRIPTIVE INDICATORS_2"][1] &&
+          seventhPage.drawText(
+            `${student["MATHEMATICS  DESCRIPTIVE INDICATORS_2"][1]}`,
+            {
+              x: 350,
+              y: 210,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+      {
+        student["MATHEMATICS  DESCRIPTIVE INDICATORS_2"][2] &&
+          seventhPage.drawText(
+            `${student["MATHEMATICS  DESCRIPTIVE INDICATORS_2"][2]}`,
+            {
+              x: 350,
+              y: 195,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+      {
+        student["MATHEMATICS  DESCRIPTIVE INDICATORS_2"][3] &&
+          seventhPage.drawText(
+            `${student["MATHEMATICS  DESCRIPTIVE INDICATORS_2"][3]}`,
+            {
+              x: 350,
+              y: 180,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+
+      seventhPage.drawText(student["EVS Written assessment_2"][0], {
+        x: 295,
+        y: 133,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      seventhPage.drawText(
+        student["EVS Expanded awareness of the environment_2"][0],
+        {
+          x: 295,
+          y: 118,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
+      seventhPage.drawText(
+        student["EVS Work presentation / Quality of work_2"][0],
+        {
+          x: 295,
+          y: 103,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
+      {
+        student["EVS DESCRIPTIVE INDICATORS_2"][0] &&
+          seventhPage.drawText(
+            `${student["EVS DESCRIPTIVE INDICATORS_2"][0]}`,
+            {
+              x: 350,
+              y: 133,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+      {
+        student["EVS DESCRIPTIVE INDICATORS_2"][1] &&
+          seventhPage.drawText(
+            `${student["EVS DESCRIPTIVE INDICATORS_2"][1]}`,
+            {
+              x: 350,
+              y: 118,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+      {
+        student["EVS DESCRIPTIVE INDICATORS_2"][2] &&
+          seventhPage.drawText(
+            `${student["EVS DESCRIPTIVE INDICATORS_2"][2]}`,
+            {
+              x: 350,
+              y: 103,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+      seventhPage.drawText(student["COMPUTER SCIENCE Computer Skills_2"][0], {
+        x: 295,
+        y: 71,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      seventhPage.drawText(
+        `${student["COMPUTER SCIENCE DESCRIPTIVE INDICATORS_2"][0]}`,
+        {
+          x: 350,
+          y: 71,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
+
+      eighthPage.drawText(student["ART & CRAFT Dexterity_2"][0], {
+        x: 295,
+        y: 712,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      eighthPage.drawText(
+        student["ART & CRAFT Creativity & imagination_2"][0],
+        {
+          x: 295,
+          y: 697,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
+      {
+        student["ART & CRAFT DESCRIPTIVE INDICATORS_2"][0] &&
+          eighthPage.drawText(
+            `${student["ART & CRAFT DESCRIPTIVE INDICATORS_2"][0]}`,
+            {
+              x: 348,
+              y: 712,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+      {
+        student["ART & CRAFT DESCRIPTIVE INDICATORS_2"][1] &&
+          eighthPage.drawText(
+            `${student["ART & CRAFT DESCRIPTIVE INDICATORS_2"][1]}`,
+            {
+              x: 348,
+              y: 697,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+
+      eighthPage.drawText(student["MUSIC Lyrical memory_2"][0], {
+        x: 295,
+        y: 665,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+
+      eighthPage.drawText(student["MUSIC Sings in key / pitch_2"][0], {
+        x: 295,
+        y: 649,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+
+      eighthPage.drawText(student["MUSIC Shows eagerness_2"][0], {
+        x: 295,
+        y: 634,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+
+      {
+        student["MUSIC DESCRIPTIVE INDICATORS_2"][0] &&
+          eighthPage.drawText(
+            `${student["MUSIC DESCRIPTIVE INDICATORS_2"][0]}`,
+            {
+              x: 348,
+              y: 666,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+
+      {
+        student["MUSIC DESCRIPTIVE INDICATORS_2"][1] &&
+          eighthPage.drawText(
+            `${student["MUSIC DESCRIPTIVE INDICATORS_2"][1]}`,
+            {
+              x: 348,
+              y: 651,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+
+      eighthPage.drawText(
+        student[
+          "DANCE Demonstrates coordination between sensory perceptions and body movements in various activities"
+        ][0],
+        {
+          x: 295,
+          y: 592,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
+      eighthPage.drawText(
+        student[
+          "DANCE Exhibits precision and control when working with their hands and fingers"
+        ][0],
+        {
+          x: 295,
+          y: 561,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
+      eighthPage.drawText(
+        student["DANCE Displays aesthetic coordination of hands and legs_2"][0],
+        {
+          x: 295,
+          y: 536,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
+      {
+        student["DANCE DESCRIPTIVE INDICATORS_2"][0] &&
+          eighthPage.drawText(
+            `${student["DANCE DESCRIPTIVE INDICATORS_2"][0]}`,
+            {
+              x: 348,
+              y: 604,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+      {
+        student["DANCE DESCRIPTIVE INDICATORS_2"][1] &&
+          eighthPage.drawText(
+            `${student["DANCE DESCRIPTIVE INDICATORS_2"][1]}`,
+            {
+              x: 348,
+              y: 589,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+
+      eighthPage.drawText(
+        student[
+          "PHYSICAL EDUCATION / SPORTS SMART Shows strength and endurance in carrying, walking and running"
+        ][0],
+        {
+          x: 295,
+          y: 494,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
+      eighthPage.drawText(
+        student["PHYSICAL EDUCATION / SPORTS SMART Adheres to guidance_2"][0],
+        {
+          x: 295,
+          y: 475,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
+      eighthPage.drawText(
+        student["PHYSICAL EDUCATION / SPORTS SMART Displays team spirit_2"][0],
+        {
+          x: 295,
+          y: 460,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
+      // {
+      //   student[
+      //     "PHYSICAL EDUCATION / SPORTS SMART DESCRIPTIVE INDICATORS_2"][0] &&
+      //     eighthPage.drawText(
+      //       `${student["PHYSICAL EDUCATION / SPORTS SMART DESCRIPTIVE INDICATORS_2"][0]}`,
+      //       {
+      //         x: 348,
+      //         y: 497,
+      //         size: 10,
+      //         color: rgb(0, 0, 0),
+      //       }
+      //     );
+      // }
+      // {
+      //   student[
+      //     "PHYSICAL EDUCATION / SPORTS SMART DESCRIPTIVE INDICATORS_2"
+      //   ][1] &&
+      //     eighthPage.drawText(
+      //       `${student["PHYSICAL EDUCATION / SPORTS SMART DESCRIPTIVE INDICATORS_2"][1]}`,
+      //       {
+      //         x: 348,
+      //         y: 482,
+      //         size: 10,
+      //         color: rgb(0, 0, 0),
+      //       }
+      //     );
+      // }
+
+      eighthPage.drawText(
+        student["LIFE SKILLS & WELL BEING Personal upkeep & cleanliness_2"][0],
+        {
+          x: 295,
+          y: 427,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
+      eighthPage.drawText(
+        student["LIFE SKILLS & WELL BEING Well groomed & self reliant_2"][0],
+        {
+          x: 295,
+          y: 412,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
+      eighthPage.drawText(
+        student["LIFE SKILLS & WELL BEING Personal belongings management_2"][0],
+        {
+          x: 295,
+          y: 397,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
+      {
+        student["LIFE SKILLS & WELL BEING DESCRIPTIVE INDICATORS_2"][0] &&
+          eighthPage.drawText(
+            `${student["LIFE SKILLS & WELL BEING DESCRIPTIVE INDICATORS_2"][0]}`,
+            {
+              x: 348,
+              y: 427,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+      {
+        student["LIFE SKILLS & WELL BEING DESCRIPTIVE INDICATORS_2"][1] &&
+          eighthPage.drawText(
+            `${student["LIFE SKILLS & WELL BEING DESCRIPTIVE INDICATORS_2"][1]}`,
+            {
+              x: 348,
+              y: 413,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+      {
+        student["LIFE SKILLS & WELL BEING DESCRIPTIVE INDICATORS_2"][2] &&
+          eighthPage.drawText(
+            `${student["LIFE SKILLS & WELL BEING DESCRIPTIVE INDICATORS_2"][2]}`,
+            {
+              x: 348,
+              y: 397,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+      eighthPage.drawText(student["COGNITIVE DEVELOPMENT Vigilant mind_2"][0], {
+        x: 295,
+        y: 367,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      eighthPage.drawText(
+        student["COGNITIVE DEVELOPMENT Proactive & volunteering_2"][0],
+        {
+          x: 295,
+          y: 352,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
+      eighthPage.drawText(
+        student[
+          "COGNITIVE DEVELOPMENT Adherence and compliance to instructions_2"
+        ][0],
+        {
+          x: 295,
+          y: 337,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
+      eighthPage.drawText(
+        student["COGNITIVE DEVELOPMENT Engagement in classroom ventures_2"][0],
+        {
+          x: 295,
+          y: 322,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
+      {
+        student["COGNITIVE DEVELOPMENT DESCRIPTIVE INDICATORS_2"][0] &&
+          eighthPage.drawText(
+            `${student["COGNITIVE DEVELOPMENT DESCRIPTIVE INDICATORS_2"][0]}`,
+            {
+              x: 348,
+              y: 367,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+      {
+        student["COGNITIVE DEVELOPMENT DESCRIPTIVE INDICATORS_2"][1] &&
+          eighthPage.drawText(
+            `${student["COGNITIVE DEVELOPMENT DESCRIPTIVE INDICATORS_2"][1]}`,
+            {
+              x: 348,
+              y: 352,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+      {
+        student["COGNITIVE DEVELOPMENT DESCRIPTIVE INDICATORS_2"][2] &&
+          eighthPage.drawText(
+            `${student["COGNITIVE DEVELOPMENT DESCRIPTIVE INDICATORS_2"][2]}`,
+            {
+              x: 348,
+              y: 337,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+      {
+        student["COGNITIVE DEVELOPMENT DESCRIPTIVE INDICATORS_2"][3] &&
+          eighthPage.drawText(
+            `${student["COGNITIVE DEVELOPMENT DESCRIPTIVE INDICATORS_2"][3]}`,
+            {
+              x: 348,
+              y: 322,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+
+      eighthPage.drawText(
+        student[
+          "COMMUNICATION AND SOCIO - EMOTIONAL DEVELOPMENT Discipline_2"
+        ][0],
+        {
+          x: 295,
+          y: 280,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
+      eighthPage.drawText(
+        student[
+          "COMMUNICATION AND SOCIO - EMOTIONAL DEVELOPMENT Radiant & confident_2"
+        ][0],
+        {
+          x: 295,
+          y: 263,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
+      eighthPage.drawText(
+        student[
+          "COMMUNICATION AND SOCIO - EMOTIONAL DEVELOPMENT Promptitude_2"
+        ][0],
+        {
+          x: 295,
+          y: 250,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
+      eighthPage.drawText(
+        student[
+          "COMMUNICATION AND SOCIO - EMOTIONAL DEVELOPMENT Shows empathy_2"
+        ][0],
+        {
+          x: 295,
+          y: 235,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
+      eighthPage.drawText(
+        student[
+          "COMMUNICATION AND SOCIO - EMOTIONAL DEVELOPMENT Courteous approach_2"
+        ][0],
+        {
+          x: 295,
+          y: 220,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
+      {
+        student[
+          "COMMUNICATION AND SOCIO - EMOTIONAL DEVELOPMENT DESCRIPTIVE INDICATORS_2"
+        ][0] &&
+          eighthPage.drawText(
+            `${student["COMMUNICATION AND SOCIO - EMOTIONAL DEVELOPMENT DESCRIPTIVE INDICATORS_2"][0]}`,
+            {
+              x: 348,
+              y: 280,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+      {
+        student[
+          "COMMUNICATION AND SOCIO - EMOTIONAL DEVELOPMENT DESCRIPTIVE INDICATORS_2"
+        ][1] &&
+          eighthPage.drawText(
+            `${student["COMMUNICATION AND SOCIO - EMOTIONAL DEVELOPMENT DESCRIPTIVE INDICATORS_2"][1]}`,
+            {
+              x: 348,
+              y: 268,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+      {
+        student[
+          "COMMUNICATION AND SOCIO - EMOTIONAL DEVELOPMENT DESCRIPTIVE INDICATORS_2"
+        ][2] &&
+          eighthPage.drawText(
+            `${student["COMMUNICATION AND SOCIO - EMOTIONAL DEVELOPMENT DESCRIPTIVE INDICATORS_2"][2]}`,
+            {
+              x: 348,
+              y: 255,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+      {
+        student[
+          "COMMUNICATION AND SOCIO - EMOTIONAL DEVELOPMENT DESCRIPTIVE INDICATORS_2"
+        ][3] &&
+          eighthPage.drawText(
+            `${student["COMMUNICATION AND SOCIO - EMOTIONAL DEVELOPMENT DESCRIPTIVE INDICATORS_2"][3]}`,
+            {
+              x: 348,
+              y: 240,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+      eighthPage.drawText(
+        student[
+          "MY JOYFUL LEARNING EXPERIENCES Engagement & participation_2"
+        ][0],
+        {
+          x: 295,
+          y: 189,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
+      eighthPage.drawText(
+        student["MY JOYFUL LEARNING EXPERIENCES Reflection & integration_2"][0],
+        {
+          x: 295,
+          y: 174,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
+      {
+        student["MY JOYFUL LEARNING EXPERIENCES DESCRIPTIVE INDICATORS_2"][0] &&
+          eighthPage.drawText(
+            `${student["MY JOYFUL LEARNING EXPERIENCES DESCRIPTIVE INDICATORS_2"][0]}`,
+            {
+              x: 348,
+              y: 189,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+      {
+        student["MY JOYFUL LEARNING EXPERIENCES DESCRIPTIVE INDICATORS_2"][1] &&
+          eighthPage.drawText(
+            `${student["MY JOYFUL LEARNING EXPERIENCES DESCRIPTIVE INDICATORS_2"][1]}`,
+            {
+              x: 348,
+              y: 174,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+
+      eighthPage.drawText(student["I am excited to go to class_______2"][0], {
+        x: 430,
+        y: 100,
+        size: 14,
+        color: rgb(0, 0, 0),
+      });
+
+      {
+        student["My Accolades_2"][0] &&
+          ninthPage.drawText(student["My Accolades_2"][0], {
+            x: 78,
+            y: 624,
+            size: 13,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["My Accolades_2"][1] &&
+          ninthPage.drawText(student["My Accolades_2"][1], {
+            x: 78,
+            y: 609,
+            size: 13,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["My Accolades_2"][2] &&
+          ninthPage.drawText(student["My Accolades_2"][2], {
+            x: 78,
+            y: 594,
+            size: 13,
+            color: rgb(0, 0, 0),
+          });
+      }
+
+      {
+        student["TEACHER’S HOLISTIC OVERVIEW_2"][0] &&
+          ninthPage.drawText(student["TEACHER’S HOLISTIC OVERVIEW_2"][0], {
+            x: 78,
+            y: 496,
+            size: 13,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["TEACHER’S HOLISTIC OVERVIEW_2"][1] &&
+          ninthPage.drawText(student["TEACHER’S HOLISTIC OVERVIEW_2"][1], {
+            x: 78,
+            y: 481,
+            size: 13,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["TEACHER’S HOLISTIC OVERVIEW_2"][2] &&
+          ninthPage.drawText(student["TEACHER’S HOLISTIC OVERVIEW_2"][2], {
+            x: 78,
+            y: 465,
+            size: 13,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["TEACHER’S HOLISTIC OVERVIEW_2"][3] &&
+          ninthPage.drawText(student["TEACHER’S HOLISTIC OVERVIEW_2"][3], {
+            x: 78,
+            y: 450,
+            size: 13,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["PARENT’S REFLECTION_2"][0] &&
+          ninthPage.drawText(student["PARENT’S REFLECTION_2"][0], {
+            x: 78,
+            y: 366,
+            size: 13,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["PARENT’S REFLECTION_2"][1] &&
+          ninthPage.drawText(student["PARENT’S REFLECTION_2"][1], {
+            x: 78,
+            y: 352,
+            size: 13,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["PARENT’S REFLECTION_2"][2] &&
+          ninthPage.drawText(student["PARENT’S REFLECTION_2"][2], {
+            x: 78,
+            y: 337,
+            size: 13,
+            color: rgb(0, 0, 0),
+          });
+      }
+
+      ninthPage.drawImage(teacherSign2Image, {
+        x: 80,
+        y: 260,
+        width: 100,
+        height: 30,
+      });
+
+      tenthPage.drawText(student["I aspire to be_2"][0], {
+        x: 150,
+        y: 622,
+        size: 14,
+        color: rgb(0, 0, 0),
+      });
+      tenthPage.drawText(student["TOTAL NO. OF WORKING DAYS_2"][0], {
+        x: 470,
+        y: 595,
+        size: 14,
+        color: rgb(0, 0, 0),
+      });
+      tenthPage.drawText(student["NO. OF DAYS PRESENT_2"][0], {
+        x: 470,
+        y: 549,
+        size: 14,
+        color: rgb(0, 0, 0),
+      });
+      tenthPage.drawText(student["ATTENDANCE %_2"][0], {
+        x: 460,
+        y: 515,
+        size: 14,
+        color: rgb(0, 0, 0),
+      });
+      tenthPage.drawText(student["I am _____ cms. tall._2"][0], {
+        x: 150,
+        y: 472,
+        size: 14,
+        color: rgb(0, 0, 0),
+      });
+      tenthPage.drawText(student["I weigh ______ kgs._2"][0], {
+        x: 175,
+        y: 452,
+        size: 14,
+        color: rgb(0, 0, 0),
+      });
+      tenthPage.drawText(student["My Hobby_2"][0], {
+        x: 390,
+        y: 390,
+        size: 14,
+        color: rgb(0, 0, 0),
+      });
+      tenthPage.drawText(student["My Best Friend_2"][0], {
+        x: 150,
+        y: 315,
+        size: 14,
+        color: rgb(0, 0, 0),
+      });
+      tenthPage.drawText(student["I am.......years old._2"][0], {
+        x: 420,
+        y: 318,
+        size: 14,
+        color: rgb(0, 0, 0),
+      });
+      tenthPage.drawText(student["I am helpful._2"][0], {
+        x: 360,
+        y: 218,
+        size: 14,
+        color: rgb(0, 0, 0),
+      });
+      tenthPage.drawText(student["I am friendly._2"][0], {
+        x: 360,
+        y: 190,
+        size: 14,
+        color: rgb(0, 0, 0),
+      });
+      tenthPage.drawText(student["I am responsible and dependable._2"][0], {
+        x: 360,
+        y: 157,
+        size: 14,
+        color: rgb(0, 0, 0),
+      });
+      tenthPage.drawText(student["I use polite expressions._2"][0], {
+        x: 360,
+        y: 120,
+        size: 14,
+        color: rgb(0, 0, 0),
+      });
+      tenthPage.drawText(student["I am a mindful listener._2"][0], {
+        x: 360,
+        y: 88,
+        size: 14,
+        color: rgb(0, 0, 0),
+      });
+
+      eleventhPage.drawImage(groupPhotImage, {
+        x: 485,
+        y: 193,
+        width: 470,
+        height: 330,
+        rotate: degrees(90),
+      });
 
       // More drawing based on the student's data...
     } catch (error) {
@@ -1466,4 +2733,3 @@ function Class2_Term2() {
 }
 
 export default Class2_Term2;
- 
