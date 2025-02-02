@@ -12,7 +12,7 @@ function Class9_Term2() {
   const location = useLocation();
   const { data, localPdf } = location.state;
   const userData = data.term_2;
-  //   console.log(data, "Data in Class3_Term1");
+  console.log(data, "Data in Class3_Term1");
   console.log(localPdf, "Use localPdf ?");
 
   const fileURL = localPdf
@@ -72,7 +72,7 @@ function Class9_Term2() {
 
       const pages = pdfDoc.getPages();
       const firstPage = pages[0];
-      // const secondPage = pages[1];
+      const secondPage = pages[1];
       const thirdPage = pages[2];
       const fourthPage = pages[3];
       const fifthPage = pages[4];
@@ -82,9 +82,597 @@ function Class9_Term2() {
       const ninthPage = pages[8];
       const tenthPage = pages[9];
 
-      // Insert data dynamically from the student's record
+      firstPage.drawImage(image, {
+        x: 470,
+        y: 570,
+        width: 80,
+        height: 87,
+      });
+      firstPage.drawText(student["Name of Student_2"][0], {
+        x: 179,
+        y: 180,
+        size: 14,
+        color: rgb(0, 0, 0),
+      });
+      firstPage.drawText(student["Class_2"][0], {
+        x: 105,
+        y: 158,
+        size: 14,
+        color: rgb(0, 0, 0),
+      });
+      firstPage.drawText(student["Father Name"][0], {
+        x: 165,
+        y: 133,
+        size: 14,
+        color: rgb(0, 0, 0),
+      });
+      firstPage.drawText(student["Date of Birth_2"][0], {
+        x: 157,
+        y: 110,
+        size: 14,
+        color: rgb(0, 0, 0),
+      });
+      firstPage.drawText(student["Admission No._2"][0], {
+        x: 455,
+        y: 180,
+        size: 14,
+        color: rgb(0, 0, 0),
+      });
+      firstPage.drawText(student["Section_2"][0], {
+        x: 410,
+        y: 158,
+        size: 14,
+        color: rgb(0, 0, 0),
+      });
+      firstPage.drawText(student["Mother's Name_2"][0], {
+        x: 457,
+        y: 133,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      firstPage.drawText(student["House_2"][0], {
+        x: 405,
+        y: 110,
+        size: 14,
+        color: rgb(0, 0, 0),
+      });
+      secondPage.drawText(student["2nd Language Name_2"][0], {
+        x: 39,
+        y: 677,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      secondPage.drawText(student["3 Subject Name Mathematics/Painting_2"][0], {
+        x: 39,
+        y: 654,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      secondPage.drawText(
+        student["4 Subject Name Science/Computer Application_2"][0],
+        {
+          x: 39,
+          y: 631,
+          size: 12,
+          color: rgb(0, 0, 0),
+        }
+      );
+      secondPage.drawText(student["ENGLISH INTERNAL ASSESSMENT_2"][0], {
+        x: 220,
+        y: 700,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      secondPage.drawText(student["ENGLISH ANNUAL EXAM_2"][0], {
+        x: 320,
+        y: 700,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      secondPage.drawText(student["ENGLISH TOTAL (100)_2"][0], {
+        x: 420,
+        y: 700,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      secondPage.drawText(student["ENGLISH GRADE_2"][0], {
+        x: 520,
+        y: 700,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
 
-      // More drawing based on the student's data...
+      secondPage.drawText(student["2nd LANGUAGE INTERNAL ASSESSMENT_2"][0], {
+        x: 220,
+        y: 677,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      secondPage.drawText(student["2nd LANGUAGE ANNUAL EXAM_2"][0], {
+        x: 320,
+        y: 677,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      // secondPage.drawText(student["2nd LANGUAGE TOTAL (100)_2"][0], {
+      //   x: 420,
+      //   y: 677,
+      //   size: 12,
+      //   color: rgb(0, 0, 0),
+      // });
+      secondPage.drawText(student["2nd LANGUAGE GRADE_2"][0], {
+        x: 520,
+        y: 677,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+
+      secondPage.drawText(student["3 INTERNAL ASSESSMENT_2"][0], {
+        x: 220,
+        y: 654,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      secondPage.drawText(student["3 ANNUAL EXAM_2"][0], {
+        x: 320,
+        y: 654,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      secondPage.drawText(student["3 TOTAL (100)_2"][0], {
+        x: 420,
+        y: 654,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      secondPage.drawText(student["3 GRADE_2"][0], {
+        x: 520,
+        y: 654,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      secondPage.drawText(student["4 INTERNAL ASSESSMENT_2"][0], {
+        x: 220,
+        y: 631,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      secondPage.drawText(student["4 ANNUAL EXAM_2"][0], {
+        x: 320,
+        y: 631,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      secondPage.drawText(student["4 TOTAL (100)_2"][0], {
+        x: 420,
+        y: 631,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      secondPage.drawText(student["4 GRADE_2"][0], {
+        x: 520,
+        y: 631,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+
+      // secondPage.drawText(student["5 INTERNAL ASSESSMENT_2"][0], {
+      //   x: 220,
+      //   y: 608,
+      //   size: 12,
+      //   color: rgb(0, 0, 0),
+      // });
+      secondPage.drawText(student["5 ANNUAL EXAM_2"][0], {
+        x: 320,
+        y: 608,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      secondPage.drawText(student["5 TOTAL (100)_2"][0], {
+        x: 420,
+        y: 608,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      secondPage.drawText(student["5 GRADE_2"][0], {
+        x: 520,
+        y: 608,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+
+      // secondPage.drawText(student["ARTIFICIAL INTELLIGENCE INTERNAL ASSESSMENT_2"][0], {
+      //   x: 220,
+      //   y: 585,
+      //   size: 12,
+      //   color: rgb(0, 0, 0),
+      // });
+      secondPage.drawText(student["ARTIFICIAL INTELLIGENCE ANNUAL EXAM_2"][0], {
+        x: 320,
+        y: 585,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      secondPage.drawText(student["ARTIFICIAL INTELLIGENCE TOTAL (100)_2"][0], {
+        x: 420,
+        y: 585,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      secondPage.drawText(student["ARTIFICIAL INTELLIGENCE GRADE_2"][0], {
+        x: 520,
+        y: 585,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      secondPage.drawText(student["Work Education GRADE_2"][0], {
+        x: 493,
+        y: 527,
+        size: 14,
+        color: rgb(0, 0, 0),
+      });
+      secondPage.drawText(student["Art Education GRADE_2"][0], {
+        x: 493,
+        y: 509,
+        size: 14,
+        color: rgb(0, 0, 0),
+      });
+      secondPage.drawText(student["Health & Physical Education GRADE_2"][0], {
+        x: 493,
+        y: 491,
+        size: 14,
+        color: rgb(0, 0, 0),
+      });
+      secondPage.drawText(student["Discipline GRADE_2"][0], {
+        x: 493,
+        y: 440,
+        size: 14,
+        color: rgb(0, 0, 0),
+      });
+
+      {
+        student["Class Teacher’s Remarks_2"][0] &&
+          secondPage.drawText(student["Class Teacher’s Remarks_2"][0], {
+            x: 169,
+            y: 407,
+            size: 12,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["Class Teacher’s Remarks_2"][1] &&
+          secondPage.drawText(student["Class Teacher’s Remarks_2"][1], {
+            x: 169,
+            y: 397,
+            size: 12,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["Class Teacher’s Remarks_2"][2] &&
+          secondPage.drawText(student["Class Teacher’s Remarks_2"][2], {
+            x: 169,
+            y: 387,
+            size: 12,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["Class Teacher’s Remarks_2"][3] &&
+          secondPage.drawText(student["Class Teacher’s Remarks_2"][3], {
+            x: 169,
+            y: 377,
+            size: 12,
+            color: rgb(0, 0, 0),
+          });
+      }
+
+      thirdPage.drawText(
+        student[
+          "COGNITIVE DEVELOPMENT Comprehends main ideas and details effectively_2"
+        ][0],
+        {
+          x: 479,
+          y: 745,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      thirdPage.drawText(
+        student[
+          "COGNITIVE DEVELOPMENT Extracts inferences and draws conclusion_2"
+        ][0],
+        {
+          x: 479,
+          y: 728,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      thirdPage.drawText(
+        student[
+          "COGNITIVE DEVELOPMENT Demonstrates effective problem solving skills and applies logical reasoning_2"
+        ][0],
+        {
+          x: 479,
+          y: 711,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      thirdPage.drawText(
+        student[
+          "COGNITIVE DEVELOPMENT Demonstrates persuasion in representing related concepts and data_2"
+        ][0],
+        {
+          x: 479,
+          y: 694,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      thirdPage.drawText(
+        student[
+          "COGNITIVE DEVELOPMENT Collaborative thinking and effective communication._2"
+        ][0],
+        {
+          x: 479,
+          y: 675,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      thirdPage.drawText(
+        student[
+          "SOCIO-EMOTIONAL DEVELOPMENT AND DILIGENCE Can communicate effectively in diverse environments._2"
+        ][0],
+        {
+          x: 479,
+          y: 630,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      thirdPage.drawText(
+        student[
+          "SOCIO-EMOTIONAL DEVELOPMENT AND DILIGENCE Displays emotional regulation and resilience and is empathetic._2"
+        ][0],
+        {
+          x: 479,
+          y: 611,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      thirdPage.drawText(
+        student[
+          "SOCIO-EMOTIONAL DEVELOPMENT AND DILIGENCE Exhibits social competence and maintain healthy relationships with others_2"
+        ][0],
+        {
+          x: 479,
+          y: 594,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      thirdPage.drawText(
+        student[
+          "SOCIO-EMOTIONAL DEVELOPMENT AND DILIGENCE Awareness of one’s strength and weaknesses._2"
+        ][0],
+        {
+          x: 479,
+          y: 577,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      thirdPage.drawText(
+        student[
+          "SOCIO-EMOTIONAL DEVELOPMENT AND DILIGENCE Takes constructive criticism positively._2"
+        ][0],
+        {
+          x: 479,
+          y: 560,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      thirdPage.drawText(
+        student[
+          "ICT Is able to apply theoretical knowledge into practical usage_2"
+        ][0],
+        {
+          x: 479,
+          y: 509,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      thirdPage.drawText(
+        student[
+          "ICT Analysis of art works, contextual understanding, Interdisciplinary connections._2"
+        ][0],
+        {
+          x: 479,
+          y: 488,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      thirdPage.drawText(
+        student[
+          "ICT Use digital technologies (computers, media players, GPS, etc.), communication /networking tools and social networks appropriately._2"
+        ][0],
+        {
+          x: 479,
+          y: 466,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      thirdPage.drawText(
+        student[
+          "ICT Skill proficiency in materials and techniques, use of tools, detail and precision._2"
+        ][0],
+        {
+          x: 479,
+          y: 442,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+
+      thirdPage.drawText(
+        student[
+          "WORK ETHICS, GENERAL ATTITUDE AND BEHAVIOUR Adheres to deadlines._2"
+        ][0],
+        {
+          x: 479,
+          y: 394,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      thirdPage.drawText(
+        student[
+          "WORK ETHICS, GENERAL ATTITUDE AND BEHAVIOUR Participates in class discussions_2"
+        ][0],
+        {
+          x: 479,
+          y: 374,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      thirdPage.drawText(
+        student[
+          "WORK ETHICS, GENERAL ATTITUDE AND BEHAVIOUR Submits assignments/notebooks on time._2"
+        ][0],
+        {
+          x: 479,
+          y: 356,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      thirdPage.drawText(
+        student[
+          "WORK ETHICS, GENERAL ATTITUDE AND BEHAVIOUR Respects teachers and classmates._2"
+        ][0],
+        {
+          x: 479,
+          y: 331,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+
+      thirdPage.drawText(
+        student[
+          "WORK ETHICS, GENERAL ATTITUDE AND BEHAVIOUR Is humble, punctual and sincere_2"
+        ][0],
+        {
+          x: 479,
+          y: 314,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      thirdPage.drawText(
+        student[
+          "INNOVATION Is being able to execute new ideas in an innovative manner._2"
+        ][0],
+        {
+          x: 479,
+          y: 268,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      thirdPage.drawText(
+        student[
+          "INNOVATION Is ready to take risks and adapt to changing conditions._2"
+        ][0],
+        {
+          x: 479,
+          y: 248,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+
+      thirdPage.drawText(
+        student["LITERARY SKILLS Asks thought provoking questions._2"][0],
+        {
+          x: 479,
+          y: 204,
+          size: 12,
+          color: rgb(0, 0, 0),
+        }
+      );
+
+      thirdPage.drawText(
+        student[
+          "LITERARY SKILLS Infers meaning from the given information._2"
+        ][0],
+        {
+          x: 479,
+          y: 189,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      thirdPage.drawText(
+        student[
+          "LITERARY SKILLS Demonstrates knowledge and research skills._2"
+        ][0],
+        {
+          x: 479,
+          y: 169,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      thirdPage.drawText(
+        student[
+          "ACTIVITY CLUBS Proficient in use of materials and techniques._2"
+        ][0],
+        {
+          x: 479,
+          y: 119,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+
+      thirdPage.drawText(
+        student[
+          "ACTIVITY CLUBS Demonstration of skill in chosen activity._2"
+        ][0],
+        {
+          x: 479,
+          y: 107,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      thirdPage.drawText(
+        student[
+          "ACTIVITY CLUBS Exhibits co-operation and self-discipline._2"
+        ][0],
+        {
+          x: 479,
+          y: 93,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      thirdPage.drawImage(teacherSign1Image, {
+        x: 60,
+        y: 55,
+        width: 100,
+        height: 30,
+      });
     } catch (error) {
       console.error("Error filling PDF form:", error);
     }
