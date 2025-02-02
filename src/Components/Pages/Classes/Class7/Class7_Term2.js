@@ -12,7 +12,7 @@ function Class7_Term2() {
   const location = useLocation();
   const { data, localPdf } = location.state;
   const userData = data.term_2;
-  //   console.log(data, "Data in Class3_Term1");
+  console.log(data, "Data in Class3_Term1");
   console.log(localPdf, "Use localPdf ?");
 
   const fileURL = localPdf
@@ -173,30 +173,31 @@ function Class7_Term2() {
         }
       );
 
+      secondPage.drawText(student["Language-I (ENGLISH) PORTFOLIO-1 (5)"][0], {
+        x: 220,
+        y: 730,
+        size: 14,
+        color: rgb(0, 0, 0),
+      });
+
       secondPage.drawText(
-        student["Language-I (ENGLISH) PERIODIC TEST - I (5)"][0],
+        student["Language-I (ENGLISH) SUBJECT ENRICHMENT-1 (5)"][0],
         {
-          x: 220,
+          x: 290,
           y: 730,
           size: 14,
           color: rgb(0, 0, 0),
         }
       );
-      secondPage.drawText(student["Language-I (ENGLISH) PORTFOLIO-1 (5)"][0], {
-        x: 290,
-        y: 730,
-        size: 14,
-        color: rgb(0, 0, 0),
-      });
-      // secondPage.drawText(
-      //   student["Language-I (ENGLISH) SUBJECT ENRICHMENT-1 (5)"][0],
-      //   {
-      //     x: 365,
-      //     y: 730,
-      //     size: 14,
-      //     color: rgb(0, 0, 0),
-      //   }
-      // );
+      secondPage.drawText(
+        student["Language-I (ENGLISH) MULTIPLE ASSESSMENT-1 (5)"][0],
+        {
+          x: 365,
+          y: 730,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
       secondPage.drawText(student["Language-I (ENGLISH) HALF YEARLY (80)"][0], {
         x: 425,
         y: 730,

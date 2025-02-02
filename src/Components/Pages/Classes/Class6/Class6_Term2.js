@@ -172,25 +172,26 @@ function Class6_Term2() {
         }
       );
 
+      secondPage.drawText(student["Language-I (ENGLISH) PORTFOLIO-1 (5)"][0], {
+        x: 220,
+        y: 730,
+        size: 14,
+        color: rgb(0, 0, 0),
+      });
+
       secondPage.drawText(
-        student["Language-I (ENGLISH) PERIODIC TEST - I (5)"][0],
+        student["Language-I (ENGLISH) SUBJECT ENRICHMENT-1 (5)"][0],
         {
-          x: 220,
+          x: 290,
           y: 730,
           size: 14,
           color: rgb(0, 0, 0),
         }
       );
-      secondPage.drawText(student["Language-I (ENGLISH) PORTFOLIO-1 (5)"][0], {
-        x: 290,
-        y: 730,
-        size: 14,
-        color: rgb(0, 0, 0),
-      });
       secondPage.drawText(
-        student["Language-I (ENGLISH) SUBJECT ENRICHMENT-1 (5)"][0],
+        student["Language-I (ENGLISH) MULTIPLE ASSESSMENT-1 (5)"][0],
         {
-          x: 370,
+          x: 365,
           y: 730,
           size: 14,
           color: rgb(0, 0, 0),
