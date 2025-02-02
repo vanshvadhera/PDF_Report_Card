@@ -213,7 +213,7 @@ function Class6_Term2() {
         }
       );
       secondPage.drawText(student["Language-I (ENGLISH) GRADE"][0], {
-        x: 534,
+        x: 530,
         y: 730,
         size: 14,
         color: rgb(0, 0, 0),
@@ -246,7 +246,7 @@ function Class6_Term2() {
       secondPage.drawText(
         student["Language-II (HINDI) MULTIPLE ASSESSMENT-1 (5)"][0],
         {
-          x: 370,
+          x: 365,
           y: 711,
           size: 14,
           color: rgb(0, 0, 0),
@@ -268,7 +268,7 @@ function Class6_Term2() {
         }
       );
       secondPage.drawText(student["Language-II (HINDI) GRADE"][0], {
-        x: 534,
+        x: 530,
         y: 711,
         size: 14,
         color: rgb(0, 0, 0),
@@ -296,7 +296,7 @@ function Class6_Term2() {
       secondPage.drawText(
         student["Language-III MULTIPLE ASSESSMENT-2 (5)"][0],
         {
-          x: 370,
+          x: 365,
           y: 694,
           size: 14,
           color: rgb(0, 0, 0),
@@ -315,7 +315,7 @@ function Class6_Term2() {
         color: rgb(0, 0, 0),
       });
       secondPage.drawText(student["Language-III GRADE"][0], {
-        x: 534,
+        x: 530,
         y: 694,
         size: 14,
         color: rgb(0, 0, 0),
@@ -341,7 +341,7 @@ function Class6_Term2() {
         color: rgb(0, 0, 0),
       });
       secondPage.drawText(student["MATHEMATICS MULTIPLE ASSESSMENT-1 (5)"][0], {
-        x: 370,
+        x: 365,
         y: 677,
         size: 14,
         color: rgb(0, 0, 0),
@@ -359,7 +359,7 @@ function Class6_Term2() {
         color: rgb(0, 0, 0),
       });
       secondPage.drawText(student["MATHEMATICS GRADE"][0], {
-        x: 534,
+        x: 530,
         y: 677,
         size: 14,
         color: rgb(0, 0, 0),
@@ -384,7 +384,7 @@ function Class6_Term2() {
         color: rgb(0, 0, 0),
       });
       secondPage.drawText(student["SCIENCE MULTIPLE ASSESSMENT-1 (5)"][0], {
-        x: 370,
+        x: 365,
         y: 660,
         size: 14,
         color: rgb(0, 0, 0),
@@ -402,7 +402,7 @@ function Class6_Term2() {
         color: rgb(0, 0, 0),
       });
       secondPage.drawText(student["SCIENCE GRADE"][0], {
-        x: 534,
+        x: 530,
         y: 660,
         size: 14,
         color: rgb(0, 0, 0),
@@ -433,7 +433,7 @@ function Class6_Term2() {
       secondPage.drawText(
         student["SOCIAL SCIENCE MULTIPLE ASSESSMENT-1 (5)"][0],
         {
-          x: 370,
+          x: 365,
           y: 643,
           size: 14,
           color: rgb(0, 0, 0),
@@ -452,7 +452,7 @@ function Class6_Term2() {
         color: rgb(0, 0, 0),
       });
       secondPage.drawText(student["SOCIAL SCIENCE GRADE"][0], {
-        x: 534,
+        x: 530,
         y: 643,
         size: 14,
         color: rgb(0, 0, 0),
@@ -486,7 +486,7 @@ function Class6_Term2() {
       secondPage.drawText(
         student["COMPUTER SCIENCE MULTIPLE ASSESSMENT-1 (5)"][0],
         {
-          x: 370,
+          x: 365,
           y: 623,
           size: 14,
           color: rgb(0, 0, 0),
@@ -505,31 +505,31 @@ function Class6_Term2() {
         color: rgb(0, 0, 0),
       });
       secondPage.drawText(student["COMPUTER SCIENCE GRADE"][0], {
-        x: 534,
+        x: 530,
         y: 623,
         size: 14,
         color: rgb(0, 0, 0),
       });
       secondPage.drawText(student["Work Education"][0], {
-        x: 513,
+        x: 505,
         y: 580,
         size: 14,
         color: rgb(0, 0, 0),
       });
       secondPage.drawText(student["Art Education"][0], {
-        x: 513,
+        x: 505,
         y: 563,
         size: 14,
         color: rgb(0, 0, 0),
       });
       secondPage.drawText(student["Health & Physical Education"][0], {
-        x: 513,
+        x: 505,
         y: 544,
         size: 14,
         color: rgb(0, 0, 0),
       });
       secondPage.drawText(student["Discipline"][0], {
-        x: 513,
+        x: 505,
         y: 502,
         size: 14,
         color: rgb(0, 0, 0),
@@ -667,7 +667,7 @@ function Class6_Term2() {
       thirdPage.drawText(
         student["Language-II (HINDI) MULTIPLE ASSESSMENT-2 (5)_2"][0],
         {
-          x: 367,
+          x: 363,
           y: 681,
           size: 14,
           color: rgb(0, 0, 0),
@@ -723,7 +723,7 @@ function Class6_Term2() {
       thirdPage.drawText(
         student["Language-III MULTIPLE ASSESSMENT-2 (5)_2"][0],
         {
-          x: 367,
+          x: 363,
           y: 664,
           size: 14,
           color: rgb(0, 0, 0),
@@ -770,7 +770,7 @@ function Class6_Term2() {
       thirdPage.drawText(
         student["MATHEMATICS MULTIPLE ASSESSMENT-2 (5)_2"][0],
         {
-          x: 367,
+          x: 363,
           y: 642,
           size: 14,
           color: rgb(0, 0, 0),
@@ -815,7 +815,7 @@ function Class6_Term2() {
         color: rgb(0, 0, 0),
       });
       thirdPage.drawText(student["SCIENCE MULTIPLE ASSESSMENT-2 (5)_2"][0], {
-        x: 367,
+        x: 363,
         y: 623,
         size: 14,
         color: rgb(0, 0, 0),
@@ -864,7 +864,7 @@ function Class6_Term2() {
       thirdPage.drawText(
         student["SOCIAL SCIENCE MULTIPLE ASSESSMENT-2 (5)_2"][0],
         {
-          x: 367,
+          x: 363,
           y: 604,
           size: 14,
           color: rgb(0, 0, 0),
@@ -917,7 +917,7 @@ function Class6_Term2() {
       thirdPage.drawText(
         student["COMPUTER SCIENCE MULTIPLE ASSESSMENT-2 (5)_2"][0],
         {
-          x: 367,
+          x: 363,
           y: 584,
           size: 14,
           color: rgb(0, 0, 0),
@@ -946,25 +946,25 @@ function Class6_Term2() {
       });
 
       thirdPage.drawText(student["Work Education_2"][0], {
-        x: 513,
+        x: 507,
         y: 535,
         size: 14,
         color: rgb(0, 0, 0),
       });
       thirdPage.drawText(student["Art Education_2"][0], {
-        x: 513,
+        x: 507,
         y: 513,
         size: 14,
         color: rgb(0, 0, 0),
       });
       thirdPage.drawText(student["Health & Physical Education_2"][0], {
-        x: 513,
+        x: 507,
         y: 490,
         size: 14,
         color: rgb(0, 0, 0),
       });
       thirdPage.drawText(student["Discipline_2"][0], {
-        x: 513,
+        x: 507,
         y: 440,
         size: 14,
         color: rgb(0, 0, 0),
@@ -1111,7 +1111,7 @@ function Class6_Term2() {
         }
       );
       fourthPage.drawText(student["Language-I (ENGLISH) ANNUAL (80)_2"][0], {
-        x: 480,
+        x: 475,
         y: 723,
         size: 10,
         color: rgb(0, 0, 0),
@@ -1119,14 +1119,14 @@ function Class6_Term2() {
       fourthPage.drawText(
         student["Language-I (ENGLISH) MARKS OBTAINED (100)_2"][0],
         {
-          x: 508,
+          x: 504,
           y: 723,
           size: 10,
           color: rgb(0, 0, 0),
         }
       );
       fourthPage.drawText(student["Language-I (ENGLISH) GRADE_2"][0], {
-        x: 545,
+        x: 540,
         y: 723,
         size: 10,
         color: rgb(0, 0, 0),
@@ -1220,7 +1220,7 @@ function Class6_Term2() {
         }
       );
       fourthPage.drawText(student["Language-II (HINDI) ANNUAL (80)_2"][0], {
-        x: 480,
+        x: 475,
         y: 703,
         size: 10,
         color: rgb(0, 0, 0),
@@ -1228,20 +1228,14 @@ function Class6_Term2() {
       fourthPage.drawText(
         student["Language-II (HINDI) MARKS OBTAINED (100)_2"][0],
         {
-          x: 508,
+          x: 504,
           y: 703,
           size: 10,
           color: rgb(0, 0, 0),
         }
       );
       fourthPage.drawText(student["Language-II (HINDI) GRADE_2"][0], {
-        x: 545,
-        y: 703,
-        size: 10,
-        color: rgb(0, 0, 0),
-      });
-      fourthPage.drawText(student["Language-II (HINDI) GRADE_2"][0], {
-        x: 545,
+        x: 540,
         y: 703,
         size: 10,
         color: rgb(0, 0, 0),
@@ -1326,25 +1320,25 @@ function Class6_Term2() {
         }
       );
       fourthPage.drawText(student["Language-III ANNUAL (80)_2"][0], {
-        x: 480,
+        x: 475,
         y: 683,
         size: 10,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["Language-III MARKS OBTAINED (100)_2"][0], {
-        x: 508,
+        x: 504,
         y: 683,
         size: 10,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["Language-III GRADE_2"][0], {
-        x: 545,
+        x: 540,
         y: 683,
         size: 10,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["Language-III GRADE_2"][0], {
-        x: 545,
+        x: 540,
         y: 683,
         size: 10,
         color: rgb(0, 0, 0),
@@ -1423,25 +1417,19 @@ function Class6_Term2() {
         }
       );
       fourthPage.drawText(student["MATHEMATICS ANNUAL (80)_2"][0], {
-        x: 480,
+        x: 475,
         y: 664,
         size: 10,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["MATHEMATICS MARKS OBTAINED (100)_2"][0], {
-        x: 508,
+        x: 504,
         y: 664,
         size: 10,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["MATHEMATICS GRADE_2"][0], {
-        x: 545,
-        y: 664,
-        size: 10,
-        color: rgb(0, 0, 0),
-      });
-      fourthPage.drawText(student["MATHEMATICS GRADE_2"][0], {
-        x: 545,
+        x: 540,
         y: 664,
         size: 10,
         color: rgb(0, 0, 0),
@@ -1514,25 +1502,19 @@ function Class6_Term2() {
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["SCIENCE ANNUAL (80)_2"][0], {
-        x: 480,
+        x: 475,
         y: 646,
         size: 10,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["SCIENCE MARKS OBTAINED (100)_2"][0], {
-        x: 508,
+        x: 504,
         y: 646,
         size: 10,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["SCIENCE GRADE_2"][0], {
-        x: 545,
-        y: 646,
-        size: 10,
-        color: rgb(0, 0, 0),
-      });
-      fourthPage.drawText(student["SCIENCE GRADE_2"][0], {
-        x: 545,
+        x: 540,
         y: 646,
         size: 10,
         color: rgb(0, 0, 0),
@@ -1620,25 +1602,19 @@ function Class6_Term2() {
         }
       );
       fourthPage.drawText(student["SOCIAL SCIENCE ANNUAL (80)_2"][0], {
-        x: 480,
+        x: 475,
         y: 626,
         size: 10,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["SOCIAL SCIENCE MARKS OBTAINED (100)_2"][0], {
-        x: 508,
+        x: 504,
         y: 626,
         size: 10,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["SOCIAL SCIENCE GRADE_2"][0], {
-        x: 545,
-        y: 626,
-        size: 10,
-        color: rgb(0, 0, 0),
-      });
-      fourthPage.drawText(student["SOCIAL SCIENCE GRADE_2"][0], {
-        x: 545,
+        x: 540,
         y: 626,
         size: 10,
         color: rgb(0, 0, 0),
@@ -1729,7 +1705,7 @@ function Class6_Term2() {
         }
       );
       fourthPage.drawText(student["COMPUTER SCIENCE ANNUAL (80)_2"][0], {
-        x: 480,
+        x: 475,
         y: 606,
         size: 10,
         color: rgb(0, 0, 0),
@@ -1737,20 +1713,14 @@ function Class6_Term2() {
       fourthPage.drawText(
         student["COMPUTER SCIENCE MARKS OBTAINED (100)_2"][0],
         {
-          x: 508,
+          x: 504,
           y: 606,
           size: 10,
           color: rgb(0, 0, 0),
         }
       );
       fourthPage.drawText(student["COMPUTER SCIENCE GRADE_2"][0], {
-        x: 545,
-        y: 606,
-        size: 10,
-        color: rgb(0, 0, 0),
-      });
-      fourthPage.drawText(student["COMPUTER SCIENCE GRADE_2"][0], {
-        x: 545,
+        x: 540,
         y: 606,
         size: 10,
         color: rgb(0, 0, 0),
@@ -1775,19 +1745,19 @@ function Class6_Term2() {
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["Work Education II_2"][0], {
-        x: 545,
+        x: 540,
         y: 565,
         size: 12,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["Art Education II_2"][0], {
-        x: 545,
+        x: 540,
         y: 548,
         size: 12,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["Health & Physical Education II_2"][0], {
-        x: 545,
+        x: 540,
         y: 527,
         size: 12,
         color: rgb(0, 0, 0),
@@ -1800,7 +1770,7 @@ function Class6_Term2() {
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["Discipline II_2"][0], {
-        x: 545,
+        x: 540,
         y: 487,
         size: 12,
         color: rgb(0, 0, 0),
@@ -1854,7 +1824,6 @@ function Class6_Term2() {
         width: 100,
         height: 30,
       });
-
       fifthPage.drawText(
         student[
           "ENGLISH Listens to comprehend effectively and understand the essence of the text"

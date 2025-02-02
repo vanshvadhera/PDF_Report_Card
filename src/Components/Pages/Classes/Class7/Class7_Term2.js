@@ -668,7 +668,7 @@ function Class7_Term2() {
       thirdPage.drawText(
         student["Language-II (HINDI) MULTIPLE ASSESSMENT-2 (5)_2"][0],
         {
-          x: 367,
+          x: 363,
           y: 681,
           size: 14,
           color: rgb(0, 0, 0),
@@ -724,7 +724,7 @@ function Class7_Term2() {
       thirdPage.drawText(
         student["Language-III MULTIPLE ASSESSMENT-2 (5)_2"][0],
         {
-          x: 367,
+          x: 363,
           y: 664,
           size: 14,
           color: rgb(0, 0, 0),
@@ -771,7 +771,7 @@ function Class7_Term2() {
       thirdPage.drawText(
         student["MATHEMATICS MULTIPLE ASSESSMENT-2 (5)_2"][0],
         {
-          x: 367,
+          x: 363,
           y: 642,
           size: 14,
           color: rgb(0, 0, 0),
@@ -816,7 +816,7 @@ function Class7_Term2() {
         color: rgb(0, 0, 0),
       });
       thirdPage.drawText(student["SCIENCE MULTIPLE ASSESSMENT-2 (5)_2"][0], {
-        x: 367,
+        x: 363,
         y: 623,
         size: 14,
         color: rgb(0, 0, 0),
@@ -865,7 +865,7 @@ function Class7_Term2() {
       thirdPage.drawText(
         student["SOCIAL SCIENCE MULTIPLE ASSESSMENT-2 (5)_2"][0],
         {
-          x: 367,
+          x: 363,
           y: 604,
           size: 14,
           color: rgb(0, 0, 0),
@@ -918,7 +918,7 @@ function Class7_Term2() {
       thirdPage.drawText(
         student["COMPUTER SCIENCE MULTIPLE ASSESSMENT-2 (5)_2"][0],
         {
-          x: 367,
+          x: 363,
           y: 584,
           size: 14,
           color: rgb(0, 0, 0),
