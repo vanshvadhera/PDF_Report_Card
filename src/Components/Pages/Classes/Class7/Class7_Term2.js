@@ -83,7 +83,7 @@ function Class7_Term2() {
       const tenthPage = pages[9];
 
       // Insert data dynamically from the student's record
- firstPage.drawImage(image, {
+      firstPage.drawImage(image, {
         x: 475,
         y: 608,
         width: 80,
@@ -188,15 +188,15 @@ function Class7_Term2() {
         size: 14,
         color: rgb(0, 0, 0),
       });
-      secondPage.drawText(
-        student["Language-I (ENGLISH) SUBJECT ENRICHMENT-1 (5)"][0],
-        {
-          x: 370,
-          y: 730,
-          size: 14,
-          color: rgb(0, 0, 0),
-        }
-      );
+      // secondPage.drawText(
+      //   student["Language-I (ENGLISH) SUBJECT ENRICHMENT-1 (5)"][0],
+      //   {
+      //     x: 365,
+      //     y: 730,
+      //     size: 14,
+      //     color: rgb(0, 0, 0),
+      //   }
+      // );
       secondPage.drawText(student["Language-I (ENGLISH) HALF YEARLY (80)"][0], {
         x: 425,
         y: 730,
@@ -246,7 +246,7 @@ function Class7_Term2() {
       secondPage.drawText(
         student["Language-II (HINDI) MULTIPLE ASSESSMENT-1 (5)"][0],
         {
-          x: 370,
+          x: 365,
           y: 711,
           size: 14,
           color: rgb(0, 0, 0),
@@ -296,7 +296,7 @@ function Class7_Term2() {
       secondPage.drawText(
         student["Language-III MULTIPLE ASSESSMENT-2 (5)"][0],
         {
-          x: 370,
+          x: 365,
           y: 694,
           size: 14,
           color: rgb(0, 0, 0),
@@ -341,7 +341,7 @@ function Class7_Term2() {
         color: rgb(0, 0, 0),
       });
       secondPage.drawText(student["MATHEMATICS MULTIPLE ASSESSMENT-1 (5)"][0], {
-        x: 370,
+        x: 365,
         y: 677,
         size: 14,
         color: rgb(0, 0, 0),
@@ -384,7 +384,7 @@ function Class7_Term2() {
         color: rgb(0, 0, 0),
       });
       secondPage.drawText(student["SCIENCE MULTIPLE ASSESSMENT-1 (5)"][0], {
-        x: 370,
+        x: 365,
         y: 660,
         size: 14,
         color: rgb(0, 0, 0),
@@ -433,7 +433,7 @@ function Class7_Term2() {
       secondPage.drawText(
         student["SOCIAL SCIENCE MULTIPLE ASSESSMENT-1 (5)"][0],
         {
-          x: 370,
+          x: 365,
           y: 643,
           size: 14,
           color: rgb(0, 0, 0),
@@ -486,7 +486,7 @@ function Class7_Term2() {
       secondPage.drawText(
         student["COMPUTER SCIENCE MULTIPLE ASSESSMENT-1 (5)"][0],
         {
-          x: 370,
+          x: 365,
           y: 623,
           size: 14,
           color: rgb(0, 0, 0),
@@ -697,12 +697,15 @@ function Class7_Term2() {
         color: rgb(0, 0, 0),
       });
 
-      thirdPage.drawText(student["Language-III (SPANISH) PERIODIC TEST - 2 (5)_2"][0], {
-        x: 158,
-        y: 664,
-        size: 14,
-        color: rgb(0, 0, 0),
-      });
+      thirdPage.drawText(
+        student["Language-III (SPANISH) PERIODIC TEST - 2 (5)_2"][0],
+        {
+          x: 158,
+          y: 664,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
       thirdPage.drawText(student["Language-III PORTFOLIO-2 (5)_2"][0], {
         x: 220,
         y: 664,
@@ -970,7 +973,7 @@ function Class7_Term2() {
       });
       {
         student["Class Teacher's Remarks_2"][0] &&
-        thirdPage.drawText(student["Class Teacher's Remarks_2"][0], {
+          thirdPage.drawText(student["Class Teacher's Remarks_2"][0], {
             x: 166,
             y: 400,
             size: 12,
@@ -979,7 +982,7 @@ function Class7_Term2() {
       }
       {
         student["Class Teacher's Remarks_2"][1] &&
-        thirdPage.drawText(student["Class Teacher's Remarks_2"][1], {
+          thirdPage.drawText(student["Class Teacher's Remarks_2"][1], {
             x: 166,
             y: 390,
             size: 12,
@@ -988,7 +991,7 @@ function Class7_Term2() {
       }
       {
         student["Class Teacher's Remarks_2"][2] &&
-        thirdPage.drawText(student["Class Teacher's Remarks_2"][2], {
+          thirdPage.drawText(student["Class Teacher's Remarks_2"][2], {
             x: 166,
             y: 380,
             size: 12,
@@ -997,21 +1000,21 @@ function Class7_Term2() {
       }
       {
         student["Class Teacher's Remarks_2"][3] &&
-        thirdPage.drawText(student["Class Teacher's Remarks_2"][3], {
+          thirdPage.drawText(student["Class Teacher's Remarks_2"][3], {
             x: 166,
             y: 370,
             size: 12,
             color: rgb(0, 0, 0),
           });
       }
-      
+
       thirdPage.drawText(student["Date_2"][0], {
         x: 70,
         y: 354,
         size: 14,
         color: rgb(0, 0, 0),
       });
-      
+
       thirdPage.drawImage(teacherSign1Image, {
         x: 250,
         y: 314,
@@ -1019,635 +1022,739 @@ function Class7_Term2() {
         height: 30,
       });
 
-      fourthPage.drawText(student["Language-I (ENGLISH) PERIODIC TEST - I (5)"][0], {
-        x: 138,
-        y: 723,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
+      fourthPage.drawText(
+        student["Language-I (ENGLISH) PERIODIC TEST - I (5)"][0],
+        {
+          x: 138,
+          y: 723,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
       fourthPage.drawText(student["Language-I (ENGLISH) PORTFOLIO-1 (5)"][0], {
         x: 170,
         y: 723,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
-      fourthPage.drawText(student["Language-I (ENGLISH) SUBJECT ENRICHMENT-1 (5)"][0], {
-        x: 215,
-        y: 723,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
-      fourthPage.drawText(student["Language-I (ENGLISH) MULTIPLE ASSESSMENT-1 (5)"][0], {
-        x: 238,
-        y: 723,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
+      fourthPage.drawText(
+        student["Language-I (ENGLISH) SUBJECT ENRICHMENT-1 (5)"][0],
+        {
+          x: 215,
+          y: 723,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fourthPage.drawText(
+        student["Language-I (ENGLISH) MULTIPLE ASSESSMENT-1 (5)"][0],
+        {
+          x: 238,
+          y: 723,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
       fourthPage.drawText(student["Language-I (ENGLISH) HALF YEARLY (80)"][0], {
         x: 264,
         y: 723,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
-      fourthPage.drawText(student["Language-I (ENGLISH) MARKS OBTAINED (100)"][0], {
-        x: 289,
-        y: 723,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
+      fourthPage.drawText(
+        student["Language-I (ENGLISH) MARKS OBTAINED (100)"][0],
+        {
+          x: 289,
+          y: 723,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
       fourthPage.drawText(student["Language-I (ENGLISH) GRADE"][0], {
         x: 323,
         y: 723,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
-      fourthPage.drawText(student["Language-I (ENGLISH) PERIODIC TEST - 2 (5)_2"][0], {
-        x: 356,
-        y: 723,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
-      fourthPage.drawText(student["Language-I (ENGLISH) PORTFOLIO-2 (5)_2"][0], {
-        x: 389,
-        y: 723,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
-      fourthPage.drawText(student["Language-I (ENGLISH) SUBJECT ENRICHMENT-2 (5)_2"][0], {
-        x: 425,
-        y: 723,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
-      fourthPage.drawText(student["Language-I (ENGLISH) MULTIPLE ASSESSMENT-2 (5)_2"][0], {
-        x: 452,
-        y: 723,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
+      fourthPage.drawText(
+        student["Language-I (ENGLISH) PERIODIC TEST - 2 (5)_2"][0],
+        {
+          x: 356,
+          y: 723,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fourthPage.drawText(
+        student["Language-I (ENGLISH) PORTFOLIO-2 (5)_2"][0],
+        {
+          x: 389,
+          y: 723,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fourthPage.drawText(
+        student["Language-I (ENGLISH) SUBJECT ENRICHMENT-2 (5)_2"][0],
+        {
+          x: 425,
+          y: 723,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fourthPage.drawText(
+        student["Language-I (ENGLISH) MULTIPLE ASSESSMENT-2 (5)_2"][0],
+        {
+          x: 452,
+          y: 723,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
       fourthPage.drawText(student["Language-I (ENGLISH) ANNUAL (80)_2"][0], {
         x: 480,
         y: 723,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
-      fourthPage.drawText(student["Language-I (ENGLISH) MARKS OBTAINED (100)_2"][0], {
-        x: 508,
-        y: 723,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
+      fourthPage.drawText(
+        student["Language-I (ENGLISH) MARKS OBTAINED (100)_2"][0],
+        {
+          x: 508,
+          y: 723,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
       fourthPage.drawText(student["Language-I (ENGLISH) GRADE_2"][0], {
         x: 545,
         y: 723,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
-    
-      fourthPage.drawText(student["Language-II (HINDI) PERIODIC TEST - I (5)"][0], {
-        x: 138,
-        y: 703,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
-      fourthPage.drawText(student["Language-II (HINDI) PORTFOLIO-1 (5)"][0], {
-        x: 170,
-        y: 703,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
-      fourthPage.drawText(student["Language-II (HINDI) SUBJECT ENRICHMENT-1 (5)"][0], {
-        x: 215,
-        y: 703,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
-      fourthPage.drawText(student["Language-II (HINDI) MULTIPLE ASSESSMENT-1 (5)"][0], {
-        x: 238,
-        y: 703,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
-      fourthPage.drawText(student["Language-II (HINDI) HALF YEARLY (80)"][0], {
-        x: 264,
-        y: 703,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
-      fourthPage.drawText(student["Language-II (HINDI) MARKS OBTAINED (100)"][0], {
-        x: 289,
-        y: 703,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
-      fourthPage.drawText(student["Language-II (HINDI) GRADE"][0], {
-        x: 323,
-        y: 703,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
-      fourthPage.drawText(student["Language-II (HINDI) PERIODIC TEST - 2 (5)_2"][0], {
-        x: 356,
-        y: 703,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
-      fourthPage.drawText(student["Language-II (HINDI) PORTFOLIO-2 (5)_2"][0], {
-        x: 389,
-        y: 703,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
-      fourthPage.drawText(student["Language-II (HINDI) SUBJECT ENRICHMENT-2 (5)_2"][0], {
-        x: 425,
-        y: 703,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
-      fourthPage.drawText(student["Language-II (HINDI) MULTIPLE ASSESSMENT-2 (5)_2"][0], {
-        x: 452,
-        y: 703,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
-      fourthPage.drawText(student["Language-II (HINDI) ANNUAL (80)_2"][0], {
-        x: 480,
-        y: 703,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
-      fourthPage.drawText(student["Language-II (HINDI) MARKS OBTAINED (100)_2"][0], {
-        x: 508,
-        y: 703,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
-      fourthPage.drawText(student["Language-II (HINDI) GRADE_2"][0], {
-        x: 545,
-        y: 703,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
-      fourthPage.drawText(student["Language-II (HINDI) GRADE_2"][0], {
-        x: 545,
-        y: 703,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
 
+      fourthPage.drawText(
+        student["Language-II (HINDI) PERIODIC TEST - I (5)"][0],
+        {
+          x: 138,
+          y: 703,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fourthPage.drawText(student["Language-II (HINDI) PORTFOLIO-1 (5)"][0], {
+        x: 170,
+        y: 703,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      fourthPage.drawText(
+        student["Language-II (HINDI) SUBJECT ENRICHMENT-1 (5)"][0],
+        {
+          x: 215,
+          y: 703,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fourthPage.drawText(
+        student["Language-II (HINDI) MULTIPLE ASSESSMENT-1 (5)"][0],
+        {
+          x: 238,
+          y: 703,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fourthPage.drawText(student["Language-II (HINDI) HALF YEARLY (80)"][0], {
+        x: 264,
+        y: 703,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      fourthPage.drawText(
+        student["Language-II (HINDI) MARKS OBTAINED (100)"][0],
+        {
+          x: 289,
+          y: 703,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fourthPage.drawText(student["Language-II (HINDI) GRADE"][0], {
+        x: 323,
+        y: 703,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      fourthPage.drawText(
+        student["Language-II (HINDI) PERIODIC TEST - 2 (5)_2"][0],
+        {
+          x: 356,
+          y: 703,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fourthPage.drawText(student["Language-II (HINDI) PORTFOLIO-2 (5)_2"][0], {
+        x: 389,
+        y: 703,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      fourthPage.drawText(
+        student["Language-II (HINDI) SUBJECT ENRICHMENT-2 (5)_2"][0],
+        {
+          x: 425,
+          y: 703,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fourthPage.drawText(
+        student["Language-II (HINDI) MULTIPLE ASSESSMENT-2 (5)_2"][0],
+        {
+          x: 452,
+          y: 703,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fourthPage.drawText(student["Language-II (HINDI) ANNUAL (80)_2"][0], {
+        x: 480,
+        y: 703,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      fourthPage.drawText(
+        student["Language-II (HINDI) MARKS OBTAINED (100)_2"][0],
+        {
+          x: 508,
+          y: 703,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fourthPage.drawText(student["Language-II (HINDI) GRADE_2"][0], {
+        x: 545,
+        y: 703,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      fourthPage.drawText(student["Language-II (HINDI) GRADE_2"][0], {
+        x: 545,
+        y: 703,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
 
       fourthPage.drawText(student["Language-III PERIODIC TEST - I (5)"][0], {
         x: 138,
         y: 683,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["Language-III PORTFOLIO-1 (5)"][0], {
         x: 170,
         y: 683,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["Language-III SUBJECT ENRICHMENT-1 (5)"][0], {
         x: 215,
         y: 683,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
-      fourthPage.drawText(student["Language-III MULTIPLE ASSESSMENT-1 (5)"][0], {
-        x: 238,
-        y: 683,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
+      fourthPage.drawText(
+        student["Language-III MULTIPLE ASSESSMENT-1 (5)"][0],
+        {
+          x: 238,
+          y: 683,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
       fourthPage.drawText(student["Language-III HALF YEARLY (80)"][0], {
         x: 264,
         y: 683,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["Language-III MARKS OBTAINED (100)"][0], {
         x: 289,
         y: 683,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["Language-III GRADE"][0], {
         x: 323,
         y: 683,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
-      fourthPage.drawText(student["Language-III (SPANISH) PERIODIC TEST - 2 (5)_2"][0], {
-        x: 356,
-        y: 683,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
+      fourthPage.drawText(
+        student["Language-III (SPANISH) PERIODIC TEST - 2 (5)_2"][0],
+        {
+          x: 356,
+          y: 683,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
       fourthPage.drawText(student["Language-III PORTFOLIO-2 (5)_2"][0], {
         x: 389,
         y: 683,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
-      fourthPage.drawText(student["Language-III SUBJECT ENRICHMENT-2 (5)_2"][0], {
-        x: 425,
-        y: 683,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
-      fourthPage.drawText(student["Language-III MULTIPLE ASSESSMENT-2 (5)_2"][0], {
-        x: 452,
-        y: 683,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
+      fourthPage.drawText(
+        student["Language-III SUBJECT ENRICHMENT-2 (5)_2"][0],
+        {
+          x: 425,
+          y: 683,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fourthPage.drawText(
+        student["Language-III MULTIPLE ASSESSMENT-2 (5)_2"][0],
+        {
+          x: 452,
+          y: 683,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
       fourthPage.drawText(student["Language-III ANNUAL (80)_2"][0], {
         x: 480,
         y: 683,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["Language-III MARKS OBTAINED (100)_2"][0], {
         x: 508,
         y: 683,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["Language-III GRADE_2"][0], {
         x: 545,
         y: 683,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["Language-III GRADE_2"][0], {
         x: 545,
         y: 683,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
 
       fourthPage.drawText(student["MATHEMATICS PERIODIC TEST - I (5)"][0], {
         x: 138,
         y: 664,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["MATHEMATICS PORTFOLIO-1 (5)"][0], {
         x: 170,
         y: 664,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["MATHEMATICS SUBJECT ENRICHMENT-1 (5)"][0], {
         x: 215,
         y: 664,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["MATHEMATICS MULTIPLE ASSESSMENT-1 (5)"][0], {
         x: 238,
         y: 664,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["MATHEMATICS HALF YEARLY (80)"][0], {
         x: 264,
         y: 664,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["MATHEMATICS MARKS OBTAINED (100)"][0], {
         x: 289,
         y: 664,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["MATHEMATICS GRADE"][0], {
         x: 323,
         y: 664,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["MATHEMATICS PERIODIC TEST - 2 (5)_2"][0], {
         x: 356,
         y: 664,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["MATHEMATICS PORTFOLIO-2 (5)_2"][0], {
         x: 389,
         y: 664,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
-      fourthPage.drawText(student["MATHEMATICS SUBJECT ENRICHMENT-2 (5)_2"][0], {
-        x: 425,
-        y: 664,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
-      fourthPage.drawText(student["MATHEMATICS MULTIPLE ASSESSMENT-2 (5)_2"][0], {
-        x: 452,
-        y: 664,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
+      fourthPage.drawText(
+        student["MATHEMATICS SUBJECT ENRICHMENT-2 (5)_2"][0],
+        {
+          x: 425,
+          y: 664,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fourthPage.drawText(
+        student["MATHEMATICS MULTIPLE ASSESSMENT-2 (5)_2"][0],
+        {
+          x: 452,
+          y: 664,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
       fourthPage.drawText(student["MATHEMATICS ANNUAL (80)_2"][0], {
         x: 480,
         y: 664,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["MATHEMATICS MARKS OBTAINED (100)_2"][0], {
         x: 508,
         y: 664,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["MATHEMATICS GRADE_2"][0], {
         x: 545,
         y: 664,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["MATHEMATICS GRADE_2"][0], {
         x: 545,
         y: 664,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
 
       fourthPage.drawText(student["SCIENCE PERIODIC TEST - I (5)"][0], {
         x: 138,
         y: 646,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["SCIENCE PORTFOLIO-1 (5)"][0], {
         x: 170,
         y: 646,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["SCIENCE SUBJECT ENRICHMENT-1 (5)"][0], {
         x: 215,
         y: 646,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["SCIENCE MULTIPLE ASSESSMENT-1 (5)"][0], {
         x: 238,
         y: 646,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["SCIENCE HALF YEARLY (80)"][0], {
         x: 264,
         y: 646,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["SCIENCE MARKS OBTAINED (100)"][0], {
         x: 289,
         y: 646,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["SCIENCE GRADE"][0], {
         x: 323,
         y: 646,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["SCIENCE PERIODIC TEST - 2 (5)_2"][0], {
         x: 356,
         y: 646,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["SCIENCE PORTFOLIO-2 (5)_2"][0], {
         x: 389,
         y: 646,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["SCIENCE SUBJECT ENRICHMENT-2 (5)_2"][0], {
         x: 425,
         y: 646,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["SCIENCE MULTIPLE ASSESSMENT-2 (5)_2"][0], {
         x: 452,
         y: 646,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["SCIENCE ANNUAL (80)_2"][0], {
         x: 480,
         y: 646,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["SCIENCE MARKS OBTAINED (100)_2"][0], {
         x: 508,
         y: 646,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["SCIENCE GRADE_2"][0], {
         x: 545,
         y: 646,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["SCIENCE GRADE_2"][0], {
         x: 545,
         y: 646,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
 
       fourthPage.drawText(student["SOCIAL SCIENCE PERIODIC TEST - I (5)"][0], {
         x: 138,
         y: 626,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["SOCIAL SCIENCE PORTFOLIO-1 (5)"][0], {
         x: 170,
         y: 626,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
-      fourthPage.drawText(student["SOCIAL SCIENCE SUBJECT ENRICHMENT-1 (5)"][0], {
-        x: 215,
-        y: 626,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
-      fourthPage.drawText(student["SOCIAL SCIENCE MULTIPLE ASSESSMENT-1 (5)"][0], {
-        x: 238,
-        y: 626,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
+      fourthPage.drawText(
+        student["SOCIAL SCIENCE SUBJECT ENRICHMENT-1 (5)"][0],
+        {
+          x: 215,
+          y: 626,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fourthPage.drawText(
+        student["SOCIAL SCIENCE MULTIPLE ASSESSMENT-1 (5)"][0],
+        {
+          x: 238,
+          y: 626,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
       fourthPage.drawText(student["SOCIAL SCIENCE HALF YEARLY (80)"][0], {
         x: 264,
         y: 626,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["SOCIAL SCIENCE MARKS OBTAINED (100)"][0], {
         x: 289,
         y: 626,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["SOCIAL SCIENCE GRADE"][0], {
         x: 323,
         y: 626,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
-      fourthPage.drawText(student["SOCIAL SCIENCE PERIODIC TEST - 2 (5)_2"][0], {
-        x: 356,
-        y: 626,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
+      fourthPage.drawText(
+        student["SOCIAL SCIENCE PERIODIC TEST - 2 (5)_2"][0],
+        {
+          x: 356,
+          y: 626,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
       fourthPage.drawText(student["SOCIAL SCIENCE PORTFOLIO-2 (5)_2"][0], {
         x: 389,
         y: 626,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
-      fourthPage.drawText(student["SOCIAL SCIENCE SUBJECT ENRICHMENT-2 (5)_2"][0], {
-        x: 425,
-        y: 626,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
-      fourthPage.drawText(student["SOCIAL SCIENCE MULTIPLE ASSESSMENT-2 (5)_2"][0], {
-        x: 452,
-        y: 626,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
+      fourthPage.drawText(
+        student["SOCIAL SCIENCE SUBJECT ENRICHMENT-2 (5)_2"][0],
+        {
+          x: 425,
+          y: 626,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fourthPage.drawText(
+        student["SOCIAL SCIENCE MULTIPLE ASSESSMENT-2 (5)_2"][0],
+        {
+          x: 452,
+          y: 626,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
       fourthPage.drawText(student["SOCIAL SCIENCE ANNUAL (80)_2"][0], {
         x: 480,
         y: 626,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["SOCIAL SCIENCE MARKS OBTAINED (100)_2"][0], {
         x: 508,
         y: 626,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["SOCIAL SCIENCE GRADE_2"][0], {
         x: 545,
         y: 626,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["SOCIAL SCIENCE GRADE_2"][0], {
         x: 545,
         y: 626,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
 
-      fourthPage.drawText(student["COMPUTER SCIENCE PERIODIC TEST - I (5)"][0], {
-        x: 138,
-        y: 606,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
+      fourthPage.drawText(
+        student["COMPUTER SCIENCE PERIODIC TEST - I (5)"][0],
+        {
+          x: 138,
+          y: 606,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
       fourthPage.drawText(student["COMPUTER SCIENCE PORTFOLIO-1 (5)"][0], {
         x: 170,
         y: 606,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
-      fourthPage.drawText(student["COMPUTER SCIENCE SUBJECT ENRICHMENT-1 (5)"][0], {
-        x: 215,
-        y: 606,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
-      fourthPage.drawText(student["COMPUTER SCIENCE MULTIPLE ASSESSMENT-1 (5)"][0], {
-        x: 238,
-        y: 606,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
+      fourthPage.drawText(
+        student["COMPUTER SCIENCE SUBJECT ENRICHMENT-1 (5)"][0],
+        {
+          x: 215,
+          y: 606,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fourthPage.drawText(
+        student["COMPUTER SCIENCE MULTIPLE ASSESSMENT-1 (5)"][0],
+        {
+          x: 238,
+          y: 606,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
       fourthPage.drawText(student["COMPUTER SCIENCE HALF YEARLY (80)"][0], {
         x: 264,
         y: 606,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["COMPUTER SCIENCE MARKS OBTAINED (100)"][0], {
         x: 289,
         y: 606,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["COMPUTER SCIENCE GRADE"][0], {
         x: 323,
         y: 606,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
-      fourthPage.drawText(student["COMPUTER SCIENCE PERIODIC TEST - 2 (5)_2"][0], {
-        x: 356,
-        y: 606,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
+      fourthPage.drawText(
+        student["COMPUTER SCIENCE PERIODIC TEST - 2 (5)_2"][0],
+        {
+          x: 356,
+          y: 606,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
       fourthPage.drawText(student["COMPUTER SCIENCE PORTFOLIO-2 (5)_2"][0], {
         x: 389,
         y: 606,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
-      fourthPage.drawText(student["COMPUTER SCIENCE SUBJECT ENRICHMENT-2 (5)_2"][0], {
-        x: 425,
-        y: 606,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
-      fourthPage.drawText(student["COMPUTER SCIENCE MULTIPLE ASSESSMENT-2 (5)_2"][0], {
-        x: 452,
-        y: 606,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
+      fourthPage.drawText(
+        student["COMPUTER SCIENCE SUBJECT ENRICHMENT-2 (5)_2"][0],
+        {
+          x: 425,
+          y: 606,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fourthPage.drawText(
+        student["COMPUTER SCIENCE MULTIPLE ASSESSMENT-2 (5)_2"][0],
+        {
+          x: 452,
+          y: 606,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
       fourthPage.drawText(student["COMPUTER SCIENCE ANNUAL (80)_2"][0], {
         x: 480,
         y: 606,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
-      fourthPage.drawText(student["COMPUTER SCIENCE MARKS OBTAINED (100)_2"][0], {
-        x: 508,
+      fourthPage.drawText(
+        student["COMPUTER SCIENCE MARKS OBTAINED (100)_2"][0],
+        {
+          x: 508,
+          y: 606,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
+      fourthPage.drawText(student["COMPUTER SCIENCE GRADE_2"][0], {
+        x: 545,
         y: 606,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["COMPUTER SCIENCE GRADE_2"][0], {
         x: 545,
         y: 606,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
-      fourthPage.drawText(student["COMPUTER SCIENCE GRADE_2"][0], {
-        x: 545,
-        y: 606,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
 
@@ -1701,10 +1808,9 @@ function Class7_Term2() {
         color: rgb(0, 0, 0),
       });
 
-
       {
         student["Class Teacher's Remarks_2"][0] &&
-        fourthPage.drawText(student["Class Teacher's Remarks_2"][0], {
+          fourthPage.drawText(student["Class Teacher's Remarks_2"][0], {
             x: 164,
             y: 465,
             size: 12,
@@ -1713,7 +1819,7 @@ function Class7_Term2() {
       }
       {
         student["Class Teacher's Remarks_2"][1] &&
-        fourthPage.drawText(student["Class Teacher's Remarks_2"][1], {
+          fourthPage.drawText(student["Class Teacher's Remarks_2"][1], {
             x: 164,
             y: 455,
             size: 12,
@@ -1722,7 +1828,7 @@ function Class7_Term2() {
       }
       {
         student["Class Teacher's Remarks_2"][2] &&
-        fourthPage.drawText(student["Class Teacher's Remarks_2"][2], {
+          fourthPage.drawText(student["Class Teacher's Remarks_2"][2], {
             x: 164,
             y: 445,
             size: 12,
@@ -1731,7 +1837,7 @@ function Class7_Term2() {
       }
       {
         student["Class Teacher's Remarks_2"][3] &&
-        fourthPage.drawText(student["Class Teacher's Remarks_2"][3], {
+          fourthPage.drawText(student["Class Teacher's Remarks_2"][3], {
             x: 164,
             y: 435,
             size: 12,
@@ -2698,10 +2804,6 @@ function Class7_Term2() {
           });
       }
 
-
-
-
-
       {
         student["My Achievements:"][0] &&
           tenthPage?.drawText(student["My Achievements:"][0], {
@@ -2729,11 +2831,6 @@ function Class7_Term2() {
             color: rgb(0, 0, 0),
           });
       }
-
-
-
-
-
 
       {
         student["My Strengths :"][0] &&
@@ -2763,8 +2860,6 @@ function Class7_Term2() {
           });
       }
 
-
-
       {
         student["My Weaknesses :"][0] &&
           tenthPage?.drawText(student["My Weaknesses :"][0], {
@@ -2792,7 +2887,6 @@ function Class7_Term2() {
             color: rgb(0, 0, 0),
           });
       }
-      
 
       // More drawing based on the student's data...
     } catch (error) {
