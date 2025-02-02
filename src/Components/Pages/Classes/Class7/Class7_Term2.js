@@ -595,17 +595,9 @@ function Class7_Term2() {
           color: rgb(0, 0, 0),
         }
       );
-      thirdPage.drawText(
-        student["Language-I (ENGLISH) PERIODIC TEST - 2 (5)_2"][0],
-        {
-          x: 217,
-          y: 700,
-          size: 14,
-          color: rgb(0, 0, 0),
-        }
-      );
+
       thirdPage.drawText(student["Language-I (ENGLISH) PORTFOLIO-2 (5)_2"][0], {
-        x: 287,
+        x: 217,
         y: 700,
         size: 14,
         color: rgb(0, 0, 0),
@@ -613,21 +605,27 @@ function Class7_Term2() {
       thirdPage.drawText(
         student["Language-I (ENGLISH) SUBJECT ENRICHMENT-2 (5)_2"][0],
         {
-          x: 363,
+          x: 287,
           y: 700,
           size: 14,
           color: rgb(0, 0, 0),
         }
       );
       thirdPage.drawText(
-        student["Language-I (ENGLISH) HALF YEARLY (80)_2"][0],
+        student["Language-I (ENGLISH) MULTIPLE ASSESSMENT-2 (5)_2"][0],
         {
-          x: 422,
+          x: 363,
           y: 700,
           size: 14,
           color: rgb(0, 0, 0),
         }
       );
+      thirdPage.drawText(student["Language-I (ENGLISH) ANNUAL (80)_2"][0], {
+        x: 422,
+        y: 700,
+        size: 14,
+        color: rgb(0, 0, 0),
+      });
       thirdPage.drawText(
         student["Language-I (ENGLISH) MARKS OBTAINED (100)_2"][0],
         {
@@ -676,7 +674,7 @@ function Class7_Term2() {
           color: rgb(0, 0, 0),
         }
       );
-      thirdPage.drawText(student["Language-II (HINDI) HALF YEARLY (80)_2"][0], {
+      thirdPage.drawText(student["Language-II (HINDI) ANNUAL (80)_2"][0], {
         x: 422,
         y: 681,
         size: 14,
@@ -732,7 +730,7 @@ function Class7_Term2() {
           color: rgb(0, 0, 0),
         }
       );
-      thirdPage.drawText(student["Language-III HALF YEARLY (80)_2"][0], {
+      thirdPage.drawText(student["Language-III ANNUAL (80)_2"][0], {
         x: 422,
         y: 664,
         size: 14,
@@ -779,7 +777,7 @@ function Class7_Term2() {
           color: rgb(0, 0, 0),
         }
       );
-      thirdPage.drawText(student["MATHEMATICS HALF YEARLY (80)_2"][0], {
+      thirdPage.drawText(student["MATHEMATICS ANNUAL (80)_2"][0], {
         x: 421,
         y: 642,
         size: 14,
@@ -823,7 +821,7 @@ function Class7_Term2() {
         size: 14,
         color: rgb(0, 0, 0),
       });
-      thirdPage.drawText(student["SCIENCE HALF YEARLY (80)_2"][0], {
+      thirdPage.drawText(student["SCIENCE ANNUAL (80)_2"][0], {
         x: 422,
         y: 623,
         size: 14,
@@ -873,7 +871,7 @@ function Class7_Term2() {
           color: rgb(0, 0, 0),
         }
       );
-      thirdPage.drawText(student["SOCIAL SCIENCE HALF YEARLY (80)_2"][0], {
+      thirdPage.drawText(student["SOCIAL SCIENCE ANNUAL (80)_2"][0], {
         x: 422,
         y: 604,
         size: 14,
@@ -926,7 +924,7 @@ function Class7_Term2() {
           color: rgb(0, 0, 0),
         }
       );
-      thirdPage.drawText(student["COMPUTER SCIENCE HALF YEARLY (80)_2"][0], {
+      thirdPage.drawText(student["COMPUTER SCIENCE ANNUAL (80)_2"][0], {
         x: 422,
         y: 584,
         size: 14,

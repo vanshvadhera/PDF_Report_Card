@@ -588,23 +588,15 @@ function Class8_Term2() {
       thirdPage.drawText(
         student["Language-I (ENGLISH) PERIODIC TEST - 2 (5)_2"][0],
         {
-          x: 158,
+          x: 155,
           y: 700,
           size: 14,
           color: rgb(0, 0, 0),
         }
       );
-      thirdPage.drawText(
-        student["Language-I (ENGLISH) PERIODIC TEST - 2 (5)_2"][0],
-        {
-          x: 220,
-          y: 700,
-          size: 14,
-          color: rgb(0, 0, 0),
-        }
-      );
+
       thirdPage.drawText(student["Language-I (ENGLISH) PORTFOLIO-2 (5)_2"][0], {
-        x: 290,
+        x: 217,
         y: 700,
         size: 14,
         color: rgb(0, 0, 0),
@@ -612,32 +604,38 @@ function Class8_Term2() {
       thirdPage.drawText(
         student["Language-I (ENGLISH) SUBJECT ENRICHMENT-2 (5)_2"][0],
         {
-          x: 370,
+          x: 287,
           y: 700,
           size: 14,
           color: rgb(0, 0, 0),
         }
       );
       thirdPage.drawText(
-        student["Language-I (ENGLISH) HALF YEARLY (80)_2"][0],
+        student["Language-I (ENGLISH) MULTIPLE ASSESSMENT-2 (5)_2"][0],
         {
-          x: 425,
+          x: 363,
           y: 700,
           size: 14,
           color: rgb(0, 0, 0),
         }
       );
+      thirdPage.drawText(student["Language-I (ENGLISH) ANNUAL (80)_2"][0], {
+        x: 422,
+        y: 700,
+        size: 14,
+        color: rgb(0, 0, 0),
+      });
       thirdPage.drawText(
         student["Language-I (ENGLISH) MARKS OBTAINED (100)_2"][0],
         {
-          x: 480,
+          x: 477,
           y: 700,
           size: 14,
           color: rgb(0, 0, 0),
         }
       );
       thirdPage.drawText(student["Language-I (ENGLISH) GRADE_2"][0], {
-        x: 534,
+        x: 531,
         y: 700,
         size: 14,
         color: rgb(0, 0, 0),
@@ -645,14 +643,14 @@ function Class8_Term2() {
       thirdPage.drawText(
         student["Language-II (HINDI) PERIODIC TEST - 2 (5)_2"][0],
         {
-          x: 158,
+          x: 155,
           y: 681,
           size: 14,
           color: rgb(0, 0, 0),
         }
       );
       thirdPage.drawText(student["Language-II (HINDI) PORTFOLIO-2 (5)_2"][0], {
-        x: 220,
+        x: 217,
         y: 681,
         size: 14,
         color: rgb(0, 0, 0),
@@ -660,7 +658,7 @@ function Class8_Term2() {
       thirdPage.drawText(
         student["Language-II (HINDI) SUBJECT ENRICHMENT-2 (5)_2"][0],
         {
-          x: 290,
+          x: 287,
           y: 681,
           size: 14,
           color: rgb(0, 0, 0),
@@ -669,14 +667,14 @@ function Class8_Term2() {
       thirdPage.drawText(
         student["Language-II (HINDI) MULTIPLE ASSESSMENT-2 (5)_2"][0],
         {
-          x: 370,
+          x: 367,
           y: 681,
           size: 14,
           color: rgb(0, 0, 0),
         }
       );
-      thirdPage.drawText(student["Language-II (HINDI) HALF YEARLY (80)_2"][0], {
-        x: 425,
+      thirdPage.drawText(student["Language-II (HINDI) ANNUAL (80)_2"][0], {
+        x: 422,
         y: 681,
         size: 14,
         color: rgb(0, 0, 0),
@@ -684,14 +682,14 @@ function Class8_Term2() {
       thirdPage.drawText(
         student["Language-II (HINDI) MARKS OBTAINED (100)_2"][0],
         {
-          x: 480,
+          x: 477,
           y: 681,
           size: 14,
           color: rgb(0, 0, 0),
         }
       );
       thirdPage.drawText(student["Language-II (HINDI) GRADE_2"][0], {
-        x: 534,
+        x: 531,
         y: 681,
         size: 14,
         color: rgb(0, 0, 0),
@@ -700,14 +698,14 @@ function Class8_Term2() {
       thirdPage.drawText(
         student["Language-III (SPANISH) PERIODIC TEST - 2 (5)_2"][0],
         {
-          x: 158,
+          x: 155,
           y: 664,
           size: 14,
           color: rgb(0, 0, 0),
         }
       );
       thirdPage.drawText(student["Language-III PORTFOLIO-2 (5)_2"][0], {
-        x: 220,
+        x: 217,
         y: 664,
         size: 14,
         color: rgb(0, 0, 0),
@@ -716,7 +714,7 @@ function Class8_Term2() {
       thirdPage.drawText(
         student["Language-III SUBJECT ENRICHMENT-2 (5)_2"][0],
         {
-          x: 290,
+          x: 287,
           y: 664,
           size: 14,
           color: rgb(0, 0, 0),
@@ -725,46 +723,46 @@ function Class8_Term2() {
       thirdPage.drawText(
         student["Language-III MULTIPLE ASSESSMENT-2 (5)_2"][0],
         {
-          x: 370,
+          x: 367,
           y: 664,
           size: 14,
           color: rgb(0, 0, 0),
         }
       );
-      thirdPage.drawText(student["Language-III HALF YEARLY (80)_2"][0], {
-        x: 425,
+      thirdPage.drawText(student["Language-III ANNUAL (80)_2"][0], {
+        x: 422,
         y: 664,
         size: 14,
         color: rgb(0, 0, 0),
       });
       thirdPage.drawText(student["Language-III MARKS OBTAINED (100)_2"][0], {
-        x: 480,
+        x: 477,
         y: 664,
         size: 14,
         color: rgb(0, 0, 0),
       });
       thirdPage.drawText(student["Language-III GRADE_2"][0], {
-        x: 534,
+        x: 531,
         y: 664,
         size: 14,
         color: rgb(0, 0, 0),
       });
 
       thirdPage.drawText(student["MATHEMATICS PERIODIC TEST - 2 (5)_2"][0], {
-        x: 158,
+        x: 155,
         y: 642,
         size: 14,
         color: rgb(0, 0, 0),
       });
       thirdPage.drawText(student["MATHEMATICS PORTFOLIO-2 (5)_2"][0], {
-        x: 220,
+        x: 217,
         y: 642,
         size: 14,
         color: rgb(0, 0, 0),
       });
 
       thirdPage.drawText(student["MATHEMATICS SUBJECT ENRICHMENT-2 (5)_2"][0], {
-        x: 290,
+        x: 287,
         y: 642,
         size: 14,
         color: rgb(0, 0, 0),
@@ -772,83 +770,83 @@ function Class8_Term2() {
       thirdPage.drawText(
         student["MATHEMATICS MULTIPLE ASSESSMENT-2 (5)_2"][0],
         {
-          x: 370,
+          x: 367,
           y: 642,
           size: 14,
           color: rgb(0, 0, 0),
         }
       );
-      thirdPage.drawText(student["MATHEMATICS HALF YEARLY (80)_2"][0], {
-        x: 425,
+      thirdPage.drawText(student["MATHEMATICS ANNUAL (80)_2"][0], {
+        x: 421,
         y: 642,
         size: 14,
         color: rgb(0, 0, 0),
       });
       thirdPage.drawText(student["MATHEMATICS MARKS OBTAINED (100)_2"][0], {
-        x: 480,
+        x: 477,
         y: 642,
         size: 14,
         color: rgb(0, 0, 0),
       });
       thirdPage.drawText(student["MATHEMATICS GRADE_2"][0], {
-        x: 534,
+        x: 531,
         y: 642,
         size: 14,
         color: rgb(0, 0, 0),
       });
 
       thirdPage.drawText(student["SCIENCE PERIODIC TEST - 2 (5)_2"][0], {
-        x: 158,
+        x: 155,
         y: 623,
         size: 14,
         color: rgb(0, 0, 0),
       });
       thirdPage.drawText(student["SCIENCE PORTFOLIO-2 (5)_2"][0], {
-        x: 220,
+        x: 217,
         y: 623,
         size: 14,
         color: rgb(0, 0, 0),
       });
 
       thirdPage.drawText(student["SCIENCE SUBJECT ENRICHMENT-2 (5)_2"][0], {
-        x: 290,
+        x: 287,
         y: 623,
         size: 14,
         color: rgb(0, 0, 0),
       });
       thirdPage.drawText(student["SCIENCE MULTIPLE ASSESSMENT-2 (5)_2"][0], {
-        x: 370,
+        x: 367,
         y: 623,
         size: 14,
         color: rgb(0, 0, 0),
       });
-      thirdPage.drawText(student["SCIENCE HALF YEARLY (80)_2"][0], {
-        x: 425,
+      thirdPage.drawText(student["SCIENCE ANNUAL (80)_2"][0], {
+        x: 422,
         y: 623,
         size: 14,
         color: rgb(0, 0, 0),
       });
       thirdPage.drawText(student["SCIENCE MARKS OBTAINED (100)_2"][0], {
-        x: 480,
+        x: 477,
         y: 623,
         size: 14,
         color: rgb(0, 0, 0),
       });
       thirdPage.drawText(student["SCIENCE GRADE_2"][0], {
-        x: 534,
+        x: 531,
         y: 623,
         size: 14,
         color: rgb(0, 0, 0),
       });
 
       thirdPage.drawText(student["SOCIAL SCIENCE PERIODIC TEST - 2 (5)_2"][0], {
-        x: 158,
+        x: 155,
         y: 604,
         size: 14,
         color: rgb(0, 0, 0),
       });
       thirdPage.drawText(student["SOCIAL SCIENCE PORTFOLIO-2 (5)_2"][0], {
-        x: 220,
+        x: 217,
         y: 604,
         size: 14,
         color: rgb(0, 0, 0),
@@ -857,7 +855,7 @@ function Class8_Term2() {
       thirdPage.drawText(
         student["SOCIAL SCIENCE SUBJECT ENRICHMENT-2 (5)_2"][0],
         {
-          x: 290,
+          x: 287,
           y: 604,
           size: 14,
           color: rgb(0, 0, 0),
@@ -866,26 +864,26 @@ function Class8_Term2() {
       thirdPage.drawText(
         student["SOCIAL SCIENCE MULTIPLE ASSESSMENT-2 (5)_2"][0],
         {
-          x: 370,
+          x: 367,
           y: 604,
           size: 14,
           color: rgb(0, 0, 0),
         }
       );
-      thirdPage.drawText(student["SOCIAL SCIENCE HALF YEARLY (80)_2"][0], {
-        x: 425,
+      thirdPage.drawText(student["SOCIAL SCIENCE ANNUAL (80)_2"][0], {
+        x: 422,
         y: 604,
         size: 14,
         color: rgb(0, 0, 0),
       });
       thirdPage.drawText(student["SOCIAL SCIENCE MARKS OBTAINED (100)_2"][0], {
-        x: 480,
+        x: 477,
         y: 604,
         size: 14,
         color: rgb(0, 0, 0),
       });
       thirdPage.drawText(student["SOCIAL SCIENCE GRADE_2"][0], {
-        x: 534,
+        x: 531,
         y: 604,
         size: 14,
         color: rgb(0, 0, 0),
@@ -894,14 +892,14 @@ function Class8_Term2() {
       thirdPage.drawText(
         student["COMPUTER SCIENCE PERIODIC TEST - 2 (5)_2"][0],
         {
-          x: 158,
+          x: 155,
           y: 584,
           size: 14,
           color: rgb(0, 0, 0),
         }
       );
       thirdPage.drawText(student["COMPUTER SCIENCE PORTFOLIO-2 (5)_2"][0], {
-        x: 220,
+        x: 217,
         y: 584,
         size: 14,
         color: rgb(0, 0, 0),
@@ -910,7 +908,7 @@ function Class8_Term2() {
       thirdPage.drawText(
         student["COMPUTER SCIENCE SUBJECT ENRICHMENT-2 (5)_2"][0],
         {
-          x: 290,
+          x: 287,
           y: 584,
           size: 14,
           color: rgb(0, 0, 0),
@@ -919,14 +917,14 @@ function Class8_Term2() {
       thirdPage.drawText(
         student["COMPUTER SCIENCE MULTIPLE ASSESSMENT-2 (5)_2"][0],
         {
-          x: 370,
+          x: 367,
           y: 584,
           size: 14,
           color: rgb(0, 0, 0),
         }
       );
-      thirdPage.drawText(student["COMPUTER SCIENCE HALF YEARLY (80)_2"][0], {
-        x: 425,
+      thirdPage.drawText(student["COMPUTER SCIENCE ANNUAL (80)_2"][0], {
+        x: 422,
         y: 584,
         size: 14,
         color: rgb(0, 0, 0),
@@ -934,14 +932,14 @@ function Class8_Term2() {
       thirdPage.drawText(
         student["COMPUTER SCIENCE MARKS OBTAINED (100)_2"][0],
         {
-          x: 480,
+          x: 477,
           y: 584,
           size: 14,
           color: rgb(0, 0, 0),
         }
       );
       thirdPage.drawText(student["COMPUTER SCIENCE GRADE_2"][0], {
-        x: 534,
+        x: 531,
         y: 584,
         size: 14,
         color: rgb(0, 0, 0),
