@@ -91,37 +91,37 @@ function Class9_Term2() {
       firstPage.drawText(student["Name of Student_2"][0], {
         x: 179,
         y: 180,
-        size: 14,
+        size: 12,
         color: rgb(0, 0, 0),
       });
       firstPage.drawText(student["Class_2"][0], {
         x: 105,
         y: 158,
-        size: 14,
+        size: 12,
         color: rgb(0, 0, 0),
       });
       firstPage.drawText(student["Father Name"][0], {
         x: 165,
         y: 133,
-        size: 14,
+        size: 12,
         color: rgb(0, 0, 0),
       });
-      firstPage.drawText(student["Date of Birth_2"][0], {
+      firstPage.drawText(student["Date of Birth_2"][0].replace(/[' "]/g, ""), {
         x: 157,
         y: 110,
-        size: 14,
+        size: 12,
         color: rgb(0, 0, 0),
       });
       firstPage.drawText(student["Admission No._2"][0], {
         x: 455,
         y: 180,
-        size: 14,
+        size: 12,
         color: rgb(0, 0, 0),
       });
       firstPage.drawText(student["Section_2"][0], {
         x: 410,
         y: 158,
-        size: 14,
+        size: 12,
         color: rgb(0, 0, 0),
       });
       firstPage.drawText(student["Mother's Name_2"][0], {
@@ -133,7 +133,7 @@ function Class9_Term2() {
       firstPage.drawText(student["House_2"][0], {
         x: 405,
         y: 110,
-        size: 14,
+        size: 12,
         color: rgb(0, 0, 0),
       });
       secondPage.drawText(student["2nd Language Name_2"][0], {
@@ -194,12 +194,12 @@ function Class9_Term2() {
         size: 12,
         color: rgb(0, 0, 0),
       });
-      // secondPage.drawText(student["2nd LANGUAGE TOTAL (100)_2"][0], {
-      //   x: 420,
-      //   y: 677,
-      //   size: 12,
-      //   color: rgb(0, 0, 0),
-      // });
+      secondPage.drawText(student["2nd LANGUAGE  TOTAL (100)_2"][0], {
+        x: 420,
+        y: 677,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
       secondPage.drawText(student["2nd LANGUAGE GRADE_2"][0], {
         x: 520,
         y: 677,
@@ -255,13 +255,12 @@ function Class9_Term2() {
         size: 12,
         color: rgb(0, 0, 0),
       });
-
-      // secondPage.drawText(student["5 INTERNAL ASSESSMENT_2"][0], {
-      //   x: 220,
-      //   y: 608,
-      //   size: 12,
-      //   color: rgb(0, 0, 0),
-      // });
+      secondPage.drawText(student["5  INTERNAL ASSESSMENT_2"][0], {
+        x: 220,
+        y: 608,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
       secondPage.drawText(student["5 ANNUAL EXAM_2"][0], {
         x: 320,
         y: 608,

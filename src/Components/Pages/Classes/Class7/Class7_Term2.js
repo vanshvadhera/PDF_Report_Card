@@ -96,7 +96,7 @@ function Class7_Term2() {
         size: 14,
         color: rgb(0, 0, 0),
       });
-      firstPage.drawText(student["Date of Birth"][0], {
+      firstPage.drawText(student["Date of Birth"][0].replace(/[' "]/g, ""), {
         x: 150,
         y: 172,
         size: 14,
