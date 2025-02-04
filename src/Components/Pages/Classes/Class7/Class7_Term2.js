@@ -82,11 +82,10 @@ function Class7_Term2() {
       const ninthPage = pages[8];
       const tenthPage = pages[9];
 
-      // Insert data dynamically from the student's record
       firstPage.drawImage(image, {
-        x: 475,
+        x: 471,
         y: 608,
-        width: 80,
+        width: 83.5,
         height: 95,
       });
 
@@ -354,7 +353,7 @@ function Class7_Term2() {
         color: rgb(0, 0, 0),
       });
       secondPage.drawText(student["MATHEMATICS MARKS OBTAINED (100)"][0], {
-        x: 480,
+        x: 470,
         y: 677,
         size: 12,
         color: rgb(0, 0, 0),
@@ -397,7 +396,7 @@ function Class7_Term2() {
         color: rgb(0, 0, 0),
       });
       secondPage.drawText(student["SCIENCE MARKS OBTAINED (100)"][0], {
-        x: 480,
+        x: 470,
         y: 660,
         size: 12,
         color: rgb(0, 0, 0),
@@ -447,7 +446,7 @@ function Class7_Term2() {
         color: rgb(0, 0, 0),
       });
       secondPage.drawText(student["SOCIAL SCIENCE MARKS OBTAINED (100)"][0], {
-        x: 480,
+        x: 470,
         y: 643,
         size: 12,
         color: rgb(0, 0, 0),
@@ -500,7 +499,7 @@ function Class7_Term2() {
         color: rgb(0, 0, 0),
       });
       secondPage.drawText(student["COMPUTER SCIENCE MARKS OBTAINED (100)"][0], {
-        x: 480,
+        x: 470,
         y: 623,
         size: 12,
         color: rgb(0, 0, 0),
@@ -1908,7 +1907,7 @@ function Class7_Term2() {
           fifthPage?.drawText(student["ENGLISH TEACHER’S REMARKS:"][0], {
             x: 50,
             y: 450,
-            size: 13,
+            size: 12,
             color: rgb(0, 0, 0),
           });
       }
@@ -1917,7 +1916,7 @@ function Class7_Term2() {
           fifthPage?.drawText(student["ENGLISH TEACHER’S REMARKS:"][1], {
             x: 50,
             y: 438,
-            size: 13,
+            size: 12,
             color: rgb(0, 0, 0),
           });
       }
@@ -2002,7 +2001,7 @@ function Class7_Term2() {
           fifthPage?.drawText(student["HINDI TEACHER’S REMARKS:"][0], {
             x: 50,
             y: 46,
-            size: 13,
+            size: 12,
             color: rgb(0, 0, 0),
           });
       }
@@ -2011,11 +2010,22 @@ function Class7_Term2() {
           fifthPage?.drawText(student["HINDI TEACHER’S REMARKS:"][1], {
             x: 50,
             y: 34,
-            size: 13,
+            size: 12,
             color: rgb(0, 0, 0),
           });
       }
 
+      // sixthPage.drawText(
+      //   student[
+      //     "Language-III Name_2"
+      //   ][0],
+      //   {
+      //     x: 358,
+      //     y: 769,
+      //     size: 10,
+      //     color: rgb(0, 0, 0),
+      //   }
+      // );
       sixthPage.drawText(
         student[
           "LANGUAGE III Listens to comprehend effectively and understand the essence of the text"
@@ -2085,7 +2095,7 @@ function Class7_Term2() {
           sixthPage?.drawText(student["LANGUAGE III TEACHER’S REMARKS:"][1], {
             x: 50,
             y: 493,
-            size: 13,
+            size: 12,
             color: rgb(0, 0, 0),
           });
       }
@@ -2183,7 +2193,7 @@ function Class7_Term2() {
           sixthPage?.drawText(student["MATHEMATICS TEACHER’S REMARKS:"][0], {
             x: 50,
             y: 56,
-            size: 13,
+            size: 12,
             color: rgb(0, 0, 0),
           });
       }
@@ -2192,7 +2202,7 @@ function Class7_Term2() {
           sixthPage?.drawText(student["MATHEMATICS TEACHER’S REMARKS:"][1], {
             x: 50,
             y: 44,
-            size: 13,
+            size: 12,
             color: rgb(0, 0, 0),
           });
       }
@@ -2262,11 +2272,11 @@ function Class7_Term2() {
           });
       }
       {
-        student["SCIENCE TEACHER’S REMARKS:"][0] &&
-          seventhPage?.drawText(student["SCIENCE TEACHER’S REMARKS:"][0], {
+        student["SCIENCE TEACHER’S REMARKS:"][1] &&
+          seventhPage?.drawText(student["SCIENCE TEACHER’S REMARKS:"][1], {
             x: 50,
             y: 484,
-            size: 13,
+            size: 12,
             color: rgb(0, 0, 0),
           });
       }
@@ -2355,7 +2365,7 @@ function Class7_Term2() {
             {
               x: 50,
               y: 56,
-              size: 13,
+              size: 12,
               color: rgb(0, 0, 0),
             }
           );
@@ -2367,7 +2377,7 @@ function Class7_Term2() {
             {
               x: 50,
               y: 44,
-              size: 13,
+              size: 12,
               color: rgb(0, 0, 0),
             }
           );
@@ -2425,13 +2435,13 @@ function Class7_Term2() {
           );
       }
       {
-        student["COMPUTER SCIENCE TEACHER’S REMARKS:"][0] &&
+        student["COMPUTER SCIENCE TEACHER’S REMARKS:"][1] &&
           eighthPage?.drawText(
-            student["COMPUTER SCIENCE TEACHER’S REMARKS:"][0],
+            student["COMPUTER SCIENCE TEACHER’S REMARKS:"][1],
             {
               x: 50,
               y: 585,
-              size: 13,
+              size: 12,
               color: rgb(0, 0, 0),
             }
           );
@@ -2482,13 +2492,13 @@ function Class7_Term2() {
           );
       }
       {
-        student["PHYSICAL EDUCATION TEACHER’S REMARKS:"][0] &&
+        student["PHYSICAL EDUCATION TEACHER’S REMARKS:"][1] &&
           eighthPage?.drawText(
-            student["PHYSICAL EDUCATION TEACHER’S REMARKS:"][0],
+            student["PHYSICAL EDUCATION TEACHER’S REMARKS:"][1],
             {
               x: 50,
               y: 330,
-              size: 13,
+              size: 12,
               color: rgb(0, 0, 0),
             }
           );
@@ -2531,7 +2541,7 @@ function Class7_Term2() {
           eighthPage?.drawText(student["DANCE TEACHER’S REMARKS:"][0], {
             x: 50,
             y: 70,
-            size: 13,
+            size: 12,
             color: rgb(0, 0, 0),
           });
       }
@@ -2540,7 +2550,7 @@ function Class7_Term2() {
           eighthPage?.drawText(student["DANCE TEACHER’S REMARKS:"][1], {
             x: 50,
             y: 58,
-            size: 13,
+            size: 12,
             color: rgb(0, 0, 0),
           });
       }
@@ -2587,11 +2597,11 @@ function Class7_Term2() {
           });
       }
       {
-        student["MUSIC TEACHER’S REMARKS:"][0] &&
-          ninthPage?.drawText(student["MUSIC TEACHER’S REMARKS:"][0], {
+        student["MUSIC TEACHER’S REMARKS:"][1] &&
+          ninthPage?.drawText(student["MUSIC TEACHER’S REMARKS:"][1], {
             x: 50,
             y: 602,
-            size: 13,
+            size: 12,
             color: rgb(0, 0, 0),
           });
       }
@@ -2638,11 +2648,11 @@ function Class7_Term2() {
           });
       }
       {
-        student["YOGA TEACHER’S REMARKS:"][0] &&
-          ninthPage?.drawText(student["YOGA TEACHER’S REMARKS:"][0], {
+        student["YOGA TEACHER’S REMARKS:"][1] &&
+          ninthPage?.drawText(student["YOGA TEACHER’S REMARKS:"][1], {
             x: 50,
             y: 387,
-            size: 13,
+            size: 12,
             color: rgb(0, 0, 0),
           });
       }
@@ -2684,7 +2694,7 @@ function Class7_Term2() {
           ninthPage?.drawText(student["ART TEACHER’S REMARKS:"][0], {
             x: 50,
             y: 175,
-            size: 13,
+            size: 12,
             color: rgb(0, 0, 0),
           });
       }
@@ -2693,7 +2703,7 @@ function Class7_Term2() {
           ninthPage?.drawText(student["ART TEACHER’S REMARKS:"][1], {
             x: 50,
             y: 163,
-            size: 13,
+            size: 12,
             color: rgb(0, 0, 0),
           });
       }
@@ -2765,11 +2775,11 @@ function Class7_Term2() {
           });
       }
       {
-        student["WORK EDUCATION TEACHER’S REMARKS:"][0] &&
-          tenthPage?.drawText(student["WORK EDUCATION TEACHER’S REMARKS:"][0], {
+        student["WORK EDUCATION TEACHER’S REMARKS:"][1] &&
+          tenthPage?.drawText(student["WORK EDUCATION TEACHER’S REMARKS:"][1], {
             x: 50,
             y: 614,
-            size: 13,
+            size: 12,
             color: rgb(0, 0, 0),
           });
       }
@@ -2779,7 +2789,7 @@ function Class7_Term2() {
           tenthPage?.drawText(student["My Achievements:"][0], {
             x: 175,
             y: 536,
-            size: 13,
+            size: 12,
             color: rgb(0, 0, 0),
           });
       }
@@ -2788,7 +2798,7 @@ function Class7_Term2() {
           tenthPage?.drawText(student["My Achievements:"][1], {
             x: 55,
             y: 516,
-            size: 13,
+            size: 12,
             color: rgb(0, 0, 0),
           });
       }
@@ -2797,7 +2807,7 @@ function Class7_Term2() {
           tenthPage?.drawText(student["My Achievements:"][2], {
             x: 55,
             y: 496,
-            size: 13,
+            size: 12,
             color: rgb(0, 0, 0),
           });
       }
@@ -2807,7 +2817,7 @@ function Class7_Term2() {
           tenthPage?.drawText(student["My Strengths :"][0], {
             x: 150,
             y: 434,
-            size: 13,
+            size: 12,
             color: rgb(0, 0, 0),
           });
       }
@@ -2816,7 +2826,7 @@ function Class7_Term2() {
           tenthPage?.drawText(student["My Strengths :"][1], {
             x: 55,
             y: 412,
-            size: 13,
+            size: 12,
             color: rgb(0, 0, 0),
           });
       }
@@ -2825,7 +2835,7 @@ function Class7_Term2() {
           tenthPage?.drawText(student["My Strengths :"][2], {
             x: 55,
             y: 393,
-            size: 13,
+            size: 12,
             color: rgb(0, 0, 0),
           });
       }
@@ -2835,7 +2845,7 @@ function Class7_Term2() {
           tenthPage?.drawText(student["My Weaknesses :"][0], {
             x: 163,
             y: 328,
-            size: 13,
+            size: 12,
             color: rgb(0, 0, 0),
           });
       }
@@ -2844,7 +2854,7 @@ function Class7_Term2() {
           tenthPage?.drawText(student["My Weaknesses :"][1], {
             x: 55,
             y: 308,
-            size: 13,
+            size: 12,
             color: rgb(0, 0, 0),
           });
       }
@@ -2853,7 +2863,7 @@ function Class7_Term2() {
           tenthPage?.drawText(student["My Weaknesses :"][2], {
             x: 55,
             y: 288,
-            size: 13,
+            size: 12,
             color: rgb(0, 0, 0),
           });
       }

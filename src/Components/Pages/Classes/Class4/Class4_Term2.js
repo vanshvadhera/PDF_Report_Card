@@ -3733,7 +3733,7 @@ function Class4_Term2() {
       {
         student["ACADEMIC GOALS II_2"][1] &&
           tenthPage.drawText(student["ACADEMIC GOALS II_2"][1], {
-            x: 88,
+            x: 68,
             y: 645,
             size: 14,
             color: rgb(0, 0, 0),
@@ -3742,7 +3742,7 @@ function Class4_Term2() {
       {
         student["ACADEMIC GOALS II_2"][2] &&
           tenthPage.drawText(student["ACADEMIC GOALS II_2"][2], {
-            x: 88,
+            x: 68,
             y: 631,
             size: 14,
             color: rgb(0, 0, 0),
@@ -3770,7 +3770,7 @@ function Class4_Term2() {
       {
         student["ACADEMIC ACHIEVEMENT II_2"][1] &&
           tenthPage.drawText(student["ACADEMIC ACHIEVEMENT II_2"][1], {
-            x: 88,
+            x: 68,
             y: 506,
             size: 14,
             color: rgb(0, 0, 0),
@@ -3779,7 +3779,7 @@ function Class4_Term2() {
       {
         student["ACADEMIC ACHIEVEMENT II_2"][2] &&
           tenthPage.drawText(student["ACADEMIC ACHIEVEMENT II_2"][2], {
-            x: 88,
+            x: 68,
             y: 484,
             size: 14,
             color: rgb(0, 0, 0),
@@ -3807,7 +3807,7 @@ function Class4_Term2() {
       {
         student["NON ACADEMIC GOALS II_2"][1] &&
           tenthPage.drawText(student["NON ACADEMIC GOALS II_2"][1], {
-            x: 88,
+            x: 68,
             y: 306,
             size: 14,
             color: rgb(0, 0, 0),
@@ -3843,7 +3843,7 @@ function Class4_Term2() {
       {
         student["NON ACADEMIC ACHIEVEMENT II_2"][1] &&
           tenthPage.drawText(student["NON ACADEMIC ACHIEVEMENT II_2"][1], {
-            x: 88,
+            x: 68,
             y: 166,
             size: 14,
             color: rgb(0, 0, 0),
@@ -3852,7 +3852,7 @@ function Class4_Term2() {
       {
         student["NON ACADEMIC ACHIEVEMENT II_2"][2] &&
           tenthPage.drawText(student["NON ACADEMIC ACHIEVEMENT II_2"][2], {
-            x: 88,
+            x: 68,
             y: 145,
             size: 14,
             color: rgb(0, 0, 0),

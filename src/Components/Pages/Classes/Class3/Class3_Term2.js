@@ -2645,7 +2645,7 @@ function Class3_Term1() {
       {
         student["ACADEMIC ACHIEVEMENT (Term II)_2"][0] &&
           tenthPage.drawText(student["ACADEMIC ACHIEVEMENT (Term II)_2"][0], {
-            x: 68,
+            x: 57,
             y: 517,
             size: 14,
             color: rgb(0, 0, 0),
@@ -2654,7 +2654,7 @@ function Class3_Term1() {
       {
         student["ACADEMIC ACHIEVEMENT (Term II)_2"][1] &&
           tenthPage.drawText(student["ACADEMIC ACHIEVEMENT (Term II)_2"][1], {
-            x: 68,
+            x: 57,
             y: 491,
             size: 14,
             color: rgb(0, 0, 0),
@@ -2663,7 +2663,7 @@ function Class3_Term1() {
       {
         student["ACADEMIC ACHIEVEMENT (Term II)_2"][2] &&
           tenthPage.drawText(student["ACADEMIC ACHIEVEMENT (Term II)_2"][2], {
-            x: 68,
+            x: 57,
             y: 471,
             size: 14,
             color: rgb(0, 0, 0),
@@ -2672,7 +2672,7 @@ function Class3_Term1() {
       {
         student["ACADEMIC ACHIEVEMENT (Term II)_2"][3] &&
           tenthPage.drawText(student["ACADEMIC ACHIEVEMENT (Term II)_2"][3], {
-            x: 68,
+            x: 57,
             y: 448,
             size: 14,
             color: rgb(0, 0, 0),
@@ -2721,7 +2721,7 @@ function Class3_Term1() {
           tenthPage.drawText(
             student["NON ACADEMIC ACHIEVEMENT (Term II)_2"][0],
             {
-              x: 68,
+              x: 57,
               y: 173,
               size: 14,
               color: rgb(0, 0, 0),
@@ -2733,7 +2733,7 @@ function Class3_Term1() {
           tenthPage.drawText(
             student["NON ACADEMIC ACHIEVEMENT (Term II)_2"][1],
             {
-              x: 68,
+              x: 57,
               y: 151,
               size: 14,
               color: rgb(0, 0, 0),
@@ -2745,7 +2745,7 @@ function Class3_Term1() {
           tenthPage.drawText(
             student["NON ACADEMIC ACHIEVEMENT (Term II)_2"][2],
             {
-              x: 68,
+              x: 57,
               y: 130,
               size: 14,
               color: rgb(0, 0, 0),
@@ -2757,7 +2757,7 @@ function Class3_Term1() {
           tenthPage.drawText(
             student["NON ACADEMIC ACHIEVEMENT (Term II)_2"][3],
             {
-              x: 68,
+              x: 57,
               y: 107,
               size: 14,
               color: rgb(0, 0, 0),

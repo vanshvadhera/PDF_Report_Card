@@ -3727,7 +3727,7 @@ function Class5_Term2() {
       {
         student["ACADEMIC GOALS_2"][1] &&
           tenthPage.drawText(student["ACADEMIC GOALS_2"][1], {
-            x: 88,
+            x: 68,
             y: 645,
             size: 14,
             color: rgb(0, 0, 0),
@@ -3736,7 +3736,7 @@ function Class5_Term2() {
       {
         student["ACADEMIC GOALS_2"][2] &&
           tenthPage.drawText(student["ACADEMIC GOALS_2"][2], {
-            x: 88,
+            x: 68,
             y: 631,
             size: 14,
             color: rgb(0, 0, 0),
@@ -3763,7 +3763,7 @@ function Class5_Term2() {
       {
         student["ACADEMIC ACHIEVEMENT_2"][1] &&
           tenthPage.drawText(student["ACADEMIC ACHIEVEMENT_2"][1], {
-            x: 88,
+            x: 68,
             y: 506,
             size: 14,
             color: rgb(0, 0, 0),
@@ -3772,7 +3772,7 @@ function Class5_Term2() {
       {
         student["ACADEMIC ACHIEVEMENT_2"][2] &&
           tenthPage.drawText(student["ACADEMIC ACHIEVEMENT_2"][2], {
-            x: 88,
+            x: 68,
             y: 484,
             size: 14,
             color: rgb(0, 0, 0),
@@ -3799,7 +3799,7 @@ function Class5_Term2() {
       {
         student["NON ACADEMIC GOALS_2"][1] &&
           tenthPage.drawText(student["NON ACADEMIC GOALS_2"][1], {
-            x: 88,
+            x: 68,
             y: 306,
             size: 14,
             color: rgb(0, 0, 0),
@@ -3836,7 +3836,7 @@ function Class5_Term2() {
       {
         student["NON ACADEMIC ACHIEVEMENT_2"][1] &&
           tenthPage.drawText(student["NON ACADEMIC ACHIEVEMENT_2"][1], {
-            x: 88,
+            x: 68,
             y: 166,
             size: 14,
             color: rgb(0, 0, 0),
@@ -3845,7 +3845,7 @@ function Class5_Term2() {
       {
         student["NON ACADEMIC ACHIEVEMENT_2"][2] &&
           tenthPage.drawText(student["NON ACADEMIC ACHIEVEMENT_2"][2], {
-            x: 88,
+            x: 68,
             y: 145,
             size: 14,
             color: rgb(0, 0, 0),
@@ -4471,7 +4471,7 @@ function Class5_Term2() {
 
       twevelthPage.drawImage(teacherSign2Image, {
         x: 220,
-        y: 300,
+        y: 290,
         width: 100,
         height: 30,
       });

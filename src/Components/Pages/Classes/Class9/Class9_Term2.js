@@ -126,8 +126,8 @@ function Class9_Term2() {
       });
       firstPage.drawText(student["Mother's Name_2"][0], {
         x: 457,
-        y: 133,
-        size: 12,
+        y: 135,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       firstPage.drawText(student["House_2"][0], {
