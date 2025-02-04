@@ -17,7 +17,7 @@ function Class4_Term2() {
 
   const fileURL = localPdf
     ? "https://innovartan.s3.amazonaws.com/d693781d826dcabbf0d8445aae90c34e501452060/3fc659b5b5b6f04c6ce1da9c7a7d0314.pdf"
-    : "https://dpsin.s3.amazonaws.com/report/IV/term1.pdf";
+    : "https://dpsin.s3.us-east-1.amazonaws.com/report/IV/term2.pdf";
 
   const dispatch = useDispatch();
 
