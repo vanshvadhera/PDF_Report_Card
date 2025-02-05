@@ -274,6 +274,13 @@ function Class7_Term2() {
         color: rgb(0, 0, 0),
       });
 
+      secondPage.drawText(student["Language-III Name"][0], {
+        x: 88,
+        y: 698, // Increased by 3 from 694
+        size: 7,
+        color: rgb(0, 0, 0),
+      });
+
       secondPage.drawText(student["Language-III PERIODIC TEST - I (5)"][0], {
         x: 158,
         y: 697, // Increased by 3 from 694
@@ -701,15 +708,19 @@ function Class7_Term2() {
         color: rgb(0, 0, 0),
       });
 
-      thirdPage.drawText(
-        student["Language-III (SPANISH) PERIODIC TEST - 2 (5)_2"][0],
-        {
-          x: 155,
-          y: 665, // Subtracted 2 from the y coordinate
-          size: 12,
-          color: rgb(0, 0, 0),
-        }
-      );
+      thirdPage.drawText(student["Language-III Name_2"][0], {
+        x: 86,
+        y: 667, // Increased by 3 from 694
+        size: 7,
+        color: rgb(0, 0, 0),
+      });
+
+      thirdPage.drawText(student["Language-III PERIODIC TEST - I (5)"][0], {
+        x: 155,
+        y: 665, // Subtracted 2 from the y coordinate
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
       thirdPage.drawText(student["Language-III PORTFOLIO-2 (5)_2"][0], {
         x: 217,
         y: 665, // Subtracted 2 from the y coordinate
@@ -1242,6 +1253,13 @@ function Class7_Term2() {
         color: rgb(0, 0, 0),
       });
 
+      fourthPage.drawText(student["Language-III Name_2"][0], {
+        x: 85,
+        y: 688, // Increased by 3 from 694
+        size: 7,
+        color: rgb(0, 0, 0),
+      });
+
       fourthPage.drawText(student["Language-III PERIODIC TEST - I (5)"][0], {
         x: 138,
         y: 683,
@@ -1287,15 +1305,12 @@ function Class7_Term2() {
         size: 10,
         color: rgb(0, 0, 0),
       });
-      fourthPage.drawText(
-        student["Language-III (SPANISH) PERIODIC TEST - 2 (5)_2"][0],
-        {
-          x: 356,
-          y: 683,
-          size: 10,
-          color: rgb(0, 0, 0),
-        }
-      );
+      fourthPage.drawText(student["Language-III PERIODIC TEST - 2 (5)_2"][0], {
+        x: 356,
+        y: 683,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
       fourthPage.drawText(student["Language-III PORTFOLIO-2 (5)_2"][0], {
         x: 389,
         y: 683,
@@ -2015,17 +2030,12 @@ function Class7_Term2() {
           });
       }
 
-      // sixthPage.drawText(
-      //   student[
-      //     "Language-III Name_2"
-      //   ][0],
-      //   {
-      //     x: 358,
-      //     y: 769,
-      //     size: 10,
-      //     color: rgb(0, 0, 0),
-      //   }
-      // );
+      sixthPage.drawText(student["Language-III Name_2"][0], {
+        x: 358,
+        y: 769,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
       sixthPage.drawText(
         student[
           "LANGUAGE III Listens to comprehend effectively and understand the essence of the text"

@@ -280,12 +280,12 @@ function Class9_Term2() {
         color: rgb(0, 0, 0),
       });
 
-      // secondPage.drawText(student["ARTIFICIAL INTELLIGENCE INTERNAL ASSESSMENT_2"][0], {
-      //   x: 220,
-      //   y: 585,
-      //   size: 12,
-      //   color: rgb(0, 0, 0),
-      // });
+      secondPage.drawText(student["ARTIFICIAL INTELLIGENCE INTERNAL ASSESMENT_2"][0], {
+        x: 220,
+        y: 585,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
       secondPage.drawText(student["ARTIFICIAL INTELLIGENCE ANNUAL EXAM_2"][0], {
         x: 320,
         y: 585,
@@ -412,7 +412,7 @@ function Class9_Term2() {
       );
       thirdPage.drawText(
         student[
-          "COGNITIVE DEVELOPMENT Collaborative thinking and effective communication._2"
+          "COGNITIVE DEVELOPMENT Collaborative thinking and effective communication_2"
         ][0],
         {
           x: 479,
@@ -423,7 +423,7 @@ function Class9_Term2() {
       );
       thirdPage.drawText(
         student[
-          "SOCIO-EMOTIONAL DEVELOPMENT AND DILIGENCE Can communicate effectively in diverse environments._2"
+          "SOCIO-EMOTIONAL DEVELOPMENT AND DILIGENCE Can communicate effectively in diverse environments_2"
         ][0],
         {
           x: 479,
@@ -434,7 +434,7 @@ function Class9_Term2() {
       );
       thirdPage.drawText(
         student[
-          "SOCIO-EMOTIONAL DEVELOPMENT AND DILIGENCE Displays emotional regulation and resilience and is empathetic._2"
+          "SOCIO-EMOTIONAL DEVELOPMENT AND DILIGENCE Displays emotional regulation and resilience and is empathetic_2"
         ][0],
         {
           x: 479,
@@ -456,7 +456,7 @@ function Class9_Term2() {
       );
       thirdPage.drawText(
         student[
-          "SOCIO-EMOTIONAL DEVELOPMENT AND DILIGENCE Awareness of one’s strength and weaknesses._2"
+          "SOCIO-EMOTIONAL DEVELOPMENT AND DILIGENCE Awareness of one’s strength and weaknesses_2"
         ][0],
         {
           x: 479,
@@ -467,7 +467,7 @@ function Class9_Term2() {
       );
       thirdPage.drawText(
         student[
-          "SOCIO-EMOTIONAL DEVELOPMENT AND DILIGENCE Takes constructive criticism positively._2"
+          "SOCIO-EMOTIONAL DEVELOPMENT AND DILIGENCE Takes constructive criticism positively_2"
         ][0],
         {
           x: 479,
@@ -489,7 +489,7 @@ function Class9_Term2() {
       );
       thirdPage.drawText(
         student[
-          "ICT Analysis of art works, contextual understanding, Interdisciplinary connections._2"
+          "ICT Analysis of art works, contextual understanding, Interdisciplinary connections_2"
         ][0],
         {
           x: 479,
@@ -500,7 +500,7 @@ function Class9_Term2() {
       );
       thirdPage.drawText(
         student[
-          "ICT Use digital technologies (computers, media players, GPS, etc.), communication /networking tools and social networks appropriately._2"
+          "ICT Use digital technologies (computers, media players, GPS, etc.), communication /networking tools and social networks appropriately_2"
         ][0],
         {
           x: 479,
@@ -511,7 +511,7 @@ function Class9_Term2() {
       );
       thirdPage.drawText(
         student[
-          "ICT Skill proficiency in materials and techniques, use of tools, detail and precision._2"
+          "ICT Skill proficiency in materials and techniques, use of tools, detail and precision_2"
         ][0],
         {
           x: 479,
@@ -523,7 +523,7 @@ function Class9_Term2() {
 
       thirdPage.drawText(
         student[
-          "WORK ETHICS, GENERAL ATTITUDE AND BEHAVIOUR Adheres to deadlines._2"
+          "WORK ETHICS, GENERAL ATTITUDE AND BEHAVIOUR Adheres to deadlines_2"
         ][0],
         {
           x: 479,
@@ -545,7 +545,7 @@ function Class9_Term2() {
       );
       thirdPage.drawText(
         student[
-          "WORK ETHICS, GENERAL ATTITUDE AND BEHAVIOUR Submits assignments/notebooks on time._2"
+          "WORK ETHICS, GENERAL ATTITUDE AND BEHAVIOUR Submits assignments/notebooks on time_2"
         ][0],
         {
           x: 479,
@@ -556,7 +556,7 @@ function Class9_Term2() {
       );
       thirdPage.drawText(
         student[
-          "WORK ETHICS, GENERAL ATTITUDE AND BEHAVIOUR Respects teachers and classmates._2"
+          "WORK ETHICS, GENERAL ATTITUDE AND BEHAVIOUR Respects teachers and classmates_2"
         ][0],
         {
           x: 479,
@@ -579,7 +579,7 @@ function Class9_Term2() {
       );
       thirdPage.drawText(
         student[
-          "INNOVATION Is being able to execute new ideas in an innovative manner._2"
+          "INNOVATION Is being able to execute new ideas in an innovative manner_2"
         ][0],
         {
           x: 479,
@@ -590,7 +590,7 @@ function Class9_Term2() {
       );
       thirdPage.drawText(
         student[
-          "INNOVATION Is ready to take risks and adapt to changing conditions._2"
+          "INNOVATION Is ready to take risks and adapt to changing conditions_2"
         ][0],
         {
           x: 479,
@@ -601,7 +601,7 @@ function Class9_Term2() {
       );
 
       thirdPage.drawText(
-        student["LITERARY SKILLS Asks thought provoking questions._2"][0],
+        student["LITERARY SKILLS Asks thought provoking questions_2"][0],
         {
           x: 479,
           y: 205,
@@ -612,7 +612,7 @@ function Class9_Term2() {
 
       thirdPage.drawText(
         student[
-          "LITERARY SKILLS Infers meaning from the given information._2"
+          "LITERARY SKILLS Infers meaning from the given information_2"
         ][0],
         {
           x: 479,
@@ -623,7 +623,7 @@ function Class9_Term2() {
       );
       thirdPage.drawText(
         student[
-          "LITERARY SKILLS Demonstrates knowledge and research skills._2"
+          "LITERARY SKILLS Demonstrates knowledge and research skills_2"
         ][0],
         {
           x: 479,
@@ -634,7 +634,7 @@ function Class9_Term2() {
       );
       thirdPage.drawText(
         student[
-          "ACTIVITY CLUBS Proficient in use of materials and techniques._2"
+          "ACTIVITY CLUBS Proficient in use of materials and techniques_2"
         ][0],
         {
           x: 479,
@@ -646,7 +646,7 @@ function Class9_Term2() {
 
       thirdPage.drawText(
         student[
-          "ACTIVITY CLUBS Demonstration of skill in chosen activity._2"
+          "ACTIVITY CLUBS Demonstration of skill in chosen activity_2"
         ][0],
         {
           x: 479,
@@ -657,7 +657,7 @@ function Class9_Term2() {
       );
       thirdPage.drawText(
         student[
-          "ACTIVITY CLUBS Exhibits co-operation and self-discipline._2"
+          "ACTIVITY CLUBS Exhibits co-operation and self-discipline_2"
         ][0],
         {
           x: 479,
