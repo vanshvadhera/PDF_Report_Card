@@ -49,10 +49,10 @@ function Class2_Term2() {
         res.arrayBuffer()
       );
 
-      const teacherSign2Url = student.teacher_sign_2;
-      const teacherSign2Bytes = await fetch(teacherSign2Url).then((res) =>
-        res.arrayBuffer()
-      );
+      // const teacherSign2Url = student.teacher_sign_2;
+      // const teacherSign2Bytes = await fetch(teacherSign2Url).then((res) =>
+      //   res.arrayBuffer()
+      // );
 
       //   const familyPhotoUrl = student.family_photo;
       //   const familyPhotoBytes = await fetch(familyPhotoUrl).then((res) =>
@@ -66,7 +66,7 @@ function Class2_Term2() {
 
       const image = await pdfDoc.embedJpg(imageBytes);
       const teacherSign1Image = await pdfDoc.embedJpg(teacherSign1Bytes);
-      const teacherSign2Image = await pdfDoc.embedJpg(teacherSign2Bytes);
+      // const teacherSign2Image = await pdfDoc.embedJpg(teacherSign2Bytes);
       //   const familyPhotImage = await pdfDoc.embedJpg(familyPhotoBytes);
       const groupPhotImage = await pdfDoc.embedJpg(groupPhotBytes);
 
@@ -2497,9 +2497,9 @@ function Class2_Term2() {
           });
       }
 
-      ninthPage.drawImage(teacherSign2Image, {
+      ninthPage.drawImage(teacherSign1Image, {
         x: 80,
-        y: 260,
+        y: 264,
         width: 100,
         height: 30,
       });

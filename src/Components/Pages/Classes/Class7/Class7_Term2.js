@@ -16,7 +16,7 @@ function Class7_Term2() {
   console.log(localPdf, "Use localPdf ?");
 
   const fileURL = localPdf
-    ? "https://innovartan.s3.amazonaws.com/0b77e5dc9797966d28fa761d5c6aaa1d228245110/b5a659a0c9a739111dd964fa2194998b.pdf"
+    ? "https://innovartan.s3.amazonaws.com/87272d30c9aeb47bc3dffb56f60424ac1625903542/9c4c36efa5e1a1ee47422bf1b292730e.pdf"
     : "https://dpsin.s3.us-east-1.amazonaws.com/report/VII/7thterm2.pdf";
 
   const dispatch = useDispatch();
@@ -1815,13 +1815,13 @@ function Class7_Term2() {
       }
       fourthPage.drawText(student["Date_2"][0], {
         x: 70,
-        y: 418,
+        y: 410,
         size: 10,
         color: rgb(0, 0, 0),
       });
       fourthPage.drawImage(teacherSign1Image, {
         x: 250,
-        y: 400,
+        y: 390,
         width: 100,
         height: 30,
       });

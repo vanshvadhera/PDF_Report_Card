@@ -49,10 +49,10 @@ function Class4_Term2() {
         res.arrayBuffer()
       );
 
-      const teacherSign2Url = student.teacher_sign_2;
-      const teacherSign2Bytes = await fetch(teacherSign2Url).then((res) =>
-        res.arrayBuffer()
-      );
+      // const teacherSign2Url = student.teacher_sign_2;
+      // const teacherSign2Bytes = await fetch(teacherSign2Url).then((res) =>
+      //   res.arrayBuffer()
+      // );
 
       // const familyPhotoUrl = student.family_photo
       // const familyPhotoBytes = await fetch(familyPhotoUrl).then((res) =>
@@ -70,7 +70,7 @@ function Class4_Term2() {
 
       const image = await pdfDoc.embedJpg(imageBytes);
       const teacherSign1Image = await pdfDoc.embedJpg(teacherSign1Bytes);
-      const teacherSign2Image = await pdfDoc.embedJpg(teacherSign2Bytes);
+      // const teacherSign2Image = await pdfDoc.embedJpg(teacherSign2Bytes);
       // const familyPhotImage = await pdfDoc.embedJpg(familyPhotoBytes);
       const groupPhotImage = await pdfDoc.embedJpg(groupPhotBytes);
       const barImage = await pdfDoc.embedPng(barBytes);
@@ -4238,7 +4238,7 @@ function Class4_Term2() {
           });
       }
 
-      eleventhPage.drawImage(teacherSign2Image, {
+      eleventhPage.drawImage(teacherSign1Image, {
         x: 250,
         y: 240,
         width: 100,
@@ -4476,48 +4476,49 @@ function Class4_Term2() {
         color: rgb(0, 0, 0),
       });
 
-      twevelthPage.drawImage(teacherSign2Image, {
+      twevelthPage.drawImage(teacherSign1Image, {
         x: 220,
-        y: 300,
+        y: 290,
         width: 100,
         height: 30,
       });
 
+      
       thirteenPage.drawImage(barImage, {
         x: 101,
         y: 462,
         width: 26,
-        height: 55,
+        height: Number(student["PUNCTUALITY_2"][0]),
       });
       thirteenPage.drawImage(barImage, {
         x: 180,
         y: 462,
         width: 26,
-        height: 110,
+        height: Number(student["ATTENTIVENESS_2"][0]),
       });
       thirteenPage.drawImage(barImage, {
         x: 259,
         y: 462,
         width: 26,
-        height: 220,
+        height: Number(student["POLITE AND COURTEOUS_2"][0]),
       });
       thirteenPage.drawImage(barImage, {
         x: 338,
         y: 462,
         width: 26,
-        height: 165,
+        height: Number(student["RESPONSIBLE_2"][0]),
       });
       thirteenPage.drawImage(barImage, {
         x: 417,
         y: 462,
         width: 26,
-        height: 220,
+        height: Number(student["HEALTH AND HYGIENE_2"][0]),
       });
       thirteenPage.drawImage(barImage, {
         x: 496,
         y: 462,
         width: 26,
-        height: 220,
+        height: Number(student["ATTENTIVENESS_2"][0]),
       });
 
       thirteenPage.drawText(student["TERM I Height (cms)_2"][0], {

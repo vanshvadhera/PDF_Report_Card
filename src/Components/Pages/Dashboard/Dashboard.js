@@ -138,7 +138,7 @@ function Dashboard() {
           : className2 === "III"
           ? 75
           : className2 === "IV"
-          ? 75
+          ? 70
           : className2 === "V"
           ? 75
           : 80,

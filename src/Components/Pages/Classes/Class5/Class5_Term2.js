@@ -50,19 +50,19 @@ function Class5_Term2() {
       );
 
       const teacherSign2Url = student.teacher_sign_2;
-      const teacherSign2Bytes = await fetch(teacherSign2Url).then((res) =>
-        res.arrayBuffer()
-      );
+      // const teacherSign2Bytes = await fetch(teacherSign2Url).then((res) =>
+      //   res.arrayBuffer()
+      // );
 
       // const familyPhotoUrl = student.family_photo
       // const familyPhotoBytes = await fetch(familyPhotoUrl).then((res) =>
       //   res.arrayBuffer()
       // );
 
-      // const groupPhotUrl = student.group_photo;
-      // const groupPhotBytes = await fetch(groupPhotUrl).then((res) =>
-      //   res.arrayBuffer()
-      // );
+      const groupPhotUrl = student.group_photo;
+      const groupPhotBytes = await fetch(groupPhotUrl).then((res) =>
+        res.arrayBuffer()
+      );
 
       const barUrl =
         "https://innovartan.s3.amazonaws.com/1cc34aea5f864bc6f60a0b15e4cdf0a31415071175/2cdb488e7a0f98f13f383a9e6be8a9c7.png";
@@ -70,9 +70,9 @@ function Class5_Term2() {
 
       const image = await pdfDoc.embedJpg(imageBytes);
       const teacherSign1Image = await pdfDoc.embedJpg(teacherSign1Bytes);
-      const teacherSign2Image = await pdfDoc.embedJpg(teacherSign2Bytes);
+      // const teacherSign2Image = await pdfDoc.embedJpg(teacherSign2Bytes);
       // const familyPhotImage = await pdfDoc.embedJpg(familyPhotoBytes);
-      // const groupPhotImage = await pdfDoc.embedJpg(groupPhotBytes);
+      const groupPhotImage = await pdfDoc.embedJpg(groupPhotBytes);
       const barImage = await pdfDoc.embedPng(barBytes);
 
       const pages = pdfDoc.getPages();
@@ -4231,7 +4231,7 @@ function Class5_Term2() {
             color: rgb(0, 0, 0),
           });
       }
-      eleventhPage.drawImage(teacherSign2Image, {
+      eleventhPage.drawImage(teacherSign1Image, {
         x: 250,
         y: 240,
         width: 100,
@@ -4469,7 +4469,7 @@ function Class5_Term2() {
         color: rgb(0, 0, 0),
       });
 
-      twevelthPage.drawImage(teacherSign2Image, {
+      twevelthPage.drawImage(teacherSign1Image, {
         x: 220,
         y: 290,
         width: 100,
@@ -4719,38 +4719,39 @@ function Class5_Term2() {
         x: 101,
         y: 462,
         width: 26,
-        height: 55,
+        height: Number(student["PUNCTUALITY_2"][0]),
       });
       fourteenPage.drawImage(barImage, {
         x: 180,
         y: 462,
         width: 26,
-        height: 110,
+        height: Number(student["ATTENTIVENESS_2"][0]),
       });
       fourteenPage.drawImage(barImage, {
         x: 259,
         y: 462,
         width: 26,
-        height: 220,
+        height: Number(student["POLITE AND COURTEOUS_2"][0]),
       });
       fourteenPage.drawImage(barImage, {
         x: 338,
         y: 462,
         width: 26,
-        height: 165,
+        height: Number(student["RESPONSIBLE_2"][0]),
       });
       fourteenPage.drawImage(barImage, {
         x: 417,
         y: 462,
         width: 26,
-        height: 220,
+        height: Number(student["HEALTH AND HYGIENE_2"][0]),
       });
       fourteenPage.drawImage(barImage, {
         x: 496,
         y: 462,
         width: 26,
-        height: 220,
+        height: Number(student["ATTENTIVENESS_2"][0]),
       });
+
       fourteenPage.drawText(student["TERM I Height (cms)_2"][0], {
         x: 90,
         y: 233,
@@ -4775,6 +4776,13 @@ function Class5_Term2() {
         y: 151,
         size: 12,
         color: rgb(0, 0, 0),
+      });
+      fifteenthPage.drawImage(groupPhotImage, {
+        x: 550,
+        y: 120,
+        width: 600,
+        height: 500,
+        rotate: degrees(90),
       });
     } catch (error) {
       console.error("Error filling PDF form:", error);

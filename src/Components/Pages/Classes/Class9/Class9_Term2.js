@@ -139,13 +139,13 @@ function Class9_Term2() {
       secondPage.drawText(student["2nd Language Name_2"][0], {
         x: 39,
         y: 677,
-        size: 12,
+        size: 9.48,
         color: rgb(0, 0, 0),
       });
       secondPage.drawText(student["3 Subject Name Mathematics/Painting_2"][0], {
         x: 39,
         y: 654,
-        size: 12,
+        size: 9.48,
         color: rgb(0, 0, 0),
       });
       secondPage.drawText(
@@ -153,7 +153,7 @@ function Class9_Term2() {
         {
           x: 39,
           y: 631,
-          size: 12,
+          size: 9.48,
           color: rgb(0, 0, 0),
         }
       );
@@ -306,25 +306,25 @@ function Class9_Term2() {
       });
       secondPage.drawText(student["Work Education GRADE_2"][0], {
         x: 493,
-        y: 527,
+        y: 529,
         size: 14,
         color: rgb(0, 0, 0),
       });
       secondPage.drawText(student["Art Education GRADE_2"][0], {
         x: 493,
-        y: 509,
+        y: 511,
         size: 14,
         color: rgb(0, 0, 0),
       });
       secondPage.drawText(student["Health & Physical Education GRADE_2"][0], {
         x: 493,
-        y: 491,
+        y: 494,
         size: 14,
         color: rgb(0, 0, 0),
       });
       secondPage.drawText(student["Discipline GRADE_2"][0], {
         x: 493,
-        y: 440,
+        y: 442,
         size: 14,
         color: rgb(0, 0, 0),
       });
@@ -383,7 +383,7 @@ function Class9_Term2() {
         ][0],
         {
           x: 479,
-          y: 728,
+          y: 727,
           size: 14,
           color: rgb(0, 0, 0),
         }
@@ -416,7 +416,7 @@ function Class9_Term2() {
         ][0],
         {
           x: 479,
-          y: 675,
+          y: 677,
           size: 14,
           color: rgb(0, 0, 0),
         }
@@ -460,7 +460,7 @@ function Class9_Term2() {
         ][0],
         {
           x: 479,
-          y: 577,
+          y: 578,
           size: 14,
           color: rgb(0, 0, 0),
         }
@@ -471,7 +471,7 @@ function Class9_Term2() {
         ][0],
         {
           x: 479,
-          y: 560,
+          y: 561,
           size: 14,
           color: rgb(0, 0, 0),
         }
@@ -515,7 +515,7 @@ function Class9_Term2() {
         ][0],
         {
           x: 479,
-          y: 442,
+          y: 444,
           size: 14,
           color: rgb(0, 0, 0),
         }
@@ -538,7 +538,7 @@ function Class9_Term2() {
         ][0],
         {
           x: 479,
-          y: 374,
+          y: 376,
           size: 14,
           color: rgb(0, 0, 0),
         }
@@ -560,7 +560,7 @@ function Class9_Term2() {
         ][0],
         {
           x: 479,
-          y: 331,
+          y: 334,
           size: 14,
           color: rgb(0, 0, 0),
         }
@@ -572,7 +572,7 @@ function Class9_Term2() {
         ][0],
         {
           x: 479,
-          y: 314,
+          y: 316,
           size: 14,
           color: rgb(0, 0, 0),
         }
@@ -583,7 +583,7 @@ function Class9_Term2() {
         ][0],
         {
           x: 479,
-          y: 268,
+          y: 270,
           size: 14,
           color: rgb(0, 0, 0),
         }
@@ -594,7 +594,7 @@ function Class9_Term2() {
         ][0],
         {
           x: 479,
-          y: 248,
+          y: 250,
           size: 14,
           color: rgb(0, 0, 0),
         }
@@ -604,7 +604,7 @@ function Class9_Term2() {
         student["LITERARY SKILLS Asks thought provoking questions._2"][0],
         {
           x: 479,
-          y: 204,
+          y: 205,
           size: 12,
           color: rgb(0, 0, 0),
         }
@@ -616,7 +616,7 @@ function Class9_Term2() {
         ][0],
         {
           x: 479,
-          y: 189,
+          y: 187,
           size: 14,
           color: rgb(0, 0, 0),
         }
@@ -627,7 +627,7 @@ function Class9_Term2() {
         ][0],
         {
           x: 479,
-          y: 169,
+          y: 167,
           size: 14,
           color: rgb(0, 0, 0),
         }
@@ -638,7 +638,7 @@ function Class9_Term2() {
         ][0],
         {
           x: 479,
-          y: 119,
+          y: 121,
           size: 14,
           color: rgb(0, 0, 0),
         }
@@ -650,7 +650,7 @@ function Class9_Term2() {
         ][0],
         {
           x: 479,
-          y: 107,
+          y: 108,
           size: 14,
           color: rgb(0, 0, 0),
         }
@@ -661,7 +661,7 @@ function Class9_Term2() {
         ][0],
         {
           x: 479,
-          y: 93,
+          y: 94,
           size: 14,
           color: rgb(0, 0, 0),
         }
