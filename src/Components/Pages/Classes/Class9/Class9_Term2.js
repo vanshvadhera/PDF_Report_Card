@@ -88,7 +88,7 @@ function Class9_Term2() {
         width: 80,
         height: 87,
       });
-      firstPage.drawText(student["Name of Student_2"][0], {
+      firstPage.drawText(student["Student Name_2"][0], {
         x: 179,
         y: 180,
         size: 12,
@@ -100,7 +100,7 @@ function Class9_Term2() {
         size: 12,
         color: rgb(0, 0, 0),
       });
-      firstPage.drawText(student["Father Name"][0], {
+      firstPage.drawText(student["Father's Name"][0], {
         x: 165,
         y: 133,
         size: 12,
