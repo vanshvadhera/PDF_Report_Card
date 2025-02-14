@@ -91,49 +91,49 @@ function Class9_Term2() {
       firstPage.drawText(student["Student Name_2"][0], {
         x: 179,
         y: 180,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       firstPage.drawText(student["Class_2"][0], {
         x: 105,
         y: 158,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       firstPage.drawText(student["Father's Name"][0], {
         x: 165,
-        y: 133,
-        size: 12,
+        y: 134,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       firstPage.drawText(student["Date of Birth_2"][0].replace(/[' "]/g, ""), {
-        x: 157,
+        x: 152,
         y: 110,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       firstPage.drawText(student["Admission No._2"][0], {
         x: 455,
         y: 180,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       firstPage.drawText(student["Section_2"][0], {
         x: 410,
         y: 158,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       firstPage.drawText(student["Mother's Name_2"][0], {
-        x: 457,
-        y: 135,
+        x: 459,
+        y: 134,
         size: 10,
         color: rgb(0, 0, 0),
       });
       firstPage.drawText(student["House_2"][0], {
         x: 405,
         y: 110,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       secondPage.drawText(student["2nd Language Name_2"][0], {
@@ -604,8 +604,8 @@ function Class9_Term2() {
         student["LITERARY SKILLS Asks thought provoking questions_2"][0],
         {
           x: 479,
-          y: 205,
-          size: 12,
+          y: 206,
+          size: 14,
           color: rgb(0, 0, 0),
         }
       );
