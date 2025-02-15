@@ -160,172 +160,172 @@ function Class9_Term2() {
       secondPage.drawText(student["ENGLISH INTERNAL ASSESSMENT_2"][0], {
         x: 220,
         y: 700,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       secondPage.drawText(student["ENGLISH ANNUAL EXAM_2"][0], {
         x: 320,
         y: 700,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       secondPage.drawText(student["ENGLISH TOTAL (100)_2"][0], {
         x: 420,
         y: 700,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       secondPage.drawText(student["ENGLISH GRADE_2"][0], {
         x: 520,
         y: 700,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
 
       secondPage.drawText(student["2nd LANGUAGE INTERNAL ASSESSMENT_2"][0], {
         x: 220,
         y: 677,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       secondPage.drawText(student["2nd LANGUAGE ANNUAL EXAM_2"][0], {
         x: 320,
         y: 677,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       secondPage.drawText(student["2nd LANGUAGE  TOTAL (100)_2"][0], {
         x: 420,
         y: 677,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       secondPage.drawText(student["2nd LANGUAGE GRADE_2"][0], {
         x: 520,
         y: 677,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
 
       secondPage.drawText(student["3 INTERNAL ASSESSMENT_2"][0], {
         x: 220,
         y: 654,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       secondPage.drawText(student["3 ANNUAL EXAM_2"][0], {
         x: 320,
         y: 654,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       secondPage.drawText(student["3 TOTAL (100)_2"][0], {
         x: 420,
         y: 654,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       secondPage.drawText(student["3 GRADE_2"][0], {
         x: 520,
         y: 654,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       secondPage.drawText(student["4 INTERNAL ASSESSMENT_2"][0], {
         x: 220,
         y: 631,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       secondPage.drawText(student["4 ANNUAL EXAM_2"][0], {
         x: 320,
         y: 631,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       secondPage.drawText(student["4 TOTAL (100)_2"][0], {
         x: 420,
         y: 631,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       secondPage.drawText(student["4 GRADE_2"][0], {
         x: 520,
         y: 631,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       secondPage.drawText(student["5  INTERNAL ASSESSMENT_2"][0], {
         x: 220,
         y: 608,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       secondPage.drawText(student["5 ANNUAL EXAM_2"][0], {
         x: 320,
         y: 608,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       secondPage.drawText(student["5 TOTAL (100)_2"][0], {
         x: 420,
         y: 608,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       secondPage.drawText(student["5 GRADE_2"][0], {
         x: 520,
         y: 608,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
 
       secondPage.drawText(student["ARTIFICIAL INTELLIGENCE INTERNAL ASSESMENT_2"][0], {
         x: 220,
         y: 585,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       secondPage.drawText(student["ARTIFICIAL INTELLIGENCE ANNUAL EXAM_2"][0], {
         x: 320,
         y: 585,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       secondPage.drawText(student["ARTIFICIAL INTELLIGENCE TOTAL (100)_2"][0], {
         x: 420,
         y: 585,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       secondPage.drawText(student["ARTIFICIAL INTELLIGENCE GRADE_2"][0], {
         x: 520,
         y: 585,
-        size: 12,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       secondPage.drawText(student["Work Education GRADE_2"][0], {
         x: 493,
         y: 529,
-        size: 14,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       secondPage.drawText(student["Art Education GRADE_2"][0], {
         x: 493,
         y: 511,
-        size: 14,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       secondPage.drawText(student["Health & Physical Education GRADE_2"][0], {
         x: 493,
         y: 494,
-        size: 14,
+        size: 10,
         color: rgb(0, 0, 0),
       });
       secondPage.drawText(student["Discipline GRADE_2"][0], {
         x: 493,
         y: 442,
-        size: 14,
+        size: 10,
         color: rgb(0, 0, 0),
       });
 
@@ -334,7 +334,7 @@ function Class9_Term2() {
           secondPage.drawText(student["Class Teacher’s Remarks_2"][0], {
             x: 169,
             y: 407,
-            size: 12,
+            size: 10,
             color: rgb(0, 0, 0),
           });
       }
@@ -343,7 +343,7 @@ function Class9_Term2() {
           secondPage.drawText(student["Class Teacher’s Remarks_2"][1], {
             x: 169,
             y: 397,
-            size: 12,
+            size: 10,
             color: rgb(0, 0, 0),
           });
       }
@@ -352,7 +352,7 @@ function Class9_Term2() {
           secondPage.drawText(student["Class Teacher’s Remarks_2"][2], {
             x: 169,
             y: 387,
-            size: 12,
+            size: 10,
             color: rgb(0, 0, 0),
           });
       }
@@ -361,7 +361,7 @@ function Class9_Term2() {
           secondPage.drawText(student["Class Teacher’s Remarks_2"][3], {
             x: 169,
             y: 377,
-            size: 12,
+            size: 10,
             color: rgb(0, 0, 0),
           });
       }
