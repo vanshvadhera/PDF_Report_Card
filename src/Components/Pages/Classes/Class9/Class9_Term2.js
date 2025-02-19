@@ -373,7 +373,7 @@ function Class9_Term2() {
         {
           x: 479,
           y: 745,
-          size: 14,
+          size: 10,
           color: rgb(0, 0, 0),
         }
       );
@@ -384,7 +384,7 @@ function Class9_Term2() {
         {
           x: 479,
           y: 727,
-          size: 14,
+          size: 10,
           color: rgb(0, 0, 0),
         }
       );
@@ -395,7 +395,7 @@ function Class9_Term2() {
         {
           x: 479,
           y: 711,
-          size: 14,
+          size: 10,
           color: rgb(0, 0, 0),
         }
       );
@@ -406,7 +406,7 @@ function Class9_Term2() {
         {
           x: 479,
           y: 694,
-          size: 14,
+          size: 10,
           color: rgb(0, 0, 0),
         }
       );
@@ -417,7 +417,7 @@ function Class9_Term2() {
         {
           x: 479,
           y: 677,
-          size: 14,
+          size: 10,
           color: rgb(0, 0, 0),
         }
       );
@@ -428,7 +428,7 @@ function Class9_Term2() {
         {
           x: 479,
           y: 630,
-          size: 14,
+          size: 10,
           color: rgb(0, 0, 0),
         }
       );
@@ -439,7 +439,7 @@ function Class9_Term2() {
         {
           x: 479,
           y: 611,
-          size: 14,
+          size: 10,
           color: rgb(0, 0, 0),
         }
       );
@@ -450,7 +450,7 @@ function Class9_Term2() {
         {
           x: 479,
           y: 594,
-          size: 14,
+          size: 10,
           color: rgb(0, 0, 0),
         }
       );
@@ -461,7 +461,7 @@ function Class9_Term2() {
         {
           x: 479,
           y: 578,
-          size: 14,
+          size: 10,
           color: rgb(0, 0, 0),
         }
       );
@@ -472,7 +472,7 @@ function Class9_Term2() {
         {
           x: 479,
           y: 561,
-          size: 14,
+          size: 10,
           color: rgb(0, 0, 0),
         }
       );
@@ -483,7 +483,7 @@ function Class9_Term2() {
         {
           x: 479,
           y: 509,
-          size: 14,
+          size: 10,
           color: rgb(0, 0, 0),
         }
       );
@@ -494,7 +494,7 @@ function Class9_Term2() {
         {
           x: 479,
           y: 488,
-          size: 14,
+          size: 10,
           color: rgb(0, 0, 0),
         }
       );
@@ -505,7 +505,7 @@ function Class9_Term2() {
         {
           x: 479,
           y: 466,
-          size: 14,
+          size: 10,
           color: rgb(0, 0, 0),
         }
       );
@@ -516,7 +516,7 @@ function Class9_Term2() {
         {
           x: 479,
           y: 444,
-          size: 14,
+          size: 10,
           color: rgb(0, 0, 0),
         }
       );
@@ -528,7 +528,7 @@ function Class9_Term2() {
         {
           x: 479,
           y: 394,
-          size: 14,
+          size: 10,
           color: rgb(0, 0, 0),
         }
       );
@@ -539,7 +539,7 @@ function Class9_Term2() {
         {
           x: 479,
           y: 376,
-          size: 14,
+          size: 10,
           color: rgb(0, 0, 0),
         }
       );
@@ -550,7 +550,7 @@ function Class9_Term2() {
         {
           x: 479,
           y: 356,
-          size: 14,
+          size: 10,
           color: rgb(0, 0, 0),
         }
       );
@@ -561,7 +561,7 @@ function Class9_Term2() {
         {
           x: 479,
           y: 334,
-          size: 14,
+          size: 10,
           color: rgb(0, 0, 0),
         }
       );
@@ -573,7 +573,7 @@ function Class9_Term2() {
         {
           x: 479,
           y: 316,
-          size: 14,
+          size: 10,
           color: rgb(0, 0, 0),
         }
       );
@@ -584,7 +584,7 @@ function Class9_Term2() {
         {
           x: 479,
           y: 270,
-          size: 14,
+          size: 10,
           color: rgb(0, 0, 0),
         }
       );
@@ -595,7 +595,7 @@ function Class9_Term2() {
         {
           x: 479,
           y: 250,
-          size: 14,
+          size: 10,
           color: rgb(0, 0, 0),
         }
       );
@@ -605,7 +605,7 @@ function Class9_Term2() {
         {
           x: 479,
           y: 206,
-          size: 14,
+          size: 10,
           color: rgb(0, 0, 0),
         }
       );
@@ -617,7 +617,7 @@ function Class9_Term2() {
         {
           x: 479,
           y: 187,
-          size: 14,
+          size: 10,
           color: rgb(0, 0, 0),
         }
       );
@@ -628,7 +628,7 @@ function Class9_Term2() {
         {
           x: 479,
           y: 167,
-          size: 14,
+          size: 10,
           color: rgb(0, 0, 0),
         }
       );
@@ -639,7 +639,7 @@ function Class9_Term2() {
         {
           x: 479,
           y: 121,
-          size: 14,
+          size: 10,
           color: rgb(0, 0, 0),
         }
       );
@@ -651,7 +651,7 @@ function Class9_Term2() {
         {
           x: 479,
           y: 108,
-          size: 14,
+          size: 10,
           color: rgb(0, 0, 0),
         }
       );
@@ -662,7 +662,7 @@ function Class9_Term2() {
         {
           x: 479,
           y: 94,
-          size: 14,
+          size: 10,
           color: rgb(0, 0, 0),
         }
       );
