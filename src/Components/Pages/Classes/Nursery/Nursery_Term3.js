@@ -207,7 +207,7 @@ function Nursery_Term3() {
         student["FEELING STRONG AND FREE Remarks"][2] &&
           thirdPage.drawText(student["FEELING STRONG AND FREE Remarks"][2], {
             x: 363,
-            y: 643,
+            y: 630,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -216,16 +216,7 @@ function Nursery_Term3() {
         student["FEELING STRONG AND FREE Remarks"][3] &&
           thirdPage.drawText(student["FEELING STRONG AND FREE Remarks"][3], {
             x: 363,
-            y: 643,
-            size: 10,
-            color: rgb(0, 0, 0),
-          });
-      }
-      {
-        student["FEELING STRONG AND FREE Remarks"][4] &&
-          thirdPage.drawText(student["FEELING STRONG AND FREE Remarks"][4], {
-            x: 363,
-            y: 643,
+            y: 617,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -291,7 +282,7 @@ function Nursery_Term3() {
         student["MIND MATTERS Remarks"][2] &&
           thirdPage.drawText(student["MIND MATTERS Remarks"][2], {
             x: 363,
-            y: 516,
+            y: 515,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -300,7 +291,7 @@ function Nursery_Term3() {
         student["MIND MATTERS Remarks"][3] &&
           thirdPage.drawText(student["MIND MATTERS Remarks"][3], {
             x: 363,
-            y: 504,
+            y: 502,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -309,7 +300,7 @@ function Nursery_Term3() {
         student["MIND MATTERS Remarks"][4] &&
           thirdPage.drawText(student["MIND MATTERS Remarks"][4], {
             x: 363,
-            y: 504,
+            y: 489,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -378,7 +369,7 @@ function Nursery_Term3() {
         student["EFFECTIVE EXPRESSIONS Remarks"][4] &&
           thirdPage.drawText(student["EFFECTIVE EXPRESSIONS Remarks"][4], {
             x: 363,
-            y: 366,
+            y: 353,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -441,7 +432,7 @@ function Nursery_Term3() {
         student["CONNECTION AND COMPASSION Remarks"][2] &&
           thirdPage.drawText(student["CONNECTION AND COMPASSION Remarks"][2], {
             x: 363,
-            y: 302,
+            y: 289,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -450,7 +441,7 @@ function Nursery_Term3() {
         student["CONNECTION AND COMPASSION Remarks"][3] &&
           thirdPage.drawText(student["CONNECTION AND COMPASSION Remarks"][3], {
             x: 363,
-            y: 302,
+            y: 276,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -459,7 +450,7 @@ function Nursery_Term3() {
         student["CONNECTION AND COMPASSION Remarks"][4] &&
           thirdPage.drawText(student["CONNECTION AND COMPASSION Remarks"][4], {
             x: 363,
-            y: 302,
+            y: 263,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -497,24 +488,6 @@ function Nursery_Term3() {
       {
         student["SOCIAL AWARENESS Remarks"][2] &&
           thirdPage.drawText(student["SOCIAL AWARENESS Remarks"][2], {
-            x: 363,
-            y: 153,
-            size: 10,
-            color: rgb(0, 0, 0),
-          });
-      }
-      {
-        student["SOCIAL AWARENESS Remarks"][3] &&
-          thirdPage.drawText(student["SOCIAL AWARENESS Remarks"][3], {
-            x: 363,
-            y: 153,
-            size: 10,
-            color: rgb(0, 0, 0),
-          });
-      }
-      {
-        student["SOCIAL AWARENESS Remarks"][4] &&
-          thirdPage.drawText(student["SOCIAL AWARENESS Remarks"][4], {
             x: 363,
             y: 153,
             size: 10,
@@ -559,25 +532,7 @@ function Nursery_Term3() {
         student["NUMERACY SMART Remarks"][2] &&
           fourthPage.drawText(student["NUMERACY SMART Remarks"][2], {
             x: 378,
-            y: 670,
-            size: 10,
-            color: rgb(0, 0, 0),
-          });
-      }
-      {
-        student["NUMERACY SMART Remarks"][3] &&
-          fourthPage.drawText(student["NUMERACY SMART Remarks"][3], {
-            x: 378,
-            y: 670,
-            size: 10,
-            color: rgb(0, 0, 0),
-          });
-      }
-      {
-        student["NUMERACY SMART Remarks"][4] &&
-          fourthPage.drawText(student["NUMERACY SMART Remarks"][4], {
-            x: 378,
-            y: 670,
+            y: 657,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -645,7 +600,7 @@ function Nursery_Term3() {
         student["LANGUAGE LEAPS Remarks"][2] &&
           fourthPage.drawText(student["LANGUAGE LEAPS Remarks"][2], {
             x: 378,
-            y: 599,
+            y: 586,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -654,7 +609,7 @@ function Nursery_Term3() {
         student["LANGUAGE LEAPS Remarks"][3] &&
           fourthPage.drawText(student["LANGUAGE LEAPS Remarks"][3], {
             x: 378,
-            y: 599,
+            y: 573,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -663,7 +618,7 @@ function Nursery_Term3() {
         student["LANGUAGE LEAPS Remarks"][4] &&
           fourthPage.drawText(student["LANGUAGE LEAPS Remarks"][4], {
             x: 378,
-            y: 599,
+            y: 560,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -707,24 +662,6 @@ function Nursery_Term3() {
             color: rgb(0, 0, 0),
           });
       }
-      {
-        student["मेरी भाषा Remarks"][3] &&
-          fourthPage.drawText(student["मेरी भाषा Remarks"][3], {
-            x: 378,
-            y: 446,
-            size: 10,
-            color: rgb(0, 0, 0),
-          });
-      }
-      {
-        student["मेरी भाषा Remarks"][4] &&
-          fourthPage.drawText(student["मेरी भाषा Remarks"][4], {
-            x: 378,
-            y: 446,
-            size: 10,
-            color: rgb(0, 0, 0),
-          });
-      }
       fourthPage.drawText(student["I am artistic"][0], {
         x: student["I am artistic"][0] === "PROGRESSIVE" ? 285 : 295,
         y: 401,
@@ -762,25 +699,7 @@ function Nursery_Term3() {
         student["AESTHETIC ME Remarks"][2] &&
           fourthPage.drawText(student["AESTHETIC ME Remarks"][2], {
             x: 378,
-            y: 388,
-            size: 10,
-            color: rgb(0, 0, 0),
-          });
-      }
-      {
-        student["AESTHETIC ME Remarks"][3] &&
-          fourthPage.drawText(student["AESTHETIC ME Remarks"][3], {
-            x: 378,
-            y: 388,
-            size: 10,
-            color: rgb(0, 0, 0),
-          });
-      }
-      {
-        student["AESTHETIC ME Remarks"][4] &&
-          fourthPage.drawText(student["AESTHETIC ME Remarks"][4], {
-            x: 378,
-            y: 388,
+            y: 375,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -823,25 +742,7 @@ function Nursery_Term3() {
         student["MUSIC MARVEL Remarks"][2] &&
           fourthPage.drawText(student["MUSIC MARVEL Remarks"][2], {
             x: 378,
-            y: 319,
-            size: 10,
-            color: rgb(0, 0, 0),
-          });
-      }
-      {
-        student["MUSIC MARVEL Remarks"][3] &&
-          fourthPage.drawText(student["MUSIC MARVEL Remarks"][3], {
-            x: 378,
-            y: 319,
-            size: 10,
-            color: rgb(0, 0, 0),
-          });
-      }
-      {
-        student["MUSIC MARVEL Remarks"][4] &&
-          fourthPage.drawText(student["MUSIC MARVEL Remarks"][4], {
-            x: 378,
-            y: 319,
+            y: 306,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -894,15 +795,6 @@ function Nursery_Term3() {
       {
         student["DANCE DYNAMO Remarks"][3] &&
           fourthPage.drawText(student["DANCE DYNAMO Remarks"][3], {
-            x: 378,
-            y: 224,
-            size: 10,
-            color: rgb(0, 0, 0),
-          });
-      }
-      {
-        student["DANCE DYNAMO Remarks"][4] &&
-          fourthPage.drawText(student["DANCE DYNAMO Remarks"][4], {
             x: 378,
             y: 224,
             size: 10,
@@ -968,16 +860,7 @@ function Nursery_Term3() {
         student["ATHLETIC ME Remarks"][3] &&
           fourthPage.drawText(student["ATHLETIC ME Remarks"][3], {
             x: 378,
-            y: 145,
-            size: 10,
-            color: rgb(0, 0, 0),
-          });
-      }
-      {
-        student["ATHLETIC ME Remarks"][4] &&
-          fourthPage.drawText(student["ATHLETIC ME Remarks"][4], {
-            x: 378,
-            y: 145,
+            y: 132,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -1235,18 +1118,6 @@ function Nursery_Term3() {
             }
           );
       }
-      {
-        student["FEELING STRONG AND FREE Remarks_2"][4] &&
-          seventhPage.drawText(
-            student["FEELING STRONG AND FREE Remarks_2"][4],
-            {
-              x: 363,
-              y: 617,
-              size: 10,
-              color: rgb(0, 0, 0),
-            }
-          );
-      }
 
       seventhPage.drawText(student["I have good observation skills_2"][0], {
         x:
@@ -1311,7 +1182,7 @@ function Nursery_Term3() {
         student["MIND MATTERS Remarks_2"][2] &&
           seventhPage.drawText(student["MIND MATTERS Remarks_2"][2], {
             x: 363,
-            y: 528,
+            y: 515,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -1320,7 +1191,7 @@ function Nursery_Term3() {
         student["MIND MATTERS Remarks_2"][3] &&
           seventhPage.drawText(student["MIND MATTERS Remarks_2"][3], {
             x: 363,
-            y: 528,
+            y: 502,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -1329,7 +1200,7 @@ function Nursery_Term3() {
         student["MIND MATTERS Remarks_2"][4] &&
           seventhPage.drawText(student["MIND MATTERS Remarks_2"][4], {
             x: 363,
-            y: 528,
+            y: 489,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -1390,16 +1261,7 @@ function Nursery_Term3() {
         student["EFFECTIVE EXPRESSIONS Remarks_2"][3] &&
           seventhPage.drawText(student["EFFECTIVE EXPRESSIONS Remarks_2"][3], {
             x: 363,
-            y: 379,
-            size: 10,
-            color: rgb(0, 0, 0),
-          });
-      }
-      {
-        student["EFFECTIVE EXPRESSIONS Remarks_2"][4] &&
-          seventhPage.drawText(student["EFFECTIVE EXPRESSIONS Remarks_2"][4], {
-            x: 363,
-            y: 379,
+            y: 366,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -1473,7 +1335,7 @@ function Nursery_Term3() {
             student["CONNECTION AND COMPASSION Remarks_2"][2],
             {
               x: 363,
-              y: 302,
+              y: 289,
               size: 10,
               color: rgb(0, 0, 0),
             }
@@ -1485,19 +1347,7 @@ function Nursery_Term3() {
             student["CONNECTION AND COMPASSION Remarks_2"][3],
             {
               x: 363,
-              y: 302,
-              size: 10,
-              color: rgb(0, 0, 0),
-            }
-          );
-      }
-      {
-        student["CONNECTION AND COMPASSION Remarks_2"][4] &&
-          seventhPage.drawText(
-            student["CONNECTION AND COMPASSION Remarks_2"][4],
-            {
-              x: 363,
-              y: 302,
+              y: 276,
               size: 10,
               color: rgb(0, 0, 0),
             }
@@ -1551,15 +1401,6 @@ function Nursery_Term3() {
             color: rgb(0, 0, 0),
           });
       }
-      {
-        student["SOCIAL AWARENESS Remarks_2"][4] &&
-          seventhPage.drawText(student["SOCIAL AWARENESS Remarks_2"][4], {
-            x: 363,
-            y: 153,
-            size: 10,
-            color: rgb(0, 0, 0),
-          });
-      }
 
       eighthPage.drawText(student["I am number smart_2"][0], {
         x: student["I am number smart_2"][0] === "PROGRESSIVE" ? 285 : 295,
@@ -1597,24 +1438,6 @@ function Nursery_Term3() {
       {
         student["NUMERACY SMART Remarks_2"][2] &&
           eighthPage.drawText(student["NUMERACY SMART Remarks_2"][2], {
-            x: 378,
-            y: 657,
-            size: 10,
-            color: rgb(0, 0, 0),
-          });
-      }
-      {
-        student["NUMERACY SMART Remarks_2"][3] &&
-          eighthPage.drawText(student["NUMERACY SMART Remarks_2"][3], {
-            x: 378,
-            y: 657,
-            size: 10,
-            color: rgb(0, 0, 0),
-          });
-      }
-      {
-        student["NUMERACY SMART Remarks_2"][4] &&
-          eighthPage.drawText(student["NUMERACY SMART Remarks_2"][4], {
             x: 378,
             y: 657,
             size: 10,
@@ -1697,16 +1520,7 @@ function Nursery_Term3() {
         student["LANGUAGE LEAPS Remarks_2"][3] &&
           eighthPage.drawText(student["LANGUAGE LEAPS Remarks_2"][3], {
             x: 378,
-            y: 586,
-            size: 10,
-            color: rgb(0, 0, 0),
-          });
-      }
-      {
-        student["LANGUAGE LEAPS Remarks_2"][4] &&
-          eighthPage.drawText(student["LANGUAGE LEAPS Remarks_2"][4], {
-            x: 378,
-            y: 586,
+            y: 573,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -1745,24 +1559,6 @@ function Nursery_Term3() {
       {
         student["मेरी भाषा Remarks_2"][2] &&
           eighthPage.drawText(student["मेरी भाषा Remarks_2"][2], {
-            x: 378,
-            y: 446,
-            size: 10,
-            color: rgb(0, 0, 0),
-          });
-      }
-      {
-        student["मेरी भाषा Remarks_2"][3] &&
-          eighthPage.drawText(student["मेरी भाषा Remarks_2"][3], {
-            x: 378,
-            y: 446,
-            size: 10,
-            color: rgb(0, 0, 0),
-          });
-      }
-      {
-        student["मेरी भाषा Remarks_2"][4] &&
-          eighthPage.drawText(student["मेरी भाषा Remarks_2"][4], {
             x: 378,
             y: 446,
             size: 10,
@@ -1812,24 +1608,6 @@ function Nursery_Term3() {
             color: rgb(0, 0, 0),
           });
       }
-      {
-        student["AESTHETIC ME Remarks_2"][3] &&
-          eighthPage.drawText(student["AESTHETIC ME Remarks_2"][3], {
-            x: 378,
-            y: 375,
-            size: 10,
-            color: rgb(0, 0, 0),
-          });
-      }
-      {
-        student["AESTHETIC ME Remarks_2"][4] &&
-          eighthPage.drawText(student["AESTHETIC ME Remarks_2"][4], {
-            x: 378,
-            y: 375,
-            size: 10,
-            color: rgb(0, 0, 0),
-          });
-      }
       eighthPage.drawText(student["I can sing melodiously_2"][0], {
         x: student["I can sing melodiously_2"][0] === "PROGRESSIVE" ? 285 : 295,
         y: 332,
@@ -1867,25 +1645,7 @@ function Nursery_Term3() {
         student["MUSIC MARVEL Remarks_2"][2] &&
           eighthPage.drawText(student["MUSIC MARVEL Remarks_2"][2], {
             x: 378,
-            y: 319,
-            size: 10,
-            color: rgb(0, 0, 0),
-          });
-      }
-      {
-        student["MUSIC MARVEL Remarks_2"][3] &&
-          eighthPage.drawText(student["MUSIC MARVEL Remarks_2"][3], {
-            x: 378,
-            y: 319,
-            size: 10,
-            color: rgb(0, 0, 0),
-          });
-      }
-      {
-        student["MUSIC MARVEL Remarks_2"][4] &&
-          eighthPage.drawText(student["MUSIC MARVEL Remarks_2"][4], {
-            x: 378,
-            y: 319,
+            y: 306,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -1932,7 +1692,7 @@ function Nursery_Term3() {
         student["DANCE DYNAMO Remarks_2"][2] &&
           eighthPage.drawText(student["DANCE DYNAMO Remarks_2"][2], {
             x: 378,
-            y: 250,
+            y: 237,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -1941,16 +1701,7 @@ function Nursery_Term3() {
         student["DANCE DYNAMO Remarks_2"][3] &&
           eighthPage.drawText(student["DANCE DYNAMO Remarks_2"][3], {
             x: 378,
-            y: 250,
-            size: 10,
-            color: rgb(0, 0, 0),
-          });
-      }
-      {
-        student["DANCE DYNAMO Remarks_2"][4] &&
-          eighthPage.drawText(student["DANCE DYNAMO Remarks_2"][4], {
-            x: 378,
-            y: 250,
+            y: 224,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -2014,15 +1765,6 @@ function Nursery_Term3() {
       {
         student["ATHLETIC ME Remarks_2"][3] &&
           eighthPage.drawText(student["ATHLETIC ME Remarks_2"][3], {
-            x: 378,
-            y: 132,
-            size: 10,
-            color: rgb(0, 0, 0),
-          });
-      }
-      {
-        student["ATHLETIC ME Remarks_2"][4] &&
-          eighthPage.drawText(student["ATHLETIC ME Remarks_2"][4], {
             x: 378,
             y: 132,
             size: 10,
@@ -2267,7 +2009,7 @@ function Nursery_Term3() {
             student["FEELING STRONG AND FREE Remarks_3"][2],
             {
               x: 363,
-              y: 643,
+              y: 630,
               size: 10,
               color: rgb(0, 0, 0),
             }
@@ -2279,19 +2021,7 @@ function Nursery_Term3() {
             student["FEELING STRONG AND FREE Remarks_3"][3],
             {
               x: 363,
-              y: 643,
-              size: 10,
-              color: rgb(0, 0, 0),
-            }
-          );
-      }
-      {
-        student["FEELING STRONG AND FREE Remarks_3"][4] &&
-          eleventhPage.drawText(
-            student["FEELING STRONG AND FREE Remarks_3"][4],
-            {
-              x: 363,
-              y: 643,
+              y: 617,
               size: 10,
               color: rgb(0, 0, 0),
             }
@@ -2359,7 +2089,7 @@ function Nursery_Term3() {
         student["MIND MATTERS Remarks_3"][2] &&
           eleventhPage.drawText(student["MIND MATTERS Remarks_3"][2], {
             x: 363,
-            y: 516,
+            y: 515,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -2368,16 +2098,7 @@ function Nursery_Term3() {
         student["MIND MATTERS Remarks_3"][3] &&
           eleventhPage.drawText(student["MIND MATTERS Remarks_3"][3], {
             x: 363,
-            y: 504,
-            size: 10,
-            color: rgb(0, 0, 0),
-          });
-      }
-      {
-        student["MIND MATTERS Remarks_3"][4] &&
-          eleventhPage.drawText(student["MIND MATTERS Remarks_3"][4], {
-            x: 363,
-            y: 504,
+            y: 502,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -2438,16 +2159,7 @@ function Nursery_Term3() {
         student["EFFECTIVE EXPRESSIONS Remarks_3"][3] &&
           eleventhPage.drawText(student["EFFECTIVE EXPRESSIONS Remarks_3"][3], {
             x: 363,
-            y: 379,
-            size: 10,
-            color: rgb(0, 0, 0),
-          });
-      }
-      {
-        student["EFFECTIVE EXPRESSIONS Remarks_3"][4] &&
-          eleventhPage.drawText(student["EFFECTIVE EXPRESSIONS Remarks_3"][4], {
-            x: 363,
-            y: 379,
+            y: 366,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -2522,7 +2234,7 @@ function Nursery_Term3() {
             student["CONNECTION AND COMPASSION Remarks_3"][2],
             {
               x: 363,
-              y: 302,
+              y: 289,
               size: 10,
               color: rgb(0, 0, 0),
             }
@@ -2534,19 +2246,7 @@ function Nursery_Term3() {
             student["CONNECTION AND COMPASSION Remarks_3"][3],
             {
               x: 363,
-              y: 302,
-              size: 10,
-              color: rgb(0, 0, 0),
-            }
-          );
-      }
-      {
-        student["CONNECTION AND COMPASSION Remarks_3"][4] &&
-          eleventhPage.drawText(
-            student["CONNECTION AND COMPASSION Remarks_3"][4],
-            {
-              x: 363,
-              y: 302,
+              y: 276,
               size: 10,
               color: rgb(0, 0, 0),
             }
@@ -2591,24 +2291,6 @@ function Nursery_Term3() {
             color: rgb(0, 0, 0),
           });
       }
-      {
-        student["SOCIAL AWARENESS Remarks_3"][3] &&
-          eleventhPage.drawText(student["SOCIAL AWARENESS Remarks_3"][3], {
-            x: 363,
-            y: 153,
-            size: 10,
-            color: rgb(0, 0, 0),
-          });
-      }
-      {
-        student["SOCIAL AWARENESS Remarks_3"][4] &&
-          eleventhPage.drawText(student["SOCIAL AWARENESS Remarks_3"][4], {
-            x: 363,
-            y: 153,
-            size: 10,
-            color: rgb(0, 0, 0),
-          });
-      }
       twelfthPage.drawText(student["I am number smart_3"][0], {
         x: student["I am number smart_3"][0] === "PROGRESSIVE" ? 285 : 295,
         y: 683,
@@ -2646,25 +2328,7 @@ function Nursery_Term3() {
         student["NUMERACY SMART Remarks_3"][2] &&
           twelfthPage.drawText(student["NUMERACY SMART Remarks_3"][2], {
             x: 378,
-            y: 670,
-            size: 10,
-            color: rgb(0, 0, 0),
-          });
-      }
-      {
-        student["NUMERACY SMART Remarks_3"][3] &&
-          twelfthPage.drawText(student["NUMERACY SMART Remarks_3"][3], {
-            x: 378,
-            y: 670,
-            size: 10,
-            color: rgb(0, 0, 0),
-          });
-      }
-      {
-        student["NUMERACY SMART Remarks_3"][4] &&
-          twelfthPage.drawText(student["NUMERACY SMART Remarks_3"][4], {
-            x: 378,
-            y: 670,
+            y: 657,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -2735,7 +2399,7 @@ function Nursery_Term3() {
         student["LANGUAGE LEAPS Remarks_3"][2] &&
           twelfthPage.drawText(student["LANGUAGE LEAPS Remarks_3"][2], {
             x: 378,
-            y: 599,
+            y: 586,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -2744,16 +2408,7 @@ function Nursery_Term3() {
         student["LANGUAGE LEAPS Remarks_3"][3] &&
           twelfthPage.drawText(student["LANGUAGE LEAPS Remarks_3"][3], {
             x: 378,
-            y: 599,
-            size: 10,
-            color: rgb(0, 0, 0),
-          });
-      }
-      {
-        student["LANGUAGE LEAPS Remarks_3"][4] &&
-          twelfthPage.drawText(student["LANGUAGE LEAPS Remarks_3"][4], {
-            x: 378,
-            y: 599,
+            y: 573,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -2798,24 +2453,6 @@ function Nursery_Term3() {
             color: rgb(0, 0, 0),
           });
       }
-      {
-        student["मेरी भाषा Remarks_3"][3] &&
-          twelfthPage.drawText(student["मेरी भाषा Remarks_3"][3], {
-            x: 378,
-            y: 446,
-            size: 10,
-            color: rgb(0, 0, 0),
-          });
-      }
-      {
-        student["मेरी भाषा Remarks_3"][4] &&
-          twelfthPage.drawText(student["मेरी भाषा Remarks_3"][4], {
-            x: 378,
-            y: 446,
-            size: 10,
-            color: rgb(0, 0, 0),
-          });
-      }
       twelfthPage.drawText(student["I am artistic_3"][0], {
         x: student["I am artistic_3"][0] === "PROGRESSIVE" ? 285 : 295,
         y: 401,
@@ -2853,25 +2490,7 @@ function Nursery_Term3() {
         student["AESTHETIC ME Remarks_3"][2] &&
           twelfthPage.drawText(student["AESTHETIC ME Remarks_3"][2], {
             x: 378,
-            y: 388,
-            size: 10,
-            color: rgb(0, 0, 0),
-          });
-      }
-      {
-        student["AESTHETIC ME Remarks_3"][3] &&
-          twelfthPage.drawText(student["AESTHETIC ME Remarks_3"][3], {
-            x: 378,
-            y: 388,
-            size: 10,
-            color: rgb(0, 0, 0),
-          });
-      }
-      {
-        student["AESTHETIC ME Remarks_3"][4] &&
-          twelfthPage.drawText(student["AESTHETIC ME Remarks_3"][4], {
-            x: 378,
-            y: 388,
+            y: 375,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -2918,25 +2537,7 @@ function Nursery_Term3() {
         student["MUSIC MARVEL Remarks_3"][2] &&
           twelfthPage.drawText(student["MUSIC MARVEL Remarks_3"][2], {
             x: 378,
-            y: 319,
-            size: 10,
-            color: rgb(0, 0, 0),
-          });
-      }
-      {
-        student["MUSIC MARVEL Remarks_3"][3] &&
-          twelfthPage.drawText(student["MUSIC MARVEL Remarks_3"][3], {
-            x: 378,
-            y: 319,
-            size: 10,
-            color: rgb(0, 0, 0),
-          });
-      }
-      {
-        student["MUSIC MARVEL Remarks_3"][4] &&
-          twelfthPage.drawText(student["MUSIC MARVEL Remarks_3"][4], {
-            x: 378,
-            y: 319,
+            y: 306,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -2990,15 +2591,6 @@ function Nursery_Term3() {
       {
         student["DANCE DYNAMO Remarks_3"][3] &&
           twelfthPage.drawText(student["DANCE DYNAMO Remarks_3"][3], {
-            x: 378,
-            y: 224,
-            size: 10,
-            color: rgb(0, 0, 0),
-          });
-      }
-      {
-        student["DANCE DYNAMO Remarks_3"][4] &&
-          twelfthPage.drawText(student["DANCE DYNAMO Remarks_3"][4], {
             x: 378,
             y: 224,
             size: 10,
@@ -3064,16 +2656,7 @@ function Nursery_Term3() {
         student["ATHLETIC ME Remarks_3"][3] &&
           twelfthPage.drawText(student["ATHLETIC ME Remarks_3"][3], {
             x: 378,
-            y: 145,
-            size: 10,
-            color: rgb(0, 0, 0),
-          });
-      }
-      {
-        student["ATHLETIC ME Remarks_3"][4] &&
-          twelfthPage.drawText(student["ATHLETIC ME Remarks_3"][4], {
-            x: 378,
-            y: 145,
+            y: 132,
             size: 10,
             color: rgb(0, 0, 0),
           });

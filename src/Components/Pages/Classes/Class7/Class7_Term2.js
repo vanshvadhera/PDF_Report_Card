@@ -237,7 +237,7 @@ function Class7_Term2() {
       secondPage.drawText(
         student["Language-II (HINDI) SUBJECT ENRICHMENT-1 (5)"][0],
         {
-          x: 292,
+          x: 293,
           y: 714,
           size: 12,
           color: rgb(0, 0, 0),
@@ -295,7 +295,7 @@ function Class7_Term2() {
       });
 
       secondPage.drawText(student["Language-III SUBJECT ENRICHMENT-1 (5)"][0], {
-        x: 292,
+        x: 293,
         y: 697, // Increased by 3 from 694
         size: 12,
         color: rgb(0, 0, 0),
@@ -342,7 +342,7 @@ function Class7_Term2() {
       });
 
       secondPage.drawText(student["MATHEMATICS SUBJECT ENRICHMENT-1 (5)"][0], {
-        x: 290,
+        x: 293,
         y: 677,
         size: 12,
         color: rgb(0, 0, 0),
@@ -385,7 +385,7 @@ function Class7_Term2() {
       });
 
       secondPage.drawText(student["SCIENCE SUBJECT ENRICHMENT-1 (5)"][0], {
-        x: 290,
+        x: 293,
         y: 660,
         size: 12,
         color: rgb(0, 0, 0),
@@ -431,7 +431,7 @@ function Class7_Term2() {
       secondPage.drawText(
         student["SOCIAL SCIENCE SUBJECT ENRICHMENT-1 (5)"][0],
         {
-          x: 290,
+          x: 293,
           y: 643,
           size: 12,
           color: rgb(0, 0, 0),
@@ -484,7 +484,7 @@ function Class7_Term2() {
       secondPage.drawText(
         student["COMPUTER SCIENCE SUBJECT ENRICHMENT-1 (5)"][0],
         {
-          x: 290,
+          x: 293,
           y: 623,
           size: 12,
           color: rgb(0, 0, 0),
@@ -1050,7 +1050,7 @@ function Class7_Term2() {
       fourthPage.drawText(
         student["Language-I (ENGLISH) SUBJECT ENRICHMENT-1 (5)"][0],
         {
-          x: 215,
+          x: 211,
           y: 723,
           size: 10,
           color: rgb(0, 0, 0),
@@ -1162,7 +1162,7 @@ function Class7_Term2() {
       fourthPage.drawText(
         student["Language-II (HINDI) SUBJECT ENRICHMENT-1 (5)"][0],
         {
-          x: 215,
+          x: 211,
           y: 703,
           size: 10,
           color: rgb(0, 0, 0),
@@ -1273,7 +1273,7 @@ function Class7_Term2() {
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["Language-III SUBJECT ENRICHMENT-1 (5)"][0], {
-        x: 215,
+        x: 211,
         y: 683,
         size: 10,
         color: rgb(0, 0, 0),
@@ -1373,7 +1373,7 @@ function Class7_Term2() {
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["MATHEMATICS SUBJECT ENRICHMENT-1 (5)"][0], {
-        x: 215,
+        x: 211,
         y: 664,
         size: 10,
         color: rgb(0, 0, 0),
@@ -1464,7 +1464,7 @@ function Class7_Term2() {
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["SCIENCE SUBJECT ENRICHMENT-1 (5)"][0], {
-        x: 215,
+        x: 211,
         y: 646,
         size: 10,
         color: rgb(0, 0, 0),
@@ -1551,7 +1551,7 @@ function Class7_Term2() {
       fourthPage.drawText(
         student["SOCIAL SCIENCE SUBJECT ENRICHMENT-1 (5)"][0],
         {
-          x: 215,
+          x: 211,
           y: 626,
           size: 10,
           color: rgb(0, 0, 0),
@@ -1654,7 +1654,7 @@ function Class7_Term2() {
       fourthPage.drawText(
         student["COMPUTER SCIENCE SUBJECT ENRICHMENT-1 (5)"][0],
         {
-          x: 215,
+          x: 211,
           y: 606,
           size: 10,
           color: rgb(0, 0, 0),
@@ -2033,7 +2033,7 @@ function Class7_Term2() {
       sixthPage.drawText(student["Language-III Name_2"][0], {
         x: 358,
         y: 769,
-        size: 10,
+        size: 13,
         color: rgb(0, 0, 0),
       });
       sixthPage.drawText(

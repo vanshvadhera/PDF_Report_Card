@@ -3950,12 +3950,15 @@ function Class5_Term2() {
         }
       );
 
-      eleventhPage.drawText(student["Third Language  HALF YEARLY EXAM (50)"][0], {
-        x: 397,
-        y: 677,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
+      eleventhPage.drawText(
+        student["Third Language  HALF YEARLY EXAM (50)"][0],
+        {
+          x: 397,
+          y: 677,
+          size: 12,
+          color: rgb(0, 0, 0),
+        }
+      );
 
       eleventhPage.drawText(student["Third Language TOTAL MARKS (100)_2"][0], {
         x: 463,
@@ -4480,7 +4483,7 @@ function Class5_Term2() {
         student["SELF ASSESSMENT_2"][0] &&
           thirteenPage.drawText(student["SELF ASSESSMENT_2"][0], {
             x: 45,
-            y: 660,
+            y: 686,
             size: 12,
             color: rgb(0, 0, 0),
           });
@@ -4489,7 +4492,7 @@ function Class5_Term2() {
         student["SELF ASSESSMENT_2"][1] &&
           thirteenPage.drawText(student["SELF ASSESSMENT_2"][1], {
             x: 45,
-            y: 645,
+            y: 671,
             size: 12,
             color: rgb(0, 0, 0),
           });
@@ -4498,7 +4501,7 @@ function Class5_Term2() {
         student["SELF ASSESSMENT_2"][2] &&
           thirteenPage.drawText(student["SELF ASSESSMENT_2"][2], {
             x: 45,
-            y: 630,
+            y: 656,
             size: 12,
             color: rgb(0, 0, 0),
           });
@@ -4507,7 +4510,7 @@ function Class5_Term2() {
         student["SELF ASSESSMENT_2"][3] &&
           thirteenPage.drawText(student["SELF ASSESSMENT_2"][3], {
             x: 45,
-            y: 650,
+            y: 641,
             size: 12,
             color: rgb(0, 0, 0),
           });
@@ -4516,7 +4519,7 @@ function Class5_Term2() {
         student["SELF ASSESSMENT_2"][4] &&
           thirteenPage.drawText(student["SELF ASSESSMENT_2"][4], {
             x: 45,
-            y: 650,
+            y: 626,
             size: 12,
             color: rgb(0, 0, 0),
           });
@@ -4526,7 +4529,7 @@ function Class5_Term2() {
         student["PEER FEEDBACK_2"][0] &&
           thirteenPage.drawText(student["PEER FEEDBACK_2"][0], {
             x: 45,
-            y: 530,
+            y: 540,
             size: 12,
             color: rgb(0, 0, 0),
           });
@@ -4535,7 +4538,7 @@ function Class5_Term2() {
         student["PEER FEEDBACK_2"][1] &&
           thirteenPage.drawText(student["PEER FEEDBACK_2"][1], {
             x: 45,
-            y: 515,
+            y: 525,
             size: 12,
             color: rgb(0, 0, 0),
           });
@@ -4544,7 +4547,7 @@ function Class5_Term2() {
         student["PEER FEEDBACK_2"][2] &&
           thirteenPage.drawText(student["PEER FEEDBACK_2"][2], {
             x: 45,
-            y: 500,
+            y: 510,
             size: 12,
             color: rgb(0, 0, 0),
           });
@@ -4553,7 +4556,7 @@ function Class5_Term2() {
         student["PEER FEEDBACK_2"][3] &&
           thirteenPage.drawText(student["PEER FEEDBACK_2"][3], {
             x: 45,
-            y: 510,
+            y: 495,
             size: 12,
             color: rgb(0, 0, 0),
           });
@@ -4562,44 +4565,7 @@ function Class5_Term2() {
         student["PEER FEEDBACK_2"][4] &&
           thirteenPage.drawText(student["PEER FEEDBACK_2"][4], {
             x: 45,
-            y: 510,
-            size: 12,
-            color: rgb(0, 0, 0),
-          });
-      }
-
-      {
-        student["PARENTAL FEEDBACK_2"][0] &&
-          thirteenPage.drawText(student["PARENTAL FEEDBACK_2"][0], {
-            x: 45,
-            y: 398,
-            size: 12,
-            color: rgb(0, 0, 0),
-          });
-      }
-      {
-        student["PARENTAL FEEDBACK_2"][1] &&
-          thirteenPage.drawText(student["PARENTAL FEEDBACK_2"][1], {
-            x: 45,
-            y: 385,
-            size: 12,
-            color: rgb(0, 0, 0),
-          });
-      }
-      {
-        student["PARENTAL FEEDBACK_2"][2] &&
-          thirteenPage.drawText(student["PARENTAL FEEDBACK_2"][2], {
-            x: 45,
-            y: 372,
-            size: 12,
-            color: rgb(0, 0, 0),
-          });
-      }
-      {
-        student["PARENTAL FEEDBACK_2"][3] &&
-          thirteenPage.drawText(student["PARENTAL FEEDBACK_2"][3], {
-            x: 45,
-            y: 359,
+            y: 480,
             size: 12,
             color: rgb(0, 0, 0),
           });
@@ -4608,7 +4574,7 @@ function Class5_Term2() {
         student["CLASS TEACHER’S FEEDBACK_2"][0] &&
           thirteenPage.drawText(student["CLASS TEACHER’S FEEDBACK_2"][0], {
             x: 45,
-            y: 302,
+            y: 392,
             size: 12,
             color: rgb(0, 0, 0),
           });
@@ -4617,7 +4583,7 @@ function Class5_Term2() {
         student["CLASS TEACHER’S FEEDBACK_2"][1] &&
           thirteenPage.drawText(student["CLASS TEACHER’S FEEDBACK_2"][1], {
             x: 45,
-            y: 287,
+            y: 377,
             size: 12,
             color: rgb(0, 0, 0),
           });
@@ -4627,7 +4593,7 @@ function Class5_Term2() {
         student["CLASS TEACHER’S FEEDBACK_2"][2] &&
           thirteenPage.drawText(student["CLASS TEACHER’S FEEDBACK_2"][2], {
             x: 45,
-            y: 273,
+            y: 362,
             size: 12,
             color: rgb(0, 0, 0),
           });
@@ -4636,7 +4602,7 @@ function Class5_Term2() {
         student["CLASS TEACHER’S FEEDBACK_2"][3] &&
           thirteenPage.drawText(student["CLASS TEACHER’S FEEDBACK_2"][3], {
             x: 45,
-            y: 259,
+            y: 347,
             size: 12,
             color: rgb(0, 0, 0),
           });
@@ -4645,7 +4611,7 @@ function Class5_Term2() {
         student["CLASS TEACHER’S FEEDBACK_2"][4] &&
           thirteenPage.drawText(student["CLASS TEACHER’S FEEDBACK_2"][4], {
             x: 45,
-            y: 245,
+            y: 332,
             size: 12,
             color: rgb(0, 0, 0),
           });
@@ -4654,7 +4620,7 @@ function Class5_Term2() {
         student["CLASS TEACHER’S FEEDBACK_2"][5] &&
           thirteenPage.drawText(student["CLASS TEACHER’S FEEDBACK_2"][5], {
             x: 45,
-            y: 231,
+            y: 317,
             size: 12,
             color: rgb(0, 0, 0),
           });
@@ -4663,7 +4629,7 @@ function Class5_Term2() {
         student["CLASS TEACHER’S FEEDBACK_2"][6] &&
           thirteenPage.drawText(student["CLASS TEACHER’S FEEDBACK_2"][6], {
             x: 45,
-            y: 217,
+            y: 302,
             size: 12,
             color: rgb(0, 0, 0),
           });
@@ -4672,7 +4638,7 @@ function Class5_Term2() {
         student["CLASS TEACHER’S FEEDBACK_2"][7] &&
           thirteenPage.drawText(student["CLASS TEACHER’S FEEDBACK_2"][7], {
             x: 45,
-            y: 203,
+            y: 287,
             size: 12,
             color: rgb(0, 0, 0),
           });
@@ -4681,7 +4647,7 @@ function Class5_Term2() {
         student["CLASS TEACHER’S FEEDBACK_2"][8] &&
           thirteenPage.drawText(student["CLASS TEACHER’S FEEDBACK_2"][8], {
             x: 45,
-            y: 189,
+            y: 272,
             size: 12,
             color: rgb(0, 0, 0),
           });
@@ -4690,7 +4656,7 @@ function Class5_Term2() {
         student["CLASS TEACHER’S FEEDBACK_2"][9] &&
           thirteenPage.drawText(student["CLASS TEACHER’S FEEDBACK_2"][9], {
             x: 430,
-            y: 189,
+            y: 257,
             size: 12,
             color: rgb(0, 0, 0),
           });

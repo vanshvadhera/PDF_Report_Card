@@ -1972,21 +1972,21 @@ function Class1_Term1() {
 
       ninthPage.drawText(student["I help and assist others_2"][0].slice(0, 20), {
               x: 330,
-              y: 108,
-              size: 12,
+              y: 102,
+              size: 14,
               color: rgb(0, 0, 0),
             });
            
       ninthPage.drawText(student["I willingly share my resources_2"][0], {
         x: 330,
-        y: 75,
-        size: 12,
+        y: 70,
+        size: 14,
         color: rgb(0, 0, 0),
       });
       ninthPage.drawText(student["I work independently_2"][0], {
         x: 330,
-        y: 45,
-        size: 12,
+        y: 38,
+        size: 14,
         color: rgb(0, 0, 0),
       });
       
@@ -2082,9 +2082,9 @@ function Class1_Term1() {
       tenthPage.drawText(
         student["I’m happy to go to Class ……_2"][0],
         {
-          x: 373,
+          x: 370,
           y: 107,
-          size: 12,
+          size: 18,
           color: rgb(0, 0, 0),
         }
       );
