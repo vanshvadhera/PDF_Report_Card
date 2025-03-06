@@ -4617,46 +4617,46 @@ function Class5_Term2() {
           });
       }
       {
-        student["CLASS TEACHER’S FEEDBACK_2"][5] &&
-          thirteenPage.drawText(student["CLASS TEACHER’S FEEDBACK_2"][5], {
+        student["Prize_2"][0] &&
+          thirteenPage.drawText(student["Prize_2"][0], {
             x: 45,
-            y: 317,
+            y: 307,
             size: 12,
             color: rgb(0, 0, 0),
           });
       }
       {
-        student["CLASS TEACHER’S FEEDBACK_2"][6] &&
-          thirteenPage.drawText(student["CLASS TEACHER’S FEEDBACK_2"][6], {
+        student["Prize_2"][1] &&
+          thirteenPage.drawText(student["Prize_2"][1], {
             x: 45,
-            y: 302,
+            y: 292,
             size: 12,
             color: rgb(0, 0, 0),
           });
       }
       {
-        student["CLASS TEACHER’S FEEDBACK_2"][7] &&
-          thirteenPage.drawText(student["CLASS TEACHER’S FEEDBACK_2"][7], {
+        student["Prize_2"][2] &&
+          thirteenPage.drawText(student["Prize_2"][2], {
             x: 45,
-            y: 287,
+            y: 277,
             size: 12,
             color: rgb(0, 0, 0),
           });
       }
       {
-        student["CLASS TEACHER’S FEEDBACK_2"][8] &&
-          thirteenPage.drawText(student["CLASS TEACHER’S FEEDBACK_2"][8], {
+        student["Prize_2"][3] &&
+          thirteenPage.drawText(student["Prize_2"][3], {
             x: 45,
-            y: 272,
+            y: 262,
             size: 12,
             color: rgb(0, 0, 0),
           });
       }
       {
-        student["CLASS TEACHER’S FEEDBACK_2"][9] &&
-          thirteenPage.drawText(student["CLASS TEACHER’S FEEDBACK_2"][9], {
+        student["Prize_2"][4] &&
+          thirteenPage.drawText(student["Prize_2"][4], {
             x: 430,
-            y: 257,
+            y: 247,
             size: 12,
             color: rgb(0, 0, 0),
           });
