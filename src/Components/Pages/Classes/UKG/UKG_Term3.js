@@ -2726,7 +2726,7 @@ function Ukg_Term3() {
         student["PARENT'S REFLECTION_3"][3] &&
           fourteenPage.drawText(student["PARENT'S REFLECTION_3"][3], {
             x: 68,
-            y: 715,
+            y: 703,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -2735,7 +2735,7 @@ function Ukg_Term3() {
         student["PARENT'S REFLECTION_3"][4] &&
           fourteenPage.drawText(student["PARENT'S REFLECTION_3"][4], {
             x: 68,
-            y: 409,
+            y: 691,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -2781,7 +2781,7 @@ function Ukg_Term3() {
         student["TEACHER'S REFLECTION_3"][4] &&
           fourteenPage.drawText(student["TEACHER'S REFLECTION_3"][4], {
             x: 68,
-            y: 475,
+            y: 463,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -2793,7 +2793,7 @@ function Ukg_Term3() {
         width: 70,
         height: 30,
       });
-      fourteenPage.drawImage(teacherSign2Image, {
+      fourteenPage.drawImage(teacherSign3Image, {
         x: 150,
         y: 315,
         width: 70,

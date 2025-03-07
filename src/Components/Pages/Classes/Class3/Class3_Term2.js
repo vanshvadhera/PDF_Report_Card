@@ -3036,163 +3036,157 @@ function Class3_Term1() {
         height: 30,
       });
 
-      twevelthPage.drawText(student["ENGLISH TERM I (50)_2"][0], {
+      twevelthPage.drawText(student["ENGLISH TERM I (50) FINAL_2"][0], {
         x: 268,
         y: 641,
         size: 12,
         color: rgb(0, 0, 0),
       });
-      twevelthPage.drawText(student["ENGLISH TERM II (50)_2"][0], {
+      twevelthPage.drawText(student["ENGLISH TERM II (50) FINAL_2"][0], {
         x: 343,
         y: 641,
         size: 12,
         color: rgb(0, 0, 0),
       });
-      twevelthPage.drawText(student["ENGLISH TOTAL MARKS (100)"][0], {
+      twevelthPage.drawText(student["ENGLISH TOTAL MARKS (100) FINAL_2"][0], {
         x: 430,
         y: 641,
         size: 12,
         color: rgb(0, 0, 0),
       });
-      twevelthPage.drawText(student["ENGLISH GRADE"][0], {
+      twevelthPage.drawText(student["ENGLISH GRADE FINAL_2"][0], {
         x: 520,
         y: 641,
         size: 12,
         color: rgb(0, 0, 0),
       });
-      twevelthPage.drawText(student["HINDI TERM I (50)_2"][0], {
+      twevelthPage.drawText(student["HINDI TERM I (50) FINAL_2"][0], {
         x: 268,
         y: 613,
         size: 12,
         color: rgb(0, 0, 0),
       });
-      twevelthPage.drawText(student["HINDI TERM II (50)_2"][0], {
+      twevelthPage.drawText(student["HINDI TERM II (50) FINAL_2"][0], {
         x: 343,
         y: 613,
         size: 12,
         color: rgb(0, 0, 0),
       });
 
-      twevelthPage.drawText(student["HINDI TOTAL MARKS (100)"][0], {
+      twevelthPage.drawText(student["HINDI TOTAL MARKS (100) FINAL_2"][0], {
         x: 430,
         y: 613,
         size: 12,
         color: rgb(0, 0, 0),
       });
 
-      twevelthPage.drawText(student["HINDI GRADE"][0], {
+      twevelthPage.drawText(student["HINDI FINAL_2"][0], {
         x: 520,
         y: 613,
         size: 12,
         color: rgb(0, 0, 0),
       });
 
-      twevelthPage.drawText(student["MATHEMATICS TERM I (50)_2"][0], {
+      twevelthPage.drawText(student["MATHEMATICS TERM I (50) FINAL_2"][0], {
         x: 267,
         y: 584,
         size: 12,
         color: rgb(0, 0, 0),
       });
-      twevelthPage.drawText(student["MATHEMATICS TERM II (50)_2"][0], {
+      twevelthPage.drawText(student["MATHEMATICS TERM II (50) FINAL_2"][0], {
         x: 342,
         y: 584,
         size: 12,
         color: rgb(0, 0, 0),
       });
 
-      twevelthPage.drawText(student["MATHEMATICS TOTAL MARKS (100)"][0], {
+      twevelthPage.drawText(student["MATHEMATICS TOTAL MARKS (100) FINAL_2"][0], {
         x: 429,
         y: 584,
         size: 12,
         color: rgb(0, 0, 0),
       });
 
-      twevelthPage.drawText(student["MATHEMATICS GRADE"][0], {
+      twevelthPage.drawText(student["MATHEMATICS GRADE FINAL_2"][0], {
         x: 519,
         y: 584,
         size: 12,
         color: rgb(0, 0, 0),
       });
 
-      twevelthPage.drawText(student["EVS TERM I (50)_2"][0], {
+      twevelthPage.drawText(student["EVS TERM I (50) FINAL_2"][0], {
         x: 268,
         y: 555,
         size: 12,
         color: rgb(0, 0, 0),
       });
-      twevelthPage.drawText(student["EVS TERM II (50)_2"][0], {
+      twevelthPage.drawText(student["EVS TERM II (50) FINAL_2"][0], {
         x: 343,
         y: 555,
         size: 12,
         color: rgb(0, 0, 0),
       });
 
-      twevelthPage.drawText(student["EVS TOTAL MARKS (100)"][0], {
+      twevelthPage.drawText(student["EVS TOTAL MARKS (100) FINAL_2"][0], {
         x: 430,
         y: 555,
         size: 12,
         color: rgb(0, 0, 0),
       });
 
-      twevelthPage.drawText(student["EVS GRADE"][0], {
+      twevelthPage.drawText(student["EVS GRADE FINAL_2"][0], {
         x: 520,
         y: 555,
         size: 12,
         color: rgb(0, 0, 0),
       });
 
-      twevelthPage.drawText(student["COMPUTER SCIENCE TERM I (50)_2"][0], {
+      twevelthPage.drawText(student["COMPUTER SCIENCE TERM I (50) FINAL_2"][0], {
         x: 268,
         y: 526,
         size: 12,
         color: rgb(0, 0, 0),
       });
-      twevelthPage.drawText(student["COMPUTER SCIENCE TERM II (50)_2"][0], {
+      twevelthPage.drawText(student["COMPUTER SCIENCE TERM II (50) FINAL_2"][0], {
         x: 343,
         y: 526,
         size: 12,
         color: rgb(0, 0, 0),
       });
 
-      twevelthPage.drawText(student["COMPUTER SCIENCE TOTAL MARKS (100)"][0], {
+      twevelthPage.drawText(student["COMPUTER SCIENCE TOTAL MARKS (100) FINAL_2"][0], {
         x: 430,
         y: 526,
         size: 12,
         color: rgb(0, 0, 0),
       });
 
-      twevelthPage.drawText(student["COMPUTER SCIENCE GRADE"][0], {
+      twevelthPage.drawText(student["COMPUTER SCIENCE GRADE FINAL_2"][0], {
         x: 520,
         y: 526,
         size: 12,
         color: rgb(0, 0, 0),
       });
-      twevelthPage.drawText(student["GRAND TOTAL_2"][0], {
+      twevelthPage.drawText(student["GRAND TOTAL FINAL_2"][0], {
         x: 300,
         y: 495,
         size: 12,
         color: rgb(0, 0, 0),
       });
-      twevelthPage.drawText(student["Grand Total_2"][0], {
-        x: 430,
-        y: 495,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
-      twevelthPage.drawText(student["Grade_2"][0], {
+      twevelthPage.drawText(student["GRADE FINAL_2"][0], {
         x: 520,
         y: 495,
         size: 12,
         color: rgb(0, 0, 0),
       });
 
-      twevelthPage.drawText(student["ATTENDANCE_2"][0], {
+      twevelthPage.drawText(student["ATTENDANCE FINAL_2"][0], {
         x: 300,
         y: 465,
         size: 12,
         color: rgb(0, 0, 0),
       });
-      twevelthPage.drawText(student["PERCENTAGE_2"][0], {
+      twevelthPage.drawText(student["PERCENTAGE FINAL_2"][0], {
         x: 517,
         y: 465,
         size: 12,

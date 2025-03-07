@@ -1067,6 +1067,15 @@ function LKG_Term3() {
             color: rgb(0, 0, 0),
           });
       }
+      {
+        student["TEACHER'S REFLECTION"][3] &&
+          fifthPage.drawText(student["TEACHER'S REFLECTION"][3], {
+            x: 57,
+            y: 161,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
       fifthPage.drawImage(teacherSign1Image, {
         x: 57,
         y: 82,
@@ -2000,6 +2009,15 @@ function LKG_Term3() {
             color: rgb(0, 0, 0),
           });
       }
+      {
+        student["TEACHER'S REFLECTION_2"][3] &&
+          ninthPage.drawText(student["TEACHER'S REFLECTION_2"][3], {
+            x: 57,
+            y: 161,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
       ninthPage.drawImage(teacherSign1Image, {
         x: 57,
         y: 82,
@@ -2913,6 +2931,15 @@ function LKG_Term3() {
             color: rgb(0, 0, 0),
           });
       }
+      {
+        student["PARENT'S REFLECTION_3"][3] &&
+          fourteenPage.drawText(student["PARENT'S REFLECTION_3"][3], {
+            x: 66,
+            y: 710,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
 
       {
         student["TEACHER'S REFLECTION_3"][0] &&
@@ -2941,6 +2968,16 @@ function LKG_Term3() {
             color: rgb(0, 0, 0),
           });
       }
+      {
+        student["TEACHER'S REFLECTION_3"][3] &&
+          fourteenPage.drawText(student["TEACHER'S REFLECTION_3"][3], {
+            x: 66,
+            y: 481,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      
       fourteenPage.drawImage(teacherSign1Image, {
         x: 66,
         y: 315,

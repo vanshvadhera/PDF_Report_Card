@@ -45,6 +45,11 @@ function Nursery_Term3() {
         res.arrayBuffer()
       );
 
+      const teacherSign3Url = student.teacher_sign_3;
+      const teacherSign3Bytes = await fetch(teacherSign3Url).then((res) =>
+        res.arrayBuffer()
+      );
+
       const familyPhotoUrl = student.family_photo;
       const familyPhotoBytes = await fetch(familyPhotoUrl).then((res) =>
         res.arrayBuffer()
@@ -67,6 +72,7 @@ function Nursery_Term3() {
       const image = await pdfDoc.embedJpg(imageBytes);
       const teacherSign1Image = await pdfDoc.embedJpg(teacherSign1Bytes);
       const teacherSign2Image = await pdfDoc.embedJpg(teacherSign2Bytes);
+      const teacherSign3Image = await pdfDoc.embedJpg(teacherSign3Bytes);
       const familyPhotImage = await pdfDoc.embedJpg(familyPhotoBytes);
       const groupPhotImage = await pdfDoc.embedJpg(groupPhotBytes);
       const myPagePhotoImage = await pdfDoc.embedJpg(myPagePhotoBytes);
@@ -997,7 +1003,7 @@ function Nursery_Term3() {
         student["TEACHER'S REFLECTION"][2] &&
           fifthPage.drawText(student["TEACHER'S REFLECTION"][2], {
             x: 57,
-            y: 173,
+            y: 161,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -1006,20 +1012,12 @@ function Nursery_Term3() {
         student["TEACHER'S REFLECTION"][3] &&
           fifthPage.drawText(student["TEACHER'S REFLECTION"][3], {
             x: 57,
-            y: 173,
+            y: 149,
             size: 10,
             color: rgb(0, 0, 0),
           });
       }
-      {
-        student["TEACHER'S REFLECTION"][4] &&
-          fifthPage.drawText(student["TEACHER'S REFLECTION"][4], {
-            x: 57,
-            y: 173,
-            size: 10,
-            color: rgb(0, 0, 0),
-          });
-      }
+
       fifthPage.drawImage(teacherSign1Image, {
         x: 57,
         y: 55,
@@ -1859,25 +1857,7 @@ function Nursery_Term3() {
         student["PARENT'S REFLECTION_2"][2] &&
           ninthPage.drawText(student["PARENT'S REFLECTION_2"][2], {
             x: 57,
-            y: 253,
-            size: 10,
-            color: rgb(0, 0, 0),
-          });
-      }
-      {
-        student["PARENT'S REFLECTION_2"][3] &&
-          ninthPage.drawText(student["PARENT'S REFLECTION_2"][3], {
-            x: 57,
-            y: 253,
-            size: 10,
-            color: rgb(0, 0, 0),
-          });
-      }
-      {
-        student["PARENT'S REFLECTION_2"][4] &&
-          ninthPage.drawText(student["PARENT'S REFLECTION_2"][4], {
-            x: 57,
-            y: 253,
+            y: 241,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -1905,7 +1885,7 @@ function Nursery_Term3() {
         student["TEACHER'S REFLECTION_2"][2] &&
           ninthPage.drawText(student["TEACHER'S REFLECTION_2"][2], {
             x: 57,
-            y: 173,
+            y: 161,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -1914,16 +1894,7 @@ function Nursery_Term3() {
         student["TEACHER'S REFLECTION_2"][3] &&
           ninthPage.drawText(student["TEACHER'S REFLECTION_2"][3], {
             x: 57,
-            y: 173,
-            size: 10,
-            color: rgb(0, 0, 0),
-          });
-      }
-      {
-        student["TEACHER'S REFLECTION_2"][4] &&
-          ninthPage.drawText(student["TEACHER'S REFLECTION_2"][4], {
-            x: 57,
-            y: 173,
+            y: 149,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -1934,7 +1905,7 @@ function Nursery_Term3() {
         width: 70,
         height: 30,
       });
-      ninthPage.drawImage(teacherSign2Image, {
+      ninthPage.drawImage(teacherSign3Image, {
         x: 140,
         y: 55,
         width: 70,
@@ -2759,16 +2730,7 @@ function Nursery_Term3() {
         student["PARENT'S REFLECTION_3"][3] &&
           fourteenPage.drawText(student["PARENT'S REFLECTION_3"][3], {
             x: 60,
-            y: 700,
-            size: 10,
-            color: rgb(0, 0, 0),
-          });
-      }
-      {
-        student["PARENT'S REFLECTION_3"][4] &&
-          fourteenPage.drawText(student["PARENT'S REFLECTION_3"][4], {
-            x: 60,
-            y: 700,
+            y: 688,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -2795,7 +2757,7 @@ function Nursery_Term3() {
         student["TEACHER'S REFLECTION_3"][2] &&
           fourteenPage.drawText(student["TEACHER'S REFLECTION_3"][2], {
             x: 60,
-            y: 516,
+            y: 504,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -2804,7 +2766,7 @@ function Nursery_Term3() {
         student["TEACHER'S REFLECTION_3"][3] &&
           fourteenPage.drawText(student["TEACHER'S REFLECTION_3"][3], {
             x: 60,
-            y: 516,
+            y: 492,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -2813,7 +2775,7 @@ function Nursery_Term3() {
         student["TEACHER'S REFLECTION_3"][4] &&
           fourteenPage.drawText(student["TEACHER'S REFLECTION_3"][4], {
             x: 60,
-            y: 516,
+            y: 480,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -2825,7 +2787,7 @@ function Nursery_Term3() {
         width: 70,
         height: 30,
       });
-      fourteenPage.drawImage(teacherSign2Image, {
+      fourteenPage.drawImage(teacherSign3Image, {
         x: 140,
         y: 370,
         width: 70,
