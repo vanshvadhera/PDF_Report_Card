@@ -3962,13 +3962,13 @@ function Class4_Term2() {
         size: 12,
         color: rgb(0, 0, 0),
       });
-      eleventhPage.drawText(student["Third Language TOTAL MARKS (100)_2"][0], {
+      eleventhPage.drawText(student["THIRD LANGUAGE TOTAL MARKS (100)_2"][0], {
         x: 463,
         y: 677,
         size: 12,
         color: rgb(0, 0, 0),
       });
-      eleventhPage.drawText(student["Third Language GRADE_2"][0], {
+      eleventhPage.drawText(student["THIRD LANGUAGE GRADE_2"][0], {
         x: 523,
         y: 677,
         size: 12,

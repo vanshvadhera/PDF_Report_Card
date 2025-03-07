@@ -2875,7 +2875,7 @@ function Class3_Term1() {
         size: 12,
         color: rgb(0, 0, 0),
       });
-      eleventhPage.drawText(student["EVS HALF YEARLY EXAM (50)"][0], {
+      eleventhPage.drawText(student["EVS ANNUAL EXAM (50)_2"][0], {
         x: 407,
         y: 651,
         size: 12,
@@ -2911,15 +2911,12 @@ function Class3_Term1() {
           color: rgb(0, 0, 0),
         }
       );
-      eleventhPage.drawText(
-        student["COMPUTER SCIENCE HALF YEARLY EXAM (50)"][0],
-        {
-          x: 407,
-          y: 632,
-          size: 12,
-          color: rgb(0, 0, 0),
-        }
-      );
+      eleventhPage.drawText(student["COMPUTER SCIENCE ANNUAL EXAM (50)_2"][0], {
+        x: 407,
+        y: 632,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
       eleventhPage.drawText(
         student["COMPUTER SCIENCE TOTAL MARKS (100)_2"][0],
         {

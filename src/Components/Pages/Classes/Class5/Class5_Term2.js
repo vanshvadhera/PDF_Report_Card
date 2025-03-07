@@ -3951,7 +3951,7 @@ function Class5_Term2() {
       );
 
       eleventhPage.drawText(
-        student["Third Language  HALF YEARLY EXAM (50)"][0],
+        student["Third Language  ANNUAL EXAM (50)_2"][0],
         {
           x: 397,
           y: 677,
@@ -4241,7 +4241,7 @@ function Class5_Term2() {
         height: 30,
       });
 
-      twevelthPage.drawText(student["ENGLISH TERM I (50)_2"][0], {
+      twevelthPage.drawText(student["ENGLISH TERM I (50) FINAL_2"][0], {
         x: 258,
         y: 649,
         size: 12,
