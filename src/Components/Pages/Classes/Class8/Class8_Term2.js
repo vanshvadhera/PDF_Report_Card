@@ -994,7 +994,7 @@ function Class8_Term2() {
         student["Class Teacher's Remarks_2"][1] &&
           thirdPage.drawText(student["Class Teacher's Remarks_2"][1], {
             x: 166,
-            y: 390,
+            y: 386,
             size: 12,
             color: rgb(0, 0, 0),
           });
@@ -1343,12 +1343,6 @@ function Class8_Term2() {
       });
       fourthPage.drawText(student["Language-III MARKS OBTAINED (100)_2"][0], {
         x: 504,
-        y: 683,
-        size: 10,
-        color: rgb(0, 0, 0),
-      });
-      fourthPage.drawText(student["Language-III GRADE_2"][0], {
-        x: 540,
         y: 683,
         size: 10,
         color: rgb(0, 0, 0),
@@ -1760,19 +1754,19 @@ function Class8_Term2() {
         size: 12,
         color: rgb(0, 0, 0),
       });
-      fourthPage.drawText(student["Work Education II_2"][0], {
+      fourthPage.drawText(student["Work Education_2"][0], {
         x: 540,
         y: 565,
         size: 12,
         color: rgb(0, 0, 0),
       });
-      fourthPage.drawText(student["Art Education II_2"][0], {
+      fourthPage.drawText(student["Art Education_2"][0], {
         x: 540,
         y: 548,
         size: 12,
         color: rgb(0, 0, 0),
       });
-      fourthPage.drawText(student["Health & Physical Education II_2"][0], {
+      fourthPage.drawText(student["Health & Physical Education_2"][0], {
         x: 540,
         y: 527,
         size: 12,
@@ -1785,7 +1779,7 @@ function Class8_Term2() {
         size: 12,
         color: rgb(0, 0, 0),
       });
-      fourthPage.drawText(student["Discipline II_2"][0], {
+      fourthPage.drawText(student["Discipline_2"][0], {
         x: 540,
         y: 487,
         size: 12,
@@ -1908,7 +1902,7 @@ function Class8_Term2() {
       {
         student["ENGLISH TEACHER’S REMARKS:"][0] &&
           fifthPage?.drawText(student["ENGLISH TEACHER’S REMARKS:"][0], {
-            x: 50,
+            x: 80,
             y: 450,
             size: 12,
             color: rgb(0, 0, 0),
@@ -1917,7 +1911,7 @@ function Class8_Term2() {
       {
         student["ENGLISH TEACHER’S REMARKS:"][1] &&
           fifthPage?.drawText(student["ENGLISH TEACHER’S REMARKS:"][1], {
-            x: 50,
+            x: 80,
             y: 438,
             size: 12,
             color: rgb(0, 0, 0),
@@ -2002,7 +1996,7 @@ function Class8_Term2() {
       {
         student["HINDI TEACHER’S REMARKS:"][0] &&
           fifthPage?.drawText(student["HINDI TEACHER’S REMARKS:"][0], {
-            x: 50,
+            x: 80,
             y: 46,
             size: 12,
             color: rgb(0, 0, 0),
@@ -2011,7 +2005,7 @@ function Class8_Term2() {
       {
         student["HINDI TEACHER’S REMARKS:"][1] &&
           fifthPage?.drawText(student["HINDI TEACHER’S REMARKS:"][1], {
-            x: 50,
+            x: 80,
             y: 34,
             size: 12,
             color: rgb(0, 0, 0),
@@ -2082,7 +2076,7 @@ function Class8_Term2() {
       {
         student["LANGUAGE III TEACHER’S REMARKS:"][0] &&
           sixthPage?.drawText(student["LANGUAGE III TEACHER’S REMARKS:"][0], {
-            x: 50,
+            x: 80,
             y: 505,
             size: 12,
             color: rgb(0, 0, 0),
@@ -2091,7 +2085,7 @@ function Class8_Term2() {
       {
         student["LANGUAGE III TEACHER’S REMARKS:"][1] &&
           sixthPage?.drawText(student["LANGUAGE III TEACHER’S REMARKS:"][1], {
-            x: 50,
+            x: 80,
             y: 493,
             size: 12,
             color: rgb(0, 0, 0),
@@ -2189,7 +2183,7 @@ function Class8_Term2() {
       {
         student["MATHEMATICS TEACHER’S REMARKS:"][0] &&
           sixthPage?.drawText(student["MATHEMATICS TEACHER’S REMARKS:"][0], {
-            x: 50,
+            x: 80,
             y: 56,
             size: 12,
             color: rgb(0, 0, 0),
@@ -2198,7 +2192,7 @@ function Class8_Term2() {
       {
         student["MATHEMATICS TEACHER’S REMARKS:"][1] &&
           sixthPage?.drawText(student["MATHEMATICS TEACHER’S REMARKS:"][1], {
-            x: 50,
+            x: 80,
             y: 44,
             size: 12,
             color: rgb(0, 0, 0),
@@ -2263,7 +2257,7 @@ function Class8_Term2() {
       {
         student["SCIENCE TEACHER’S REMARKS:"][0] &&
           seventhPage?.drawText(student["SCIENCE TEACHER’S REMARKS:"][0], {
-            x: 50,
+            x: 80,
             y: 496,
             size: 12,
             color: rgb(0, 0, 0),
@@ -2272,7 +2266,7 @@ function Class8_Term2() {
       {
         student["SCIENCE TEACHER’S REMARKS:"][1] &&
           seventhPage?.drawText(student["SCIENCE TEACHER’S REMARKS:"][1], {
-            x: 50,
+            x: 80,
             y: 484,
             size: 12,
             color: rgb(0, 0, 0),
@@ -2361,7 +2355,7 @@ function Class8_Term2() {
           seventhPage?.drawText(
             student["SOCIAL SCIENCE TEACHER’S REMARKS:"][0],
             {
-              x: 50,
+              x: 80,
               y: 56,
               size: 12,
               color: rgb(0, 0, 0),
@@ -2373,7 +2367,7 @@ function Class8_Term2() {
           seventhPage?.drawText(
             student["SOCIAL SCIENCE TEACHER’S REMARKS:"][1],
             {
-              x: 50,
+              x: 80,
               y: 44,
               size: 12,
               color: rgb(0, 0, 0),
@@ -2425,7 +2419,7 @@ function Class8_Term2() {
           eighthPage?.drawText(
             student["COMPUTER SCIENCE TEACHER’S REMARKS:"][0],
             {
-              x: 50,
+              x: 80,
               y: 597,
               size: 12,
               color: rgb(0, 0, 0),
@@ -2437,7 +2431,7 @@ function Class8_Term2() {
           eighthPage?.drawText(
             student["COMPUTER SCIENCE TEACHER’S REMARKS:"][1],
             {
-              x: 50,
+              x: 80,
               y: 585,
               size: 12,
               color: rgb(0, 0, 0),
@@ -2482,7 +2476,7 @@ function Class8_Term2() {
           eighthPage?.drawText(
             student["PHYSICAL EDUCATION TEACHER’S REMARKS:"][0],
             {
-              x: 50,
+              x: 80,
               y: 343,
               size: 12,
               color: rgb(0, 0, 0),
@@ -2494,7 +2488,7 @@ function Class8_Term2() {
           eighthPage?.drawText(
             student["PHYSICAL EDUCATION TEACHER’S REMARKS:"][1],
             {
-              x: 50,
+              x: 80,
               y: 330,
               size: 12,
               color: rgb(0, 0, 0),
@@ -2537,7 +2531,7 @@ function Class8_Term2() {
       {
         student["DANCE TEACHER’S REMARKS:"][0] &&
           eighthPage?.drawText(student["DANCE TEACHER’S REMARKS:"][0], {
-            x: 50,
+            x: 80,
             y: 70,
             size: 12,
             color: rgb(0, 0, 0),
@@ -2546,7 +2540,7 @@ function Class8_Term2() {
       {
         student["DANCE TEACHER’S REMARKS:"][1] &&
           eighthPage?.drawText(student["DANCE TEACHER’S REMARKS:"][1], {
-            x: 50,
+            x: 80,
             y: 58,
             size: 12,
             color: rgb(0, 0, 0),
@@ -2588,7 +2582,7 @@ function Class8_Term2() {
       {
         student["MUSIC TEACHER’S REMARKS:"][0] &&
           ninthPage?.drawText(student["MUSIC TEACHER’S REMARKS:"][0], {
-            x: 50,
+            x: 80,
             y: 615,
             size: 12,
             color: rgb(0, 0, 0),
@@ -2597,7 +2591,7 @@ function Class8_Term2() {
       {
         student["MUSIC TEACHER’S REMARKS:"][1] &&
           ninthPage?.drawText(student["MUSIC TEACHER’S REMARKS:"][1], {
-            x: 50,
+            x: 80,
             y: 602,
             size: 12,
             color: rgb(0, 0, 0),
@@ -2639,7 +2633,7 @@ function Class8_Term2() {
       {
         student["YOGA TEACHER’S REMARKS:"][0] &&
           ninthPage?.drawText(student["YOGA TEACHER’S REMARKS:"][0], {
-            x: 50,
+            x: 80,
             y: 400,
             size: 12,
             color: rgb(0, 0, 0),
@@ -2648,7 +2642,7 @@ function Class8_Term2() {
       {
         student["YOGA TEACHER’S REMARKS:"][1] &&
           ninthPage?.drawText(student["YOGA TEACHER’S REMARKS:"][1], {
-            x: 50,
+            x: 80,
             y: 387,
             size: 12,
             color: rgb(0, 0, 0),
@@ -2690,7 +2684,7 @@ function Class8_Term2() {
       {
         student["ART TEACHER’S REMARKS:"][0] &&
           ninthPage?.drawText(student["ART TEACHER’S REMARKS:"][0], {
-            x: 50,
+            x: 80,
             y: 175,
             size: 12,
             color: rgb(0, 0, 0),
@@ -2699,7 +2693,7 @@ function Class8_Term2() {
       {
         student["ART TEACHER’S REMARKS:"][1] &&
           ninthPage?.drawText(student["ART TEACHER’S REMARKS:"][1], {
-            x: 50,
+            x: 80,
             y: 163,
             size: 12,
             color: rgb(0, 0, 0),
@@ -2757,7 +2751,7 @@ function Class8_Term2() {
       {
         student["WORK EDUCATION TEACHER’S REMARKS:"][0] &&
           tenthPage?.drawText(student["WORK EDUCATION TEACHER’S REMARKS:"][0], {
-            x: 50,
+            x: 80,
             y: 626,
             size: 12,
             color: rgb(0, 0, 0),
@@ -2766,7 +2760,7 @@ function Class8_Term2() {
       {
         student["WORK EDUCATION TEACHER’S REMARKS:"][1] &&
           tenthPage?.drawText(student["WORK EDUCATION TEACHER’S REMARKS:"][1], {
-            x: 50,
+            x: 80,
             y: 614,
             size: 12,
             color: rgb(0, 0, 0),
