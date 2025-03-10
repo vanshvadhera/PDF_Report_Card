@@ -247,6 +247,24 @@ function Class1_Term1() {
             color: rgb(0, 0, 0),
           });
       }
+      {
+        student["ENGLISH REMARKS"][4] &&
+          thirdPage.drawText(student["ENGLISH REMARKS"][4], {
+            x: 343,
+            y: 643,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["ENGLISH REMARKS"][5] &&
+          thirdPage.drawText(student["ENGLISH REMARKS"][5], {
+            x: 343,
+            y: 630,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
       thirdPage.drawText(student["HINDI भाषा कुशलता"][0], {
         x: 293,
         y: 468,
@@ -873,6 +891,30 @@ function Class1_Term1() {
             }
           );
       }
+      {
+        student["COMMUNICATION AND SOCIO-EMOTIONAL DEVELOPMENT Remarks"][4] &&
+          fourthPage.drawText(
+            student["COMMUNICATION AND SOCIO-EMOTIONAL DEVELOPMENT Remarks"][4],
+            {
+              x: 335,
+              y: 140,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+      {
+        student["COMMUNICATION AND SOCIO-EMOTIONAL DEVELOPMENT Remarks"][5] &&
+          fourthPage.drawText(
+            student["COMMUNICATION AND SOCIO-EMOTIONAL DEVELOPMENT Remarks"][5],
+            {
+              x: 335,
+              y: 127,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
       fourthPage.drawText(
         student["APPLIED LEARNING EXPERIENCES Active participation"][0],
         {
@@ -1186,6 +1228,24 @@ function Class1_Term1() {
           seventhPage.drawText(student["ENGLISH REMARKS_2"][3], {
             x: 345,
             y: 641,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["ENGLISH REMARKS_2"][4] &&
+          seventhPage.drawText(student["ENGLISH REMARKS_2"][4], {
+            x: 345,
+            y: 628,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["ENGLISH REMARKS_2"][5] &&
+          seventhPage.drawText(student["ENGLISH REMARKS_2"][5], {
+            x: 345,
+            y: 615,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -1846,6 +1906,34 @@ function Class1_Term1() {
             {
               x: 335,
               y: 179,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+      {
+        student["COMMUNICATION AND SOCIO-EMOTIONAL DEVELOPMENT Remarks_2"][4] &&
+          eighthPage.drawText(
+            student[
+              "COMMUNICATION AND SOCIO-EMOTIONAL DEVELOPMENT Remarks_2"
+            ][4],
+            {
+              x: 335,
+              y: 166,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+      {
+        student["COMMUNICATION AND SOCIO-EMOTIONAL DEVELOPMENT Remarks_2"][5] &&
+          eighthPage.drawText(
+            student[
+              "COMMUNICATION AND SOCIO-EMOTIONAL DEVELOPMENT Remarks_2"
+            ][5],
+            {
+              x: 335,
+              y: 153,
               size: 10,
               color: rgb(0, 0, 0),
             }

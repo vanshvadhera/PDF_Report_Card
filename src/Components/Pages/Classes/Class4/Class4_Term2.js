@@ -2297,16 +2297,17 @@ function Class4_Term2() {
           color: rgb(0, 0, 0),
         }
       );
-      // seventhPage.drawText(
-      //   student["General Science Shows curiosity and interests in every minute detail with hands on activities_2"
-      //   ][0],
-      //   {
-      //     x: 540,
-      //     y: 594,
-      //     size: 14,
-      //     color: rgb(0, 0, 0),
-      //   }
-      // );
+      seventhPage.drawText(
+        student[
+          "General Science  Shows curiosity and interests in every minute detail with hands on activities_2"
+        ][0],
+        {
+          x: 540,
+          y: 594,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
       seventhPage.drawText(
         student[
           "General Science  Uses sensory perceptions and responds appropriately"
@@ -4722,7 +4723,7 @@ function Class4_Term2() {
       {
         student["Prize_2"][4] &&
           fourteenPage.drawText(student["Prize_2"][4], {
-            x: 430,
+            x: 45,
             y: 247,
             size: 12,
             color: rgb(0, 0, 0),

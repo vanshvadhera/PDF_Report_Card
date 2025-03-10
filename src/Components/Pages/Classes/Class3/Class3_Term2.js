@@ -3337,7 +3337,7 @@ function Class3_Term1() {
           });
       }
       {
-        student["Prize_2"][0] &&
+        student["Prize_2" ][0] &&
           thirteenPage.drawText(student["Prize_2"][0], {
             x: 45,
             y: 307,
@@ -3375,7 +3375,7 @@ function Class3_Term1() {
       {
         student["Prize_2"][4] &&
           thirteenPage.drawText(student["Prize_2"][4], {
-            x: 430,
+            x: 45,
             y: 247,
             size: 12,
             color: rgb(0, 0, 0),

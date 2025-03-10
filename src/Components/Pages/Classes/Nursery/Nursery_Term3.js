@@ -966,20 +966,12 @@ function Nursery_Term3() {
         student["PARENT'S REFLECTION"][3] &&
           fifthPage.drawText(student["PARENT'S REFLECTION"][3], {
             x: 57,
-            y: 241,
+            y: 229,
             size: 10,
             color: rgb(0, 0, 0),
           });
       }
-      {
-        student["PARENT'S REFLECTION"][4] &&
-          fifthPage.drawText(student["PARENT'S REFLECTION"][4], {
-            x: 57,
-            y: 241,
-            size: 10,
-            color: rgb(0, 0, 0),
-          });
-      }
+     
 
       {
         student["TEACHER'S REFLECTION"][0] &&
@@ -1858,6 +1850,15 @@ function Nursery_Term3() {
           ninthPage.drawText(student["PARENT'S REFLECTION_2"][2], {
             x: 57,
             y: 241,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["PARENT'S REFLECTION_2"][3] &&
+          ninthPage.drawText(student["PARENT'S REFLECTION_2"][3], {
+            x: 57,
+            y: 229,
             size: 10,
             color: rgb(0, 0, 0),
           });

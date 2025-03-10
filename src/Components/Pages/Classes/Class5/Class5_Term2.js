@@ -4643,7 +4643,7 @@ function Class5_Term2() {
       {
         student["Prize_2"][4] &&
           thirteenPage.drawText(student["Prize_2"][4], {
-            x: 430,
+            x: 45,
             y: 247,
             size: 12,
             color: rgb(0, 0, 0),
