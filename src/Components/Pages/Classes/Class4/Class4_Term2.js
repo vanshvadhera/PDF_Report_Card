@@ -2298,8 +2298,7 @@ function Class4_Term2() {
         }
       );
       // seventhPage.drawText(
-      //   student[
-      //     "General Science Shows curiosity and interest in every minute detail with hands on activities_2"
+      //   student["General Science Shows curiosity and interests in every minute detail with hands on activities_2"
       //   ][0],
       //   {
       //     x: 540,
@@ -3682,8 +3681,8 @@ function Class4_Term2() {
       });
 
       {
-        student["REMARKS BY THE CLASS TEACHER"][0] &&
-          ninthPage.drawText(student["REMARKS BY THE CLASS TEACHER"][0], {
+        student["REMARKS BY THE CLASS TEACHER_2"][0] &&
+          ninthPage.drawText(student["REMARKS BY THE CLASS TEACHER_2"][0], {
             x: 40,
             y: 330,
             size: 12,
@@ -3691,8 +3690,8 @@ function Class4_Term2() {
           });
       }
       {
-        student["REMARKS BY THE CLASS TEACHER"][1] &&
-          ninthPage.drawText(student["REMARKS BY THE CLASS TEACHER"][1], {
+        student["REMARKS BY THE CLASS TEACHER_2"][1] &&
+          ninthPage.drawText(student["REMARKS BY THE CLASS TEACHER_2"][1], {
             x: 40,
             y: 315,
             size: 12,
@@ -3700,8 +3699,8 @@ function Class4_Term2() {
           });
       }
       {
-        student["REMARKS BY THE CLASS TEACHER"][2] &&
-          ninthPage.drawText(student["REMARKS BY THE CLASS TEACHER"][2], {
+        student["REMARKS BY THE CLASS TEACHER_2"][2] &&
+          ninthPage.drawText(student["REMARKS BY THE CLASS TEACHER_2"][2], {
             x: 40,
             y: 300,
             size: 12,
