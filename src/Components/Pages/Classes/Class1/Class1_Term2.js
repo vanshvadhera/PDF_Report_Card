@@ -1574,7 +1574,7 @@ function Class1_Term1() {
         student["PHYSICAL EDUCATION Remarks_2"][2] &&
           eighthPage.drawText(student["PHYSICAL EDUCATION Remarks_2"][2], {
             x: 335,
-            y: 482,
+            y: 494,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -1583,7 +1583,7 @@ function Class1_Term1() {
         student["PHYSICAL EDUCATION Remarks_2"][3] &&
           eighthPage.drawText(student["PHYSICAL EDUCATION Remarks_2"][3], {
             x: 335,
-            y: 456,
+            y: 481,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -1633,7 +1633,7 @@ function Class1_Term1() {
             student["LIFE SKILLS & WELL BEING Remarks_2"][1],
             {
               x: 335,
-              y: 420,
+              y: 417,
               size: 10,
               color: rgb(0, 0, 0),
             }
@@ -1645,7 +1645,7 @@ function Class1_Term1() {
             student["LIFE SKILLS & WELL BEING Remarks_2"][2],
             {
               x: 335,
-              y: 410,
+              y: 404,
               size: 10,
               color: rgb(0, 0, 0),
             }
@@ -1657,7 +1657,7 @@ function Class1_Term1() {
             student["LIFE SKILLS & WELL BEING Remarks_2"][3],
             {
               x: 335,
-              y: 400,
+              y: 391,
               size: 10,
               color: rgb(0, 0, 0),
             }

@@ -1415,9 +1415,9 @@ function Class2_Term2() {
       });
 
       {
-        student["ENGLISH SPEAKING CALIBRE DESCRIPTIVE INDICATORS"][0] &&
+        student["ENGLISH SPEAKING CALIBRE DESCRIPTIVE INDICATORS_2"][0] &&
           seventhPage.drawText(
-            `${student["ENGLISH SPEAKING CALIBRE DESCRIPTIVE INDICATORS"][0]}`,
+            `${student["ENGLISH SPEAKING CALIBRE DESCRIPTIVE INDICATORS_2"][0]}`,
             {
               x: 350,
               y: 587,
@@ -1427,9 +1427,9 @@ function Class2_Term2() {
           );
       }
       {
-        student["ENGLISH SPEAKING CALIBRE DESCRIPTIVE INDICATORS"][1] &&
+        student["ENGLISH SPEAKING CALIBRE DESCRIPTIVE INDICATORS_2"][1] &&
           seventhPage.drawText(
-            `${student["ENGLISH SPEAKING CALIBRE DESCRIPTIVE INDICATORS"][1]}`,
+            `${student["ENGLISH SPEAKING CALIBRE DESCRIPTIVE INDICATORS_2"][1]}`,
             {
               x: 350,
               y: 572,
@@ -1688,9 +1688,9 @@ function Class2_Term2() {
       });
 
       {
-        student["HINDI लेखन कौशल DESCRIPTIVE INDICATORS"][0] &&
+        student["HINDI लेखन कौशल DESCRIPTIVE INDICATORS_2"][0] &&
           seventhPage.drawText(
-            `${student["HINDI लेखन कौशल DESCRIPTIVE INDICATORS"][0]}`,
+            `${student["HINDI लेखन कौशल DESCRIPTIVE INDICATORS_2"][0]}`,
             {
               x: 350,
               y: 315,
@@ -1700,9 +1700,9 @@ function Class2_Term2() {
           );
       }
       {
-        student["HINDI लेखन कौशल DESCRIPTIVE INDICATORS"][1] &&
+        student["HINDI लेखन कौशल DESCRIPTIVE INDICATORS_2"][1] &&
           seventhPage.drawText(
-            `${student["HINDI लेखन कौशल DESCRIPTIVE INDICATORS"][1]}`,
+            `${student["HINDI लेखन कौशल DESCRIPTIVE INDICATORS_2"][1]}`,
             {
               x: 350,
               y: 300,
@@ -1712,9 +1712,9 @@ function Class2_Term2() {
           );
       }
       {
-        student["HINDI लेखन कौशल DESCRIPTIVE INDICATORS"][2] &&
+        student["HINDI लेखन कौशल DESCRIPTIVE INDICATORS_2"][2] &&
           seventhPage.drawText(
-            `${student["HINDI लेखन कौशल DESCRIPTIVE INDICATORS"][2]}`,
+            `${student["HINDI लेखन कौशल DESCRIPTIVE INDICATORS_2"][2]}`,
             {
               x: 350,
               y: 285,
@@ -1724,9 +1724,9 @@ function Class2_Term2() {
           );
       }
       {
-        student["HINDI लेखन कौशल DESCRIPTIVE INDICATORS"][3] &&
+        student["HINDI लेखन कौशल DESCRIPTIVE INDICATORS_2"][3] &&
           seventhPage.drawText(
-            `${student["HINDI लेखन कौशल DESCRIPTIVE INDICATORS"][3]}`,
+            `${student["HINDI लेखन कौशल DESCRIPTIVE INDICATORS_2"][3]}`,
             {
               x: 350,
               y: 270,
