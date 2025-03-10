@@ -1011,7 +1011,7 @@ function Nursery_Term2() {
       });
 
       seventhPage.drawText(student["I love cleanliness_2"][0], {
-        x: student["I love cleanliness"][0] === "PROGRESSIVE" ? 275 : 285,
+        x: student["I love cleanliness_2"][0] === "PROGRESSIVE" ? 275 : 285,
         y: 656,
         size: 10,
         color: rgb(0, 0, 0),

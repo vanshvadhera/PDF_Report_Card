@@ -1983,7 +1983,7 @@ function Class2_Term2() {
 
       eighthPage.drawText(
         student[
-          "DANCE Demonstrates coordination between sensory perceptions and body movements in various activities"
+          "DANCE Demonstrates coordination between sensory perceptions and body movements in various activities_2"
         ][0],
         {
           x: 295,
@@ -1994,7 +1994,7 @@ function Class2_Term2() {
       );
       eighthPage.drawText(
         student[
-          "DANCE Exhibits precision and control when working with their hands and fingers"
+          "DANCE Exhibits precision and control when working with their hands and fingers_2"
         ][0],
         {
           x: 295,
@@ -2039,7 +2039,7 @@ function Class2_Term2() {
 
       eighthPage.drawText(
         student[
-          "PHYSICAL EDUCATION / SPORTS SMART Shows strength and endurance in carrying, walking and running"
+          "PHYSICAL EDUCATION / SPORTS SMART Shows strength and endurance in carrying, walking and running_2"
         ][0],
         {
           x: 295,
