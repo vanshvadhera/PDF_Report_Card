@@ -126,37 +126,37 @@ function Class7_Term2() {
         color: rgb(0, 0, 0),
       });
       firstPage.drawText(student["Admission No."][0], {
-        x: 455,
+        x: 400,
         y: 197,
         size: 12,
         color: rgb(0, 0, 0),
       });
       firstPage.drawText(student["Age in years"][0], {
-        x: 455,
+        x: 400,
         y: 172,
         size: 12,
         color: rgb(0, 0, 0),
       });
       firstPage.drawText(student["Weight"][0], {
-        x: 455,
+        x: 400,
         y: 149,
         size: 12,
         color: rgb(0, 0, 0),
       });
       firstPage.drawText(student["Attendance"][0], {
-        x: 455,
+        x: 400,
         y: 124,
         size: 12,
         color: rgb(0, 0, 0),
       });
       firstPage.drawText(student["Father's Name"][0], {
-        x: 455,
+        x: 400,
         y: 99,
         size: 12,
         color: rgb(0, 0, 0),
       });
       firstPage.drawText(student["Guardian’s Name"][0], {
-        x: 455,
+        x: 400,
         y: 76,
         size: 12,
         color: rgb(0, 0, 0),
@@ -1018,7 +1018,7 @@ function Class7_Term2() {
           });
       }
 
-      thirdPage.drawText(student["Date_2"][0], {
+      thirdPage.drawText(student["Date II"][0], {
         x: 70,
         y: 340,
         size: 12,
@@ -1288,7 +1288,7 @@ function Class7_Term2() {
         }
       );
       fourthPage.drawText(student["Language-III HALF YEARLY (80)"][0], {
-        x: 264,
+        x: 260,
         y: 683,
         size: 10,
         color: rgb(0, 0, 0),
@@ -1379,7 +1379,7 @@ function Class7_Term2() {
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(student["MATHEMATICS HALF YEARLY (80)"][0], {
-        x: 264,
+        x: 260,
         y: 664,
         size: 10,
         color: rgb(0, 0, 0),
@@ -1561,7 +1561,7 @@ function Class7_Term2() {
         }
       );
       fourthPage.drawText(student["SOCIAL SCIENCE HALF YEARLY (80)"][0], {
-        x: 264,
+        x: 260,
         y: 626,
         size: 10,
         color: rgb(0, 0, 0),
@@ -1664,7 +1664,7 @@ function Class7_Term2() {
         }
       );
       fourthPage.drawText(student["COMPUTER SCIENCE HALF YEARLY (80)"][0], {
-        x: 264,
+        x: 260,
         y: 606,
         size: 10,
         color: rgb(0, 0, 0),
@@ -1834,7 +1834,7 @@ function Class7_Term2() {
             }
           );
       }
-      fourthPage.drawText(student["Date_2"][0], {
+      fourthPage.drawText(student["Date II"][0], {
         x: 70,
         y: 410,
         size: 10,
@@ -2772,7 +2772,7 @@ function Class7_Term2() {
         }
       );
       tenthPage.drawText(
-        student["COMPUTER SCIENCE Can understand software components"][0],
+        student["LIFE SKILLS"][0],
         {
           x: 500,
           y: 678,
