@@ -3100,12 +3100,15 @@ function Class3_Term1() {
         color: rgb(0, 0, 0),
       });
 
-      twevelthPage.drawText(student["MATHEMATICS TOTAL MARKS (100) FINAL_2"][0], {
-        x: 429,
-        y: 584,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
+      twevelthPage.drawText(
+        student["MATHEMATICS TOTAL MARKS (100) FINAL_2"][0],
+        {
+          x: 429,
+          y: 584,
+          size: 12,
+          color: rgb(0, 0, 0),
+        }
+      );
 
       twevelthPage.drawText(student["MATHEMATICS GRADE FINAL_2"][0], {
         x: 519,
@@ -3141,25 +3144,34 @@ function Class3_Term1() {
         color: rgb(0, 0, 0),
       });
 
-      twevelthPage.drawText(student["COMPUTER SCIENCE TERM I (50) FINAL_2"][0], {
-        x: 268,
-        y: 526,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
-      twevelthPage.drawText(student["COMPUTER SCIENCE TERM II (50) FINAL_2"][0], {
-        x: 343,
-        y: 526,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
+      twevelthPage.drawText(
+        student["COMPUTER SCIENCE TERM I (50) FINAL_2"][0],
+        {
+          x: 268,
+          y: 526,
+          size: 12,
+          color: rgb(0, 0, 0),
+        }
+      );
+      twevelthPage.drawText(
+        student["COMPUTER SCIENCE TERM II (50) FINAL_2"][0],
+        {
+          x: 343,
+          y: 526,
+          size: 12,
+          color: rgb(0, 0, 0),
+        }
+      );
 
-      twevelthPage.drawText(student["COMPUTER SCIENCE TOTAL MARKS (100) FINAL_2"][0], {
-        x: 430,
-        y: 526,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
+      twevelthPage.drawText(
+        student["COMPUTER SCIENCE TOTAL MARKS (100) FINAL_2"][0],
+        {
+          x: 430,
+          y: 526,
+          size: 12,
+          color: rgb(0, 0, 0),
+        }
+      );
 
       twevelthPage.drawText(student["COMPUTER SCIENCE GRADE FINAL_2"][0], {
         x: 520,
@@ -3168,7 +3180,7 @@ function Class3_Term1() {
         color: rgb(0, 0, 0),
       });
       twevelthPage.drawText(student["GRAND TOTAL FINAL_2"][0], {
-        x: 300,
+        x: 430,
         y: 495,
         size: 12,
         color: rgb(0, 0, 0),
@@ -3337,7 +3349,8 @@ function Class3_Term1() {
           });
       }
       {
-        student["Prize_2" ][0] &&
+        student["Prize_2"][0] &&
+          student["Prize_2"][0] !== "-" &&
           thirteenPage.drawText(student["Prize_2"][0], {
             x: 45,
             y: 307,

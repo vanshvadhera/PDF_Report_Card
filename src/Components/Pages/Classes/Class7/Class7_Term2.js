@@ -637,7 +637,7 @@ function Class7_Term2() {
       });
 
       thirdPage.drawText(
-        student["Language-I (ENGLISH) MARKS OBTAINED (100)_2"][0],
+        student["Language-I (ENGLISH) MARKS OBTAINED (100) II"][0],
         {
           x: 477,
           y: 703, // Added 3 to the y coordinate
@@ -646,7 +646,7 @@ function Class7_Term2() {
         }
       );
 
-      thirdPage.drawText(student["Language-I (ENGLISH) GRADE_2"][0], {
+      thirdPage.drawText(student["Language-I (ENGLISH) GRADE II"][0], {
         x: 531,
         y: 703, // Added 3 to the y coordinate
         size: 12,
@@ -693,7 +693,7 @@ function Class7_Term2() {
         color: rgb(0, 0, 0),
       });
       thirdPage.drawText(
-        student["Language-II (HINDI) MARKS OBTAINED (100)_2"][0],
+        student["Language-II (HINDI) MARKS OBTAINED (100) II"][0],
         {
           x: 477,
           y: 684, // Added 3 to the y coordinate
@@ -701,7 +701,7 @@ function Class7_Term2() {
           color: rgb(0, 0, 0),
         }
       );
-      thirdPage.drawText(student["Language-II (HINDI) GRADE_2"][0], {
+      thirdPage.drawText(student["Language-II (HINDI) GRADE II"][0], {
         x: 531,
         y: 684, // Added 3 to the y coordinate
         size: 12,
@@ -751,13 +751,13 @@ function Class7_Term2() {
         size: 12,
         color: rgb(0, 0, 0),
       });
-      thirdPage.drawText(student["Language-III MARKS OBTAINED (100)_2"][0], {
+      thirdPage.drawText(student["Language-III MARKS OBTAINED (100) II"][0], {
         x: 477,
         y: 665, // Subtracted 2 from the y coordinate
         size: 12,
         color: rgb(0, 0, 0),
       });
-      thirdPage.drawText(student["Language-III GRADE_2"][0], {
+      thirdPage.drawText(student["Language-III GRADE II"][0], {
         x: 531,
         y: 665, // Subtracted 2 from the y coordinate
         size: 12,
@@ -797,13 +797,13 @@ function Class7_Term2() {
         size: 12,
         color: rgb(0, 0, 0),
       });
-      thirdPage.drawText(student["MATHEMATICS MARKS OBTAINED (100)_2"][0], {
+      thirdPage.drawText(student["MATHEMATICS MARKS OBTAINED (100) II"][0], {
         x: 477,
         y: 645, // Added 3 to the y coordinate
         size: 12,
         color: rgb(0, 0, 0),
       });
-      thirdPage.drawText(student["MATHEMATICS GRADE_2"][0], {
+      thirdPage.drawText(student["MATHEMATICS GRADE II"][0], {
         x: 531,
         y: 645, // Added 3 to the y coordinate
         size: 12,
@@ -840,13 +840,13 @@ function Class7_Term2() {
         size: 12,
         color: rgb(0, 0, 0),
       });
-      thirdPage.drawText(student["SCIENCE MARKS OBTAINED (100)_2"][0], {
+      thirdPage.drawText(student["SCIENCE MARKS OBTAINED (100) II"][0], {
         x: 477,
         y: 624, // Subtracted 2 from the y coordinate
         size: 12,
         color: rgb(0, 0, 0),
       });
-      thirdPage.drawText(student["SCIENCE GRADE_2"][0], {
+      thirdPage.drawText(student["SCIENCE GRADE II"][0], {
         x: 531,
         y: 624, // Subtracted 2 from the y coordinate
         size: 12,
@@ -889,13 +889,13 @@ function Class7_Term2() {
         size: 12,
         color: rgb(0, 0, 0),
       });
-      thirdPage.drawText(student["SOCIAL SCIENCE MARKS OBTAINED (100)_2"][0], {
+      thirdPage.drawText(student["SOCIAL SCIENCE MARKS OBTAINED (100) II"][0], {
         x: 477,
         y: 605, // Subtracted 2 from the y coordinate
         size: 12,
         color: rgb(0, 0, 0),
       });
-      thirdPage.drawText(student["SOCIAL SCIENCE GRADE_2"][0], {
+      thirdPage.drawText(student["SOCIAL SCIENCE GRADE II"][0], {
         x: 531,
         y: 605, // Subtracted 2 from the y coordinate
         size: 12,
@@ -942,7 +942,7 @@ function Class7_Term2() {
         color: rgb(0, 0, 0),
       });
       thirdPage.drawText(
-        student["COMPUTER SCIENCE MARKS OBTAINED (100)_2"][0],
+        student["COMPUTER SCIENCE MARKS OBTAINED (100) II"][0],
         {
           x: 477,
           y: 585, // Subtracted 2 from the y coordinate
@@ -950,7 +950,7 @@ function Class7_Term2() {
           color: rgb(0, 0, 0),
         }
       );
-      thirdPage.drawText(student["COMPUTER SCIENCE GRADE_2"][0], {
+      thirdPage.drawText(student["COMPUTER SCIENCE GRADE II"][0], {
         x: 531,
         y: 585, // Subtracted 2 from the y coordinate
         size: 12,
@@ -1129,7 +1129,7 @@ function Class7_Term2() {
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(
-        student["Language-I (ENGLISH) MARKS OBTAINED (100)_2"][0],
+        student["Language-I (ENGLISH) MARKS OBTAINED (100) II"][0],
         {
           x: 504,
           y: 723,
@@ -1137,7 +1137,7 @@ function Class7_Term2() {
           color: rgb(0, 0, 0),
         }
       );
-      fourthPage.drawText(student["Language-I (ENGLISH) GRADE_2"][0], {
+      fourthPage.drawText(student["Language-I (ENGLISH) GRADE II"][0], {
         x: 540,
         y: 723,
         size: 10,
@@ -1238,7 +1238,7 @@ function Class7_Term2() {
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(
-        student["Language-II (HINDI) MARKS OBTAINED (100)_2"][0],
+        student["Language-II (HINDI) MARKS OBTAINED (100) II"][0],
         {
           x: 504,
           y: 703,
@@ -1246,7 +1246,7 @@ function Class7_Term2() {
           color: rgb(0, 0, 0),
         }
       );
-      fourthPage.drawText(student["Language-II (HINDI) GRADE_2"][0], {
+      fourthPage.drawText(student["Language-II (HINDI) GRADE II"][0], {
         x: 540,
         y: 703,
         size: 10,
@@ -1341,13 +1341,13 @@ function Class7_Term2() {
         size: 10,
         color: rgb(0, 0, 0),
       });
-      fourthPage.drawText(student["Language-III MARKS OBTAINED (100)_2"][0], {
+      fourthPage.drawText(student["Language-III MARKS OBTAINED (100) II"][0], {
         x: 504,
         y: 683,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      fourthPage.drawText(student["Language-III GRADE_2"][0], {
+      fourthPage.drawText(student["Language-III GRADE II"][0], {
         x: 540,
         y: 683,
         size: 10,
@@ -1432,13 +1432,13 @@ function Class7_Term2() {
         size: 10,
         color: rgb(0, 0, 0),
       });
-      fourthPage.drawText(student["MATHEMATICS MARKS OBTAINED (100)_2"][0], {
+      fourthPage.drawText(student["MATHEMATICS MARKS OBTAINED (100) II"][0], {
         x: 504,
         y: 664,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      fourthPage.drawText(student["MATHEMATICS GRADE_2"][0], {
+      fourthPage.drawText(student["MATHEMATICS GRADE II"][0], {
         x: 540,
         y: 664,
         size: 10,
@@ -1517,13 +1517,13 @@ function Class7_Term2() {
         size: 10,
         color: rgb(0, 0, 0),
       });
-      fourthPage.drawText(student["SCIENCE MARKS OBTAINED (100)_2"][0], {
+      fourthPage.drawText(student["SCIENCE MARKS OBTAINED (100) II"][0], {
         x: 504,
         y: 646,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      fourthPage.drawText(student["SCIENCE GRADE_2"][0], {
+      fourthPage.drawText(student["SCIENCE GRADE II"][0], {
         x: 540,
         y: 646,
         size: 10,
@@ -1617,13 +1617,13 @@ function Class7_Term2() {
         size: 10,
         color: rgb(0, 0, 0),
       });
-      fourthPage.drawText(student["SOCIAL SCIENCE MARKS OBTAINED (100)_2"][0], {
+      fourthPage.drawText(student["SOCIAL SCIENCE MARKS OBTAINED (100) II"][0], {
         x: 504,
         y: 626,
         size: 10,
         color: rgb(0, 0, 0),
       });
-      fourthPage.drawText(student["SOCIAL SCIENCE GRADE_2"][0], {
+      fourthPage.drawText(student["SOCIAL SCIENCE GRADE II"][0], {
         x: 540,
         y: 626,
         size: 10,
@@ -1721,7 +1721,7 @@ function Class7_Term2() {
         color: rgb(0, 0, 0),
       });
       fourthPage.drawText(
-        student["COMPUTER SCIENCE MARKS OBTAINED (100)_2"][0],
+        student["COMPUTER SCIENCE MARKS OBTAINED (100) II"][0],
         {
           x: 504,
           y: 606,
@@ -1729,7 +1729,7 @@ function Class7_Term2() {
           color: rgb(0, 0, 0),
         }
       );
-      fourthPage.drawText(student["COMPUTER SCIENCE GRADE_2"][0], {
+      fourthPage.drawText(student["COMPUTER SCIENCE GRADE II"][0], {
         x: 540,
         y: 606,
         size: 10,

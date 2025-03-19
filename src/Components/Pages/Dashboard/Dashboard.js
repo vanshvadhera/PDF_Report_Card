@@ -141,6 +141,12 @@ function Dashboard() {
           ? 70
           : className2 === "V"
           ? 75
+          : className2 === "VI"
+          ? 70
+          : className2 === "VII"
+          ? 70
+          : className2 === "VIII"
+          ? 70
           : 80,
       reflection_pos:
         className2 === "LKG"

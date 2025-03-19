@@ -2551,17 +2551,17 @@ function Class5_Term2() {
         }
       );
 
-      //   seventhPage.drawText(
-      //     student[
-      //       "General Science Shows curiosity and interest in every minute detail with hands on activities_2"
-      //     ][0],
-      //     {
-      //       x: 540,
-      //       y: 577,
-      //       size: 14,
-      //       color: rgb(0, 0, 0),
-      //     }
-      //   );
+      seventhPage.drawText(
+        student[
+          "General Science  Shows curiosity and interest in every minute detail with hands on activities_2"
+        ][0],
+        {
+          x: 540,
+          y: 592,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
       seventhPage.drawText(
         student[
           "General Science  Uses sensory perceptions and responds appropriately_2"
@@ -3950,15 +3950,12 @@ function Class5_Term2() {
         }
       );
 
-      eleventhPage.drawText(
-        student["Third Language  ANNUAL EXAM (50)_2"][0],
-        {
-          x: 397,
-          y: 677,
-          size: 12,
-          color: rgb(0, 0, 0),
-        }
-      );
+      eleventhPage.drawText(student["Third Language  ANNUAL EXAM (50)_2"][0], {
+        x: 397,
+        y: 677,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
 
       eleventhPage.drawText(student["THIRD LANGUAGE TOTAL MARKS (100)_2"][0], {
         x: 463,
@@ -4122,7 +4119,7 @@ function Class5_Term2() {
       });
 
       eleventhPage.drawText(student["GRAND TOTAL_2"][0], {
-        x: 330,
+        x: 463,
         y: 589,
         size: 12,
         color: rgb(0, 0, 0),
@@ -4306,12 +4303,15 @@ function Class5_Term2() {
         color: rgb(0, 0, 0),
       });
 
-      twevelthPage.drawText(student["Third Language TOTAL MARKS (100) FINAL_2"][0], {
-        x: 420,
-        y: 593,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
+      twevelthPage.drawText(
+        student["Third Language TOTAL MARKS (100) FINAL_2"][0],
+        {
+          x: 420,
+          y: 593,
+          size: 12,
+          color: rgb(0, 0, 0),
+        }
+      );
 
       twevelthPage.drawText(student["Third Language GRADE FINAL_2"][0], {
         x: 523,
@@ -4332,12 +4332,15 @@ function Class5_Term2() {
         color: rgb(0, 0, 0),
       });
 
-      twevelthPage.drawText(student["MATHEMATICS TOTAL MARKS (100) FINAL_2"][0], {
-        x: 420,
-        y: 565,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
+      twevelthPage.drawText(
+        student["MATHEMATICS TOTAL MARKS (100) FINAL_2"][0],
+        {
+          x: 420,
+          y: 565,
+          size: 12,
+          color: rgb(0, 0, 0),
+        }
+      );
 
       twevelthPage.drawText(student["MATHEMATICS GRADE FINAL_2"][0], {
         x: 523,
@@ -4352,19 +4355,25 @@ function Class5_Term2() {
         size: 12,
         color: rgb(0, 0, 0),
       });
-      twevelthPage.drawText(student["GENERAL SCIENCE TERM II (50) FINAL_2"][0], {
-        x: 333,
-        y: 537,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
+      twevelthPage.drawText(
+        student["GENERAL SCIENCE TERM II (50) FINAL_2"][0],
+        {
+          x: 333,
+          y: 537,
+          size: 12,
+          color: rgb(0, 0, 0),
+        }
+      );
 
-      twevelthPage.drawText(student["GENERAL SCIENCE TOTAL MARKS (100) FINAL_2"][0], {
-        x: 420,
-        y: 537,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
+      twevelthPage.drawText(
+        student["GENERAL SCIENCE TOTAL MARKS (100) FINAL_2"][0],
+        {
+          x: 420,
+          y: 537,
+          size: 12,
+          color: rgb(0, 0, 0),
+        }
+      );
 
       twevelthPage.drawText(student["GENERAL SCIENCE GRADE FINAL_2"][0], {
         x: 523,
@@ -4386,12 +4395,15 @@ function Class5_Term2() {
         color: rgb(0, 0, 0),
       });
 
-      twevelthPage.drawText(student["SOCIAL STUDIES TOTAL MARKS (100) FINAL_2"][0], {
-        x: 420,
-        y: 509,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
+      twevelthPage.drawText(
+        student["SOCIAL STUDIES TOTAL MARKS (100) FINAL_2"][0],
+        {
+          x: 420,
+          y: 509,
+          size: 12,
+          color: rgb(0, 0, 0),
+        }
+      );
 
       twevelthPage.drawText(student["SOCIAL STUDIES GRADE FINAL_2"][0], {
         x: 523,
@@ -4399,18 +4411,24 @@ function Class5_Term2() {
         size: 12,
         color: rgb(0, 0, 0),
       });
-      twevelthPage.drawText(student["COMPUTER SCIENCE TERM I (50) FINAL_2"][0], {
-        x: 258,
-        y: 481,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
-      twevelthPage.drawText(student["COMPUTER SCIENCE TERM II (50) FINAL_2"][0], {
-        x: 333,
-        y: 481,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
+      twevelthPage.drawText(
+        student["COMPUTER SCIENCE TERM I (50) FINAL_2"][0],
+        {
+          x: 258,
+          y: 481,
+          size: 12,
+          color: rgb(0, 0, 0),
+        }
+      );
+      twevelthPage.drawText(
+        student["COMPUTER SCIENCE TERM II (50) FINAL_2"][0],
+        {
+          x: 333,
+          y: 481,
+          size: 12,
+          color: rgb(0, 0, 0),
+        }
+      );
 
       twevelthPage.drawText(
         student["COMPUTER SCIENCE TOTAL MARKS (100) FINAL_2"][0],
@@ -4430,7 +4448,7 @@ function Class5_Term2() {
       });
 
       twevelthPage.drawText(student["GRAND TOTAL FINAL_2"][0], {
-        x: 300,
+        x: 420,
         y: 455,
         size: 12,
         color: rgb(0, 0, 0),
@@ -4606,6 +4624,7 @@ function Class5_Term2() {
       }
       {
         student["Prize_2"][0] &&
+          student["Prize_2"][0] !== "-" &&
           thirteenPage.drawText(student["Prize_2"][0], {
             x: 45,
             y: 307,

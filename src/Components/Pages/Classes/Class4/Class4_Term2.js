@@ -4447,7 +4447,7 @@ function Class4_Term2() {
       });
 
       twevelthPage.drawText(student["GRAND TOTAL FINAL_2"][0], {
-        x: 300,
+        x: 420,
         y: 455,
         size: 12,
         color: rgb(0, 0, 0),
@@ -4686,6 +4686,7 @@ function Class4_Term2() {
       }
       {
         student["Prize_2"][0] &&
+          student["Prize_2"][0] !== "-" &&
           fourteenPage.drawText(student["Prize_2"][0], {
             x: 45,
             y: 307,
