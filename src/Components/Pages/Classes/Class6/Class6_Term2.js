@@ -301,7 +301,7 @@ function Class6_Term2() {
         color: rgb(0, 0, 0),
       });
       secondPage.drawText(
-        student["Language-III MULTIPLE ASSESSMENT-2 (5)"][0],
+        student["Language-III MULTIPLE ASSESSMENT-1 (5)"][0],
         {
           x: 363,
           y: 697, // Increased by 3 from 694
@@ -715,7 +715,7 @@ function Class6_Term2() {
         color: rgb(0, 0, 0),
       });
 
-      thirdPage.drawText(student["Language-III PERIODIC TEST - I (5)_2"][0], {
+      thirdPage.drawText(student["Language-III PERIODIC TEST - 2 (5)_2"][0], {
         x: 155,
         y: 665, // Subtracted 2 from the y coordinate
         size: 12,
