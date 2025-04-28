@@ -12,8 +12,8 @@ function Class3_Term1() {
   const location = useLocation();
   const { data, localPdf } = location.state;
   const userData = data.term_1;
-  //   console.log(data, "Data in Class3_Term1");
-  console.log(localPdf, "Use localPdf ?");
+    console.log(data, "Data in Class3_Term1");
+  // console.log(localPdf, "Use localPdf ?");
 
   const fileURL = localPdf
     ? "https://innovartan.s3.amazonaws.com/10f755159d81b7a7ef9c14b7c9d072531369542047/b500a3de62d0a34bc0aae7117bd358b2.pdf"

@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import { PDFDocument, rgb, degrees } from "pdf-lib";
+import { PDFDocument, rgb, degrees, rotateDegrees } from "pdf-lib";
 import download from "downloadjs";
 import JSZip from "jszip";
 // import { userData } from "../../../UserData/UserData";
@@ -8,16 +8,11 @@ import { useLocation } from "react-router";
 import { useDispatch } from "react-redux";
 import { userDataActions } from "../../../Data/Slices/UserDataSlice";
 
-function Nursery_Term2() {
+function Nursery_Term3() {
   const location = useLocation();
-  const { data, localPdf } = location.state;
-  const userData = data.term_2;
-  console.log(data, "Data in Class1_Term2");
-  console.log(localPdf, "Use localPdf ?");
-
-  const fileURL = localPdf
-    ? "https://innovartan.s3.amazonaws.com/8c093da373d2fcb48313cc226546ed952109776981/f58192864ec3ec0f7407de2e887940f3.pdf"
-    : "https://dpsin.s3.us-east-1.amazonaws.com/report/NUR/term2.pdf";
+  const { data } = location.state;
+  const userData = data.term_3;
+  console.log(data, "Data in Class1_Term3");
 
   const dispatch = useDispatch();
 
@@ -49,6 +44,7 @@ function Nursery_Term2() {
       const teacherSign2Bytes = await fetch(teacherSign2Url).then((res) =>
         res.arrayBuffer()
       );
+
       const teacherSign3Url = student.teacher_sign_3;
       const teacherSign3Bytes = await fetch(teacherSign3Url).then((res) =>
         res.arrayBuffer()
@@ -59,18 +55,17 @@ function Nursery_Term2() {
         res.arrayBuffer()
       );
 
-      //   const groupPhotUrl = student.group_photo;
-      //   const groupPhotBytes = await fetch(groupPhotUrl).then((res) =>
-      //     res.arrayBuffer()
-      //   );
+        const groupPhotUrl = student.group_photo;
+        const groupPhotBytes = await fetch(groupPhotUrl).then((res) =>
+          res.arrayBuffer()
+        );
 
       const myPagePhotoUrl = student.my_page_photo;
       const myPagePhotoBytes = await fetch(myPagePhotoUrl).then((res) =>
         res.arrayBuffer()
       );
-
-      const myPagePhotoUrl_2 = student.my_page_photo_2;
-      const myPagePhotoBytes_2 = await fetch(myPagePhotoUrl_2).then((res) =>
+      const myPagePhotoUrl2 = student.my_page_photo_2;
+      const myPagePhotoBytes2 = await fetch(myPagePhotoUrl2).then((res) =>
         res.arrayBuffer()
       );
 
@@ -79,9 +74,9 @@ function Nursery_Term2() {
       const teacherSign2Image = await pdfDoc.embedJpg(teacherSign2Bytes);
       const teacherSign3Image = await pdfDoc.embedJpg(teacherSign3Bytes);
       const familyPhotImage = await pdfDoc.embedJpg(familyPhotoBytes);
-      //   const groupPhotImage = await pdfDoc.embedJpg(groupPhotBytes);
+      const groupPhotImage = await pdfDoc.embedJpg(groupPhotBytes);
       const myPagePhotoImage = await pdfDoc.embedJpg(myPagePhotoBytes);
-      const myPagePhotoImage_2 = await pdfDoc.embedJpg(myPagePhotoBytes_2);
+      const myPagePhotoImage2 = await pdfDoc.embedJpg(myPagePhotoBytes2);
 
       const pages = pdfDoc.getPages();
       const firstPage = pages[0];
@@ -94,8 +89,12 @@ function Nursery_Term2() {
       const eighthPage = pages[7];
       const ninthPage = pages[8];
       const tenthPage = pages[9];
+      const eleventhPage = pages[10];
+      const twelfthPage = pages[11];
+      const thirteenPage = pages[12];
+      const fourteenPage = pages[13];
+      const fifteenthPage = pages[14];
 
-      // Insert data dynamically from the student's record
       firstPage.drawImage(image, {
         x: 81,
         y: 300,
@@ -186,10 +185,11 @@ function Nursery_Term2() {
           student["I have independent restroom habits"][0] === "PROGRESSIVE"
             ? 275
             : 285,
-        y: 587,
+        y: 588,
         size: 10,
         color: rgb(0, 0, 0),
       });
+      // eslint-disable-next-line no-lone-blocks
       {
         student["FEELING STRONG AND FREE Remarks"][0] &&
           thirdPage.drawText(student["FEELING STRONG AND FREE Remarks"][0], {
@@ -199,6 +199,7 @@ function Nursery_Term2() {
             color: rgb(0, 0, 0),
           });
       }
+      // eslint-disable-next-line no-lone-blocks
       {
         student["FEELING STRONG AND FREE Remarks"][1] &&
           thirdPage.drawText(student["FEELING STRONG AND FREE Remarks"][1], {
@@ -287,7 +288,7 @@ function Nursery_Term2() {
         student["MIND MATTERS Remarks"][2] &&
           thirdPage.drawText(student["MIND MATTERS Remarks"][2], {
             x: 363,
-            y: 516,
+            y: 515,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -296,7 +297,16 @@ function Nursery_Term2() {
         student["MIND MATTERS Remarks"][3] &&
           thirdPage.drawText(student["MIND MATTERS Remarks"][3], {
             x: 363,
-            y: 504,
+            y: 502,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["MIND MATTERS Remarks"][4] &&
+          thirdPage.drawText(student["MIND MATTERS Remarks"][4], {
+            x: 363,
+            y: 489,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -357,6 +367,15 @@ function Nursery_Term2() {
           thirdPage.drawText(student["EFFECTIVE EXPRESSIONS Remarks"][3], {
             x: 363,
             y: 366,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["EFFECTIVE EXPRESSIONS Remarks"][4] &&
+          thirdPage.drawText(student["EFFECTIVE EXPRESSIONS Remarks"][4], {
+            x: 363,
+            y: 353,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -429,6 +448,15 @@ function Nursery_Term2() {
           thirdPage.drawText(student["CONNECTION AND COMPASSION Remarks"][3], {
             x: 363,
             y: 276,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["CONNECTION AND COMPASSION Remarks"][4] &&
+          thirdPage.drawText(student["CONNECTION AND COMPASSION Remarks"][4], {
+            x: 363,
+            y: 263,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -515,15 +543,7 @@ function Nursery_Term2() {
             color: rgb(0, 0, 0),
           });
       }
-      {
-        student["NUMERACY SMART Remarks"][3] &&
-          fourthPage.drawText(student["NUMERACY SMART Remarks"][3], {
-            x: 378,
-            y: 644,
-            size: 10,
-            color: rgb(0, 0, 0),
-          });
-      }
+
       fourthPage.drawText(student["I am jolly with phonics"][0], {
         x: student["I am jolly with phonics"][0] === "PROGRESSIVE" ? 285 : 295,
         y: 612,
@@ -596,6 +616,15 @@ function Nursery_Term2() {
           fourthPage.drawText(student["LANGUAGE LEAPS Remarks"][3], {
             x: 378,
             y: 573,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["LANGUAGE LEAPS Remarks"][4] &&
+          fourthPage.drawText(student["LANGUAGE LEAPS Remarks"][4], {
+            x: 378,
+            y: 560,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -681,6 +710,7 @@ function Nursery_Term2() {
             color: rgb(0, 0, 0),
           });
       }
+
       fourthPage.drawText(student["I can sing melodiously"][0], {
         x: student["I can sing melodiously"][0] === "PROGRESSIVE" ? 285 : 295,
         y: 332,
@@ -841,7 +871,6 @@ function Nursery_Term2() {
             color: rgb(0, 0, 0),
           });
       }
-
       fifthPage.drawText(student["Total no. of working days"][0], {
         x: 135,
         y: 671,
@@ -867,7 +896,7 @@ function Nursery_Term2() {
         color: rgb(0, 0, 0),
       });
       fifthPage.drawText(student["My favourite fruit"][0], {
-        x: 420,
+        x: 445,
         y: 660,
         size: 14,
         color: rgb(0, 0, 0),
@@ -890,21 +919,9 @@ function Nursery_Term2() {
         size: 12,
         color: rgb(0, 0, 0),
       });
-      fifthPage.drawText(student["I extend support"][0].slice(21, 40), {
-        x: 313,
-        y: 432,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
       fifthPage.drawText(student["I am generous"][0].slice(0, 20), {
         x: 313,
         y: 408,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
-      fifthPage.drawText(student["I am generous"][0].slice(21, 40), {
-        x: 313,
-        y: 395,
         size: 12,
         color: rgb(0, 0, 0),
       });
@@ -917,15 +934,7 @@ function Nursery_Term2() {
           color: rgb(0, 0, 0),
         }
       );
-      fifthPage.drawText(
-        student["I get along well with my classmates"][0].slice(21, 40),
-        {
-          x: 313,
-          y: 356,
-          size: 12,
-          color: rgb(0, 0, 0),
-        }
-      );
+
       {
         student["PARENT'S REFLECTION"][0] &&
           fifthPage.drawText(student["PARENT'S REFLECTION"][0], {
@@ -953,6 +962,16 @@ function Nursery_Term2() {
             color: rgb(0, 0, 0),
           });
       }
+      {
+        student["PARENT'S REFLECTION"][3] &&
+          fifthPage.drawText(student["PARENT'S REFLECTION"][3], {
+            x: 57,
+            y: 229,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+     
 
       {
         student["TEACHER'S REFLECTION"][0] &&
@@ -990,6 +1009,7 @@ function Nursery_Term2() {
             color: rgb(0, 0, 0),
           });
       }
+
       fifthPage.drawImage(teacherSign1Image, {
         x: 57,
         y: 55,
@@ -1002,7 +1022,6 @@ function Nursery_Term2() {
         width: 70,
         height: 30,
       });
-
       sixthPage.drawImage(myPagePhotoImage, {
         x: 55,
         y: 106,
@@ -1010,12 +1029,14 @@ function Nursery_Term2() {
         height: 590,
       });
 
+      // thirdPage.drawText ->
       seventhPage.drawText(student["I love cleanliness_2"][0], {
         x: student["I love cleanliness_2"][0] === "PROGRESSIVE" ? 275 : 285,
         y: 656,
         size: 10,
         color: rgb(0, 0, 0),
       });
+
       seventhPage.drawText(student["I am organised_2"][0], {
         x: student["I am organised_2"][0] === "PROGRESSIVE" ? 275 : 285,
         y: 633,
@@ -1038,6 +1059,7 @@ function Nursery_Term2() {
         size: 10,
         color: rgb(0, 0, 0),
       });
+
       {
         student["FEELING STRONG AND FREE Remarks_2"][0] &&
           seventhPage.drawText(
@@ -1086,6 +1108,7 @@ function Nursery_Term2() {
             }
           );
       }
+
       seventhPage.drawText(student["I have good observation skills_2"][0], {
         x:
           student["I have good observation skills_2"][0] === "PROGRESSIVE"
@@ -1126,6 +1149,7 @@ function Nursery_Term2() {
         size: 10,
         color: rgb(0, 0, 0),
       });
+
       {
         student["MIND MATTERS Remarks_2"][0] &&
           seventhPage.drawText(student["MIND MATTERS Remarks_2"][0], {
@@ -1148,7 +1172,7 @@ function Nursery_Term2() {
         student["MIND MATTERS Remarks_2"][2] &&
           seventhPage.drawText(student["MIND MATTERS Remarks_2"][2], {
             x: 363,
-            y: 516,
+            y: 515,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -1157,11 +1181,21 @@ function Nursery_Term2() {
         student["MIND MATTERS Remarks_2"][3] &&
           seventhPage.drawText(student["MIND MATTERS Remarks_2"][3], {
             x: 363,
-            y: 504,
+            y: 502,
             size: 10,
             color: rgb(0, 0, 0),
           });
       }
+      {
+        student["MIND MATTERS Remarks_2"][4] &&
+          seventhPage.drawText(student["MIND MATTERS Remarks_2"][4], {
+            x: 363,
+            y: 489,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+
       seventhPage.drawText(student["I am an attentive listener_2"][0], {
         x:
           student["I am an attentive listener_2"][0] === "PROGRESSIVE"
@@ -1348,6 +1382,15 @@ function Nursery_Term2() {
             color: rgb(0, 0, 0),
           });
       }
+      {
+        student["SOCIAL AWARENESS Remarks_2"][3] &&
+          seventhPage.drawText(student["SOCIAL AWARENESS Remarks_2"][3], {
+            x: 363,
+            y: 153,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
 
       eighthPage.drawText(student["I am number smart_2"][0], {
         x: student["I am number smart_2"][0] === "PROGRESSIVE" ? 285 : 295,
@@ -1391,15 +1434,7 @@ function Nursery_Term2() {
             color: rgb(0, 0, 0),
           });
       }
-      {
-        student["NUMERACY SMART Remarks_2"][3] &&
-          eighthPage.drawText(student["NUMERACY SMART Remarks_2"][3], {
-            x: 378,
-            y: 644,
-            size: 10,
-            color: rgb(0, 0, 0),
-          });
-      }
+
       eighthPage.drawText(student["I am jolly with phonics_2"][0], {
         x:
           student["I am jolly with phonics_2"][0] === "PROGRESSIVE" ? 285 : 295,
@@ -1443,6 +1478,7 @@ function Nursery_Term2() {
         size: 10,
         color: rgb(0, 0, 0),
       });
+
       {
         student["LANGUAGE LEAPS Remarks_2"][0] &&
           eighthPage.drawText(student["LANGUAGE LEAPS Remarks_2"][0], {
@@ -1479,6 +1515,7 @@ function Nursery_Term2() {
             color: rgb(0, 0, 0),
           });
       }
+
       eighthPage.drawText(student["अक्षर ज्ञान_2"][0], {
         x: student["अक्षर ज्ञान_2"][0] === "PROGRESSIVE" ? 285 : 295,
         y: 472,
@@ -1518,6 +1555,7 @@ function Nursery_Term2() {
             color: rgb(0, 0, 0),
           });
       }
+
       eighthPage.drawText(student["I am artistic_2"][0], {
         x: student["I am artistic_2"][0] === "PROGRESSIVE" ? 285 : 295,
         y: 401,
@@ -1602,6 +1640,7 @@ function Nursery_Term2() {
             color: rgb(0, 0, 0),
           });
       }
+
       eighthPage.drawText(student["I have groovy feet_2"][0], {
         x: student["I have groovy feet_2"][0] === "PROGRESSIVE" ? 285 : 295,
         y: 263,
@@ -1657,6 +1696,7 @@ function Nursery_Term2() {
             color: rgb(0, 0, 0),
           });
       }
+
       eighthPage.drawText(student["I show strength and endurance_2"][0], {
         x:
           student["I show strength and endurance_2"][0] === "PROGRESSIVE"
@@ -1747,44 +1787,33 @@ function Nursery_Term2() {
         color: rgb(0, 0, 0),
       });
       ninthPage.drawText(student["My favourite Book_2"][0], {
-        x: 405,
-        y: 653,
+        x: 420,
+        y: 655,
         size: 14,
         color: rgb(0, 0, 0),
       });
       ninthPage.drawText(student["My favourite place to visit_2"][0], {
-        x: 98,
+        x: 90,
         y: 535,
         size: 14,
         color: rgb(0, 0, 0),
       });
       ninthPage.drawText(student["My best friend_2"][0], {
-        x: 430,
-        y: 557,
+        x: 420,
+        y: 558,
         size: 14,
         color: rgb(0, 0, 0),
       });
+
       ninthPage.drawText(student["I extend support_2"][0].slice(0, 20), {
         x: 313,
         y: 445,
         size: 12,
         color: rgb(0, 0, 0),
       });
-      ninthPage.drawText(student["I extend support_2"][0].slice(21, 40), {
-        x: 313,
-        y: 432,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
       ninthPage.drawText(student["I am generous_2"][0].slice(0, 20), {
         x: 313,
         y: 408,
-        size: 12,
-        color: rgb(0, 0, 0),
-      });
-      ninthPage.drawText(student["I am generous_2"][0].slice(21, 40), {
-        x: 313,
-        y: 395,
         size: 12,
         color: rgb(0, 0, 0),
       });
@@ -1797,15 +1826,7 @@ function Nursery_Term2() {
           color: rgb(0, 0, 0),
         }
       );
-      ninthPage.drawText(
-        student["I get along well with my classmates_2"][0].slice(21, 40),
-        {
-          x: 313,
-          y: 356,
-          size: 12,
-          color: rgb(0, 0, 0),
-        }
-      );
+
       {
         student["PARENT'S REFLECTION_2"][0] &&
           ninthPage.drawText(student["PARENT'S REFLECTION_2"][0], {
@@ -1829,6 +1850,15 @@ function Nursery_Term2() {
           ninthPage.drawText(student["PARENT'S REFLECTION_2"][2], {
             x: 57,
             y: 241,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["PARENT'S REFLECTION_2"][3] &&
+          ninthPage.drawText(student["PARENT'S REFLECTION_2"][3], {
+            x: 57,
+            y: 229,
             size: 10,
             color: rgb(0, 0, 0),
           });
@@ -1883,14 +1913,903 @@ function Nursery_Term2() {
         height: 30,
       });
 
-      tenthPage.drawImage(myPagePhotoImage_2, {
+      tenthPage.drawImage(myPagePhotoImage2, {
         x: 55,
         y: 106,
         width: 480,
         height: 590,
       });
 
-      // More drawing based on the student's data...
+      eleventhPage.drawText(student["I love cleanliness_3"][0], {
+        x: student["I love cleanliness_3"][0] === "PROGRESSIVE" ? 275 : 285,
+        y: 656,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      eleventhPage.drawText(student["I am organised_3"][0], {
+        x: student["I am organised_3"][0] === "PROGRESSIVE" ? 275 : 285,
+        y: 633,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      eleventhPage.drawText(student["I can eat independently_3"][0], {
+        x:
+          student["I can eat independently_3"][0] === "PROGRESSIVE" ? 275 : 285,
+        y: 610,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      eleventhPage.drawText(
+        student["I have independent restroom habits_3"][0],
+        {
+          x:
+            student["I have independent restroom habits_3"][0] === "PROGRESSIVE"
+              ? 275
+              : 285,
+          y: 587,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
+      {
+        student["FEELING STRONG AND FREE Remarks_3"][0] &&
+          eleventhPage.drawText(
+            student["FEELING STRONG AND FREE Remarks_3"][0],
+            {
+              x: 363,
+              y: 656,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+      {
+        student["FEELING STRONG AND FREE Remarks_3"][1] &&
+          eleventhPage.drawText(
+            student["FEELING STRONG AND FREE Remarks_3"][1],
+            {
+              x: 363,
+              y: 643,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+      {
+        student["FEELING STRONG AND FREE Remarks_3"][2] &&
+          eleventhPage.drawText(
+            student["FEELING STRONG AND FREE Remarks_3"][2],
+            {
+              x: 363,
+              y: 630,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+      {
+        student["FEELING STRONG AND FREE Remarks_3"][3] &&
+          eleventhPage.drawText(
+            student["FEELING STRONG AND FREE Remarks_3"][3],
+            {
+              x: 363,
+              y: 617,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+      eleventhPage.drawText(student["I have good observation skills_3"][0], {
+        x:
+          student["I have good observation skills_3"][0] === "PROGRESSIVE"
+            ? 275
+            : 285,
+        y: 541,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      eleventhPage.drawText(student["I wonder and explore my senses_3"][0], {
+        x:
+          student["I wonder and explore my senses_3"][0] === "PROGRESSIVE"
+            ? 275
+            : 285,
+        y: 519,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      eleventhPage.drawText(student["I can retain and recall_3"][0], {
+        x:
+          student["I can retain and recall_3"][0] === "PROGRESSIVE" ? 275 : 285,
+        y: 497,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      eleventhPage.drawText(student["I am mindful of things around me_3"][0], {
+        x:
+          student["I am mindful of things around me_3"][0] === "PROGRESSIVE"
+            ? 275
+            : 285,
+        y: 475,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      eleventhPage.drawText(student["I am a logical thinker_3"][0], {
+        x: student["I am a logical thinker_3"][0] === "PROGRESSIVE" ? 275 : 285,
+        y: 453,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      {
+        student["MIND MATTERS Remarks_3"][0] &&
+          eleventhPage.drawText(student["MIND MATTERS Remarks_3"][0], {
+            x: 363,
+            y: 541,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["MIND MATTERS Remarks_3"][1] &&
+          eleventhPage.drawText(student["MIND MATTERS Remarks_3"][1], {
+            x: 363,
+            y: 528,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["MIND MATTERS Remarks_3"][2] &&
+          eleventhPage.drawText(student["MIND MATTERS Remarks_3"][2], {
+            x: 363,
+            y: 515,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["MIND MATTERS Remarks_3"][3] &&
+          eleventhPage.drawText(student["MIND MATTERS Remarks_3"][3], {
+            x: 363,
+            y: 502,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+
+      eleventhPage.drawText(student["I am an attentive listener_3"][0], {
+        x:
+          student["I am an attentive listener_3"][0] === "PROGRESSIVE"
+            ? 275
+            : 285,
+        y: 405,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      eleventhPage.drawText(student["I can express myself clearly_3"][0], {
+        x:
+          student["I can express myself clearly_3"][0] === "PROGRESSIVE"
+            ? 275
+            : 285,
+        y: 383,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      eleventhPage.drawText(student["I share mutual gaze_3"][0], {
+        x: student["I share mutual gaze_3"][0] === "PROGRESSIVE" ? 275 : 285,
+        y: 360,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      {
+        student["EFFECTIVE EXPRESSIONS Remarks_3"][0] &&
+          eleventhPage.drawText(student["EFFECTIVE EXPRESSIONS Remarks_3"][0], {
+            x: 363,
+            y: 405,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["EFFECTIVE EXPRESSIONS Remarks_3"][1] &&
+          eleventhPage.drawText(student["EFFECTIVE EXPRESSIONS Remarks_3"][1], {
+            x: 363,
+            y: 392,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["EFFECTIVE EXPRESSIONS Remarks_3"][2] &&
+          eleventhPage.drawText(student["EFFECTIVE EXPRESSIONS Remarks_3"][2], {
+            x: 363,
+            y: 379,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["EFFECTIVE EXPRESSIONS Remarks_3"][3] &&
+          eleventhPage.drawText(student["EFFECTIVE EXPRESSIONS Remarks_3"][3], {
+            x: 363,
+            y: 366,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+
+      eleventhPage.drawText(student["I harmonize well with classmates_3"][0], {
+        x:
+          student["I harmonize well with classmates_3"][0] === "PROGRESSIVE"
+            ? 275
+            : 285,
+        y: 315,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      eleventhPage.drawText(student["I adopt and follow norms_3"][0], {
+        x:
+          student["I adopt and follow norms_3"][0] === "PROGRESSIVE"
+            ? 275
+            : 285,
+        y: 292,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      eleventhPage.drawText(student["I am assertive_3"][0], {
+        x: student["I am assertive_3"][0] === "PROGRESSIVE" ? 275 : 285,
+        y: 269,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      eleventhPage.drawText(student["I embrace responsibilities well_3"][0], {
+        x:
+          student["I embrace responsibilities well_3"][0] === "PROGRESSIVE"
+            ? 275
+            : 285,
+        y: 246,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      eleventhPage.drawText(student["I am self reliant_3"][0], {
+        x: student["I am self reliant_3"][0] === "PROGRESSIVE" ? 275 : 285,
+        y: 223,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      {
+        student["CONNECTION AND COMPASSION Remarks_3"][0] &&
+          eleventhPage.drawText(
+            student["CONNECTION AND COMPASSION Remarks_3"][0],
+            {
+              x: 363,
+              y: 315,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+      {
+        student["CONNECTION AND COMPASSION Remarks_3"][1] &&
+          eleventhPage.drawText(
+            student["CONNECTION AND COMPASSION Remarks_3"][1],
+            {
+              x: 363,
+              y: 302,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+      {
+        student["CONNECTION AND COMPASSION Remarks_3"][2] &&
+          eleventhPage.drawText(
+            student["CONNECTION AND COMPASSION Remarks_3"][2],
+            {
+              x: 363,
+              y: 289,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+      {
+        student["CONNECTION AND COMPASSION Remarks_3"][3] &&
+          eleventhPage.drawText(
+            student["CONNECTION AND COMPASSION Remarks_3"][3],
+            {
+              x: 363,
+              y: 276,
+              size: 10,
+              color: rgb(0, 0, 0),
+            }
+          );
+      }
+      eleventhPage.drawText(student["I am inquisitive_3"][0], {
+        x: student["I am inquisitive_3"][0] === "PROGRESSIVE" ? 275 : 285,
+        y: 179,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      eleventhPage.drawText(student["I am a smart thinker_3"][0], {
+        x: student["I am a smart thinker_3"][0] === "PROGRESSIVE" ? 275 : 285,
+        y: 156,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      {
+        student["SOCIAL AWARENESS Remarks_3"][0] &&
+          eleventhPage.drawText(student["SOCIAL AWARENESS Remarks_3"][0], {
+            x: 363,
+            y: 179,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["SOCIAL AWARENESS Remarks_3"][1] &&
+          eleventhPage.drawText(student["SOCIAL AWARENESS Remarks_3"][1], {
+            x: 363,
+            y: 166,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["SOCIAL AWARENESS Remarks_3"][2] &&
+          eleventhPage.drawText(student["SOCIAL AWARENESS Remarks_3"][2], {
+            x: 363,
+            y: 153,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      twelfthPage.drawText(student["I am number smart_3"][0], {
+        x: student["I am number smart_3"][0] === "PROGRESSIVE" ? 285 : 295,
+        y: 683,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      twelfthPage.drawText(student["I am aware of pre-math concepts_3"][0], {
+        x:
+          student["I am aware of pre-math concepts_3"][0] === "PROGRESSIVE"
+            ? 285
+            : 295,
+        y: 658,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      {
+        student["NUMERACY SMART Remarks_3"][0] &&
+          twelfthPage.drawText(student["NUMERACY SMART Remarks_3"][0], {
+            x: 378,
+            y: 683,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["NUMERACY SMART Remarks_3"][1] &&
+          twelfthPage.drawText(student["NUMERACY SMART Remarks_3"][1], {
+            x: 378,
+            y: 670,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["NUMERACY SMART Remarks_3"][2] &&
+          twelfthPage.drawText(student["NUMERACY SMART Remarks_3"][2], {
+            x: 378,
+            y: 657,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+
+      twelfthPage.drawText(student["I am jolly with phonics_3"][0], {
+        x:
+          student["I am jolly with phonics_3"][0] === "PROGRESSIVE" ? 285 : 295,
+        y: 612,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      twelfthPage.drawText(student["I can comprehend and trace letters_3"][0], {
+        x:
+          student["I can comprehend and trace letters_3"][0] === "PROGRESSIVE"
+            ? 285
+            : 295,
+        y: 589,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      twelfthPage.drawText(student["I can converse using vocabulary_3"][0], {
+        x:
+          student["I can converse using vocabulary_3"][0] === "PROGRESSIVE"
+            ? 285
+            : 295,
+        y: 566,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      twelfthPage.drawText(student["I engage in action rhymes_3"][0], {
+        x:
+          student["I engage in action rhymes_3"][0] === "PROGRESSIVE"
+            ? 285
+            : 295,
+        y: 543,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      twelfthPage.drawText(student["I am comfortable making patterns_3"][0], {
+        x:
+          student["I am comfortable making patterns_3"][0] === "PROGRESSIVE"
+            ? 285
+            : 295,
+        y: 520,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      {
+        student["LANGUAGE LEAPS Remarks_3"][0] &&
+          twelfthPage.drawText(student["LANGUAGE LEAPS Remarks_3"][0], {
+            x: 378,
+            y: 612,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["LANGUAGE LEAPS Remarks_3"][1] &&
+          twelfthPage.drawText(student["LANGUAGE LEAPS Remarks_3"][1], {
+            x: 378,
+            y: 599,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["LANGUAGE LEAPS Remarks_3"][2] &&
+          twelfthPage.drawText(student["LANGUAGE LEAPS Remarks_3"][2], {
+            x: 378,
+            y: 586,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["LANGUAGE LEAPS Remarks_3"][3] &&
+          twelfthPage.drawText(student["LANGUAGE LEAPS Remarks_3"][3], {
+            x: 378,
+            y: 573,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+
+      twelfthPage.drawText(student["अक्षर ज्ञान_3"][0], {
+        x: student["अक्षर ज्ञान_3"][0] === "PROGRESSIVE" ? 285 : 295,
+        y: 472,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      twelfthPage.drawText(student["कवि ता का आनंद_3"][0], {
+        x: student["कवि ता का आनंद_3"][0] === "PROGRESSIVE" ? 285 : 295,
+        y: 447,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      {
+        student["मेरी भाषा Remarks_3"][0] &&
+          twelfthPage.drawText(student["मेरी भाषा Remarks_3"][0], {
+            x: 378,
+            y: 472,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["मेरी भाषा Remarks_3"][1] &&
+          twelfthPage.drawText(student["मेरी भाषा Remarks_3"][1], {
+            x: 378,
+            y: 459,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["मेरी भाषा Remarks_3"][2] &&
+          twelfthPage.drawText(student["मेरी भाषा Remarks_3"][2], {
+            x: 378,
+            y: 446,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      twelfthPage.drawText(student["I am artistic_3"][0], {
+        x: student["I am artistic_3"][0] === "PROGRESSIVE" ? 285 : 295,
+        y: 401,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      twelfthPage.drawText(student["I have distinct expressions_3"][0], {
+        x:
+          student["I have distinct expressions_3"][0] === "PROGRESSIVE"
+            ? 285
+            : 295,
+        y: 378,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      {
+        student["AESTHETIC ME Remarks_3"][0] &&
+          twelfthPage.drawText(student["AESTHETIC ME Remarks_3"][0], {
+            x: 378,
+            y: 401,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["AESTHETIC ME Remarks_3"][1] &&
+          twelfthPage.drawText(student["AESTHETIC ME Remarks_3"][1], {
+            x: 378,
+            y: 388,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["AESTHETIC ME Remarks_3"][2] &&
+          twelfthPage.drawText(student["AESTHETIC ME Remarks_3"][2], {
+            x: 378,
+            y: 375,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+
+      twelfthPage.drawText(student["I can sing melodiously_3"][0], {
+        x: student["I can sing melodiously_3"][0] === "PROGRESSIVE" ? 285 : 295,
+        y: 332,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      twelfthPage.drawText(
+        student["I can sing in tune with expressions_3"][0],
+        {
+          x:
+            student["I can sing in tune with expressions_3"][0] ===
+            "PROGRESSIVE"
+              ? 285
+              : 295,
+          y: 309,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
+      {
+        student["MUSIC MARVEL Remarks_3"][0] &&
+          twelfthPage.drawText(student["MUSIC MARVEL Remarks_3"][0], {
+            x: 378,
+            y: 332,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["MUSIC MARVEL Remarks_3"][1] &&
+          twelfthPage.drawText(student["MUSIC MARVEL Remarks_3"][1], {
+            x: 378,
+            y: 319,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["MUSIC MARVEL Remarks_3"][2] &&
+          twelfthPage.drawText(student["MUSIC MARVEL Remarks_3"][2], {
+            x: 378,
+            y: 306,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      twelfthPage.drawText(student["I have groovy feet_3"][0], {
+        x: student["I have groovy feet_3"][0] === "PROGRESSIVE" ? 285 : 295,
+        y: 263,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      twelfthPage.drawText(student["I am flexible_3"][0], {
+        x: student["I am flexible_3"][0] === "PROGRESSIVE" ? 285 : 295,
+        y: 240,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      twelfthPage.drawText(student["I am a dance enthusiast_3"][0], {
+        x:
+          student["I am a dance enthusiast_3"][0] === "PROGRESSIVE" ? 285 : 295,
+        y: 217,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      {
+        student["DANCE DYNAMO Remarks_3"][0] &&
+          twelfthPage.drawText(student["DANCE DYNAMO Remarks_3"][0], {
+            x: 378,
+            y: 263,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["DANCE DYNAMO Remarks_3"][1] &&
+          twelfthPage.drawText(student["DANCE DYNAMO Remarks_3"][1], {
+            x: 378,
+            y: 250,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["DANCE DYNAMO Remarks_3"][2] &&
+          twelfthPage.drawText(student["DANCE DYNAMO Remarks_3"][2], {
+            x: 378,
+            y: 237,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["DANCE DYNAMO Remarks_3"][3] &&
+          twelfthPage.drawText(student["DANCE DYNAMO Remarks_3"][3], {
+            x: 378,
+            y: 224,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      twelfthPage.drawText(student["I show strength and endurance_3"][0], {
+        x:
+          student["I show strength and endurance_3"][0] === "PROGRESSIVE"
+            ? 285
+            : 295,
+        y: 171,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      twelfthPage.drawText(
+        student["I have appropriate control and balance_3"][0],
+        {
+          x:
+            student["I have appropriate control and balance_3"][0] ===
+            "PROGRESSIVE"
+              ? 285
+              : 295,
+          y: 141,
+          size: 10,
+          color: rgb(0, 0, 0),
+        }
+      );
+      twelfthPage.drawText(student["I display team spirit_3"][0], {
+        x: student["I display team spirit_3"][0] === "PROGRESSIVE" ? 285 : 295,
+        y: 111,
+        size: 10,
+        color: rgb(0, 0, 0),
+      });
+      {
+        student["ATHLETIC ME Remarks_3"][0] &&
+          twelfthPage.drawText(student["ATHLETIC ME Remarks_3"][0], {
+            x: 378,
+            y: 171,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["ATHLETIC ME Remarks_3"][1] &&
+          twelfthPage.drawText(student["ATHLETIC ME Remarks_3"][1], {
+            x: 378,
+            y: 158,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["ATHLETIC ME Remarks_3"][2] &&
+          twelfthPage.drawText(student["ATHLETIC ME Remarks_3"][2], {
+            x: 378,
+            y: 145,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["ATHLETIC ME Remarks_3"][3] &&
+          twelfthPage.drawText(student["ATHLETIC ME Remarks_3"][3], {
+            x: 378,
+            y: 132,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      thirteenPage.drawText(student["Total no. of working days_3"][0], {
+        x: 160,
+        y: 640,
+        size: 14,
+        color: rgb(0, 0, 0),
+      });
+      thirteenPage.drawText(student["No. of days present_3"][0], {
+        x: 200,
+        y: 628,
+        size: 14,
+        color: rgb(0, 0, 0),
+      });
+      thirteenPage.drawText(student["Activity I enjoy the most_3"][0], {
+        x: 380,
+        y: 630,
+        size: 14,
+        color: rgb(0, 0, 0),
+      });
+      thirteenPage.drawText(student["I stand ______ cms tall_3"][0], {
+        x: 280,
+        y: 549,
+        size: 14,
+        color: rgb(0, 0, 0),
+      });
+      thirteenPage.drawText(student["I weigh ______ kgs_3"][0], {
+        x: 290,
+        y: 530,
+        size: 14,
+        color: rgb(0, 0, 0),
+      });
+      thirteenPage.drawText(student["I am progressing in_3"][0], {
+        x: 98,
+        y: 405,
+        size: 14,
+        color: rgb(0, 0, 0),
+      });
+      thirteenPage.drawText(
+        student["Activity I enjoy doing with my friends_3"][0],
+        {
+          x: 360,
+          y: 405,
+          size: 14,
+          color: rgb(0, 0, 0),
+        }
+      );
+      thirteenPage.drawText(student["I extend support_3"][0], {
+        x: 345,
+        y: 260,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      thirteenPage.drawText(student["I am generous_3"][0], {
+        x: 345,
+        y: 220,
+        size: 12,
+        color: rgb(0, 0, 0),
+      });
+      thirteenPage.drawText(
+        student["I get along well with my classmates_3"][0],
+        {
+          x: 345,
+          y: 185,
+          size: 12,
+          color: rgb(0, 0, 0),
+        }
+      );
+
+      {
+        student["PARENT'S REFLECTION_3"][0] &&
+          fourteenPage.drawText(student["PARENT'S REFLECTION_3"][0], {
+            x: 60,
+            y: 724,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["PARENT'S REFLECTION_3"][1] &&
+          fourteenPage.drawText(student["PARENT'S REFLECTION_3"][1], {
+            x: 60,
+            y: 712,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["PARENT'S REFLECTION_3"][2] &&
+          fourteenPage.drawText(student["PARENT'S REFLECTION_3"][2], {
+            x: 60,
+            y: 700,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["PARENT'S REFLECTION_3"][3] &&
+          fourteenPage.drawText(student["PARENT'S REFLECTION_3"][3], {
+            x: 60,
+            y: 688,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["TEACHER'S REFLECTION_3"][0] &&
+          fourteenPage.drawText(student["TEACHER'S REFLECTION_3"][0], {
+            x: 60,
+            y: 528,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["TEACHER'S REFLECTION_3"][1] &&
+          fourteenPage.drawText(student["TEACHER'S REFLECTION_3"][1], {
+            x: 60,
+            y: 516,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["TEACHER'S REFLECTION_3"][2] &&
+          fourteenPage.drawText(student["TEACHER'S REFLECTION_3"][2], {
+            x: 60,
+            y: 504,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["TEACHER'S REFLECTION_3"][3] &&
+          fourteenPage.drawText(student["TEACHER'S REFLECTION_3"][3], {
+            x: 60,
+            y: 492,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+      {
+        student["TEACHER'S REFLECTION_3"][4] &&
+          fourteenPage.drawText(student["TEACHER'S REFLECTION_3"][4], {
+            x: 60,
+            y: 480,
+            size: 10,
+            color: rgb(0, 0, 0),
+          });
+      }
+
+      fourteenPage.drawImage(teacherSign1Image, {
+        x: 57,
+        y: 370,
+        width: 70,
+        height: 30,
+      });
+      fourteenPage.drawImage(teacherSign3Image, {
+        x: 140,
+        y: 370,
+        width: 70,
+        height: 30,
+      });
+      fourteenPage.drawText(student["I have graduated to_3"][0], {
+        x: 234,
+        y: 175,
+        size: 14,
+        color: rgb(0, 0, 0),
+      });
+
+      
+      fifteenthPage.drawImage(groupPhotImage, {
+        x: 470,
+        y: 200,
+        width: 480,
+        height: 290,
+        rotate: degrees(90),
+      });
+
     } catch (error) {
       console.error("Error filling PDF form:", error);
     }
@@ -1902,9 +2821,9 @@ function Nursery_Term2() {
       const zip = new JSZip();
 
       for (let student of userData) {
-        const existingPdfBytes = await fetch(fileURL).then((res) =>
-          res.arrayBuffer()
-        );
+        const existingPdfBytes = await fetch(
+          "https://innovartan.s3.amazonaws.com/291d6a5faccb72005b0fa3a3e06dde892072853752/76c6cf45af60f7757707d7b97b8f1f1d.pdf"
+        ).then((res) => res.arrayBuffer());
 
         const pdfDoc = await PDFDocument.load(existingPdfBytes);
         await fillPdfForm(student, pdfDoc);
@@ -1961,9 +2880,9 @@ function Nursery_Term2() {
 
   const fillAndDownloadSinglePdf = async (shouldDownload, shouldView) => {
     try {
-      const existingPdfBytes = await fetch(fileURL).then((res) =>
-        res.arrayBuffer()
-      );
+      const existingPdfBytes = await fetch(
+        "https://innovartan.s3.amazonaws.com/291d6a5faccb72005b0fa3a3e06dde892072853752/76c6cf45af60f7757707d7b97b8f1f1d.pdf"
+      ).then((res) => res.arrayBuffer());
 
       const pdfDoc = await PDFDocument.load(existingPdfBytes);
 
@@ -2026,4 +2945,4 @@ function Nursery_Term2() {
   );
 }
 
-export default Nursery_Term2;
+export default Nursery_Term3;
